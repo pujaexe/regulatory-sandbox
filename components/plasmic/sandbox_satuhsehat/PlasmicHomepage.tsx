@@ -640,12 +640,14 @@ function PlasmicHomepage__RenderFunc(props: {
                         "__wab_instance",
                         sty.antdCollapse___36Aou
                       )}
+                      expandIconPosition={"right" as const}
                     >
                       <CollapsePanel
                         className={classNames(
                           "__wab_instance",
                           sty.antdCollapsePanel__mQRl
                         )}
+                        collapsible={"header" as const}
                         header={
                           <h6
                             className={classNames(
@@ -679,10 +681,12 @@ function PlasmicHomepage__RenderFunc(props: {
                     className={classNames(projectcss.all, sty.freeBox___1U4O)}
                   >
                     <Collapse
+                      accordion={true}
                       className={classNames(
                         "__wab_instance",
                         sty.antdCollapse__p0SbZ
                       )}
+                      expandIconPosition={"right" as const}
                     >
                       <CollapsePanel
                         className={classNames(
@@ -936,10 +940,12 @@ function PlasmicHomepage__RenderFunc(props: {
                     className={classNames(projectcss.all, sty.freeBox__laWke)}
                   >
                     <Collapse
+                      accordion={true}
                       className={classNames(
                         "__wab_instance",
                         sty.antdCollapse__hbzbd
                       )}
+                      expandIconPosition={"right" as const}
                     >
                       <CollapsePanel
                         className={classNames(
@@ -981,10 +987,12 @@ function PlasmicHomepage__RenderFunc(props: {
                     className={classNames(projectcss.all, sty.freeBox__kdghQ)}
                   >
                     <Collapse
+                      accordion={true}
                       className={classNames(
                         "__wab_instance",
                         sty.antdCollapse__nvsT5
                       )}
+                      expandIconPosition={"right" as const}
                     >
                       <CollapsePanel
                         className={classNames(
@@ -1026,10 +1034,12 @@ function PlasmicHomepage__RenderFunc(props: {
                     className={classNames(projectcss.all, sty.freeBox__kximm)}
                   >
                     <Collapse
+                      accordion={true}
                       className={classNames(
                         "__wab_instance",
                         sty.antdCollapse__l3TQr
                       )}
+                      expandIconPosition={"right" as const}
                     >
                       <CollapsePanel
                         className={classNames(
@@ -1069,10 +1079,12 @@ function PlasmicHomepage__RenderFunc(props: {
                     className={classNames(projectcss.all, sty.freeBox__mX4Ws)}
                   >
                     <Collapse
+                      accordion={true}
                       className={classNames(
                         "__wab_instance",
                         sty.antdCollapse__fFs5C
                       )}
+                      expandIconPosition={"right" as const}
                     >
                       <CollapsePanel
                         className={classNames(
@@ -1114,10 +1126,12 @@ function PlasmicHomepage__RenderFunc(props: {
                     className={classNames(projectcss.all, sty.freeBox__rd7L)}
                   >
                     <Collapse
+                      accordion={true}
                       className={classNames(
                         "__wab_instance",
                         sty.antdCollapse__d7R6
                       )}
+                      expandIconPosition={"right" as const}
                     >
                       <CollapsePanel
                         className={classNames(
@@ -1157,10 +1171,12 @@ function PlasmicHomepage__RenderFunc(props: {
                     className={classNames(projectcss.all, sty.freeBox__x50Mt)}
                   >
                     <Collapse
+                      accordion={true}
                       className={classNames(
                         "__wab_instance",
                         sty.antdCollapse__b3RxA
                       )}
+                      expandIconPosition={"right" as const}
                     >
                       <CollapsePanel
                         className={classNames(
