@@ -661,16 +661,15 @@ function PlasmicHomepage__RenderFunc(props: {
                             )}
                             collapsible={"header" as const}
                             header={
-                              <h6
+                              <div
                                 className={classNames(
                                   projectcss.all,
-                                  projectcss.h6,
                                   projectcss.__wab_text,
-                                  sty.h6__oc5F6
+                                  sty.text__oc5F6
                                 )}
                               >
                                 {"Apa itu regulatory sandbox?"}
-                              </h6>
+                              </div>
                             }
                             key={"1" as const}
                           >
@@ -709,20 +708,19 @@ function PlasmicHomepage__RenderFunc(props: {
                               sty.antdCollapsePanel__feGl3
                             )}
                             header={
-                              <h6
+                              <div
                                 className={classNames(
                                   projectcss.all,
-                                  projectcss.h6,
                                   projectcss.__wab_text,
-                                  sty.h6__s1S
+                                  sty.text__s1S
                                 )}
                               >
                                 {
                                   "Siapa yang dapat mendaftar regulatory sandbox? "
                                 }
-                              </h6>
+                              </div>
                             }
-                            key={"2" as const}
+                            key={"1" as const}
                           >
                             <div
                               className={classNames(
@@ -975,20 +973,19 @@ function PlasmicHomepage__RenderFunc(props: {
                               sty.antdCollapsePanel__kxWv9
                             )}
                             header={
-                              <h6
+                              <div
                                 className={classNames(
                                   projectcss.all,
-                                  projectcss.h6,
                                   projectcss.__wab_text,
-                                  sty.h6__t5Kum
+                                  sty.text__t5Kum
                                 )}
                               >
                                 {
                                   "Apakah ada kewajiban setiap penyelenggara IDK mengikuti regulatory sandbox?"
                                 }
-                              </h6>
+                              </div>
                             }
-                            key={"3" as const}
+                            key={"1" as const}
                           >
                             <div
                               className={classNames(
@@ -1025,20 +1022,19 @@ function PlasmicHomepage__RenderFunc(props: {
                               sty.antdCollapsePanel__ij2K
                             )}
                             header={
-                              <h6
+                              <div
                                 className={classNames(
                                   projectcss.all,
-                                  projectcss.h6,
                                   projectcss.__wab_text,
-                                  sty.h6__jJCoy
+                                  sty.text__jJCoy
                                 )}
                               >
                                 {
                                   "Apakah regulatory sandbox hanya untuk inovasi digital kesehatan dalam negeri?"
                                 }
-                              </h6>
+                              </div>
                             }
-                            key={"4" as const}
+                            key={"1" as const}
                           >
                             <div
                               className={classNames(
@@ -1083,20 +1079,19 @@ function PlasmicHomepage__RenderFunc(props: {
                               sty.antdCollapsePanel__iNfzp
                             )}
                             header={
-                              <h6
+                              <div
                                 className={classNames(
                                   projectcss.all,
-                                  projectcss.h6,
                                   projectcss.__wab_text,
-                                  sty.h6__pEkpr
+                                  sty.text__pEkpr
                                 )}
                               >
                                 {
                                   "Kapan saya perlu mengikuti Regulatory Sandbox?"
                                 }
-                              </h6>
+                              </div>
                             }
-                            key={"5" as const}
+                            key={"1" as const}
                           >
                             <div
                               className={classNames(
@@ -1133,20 +1128,19 @@ function PlasmicHomepage__RenderFunc(props: {
                               sty.antdCollapsePanel__hN6Qb
                             )}
                             header={
-                              <h6
+                              <div
                                 className={classNames(
                                   projectcss.all,
-                                  projectcss.h6,
                                   projectcss.__wab_text,
-                                  sty.h6__cmSd7
+                                  sty.text__cmSd7
                                 )}
                               >
                                 {
                                   "Ruang lingkup apa saja yang diuji dalam regulatory sandbox?"
                                 }
-                              </h6>
+                              </div>
                             }
-                            key={"6" as const}
+                            key={"1" as const}
                           >
                             <div
                               className={classNames(
@@ -1183,20 +1177,19 @@ function PlasmicHomepage__RenderFunc(props: {
                               sty.antdCollapsePanel___5IHgv
                             )}
                             header={
-                              <h6
+                              <div
                                 className={classNames(
                                   projectcss.all,
-                                  projectcss.h6,
                                   projectcss.__wab_text,
-                                  sty.h6__zVfci
+                                  sty.text__zVfci
                                 )}
                               >
                                 {
                                   "Bagaimana proses pendaftaran regulatory sandbox"
                                 }
-                              </h6>
+                              </div>
                             }
-                            key={"7" as const}
+                            key={"1" as const}
                           >
                             <div
                               className={classNames(
@@ -1233,20 +1226,19 @@ function PlasmicHomepage__RenderFunc(props: {
                               sty.antdCollapsePanel___4C8D
                             )}
                             header={
-                              <h6
+                              <div
                                 className={classNames(
                                   projectcss.all,
-                                  projectcss.h6,
                                   projectcss.__wab_text,
-                                  sty.h6___47DWl
+                                  sty.text___47DWl
                                 )}
                               >
                                 {
                                   "Berapa lama waktu yang diperlukan untuk mendaftar sampai mendapatkan rekomendasi regulatory sandbox?"
                                 }
-                              </h6>
+                              </div>
                             }
-                            key={"8" as const}
+                            key={"1" as const}
                           >
                             <div
                               className={classNames(
