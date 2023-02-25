@@ -635,6 +635,7 @@ function PlasmicHomepage__RenderFunc(props: {
                     className={classNames(projectcss.all, sty.freeBox___7WBxE)}
                   >
                     <Collapse
+                      accordion={true}
                       className={classNames(
                         "__wab_instance",
                         sty.antdCollapse___36Aou
@@ -700,7 +701,7 @@ function PlasmicHomepage__RenderFunc(props: {
                             {"Siapa yang dapat mendaftar regulatory sandbox? "}
                           </h6>
                         }
-                        key={"1" as const}
+                        key={"2" as const}
                       >
                         <div
                           className={classNames(
@@ -959,7 +960,7 @@ function PlasmicHomepage__RenderFunc(props: {
                             }
                           </h6>
                         }
-                        key={"1" as const}
+                        key={"3" as const}
                       >
                         <div
                           className={classNames(
@@ -1004,7 +1005,7 @@ function PlasmicHomepage__RenderFunc(props: {
                             }
                           </h6>
                         }
-                        key={"1" as const}
+                        key={"4" as const}
                       >
                         <div
                           className={classNames(
@@ -1047,7 +1048,7 @@ function PlasmicHomepage__RenderFunc(props: {
                             {"Kapan saya perlu mengikuti Regulatory Sandbox?"}
                           </h6>
                         }
-                        key={"1" as const}
+                        key={"5" as const}
                       >
                         <div
                           className={classNames(
@@ -1092,7 +1093,7 @@ function PlasmicHomepage__RenderFunc(props: {
                             }
                           </h6>
                         }
-                        key={"1" as const}
+                        key={"6" as const}
                       >
                         <div
                           className={classNames(
@@ -1135,7 +1136,7 @@ function PlasmicHomepage__RenderFunc(props: {
                             {"Bagaimana proses pendaftaran regulatory sandbox"}
                           </h6>
                         }
-                        key={"1" as const}
+                        key={"7" as const}
                       >
                         <div
                           className={classNames(
@@ -1180,7 +1181,7 @@ function PlasmicHomepage__RenderFunc(props: {
                             }
                           </h6>
                         }
-                        key={"1" as const}
+                        key={"8" as const}
                       >
                         <div
                           className={classNames(
