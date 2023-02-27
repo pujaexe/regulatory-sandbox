@@ -1,0 +1,115 @@
+.collapse {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  position: relative;
+  background: #ffffff;
+  transition-property: transform;
+  transition-duration: 2s;
+  box-shadow: 0px 6px 12px 0px #0000000f;
+  overflow: hidden;
+  min-width: 0;
+  -webkit-transition-property: transform;
+  -webkit-transition-duration: 2s;
+  border-radius: 12px;
+  padding: 0px;
+  border: 1px solid #d3d3d3;
+}
+.collapse:focus-within {
+  box-shadow: 0px 6px 12px 0px transparent;
+  outline: none;
+}
+.collapse:active {
+  box-shadow: 0px 6px 12px 0px transparent;
+}
+.button {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  background: #ffffff;
+  cursor: pointer;
+  min-width: 0;
+  border-radius: 12px;
+  padding: 12px;
+}
+.collapse:focus-within .button {
+  box-shadow: 0px 4px 16px 0px #0000000f;
+  outline: none;
+}
+.collapse:active .button {
+  box-shadow: 0px 4px 16px 0px #0000000f;
+}
+.freeBox {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-width: 0;
+}
+.slotTargetSlot {
+  text-align: left;
+  font-weight: 600;
+}
+.arrowOpen {
+  position: relative;
+  object-fit: cover;
+  max-width: 100%;
+  width: 1em;
+  flex-shrink: 0;
+  height: 1em;
+}
+.collapse:focus-within .arrowOpen {
+  display: none;
+  outline: none;
+}
+.collapse:active .arrowOpen {
+  display: none;
+}
+.arrowclose {
+  position: relative;
+  object-fit: cover;
+  max-width: 100%;
+  width: 1em;
+  flex-shrink: 0;
+  height: 1em;
+  display: none;
+}
+.collapse:focus-within .arrowclose {
+  display: block;
+  outline: none;
+}
+.collapse:active .arrowclose {
+  display: block;
+}
+.item {
+  position: relative;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  background: none;
+  min-width: 0;
+  display: none;
+  padding: 12px;
+}
+.itemisopen {
+  display: flex;
+}
+.collapse:focus-within .item {
+  display: flex;
+  outline: none;
+}
+.collapse:active .item {
+  display: flex;
+}

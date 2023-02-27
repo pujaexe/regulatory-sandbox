@@ -220,6 +220,19 @@
           "cssFilePath": "plasmic/sandbox_satuhsehat/PlasmicHomepage.module.css",
           "scheme": "blackbox",
           "componentType": "page"
+        },
+        {
+          "id": "Z0pRxdl5sa",
+          "name": "Collapsible",
+          "type": "managed",
+          "projectId": "mazsTSCdeXMvNewzsED8CP",
+          "renderModuleFilePath": "plasmic/sandbox_satuhsehat/PlasmicCollapsible.tsx",
+          "importSpec": {
+            "modulePath": "Collapsible.tsx"
+          },
+          "cssFilePath": "plasmic/sandbox_satuhsehat/PlasmicCollapsible.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
         }
       ],
       "icons": [
@@ -267,6 +280,16 @@
           "id": "KLL8rlOJRh",
           "name": "MobilePhoneChatHealthDeviceTelephoneSmartphoneSvgrepoComsvgIcon",
           "moduleFilePath": "plasmic/sandbox_satuhsehat/icons/PlasmicIcon__MobilePhoneChatHealthDeviceTelephoneSmartphoneSvgrepoComsvg.tsx"
+        },
+        {
+          "id": "Vsh1JbJgG5",
+          "name": "ArrowRightCircleSvgrepoComsvgIcon",
+          "moduleFilePath": "plasmic/sandbox_satuhsehat/icons/PlasmicIcon__ArrowRightCircleSvgrepoComsvg.tsx"
+        },
+        {
+          "id": "F5gVYOG9tO",
+          "name": "ArrowDownCircleSvgrepoComsvgIcon",
+          "moduleFilePath": "plasmic/sandbox_satuhsehat/icons/PlasmicIcon__ArrowDownCircleSvgrepoComsvg.tsx"
         }
       ],
       "images": [

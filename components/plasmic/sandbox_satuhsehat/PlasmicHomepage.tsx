@@ -36,8 +36,7 @@ import {
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
 import { NavigationBar } from "@plasmicpkgs/plasmic-nav"; // plasmic-import: jGx9tiKJoex/codeComponent
-import { Collapse } from "@plasmicpkgs/antd/skinny/registerCollapse"; // plasmic-import: F10gpQ1ZhXY/codeComponent
-import CollapsePanel from "antd/lib/collapse/CollapsePanel"; // plasmic-import: yegZ392NLoV/codeComponent
+import Collapsible from "../../Collapsible"; // plasmic-import: Z0pRxdl5sa/component
 
 import { useScreenVariants as useScreenVariantsqbGzfD819Z3T3 } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: QBGzfD819Z3t3/globalVariant
 
@@ -646,413 +645,358 @@ function PlasmicHomepage__RenderFunc(props: {
                           sty.freeBox__egpu9
                         )}
                       >
-                        <Collapse
-                          accordion={true}
+                        <Collapsible
                           className={classNames(
                             "__wab_instance",
-                            sty.antdCollapse__dgsnc
+                            sty.collapsible__w9KY
                           )}
-                          expandIconPosition={"right" as const}
-                        >
-                          <CollapsePanel
-                            className={classNames(
-                              "__wab_instance",
-                              sty.antdCollapsePanel__ywCiD
-                            )}
-                            collapsible={"header" as const}
-                            header={
-                              <h6
-                                className={classNames(
-                                  projectcss.all,
-                                  projectcss.h6,
-                                  projectcss.__wab_text,
-                                  sty.h6__oc5F6
-                                )}
-                              >
-                                {"Apa itu regulatory sandbox?"}
-                              </h6>
-                            }
-                            key={"1" as const}
-                          >
+                          slot={
                             <div
                               className={classNames(
                                 projectcss.all,
                                 projectcss.__wab_text,
-                                sty.text__riMiQ
+                                sty.text__aCapP
                               )}
                             >
-                              {
-                                "Regulatory sandbox adalah mekanisme pengujian untuk penyelenggara inovasi digital kesehatan (IDK) yang dilakukan oleh Kementerian Kesehatan untuk menilai keandalan proses bisnis, model bisnis, teknologi, tata kelola. \n\nPembelajaran selama proses uji dapat menjadi rekomendasi pengembangan regulasi berbasis bukti."
-                              }
+                              {"Apa itu regulatory sandbox?"}
                             </div>
-                          </CollapsePanel>
-                        </Collapse>
+                          }
+                        >
+                          {
+                            "Regulatory sandbox adalah mekanisme pengujian untuk penyelenggara inovasi digital kesehatan (IDK) yang dilakukan oleh Kementerian Kesehatan untuk menilai keandalan proses bisnis, model bisnis, teknologi, tata kelola. \n\nPembelajaran selama proses uji dapat menjadi rekomendasi pengembangan regulasi berbasis bukti."
+                          }
+                        </Collapsible>
                       </div>
 
                       <div
                         className={classNames(
                           projectcss.all,
-                          sty.freeBox__qRtxg
+                          sty.freeBox__dMn8B
                         )}
                       >
-                        <Collapse
-                          accordion={true}
+                        <Collapsible
                           className={classNames(
                             "__wab_instance",
-                            sty.antdCollapse__nx8IX
+                            sty.collapsible__xezpa
                           )}
-                          expandIconPosition={"right" as const}
+                          slot={
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.__wab_text,
+                                sty.text__eBkoX
+                              )}
+                            >
+                              {
+                                "Siapa yang dapat mendaftar regulatory sandbox? "
+                              }
+                            </div>
+                          }
                         >
-                          <CollapsePanel
+                          <div
                             className={classNames(
-                              "__wab_instance",
-                              sty.antdCollapsePanel__feGl3
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.text__vdh2W
                             )}
-                            header={
-                              <h6
-                                className={classNames(
-                                  projectcss.all,
-                                  projectcss.h6,
-                                  projectcss.__wab_text,
-                                  sty.h6__s1S
-                                )}
-                              >
-                                {
-                                  "Siapa yang dapat mendaftar regulatory sandbox? "
-                                }
-                              </h6>
-                            }
-                            key={"1" as const}
                           >
-                            <div
+                            {
+                              "Peserta Regulatory Sandbox merupakan penyelenggara IDK yang memenuhi ketentuan sebagaimana dimaksud dalam panduan ini yaitu sebagai berikut:"
+                            }
+                          </div>
+
+                          <ul
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.ul,
+                              sty.ul__k10Mq
+                            )}
+                          >
+                            <li
                               className={classNames(
                                 projectcss.all,
+                                projectcss.li,
                                 projectcss.__wab_text,
-                                sty.text__xiBoi
+                                sty.li__voZvY
                               )}
                             >
                               {
-                                "Peserta Regulatory Sandbox merupakan penyelenggara IDK yang memenuhi ketentuan sebagaimana dimaksud dalam panduan ini yaitu sebagai berikut:"
+                                "Pelaku usaha non perseroangan sebagaimana diatur dalam peraturan perundang-undangan terkait perizinan usaha terintegrasi"
                               }
-                            </div>
+                            </li>
 
-                            <ul
+                            <li
                               className={classNames(
                                 projectcss.all,
-                                projectcss.ul,
-                                sty.ul__hpSul
-                              )}
-                            >
-                              <li
-                                className={classNames(
-                                  projectcss.all,
-                                  projectcss.li,
-                                  projectcss.__wab_text,
-                                  sty.li__pAkt6
-                                )}
-                              >
-                                {
-                                  "Pelaku usaha non perseroangan sebagaimana diatur dalam peraturan perundang-undangan terkait perizinan usaha terintegrasi"
-                                }
-                              </li>
-
-                              <li
-                                className={classNames(
-                                  projectcss.all,
-                                  projectcss.li,
-                                  projectcss.__wab_text,
-                                  sty.li__xi3Nd
-                                )}
-                              >
-                                {
-                                  "Melaksanakan kegiatan usaha secara luas atau sudah dilaksanakan (pengguna dan kegiatan usaha) pada minimal dua provinsi"
-                                }
-                              </li>
-
-                              <li
-                                className={classNames(
-                                  projectcss.all,
-                                  projectcss.li,
-                                  projectcss.__wab_text,
-                                  sty.li___41STz
-                                )}
-                              >
-                                {
-                                  "Inovasi yang dapat menimbulkan kompleksitas dari sisi teknologi dan penggunaannya"
-                                }
-                              </li>
-
-                              <li
-                                className={classNames(
-                                  projectcss.all,
-                                  projectcss.li,
-                                  projectcss.__wab_text,
-                                  sty.li__fwbw1
-                                )}
-                              >
-                                {
-                                  "Merupakan bagian dari klaster yang tengah menjadi fokus regulatory sandbox (untuk tahap awal ini klaster telekesehatan yang terdiri dari Telekonsultasi, Telemonitoring, Telemedicine, Komunikasi, Edukasi, Informasi (KIE), dan teknologi telekesehatan lainnya)"
-                                }
-                              </li>
-
-                              <li
-                                className={classNames(
-                                  projectcss.all,
-                                  projectcss.li,
-                                  projectcss.__wab_text,
-                                  sty.li__nx9I
-                                )}
-                              >
-                                {
-                                  "Merupakan bagian dari klaster yang tengah menjadi fokus regulatory sandbox (untuk tahap awal ini klaster telekesehatan yang terdiri dari Telekonsultasi, Telemonitoring, Telemedicine, Komunikasi, Edukasi, Informasi (KIE), dan teknologi telekesehatan lainnya)"
-                                }
-                              </li>
-                            </ul>
-
-                            <div
-                              className={classNames(
-                                projectcss.all,
+                                projectcss.li,
                                 projectcss.__wab_text,
-                                sty.text__z1Hbi
+                                sty.li___6QaCt
                               )}
                             >
                               {
-                                "Pelaku usaha non perseroangan sebagaimana diatur dalam peraturan perundang-undangan terkait perizinan usaha terintegrasi, antara lain"
+                                "Melaksanakan kegiatan usaha secara luas atau sudah dilaksanakan (pengguna dan kegiatan usaha) pada minimal dua provinsi"
                               }
-                            </div>
+                            </li>
 
-                            <ul
+                            <li
                               className={classNames(
                                 projectcss.all,
-                                projectcss.ul,
-                                sty.ul___0QTEq
+                                projectcss.li,
+                                projectcss.__wab_text,
+                                sty.li___9KGho
                               )}
                             >
-                              <li
-                                className={classNames(
-                                  projectcss.all,
-                                  projectcss.li,
-                                  projectcss.__wab_text,
-                                  sty.li__gnmYf
-                                )}
-                              >
-                                {"Perseroan terbatas"}
-                              </li>
+                              {
+                                "Inovasi yang dapat menimbulkan kompleksitas dari sisi teknologi dan penggunaannya"
+                              }
+                            </li>
 
-                              <li
-                                className={classNames(
-                                  projectcss.all,
-                                  projectcss.li,
-                                  projectcss.__wab_text,
-                                  sty.li__jXkH1
-                                )}
-                              >
-                                {"Perusahaan umum"}
-                              </li>
+                            <li
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.li,
+                                projectcss.__wab_text,
+                                sty.li__gDisU
+                              )}
+                            >
+                              {
+                                "Merupakan bagian dari klaster yang tengah menjadi fokus regulatory sandbox (untuk tahap awal ini klaster telekesehatan yang terdiri dari Telekonsultasi, Telemonitoring, Telemedicine, Komunikasi, Edukasi, Informasi (KIE), dan teknologi telekesehatan lainnya)"
+                              }
+                            </li>
 
-                              <li
-                                className={classNames(
-                                  projectcss.all,
-                                  projectcss.li,
-                                  projectcss.__wab_text,
-                                  sty.li__usyFb
-                                )}
-                              >
-                                {"Perusahaan umum daerah"}
-                              </li>
+                            <li
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.li,
+                                projectcss.__wab_text,
+                                sty.li__ulmb7
+                              )}
+                            >
+                              {
+                                "Merupakan bagian dari klaster yang tengah menjadi fokus regulatory sandbox (untuk tahap awal ini klaster telekesehatan yang terdiri dari Telekonsultasi, Telemonitoring, Telemedicine, Komunikasi, Edukasi, Informasi (KIE), dan teknologi telekesehatan lainnya)"
+                              }
+                            </li>
+                          </ul>
 
-                              <li
-                                className={classNames(
-                                  projectcss.all,
-                                  projectcss.li,
-                                  projectcss.__wab_text,
-                                  sty.li__krJ54
-                                )}
-                              >
-                                {
-                                  "Badan hukum lainnya yang dimiliki oleh negara"
-                                }
-                              </li>
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.text__yApCq
+                            )}
+                          >
+                            {
+                              "Pelaku usaha non perseroangan sebagaimana diatur dalam peraturan perundang-undangan terkait perizinan usaha terintegrasi, antara lain"
+                            }
+                          </div>
 
-                              <li
-                                className={classNames(
-                                  projectcss.all,
-                                  projectcss.li,
-                                  projectcss.__wab_text,
-                                  sty.li__mXtbc
-                                )}
-                              >
-                                {"Badan layanan umum"}
-                              </li>
+                          <ul
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.ul,
+                              sty.ul__hYvN
+                            )}
+                          >
+                            <li
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.li,
+                                projectcss.__wab_text,
+                                sty.li___9Z2X8
+                              )}
+                            >
+                              {"Perseroan terbatas"}
+                            </li>
 
-                              <li
-                                className={classNames(
-                                  projectcss.all,
-                                  projectcss.li,
-                                  projectcss.__wab_text,
-                                  sty.li__dPj4
-                                )}
-                              >
-                                {"Lembaga penyiaran"}
-                              </li>
+                            <li
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.li,
+                                projectcss.__wab_text,
+                                sty.li__p1JPj
+                              )}
+                            >
+                              {"Perusahaan umum"}
+                            </li>
 
-                              <li
-                                className={classNames(
-                                  projectcss.all,
-                                  projectcss.li,
-                                  projectcss.__wab_text,
-                                  sty.li__nkCnn
-                                )}
-                              >
-                                {"Badan usaha yang didirikan oleh yayasan"}
-                              </li>
+                            <li
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.li,
+                                projectcss.__wab_text,
+                                sty.li__ymrdh
+                              )}
+                            >
+                              {"Perusahaan umum daerah"}
+                            </li>
 
-                              <li
-                                className={classNames(
-                                  projectcss.all,
-                                  projectcss.li,
-                                  projectcss.__wab_text,
-                                  sty.li__hmBJf
-                                )}
-                              >
-                                {"Koperasi"}
-                              </li>
+                            <li
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.li,
+                                projectcss.__wab_text,
+                                sty.li__sr7H2
+                              )}
+                            >
+                              {"Badan hukum lainnya yang dimiliki oleh negara"}
+                            </li>
 
-                              <li
-                                className={classNames(
-                                  projectcss.all,
-                                  projectcss.li,
-                                  projectcss.__wab_text,
-                                  sty.li__ykZbb
-                                )}
-                              >
-                                {"Persekutuan komanditer"}
-                              </li>
+                            <li
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.li,
+                                projectcss.__wab_text,
+                                sty.li__feSa9
+                              )}
+                            >
+                              {"Badan layanan umum"}
+                            </li>
 
-                              <li
-                                className={classNames(
-                                  projectcss.all,
-                                  projectcss.li,
-                                  projectcss.__wab_text,
-                                  sty.li__oEnjP
-                                )}
-                              >
-                                {"Persekutuan firma; dan"}
-                              </li>
+                            <li
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.li,
+                                projectcss.__wab_text,
+                                sty.li__fnx5K
+                              )}
+                            >
+                              {"Lembaga penyiaran"}
+                            </li>
 
-                              <li
-                                className={classNames(
-                                  projectcss.all,
-                                  projectcss.li,
-                                  projectcss.__wab_text,
-                                  sty.li__aBq1Z
-                                )}
-                              >
-                                {"Persekutuan perdata"}
-                              </li>
-                            </ul>
-                          </CollapsePanel>
-                        </Collapse>
+                            <li
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.li,
+                                projectcss.__wab_text,
+                                sty.li__ckmbT
+                              )}
+                            >
+                              {"Badan usaha yang didirikan oleh yayasan"}
+                            </li>
+
+                            <li
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.li,
+                                projectcss.__wab_text,
+                                sty.li__z8QmI
+                              )}
+                            >
+                              {"Koperasi"}
+                            </li>
+
+                            <li
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.li,
+                                projectcss.__wab_text,
+                                sty.li__ofpKl
+                              )}
+                            >
+                              {"Persekutuan komanditer"}
+                            </li>
+
+                            <li
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.li,
+                                projectcss.__wab_text,
+                                sty.li__tWyCg
+                              )}
+                            >
+                              {"Persekutuan firma; dan"}
+                            </li>
+
+                            <li
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.li,
+                                projectcss.__wab_text,
+                                sty.li__iBkEk
+                              )}
+                            >
+                              {"Persekutuan perdata"}
+                            </li>
+                          </ul>
+                        </Collapsible>
                       </div>
 
                       <div
                         className={classNames(
                           projectcss.all,
-                          sty.freeBox__cal4Y
+                          sty.freeBox__mu3Y
                         )}
                       >
-                        <Collapse
-                          accordion={true}
+                        <Collapsible
                           className={classNames(
                             "__wab_instance",
-                            sty.antdCollapse___8GKy9
+                            sty.collapsible__avl0B
                           )}
-                          expandIconPosition={"right" as const}
-                        >
-                          <CollapsePanel
-                            className={classNames(
-                              "__wab_instance",
-                              sty.antdCollapsePanel__kxWv9
-                            )}
-                            header={
-                              <h6
-                                className={classNames(
-                                  projectcss.all,
-                                  projectcss.h6,
-                                  projectcss.__wab_text,
-                                  sty.h6__t5Kum
-                                )}
-                              >
-                                {
-                                  "Apakah ada kewajiban setiap penyelenggara IDK mengikuti regulatory sandbox?"
-                                }
-                              </h6>
-                            }
-                            key={"1" as const}
-                          >
+                          slot={
                             <div
                               className={classNames(
                                 projectcss.all,
                                 projectcss.__wab_text,
-                                sty.text__hjurn
+                                sty.text__xvg9Z
                               )}
                             >
                               {
-                                "Penyelenggara IDK dihimbau untuk mendaftar regulatory sandbox dalam rangka turut serta dalam memberi masukan bagi pembuat kebijakan (regulator) serta dalam rangka melakukan perlindungan pengguna inovasi."
+                                "Apakah ada kewajiban setiap penyelenggara IDK mengikuti regulatory sandbox?"
                               }
                             </div>
-                          </CollapsePanel>
-                        </Collapse>
+                          }
+                        >
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.text__qTfii
+                            )}
+                          >
+                            {
+                              "Penyelenggara IDK dihimbau untuk mendaftar regulatory sandbox dalam rangka turut serta dalam memberi masukan bagi pembuat kebijakan (regulator) serta dalam rangka melakukan perlindungan pengguna inovasi."
+                            }
+                          </div>
+                        </Collapsible>
                       </div>
 
                       <div
                         className={classNames(
                           projectcss.all,
-                          sty.freeBox__vqwQh
+                          sty.freeBox__l2Bw8
                         )}
                       >
-                        <Collapse
-                          accordion={true}
+                        <Collapsible
                           className={classNames(
                             "__wab_instance",
-                            sty.antdCollapse__jG3Au
+                            sty.collapsible__xzoog
                           )}
-                          expandIconPosition={"right" as const}
-                        >
-                          <CollapsePanel
-                            className={classNames(
-                              "__wab_instance",
-                              sty.antdCollapsePanel__ij2K
-                            )}
-                            header={
-                              <h6
-                                className={classNames(
-                                  projectcss.all,
-                                  projectcss.h6,
-                                  projectcss.__wab_text,
-                                  sty.h6__jJCoy
-                                )}
-                              >
-                                {
-                                  "Apakah regulatory sandbox hanya untuk inovasi digital kesehatan dalam negeri?"
-                                }
-                              </h6>
-                            }
-                            key={"1" as const}
-                          >
+                          slot={
                             <div
                               className={classNames(
                                 projectcss.all,
                                 projectcss.__wab_text,
-                                sty.text__p2Pqg
+                                sty.text___5YZmC
                               )}
                             >
                               {
-                                "Ya. Regulatory sandbox oleh Kementerian Kesehatan RI diperuntukkan bagi pelaku industri penyelenggara IDK dalam negeri yang memiliki inovasi kesehatan disruptif. Saat ini regulatory sandbox diberlakukan untuk klaster telekesehatan dan ke depannya akan diperluas ke klaster prioritas lainnya."
+                                "Apakah regulatory sandbox hanya untuk inovasi digital kesehatan dalam negeri?"
                               }
                             </div>
-                          </CollapsePanel>
-                        </Collapse>
+                          }
+                        >
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.text__oEczg
+                            )}
+                          >
+                            {
+                              "Ya. Regulatory sandbox oleh Kementerian Kesehatan RI diperuntukkan bagi pelaku industri penyelenggara IDK dalam negeri yang memiliki inovasi kesehatan disruptif. Saat ini regulatory sandbox diberlakukan untuk klaster telekesehatan dan ke depannya akan diperluas ke klaster prioritas lainnya."
+                            }
+                          </div>
+                        </Collapsible>
                       </div>
                     </div>
                   </div>
@@ -1066,201 +1010,144 @@ function PlasmicHomepage__RenderFunc(props: {
                       <div
                         className={classNames(
                           projectcss.all,
-                          sty.freeBox__ggffk
+                          sty.freeBox__v5In
                         )}
                       >
-                        <Collapse
-                          accordion={true}
+                        <Collapsible
                           className={classNames(
                             "__wab_instance",
-                            sty.antdCollapse__jStH
+                            sty.collapsible__qReT
                           )}
-                          expandIconPosition={"right" as const}
-                        >
-                          <CollapsePanel
-                            className={classNames(
-                              "__wab_instance",
-                              sty.antdCollapsePanel__iNfzp
-                            )}
-                            header={
-                              <h6
-                                className={classNames(
-                                  projectcss.all,
-                                  projectcss.h6,
-                                  projectcss.__wab_text,
-                                  sty.h6__pEkpr
-                                )}
-                              >
-                                {
-                                  "Kapan saya perlu mengikuti Regulatory Sandbox?"
-                                }
-                              </h6>
-                            }
-                            key={"1" as const}
-                          >
+                          slot={
                             <div
                               className={classNames(
                                 projectcss.all,
                                 projectcss.__wab_text,
-                                sty.text__n9PcC
+                                sty.text__exDwe
                               )}
                             >
-                              {
-                                "Setiap penyelenggara IDK pada klaster prioritas yang telah diumumkan oleh Kementerian Kesehatan RI, diberikan waktu satu bulan untuk melakukan pendaftaran dan mengikuti proses pendaftaran untuk mendapatkan rekomendasi."
-                              }
+                              {"Kapan saya perlu mengikuti Regulatory Sandbox?"}
                             </div>
-                          </CollapsePanel>
-                        </Collapse>
+                          }
+                        >
+                          {
+                            "Setiap penyelenggara IDK pada klaster prioritas yang telah diumumkan oleh Kementerian Kesehatan RI, diberikan waktu satu bulan untuk melakukan pendaftaran dan mengikuti proses pendaftaran untuk mendapatkan rekomendasi."
+                          }
+                        </Collapsible>
                       </div>
 
                       <div
                         className={classNames(
                           projectcss.all,
-                          sty.freeBox___8NGeH
+                          sty.freeBox__pkWop
                         )}
                       >
-                        <Collapse
-                          accordion={true}
+                        <Collapsible
                           className={classNames(
                             "__wab_instance",
-                            sty.antdCollapse__irW3R
+                            sty.collapsible___50K1M
                           )}
-                          expandIconPosition={"right" as const}
-                        >
-                          <CollapsePanel
-                            className={classNames(
-                              "__wab_instance",
-                              sty.antdCollapsePanel__hN6Qb
-                            )}
-                            header={
-                              <h6
-                                className={classNames(
-                                  projectcss.all,
-                                  projectcss.h6,
-                                  projectcss.__wab_text,
-                                  sty.h6__cmSd7
-                                )}
-                              >
-                                {
-                                  "Ruang lingkup apa saja yang diuji dalam regulatory sandbox?"
-                                }
-                              </h6>
-                            }
-                            key={"1" as const}
-                          >
+                          slot={
                             <div
                               className={classNames(
                                 projectcss.all,
                                 projectcss.__wab_text,
-                                sty.text__w3QYk
+                                sty.text___6Oory
                               )}
                             >
                               {
-                                'Regulatory sandbox menguji penyelenggara IDK pada aspek berikut:\n- Penerimaan pengguna (user acceptance test)\n- Standar teknologi\n- Keamanan dan perlindungan data pengguna\n- Inklusivitas\n\nTerdapat juga aspek-aspek lain yang diuji pada masing-masing klaster yang akan ditentukan oleh Kementerian Kesehatan dan tim panel."'
+                                "Ruang lingkup apa saja yang diuji dalam regulatory sandbox?"
                               }
                             </div>
-                          </CollapsePanel>
-                        </Collapse>
+                          }
+                        >
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.text__cPqPw
+                            )}
+                          >
+                            {
+                              'Regulatory sandbox menguji penyelenggara IDK pada aspek berikut:\n- Penerimaan pengguna (user acceptance test)\n- Standar teknologi\n- Keamanan dan perlindungan data pengguna\n- Inklusivitas\n\nTerdapat juga aspek-aspek lain yang diuji pada masing-masing klaster yang akan ditentukan oleh Kementerian Kesehatan dan tim panel."'
+                            }
+                          </div>
+                        </Collapsible>
+                      </div>
+
+                      <div
+                        className={classNames(projectcss.all, sty.freeBox__h6P)}
+                      >
+                        <Collapsible
+                          className={classNames(
+                            "__wab_instance",
+                            sty.collapsible__aJCwZ
+                          )}
+                          slot={
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.__wab_text,
+                                sty.text__oeR6V
+                              )}
+                            >
+                              {
+                                "Bagaimana proses pendaftaran regulatory sandbox"
+                              }
+                            </div>
+                          }
+                        >
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.text__cu0Zh
+                            )}
+                          >
+                            {
+                              '"Proses pendaftaran regulatory sandbox meliputi:\n\n1. Pengisian formulir pendaftaran\nTahap ini terdiri atas pengisian formulir pendaftaran secara online. \n\n2. Verifikasi dan validasi pendaftaran\nPenyelenggara IDK yang lolos verifikasi dan validasi akan diberikan status tercatat. Selanjutnya peserta akan mendapatkan nomor registrasi atas status tercatat.\n\n3. Seleksi dan kategorisasi klaster inovasi\nPada tahap ini, penyelenggara IDK akan melanjutkan proses seleksi untuk dapat ikut serta dalam regulatory sandbox. Pengumuman akan diinformasikan melalui kanal publikasi resmi Kementerian Kesehatan Republik Indonesia kepada penyelenggara IDK."'
+                            }
+                          </div>
+                        </Collapsible>
                       </div>
 
                       <div
                         className={classNames(
                           projectcss.all,
-                          sty.freeBox__hI8D
+                          sty.freeBox__hyAz
                         )}
                       >
-                        <Collapse
-                          accordion={true}
+                        <Collapsible
                           className={classNames(
                             "__wab_instance",
-                            sty.antdCollapse__wRhb
+                            sty.collapsible__bEvrH
                           )}
-                          expandIconPosition={"right" as const}
-                        >
-                          <CollapsePanel
-                            className={classNames(
-                              "__wab_instance",
-                              sty.antdCollapsePanel___5IHgv
-                            )}
-                            header={
-                              <h6
-                                className={classNames(
-                                  projectcss.all,
-                                  projectcss.h6,
-                                  projectcss.__wab_text,
-                                  sty.h6__zVfci
-                                )}
-                              >
-                                {
-                                  "Bagaimana proses pendaftaran regulatory sandbox"
-                                }
-                              </h6>
-                            }
-                            key={"1" as const}
-                          >
+                          slot={
                             <div
                               className={classNames(
                                 projectcss.all,
                                 projectcss.__wab_text,
-                                sty.text___2Ip67
+                                sty.text__sviyU
                               )}
                             >
                               {
-                                '"Proses pendaftaran regulatory sandbox meliputi:\n\n1. Pengisian formulir pendaftaran\nTahap ini terdiri atas pengisian formulir pendaftaran secara online. \n\n2. Verifikasi dan validasi pendaftaran\nPenyelenggara IDK yang lolos verifikasi dan validasi akan diberikan status tercatat. Selanjutnya peserta akan mendapatkan nomor registrasi atas status tercatat.\n\n3. Seleksi dan kategorisasi klaster inovasi\nPada tahap ini, penyelenggara IDK akan melanjutkan proses seleksi untuk dapat ikut serta dalam regulatory sandbox. Pengumuman akan diinformasikan melalui kanal publikasi resmi Kementerian Kesehatan Republik Indonesia kepada penyelenggara IDK."'
+                                "Berapa lama waktu yang diperlukan untuk mendaftar sampai mendapatkan rekomendasi regulatory sandbox?"
                               }
                             </div>
-                          </CollapsePanel>
-                        </Collapse>
-                      </div>
-
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          sty.freeBox__fdI51
-                        )}
-                      >
-                        <Collapse
-                          accordion={true}
-                          className={classNames(
-                            "__wab_instance",
-                            sty.antdCollapse___6I8Q
-                          )}
-                          expandIconPosition={"right" as const}
+                          }
                         >
-                          <CollapsePanel
+                          <div
                             className={classNames(
-                              "__wab_instance",
-                              sty.antdCollapsePanel___4C8D
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.text__u7U8C
                             )}
-                            header={
-                              <h6
-                                className={classNames(
-                                  projectcss.all,
-                                  projectcss.h6,
-                                  projectcss.__wab_text,
-                                  sty.h6___47DWl
-                                )}
-                              >
-                                {
-                                  "Berapa lama waktu yang diperlukan untuk mendaftar sampai mendapatkan rekomendasi regulatory sandbox?"
-                                }
-                              </h6>
-                            }
-                            key={"1" as const}
                           >
-                            <div
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.__wab_text,
-                                sty.text__abJe3
-                              )}
-                            >
-                              {
-                                'Total estimasi waktu yang dibutuhkan untuk menyelesaikan proses pendaftaran hingga pemberian rekomendasi pada regulatory sandbox adalah 8-14 bulan. Perbedaan waktu keluarnya rekomendasi tergantung dengan ada atau tidaknya perbaikan, berikut simulasi waktu perihal tahapan yang disebutkan:\n\n- Pendaftaran sampai Seleksi dan Kategorisasi Klaster : 2 Bulan\n- Pengujian sampai Rekomendasi (tanpa perbaikan) : 6 bulan\n- Pengujian sampai Rekomendasi (dengan waktu perbaikan maksimal) : 14 bulan"""'
-                              }
-                            </div>
-                          </CollapsePanel>
-                        </Collapse>
+                            {
+                              'Total estimasi waktu yang dibutuhkan untuk menyelesaikan proses pendaftaran hingga pemberian rekomendasi pada regulatory sandbox adalah 8-14 bulan. Perbedaan waktu keluarnya rekomendasi tergantung dengan ada atau tidaknya perbaikan, berikut simulasi waktu perihal tahapan yang disebutkan:\n\n- Pendaftaran sampai Seleksi dan Kategorisasi Klaster : 2 Bulan\n- Pengujian sampai Rekomendasi (tanpa perbaikan) : 6 bulan\n- Pengujian sampai Rekomendasi (dengan waktu perbaikan maksimal) : 14 bulan"""'
+                            }
+                          </div>
+                        </Collapsible>
                       </div>
                     </div>
                   </div>
