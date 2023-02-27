@@ -603,7 +603,7 @@
 
 "@plasmicpkgs/antd@^2.0.23":
   "integrity" "sha512-wZj5pjdWccIEIgjRE2ZDZlhWKlMFUEuSHOP5J6OpFwJz0EuXw1wHMVSEgWS1UCN0apN+0yGNkTO6ADGC/cQFBw=="
-  "resolved" "https://registry.npmjs.org/@plasmicpkgs/antd/-/antd-2.0.23.tgz"
+  "resolved" "https://repo.huaweicloud.com/repository/npm/@plasmicpkgs/antd/-/antd-2.0.23.tgz"
   "version" "2.0.23"
   dependencies:
     "antd" "^4.19.5"
