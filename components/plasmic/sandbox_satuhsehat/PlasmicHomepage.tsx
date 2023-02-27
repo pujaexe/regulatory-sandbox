@@ -37,6 +37,8 @@ import {
 } from "@plasmicapp/react-web";
 import { NavigationBar } from "@plasmicpkgs/plasmic-nav"; // plasmic-import: jGx9tiKJoex/codeComponent
 import Collapsible from "../../Collapsible"; // plasmic-import: Z0pRxdl5sa/component
+import TextInput from "../../TextInput"; // plasmic-import: i1n34K5kn_z/component
+import Button from "../../Button"; // plasmic-import: Gt-Lz5BwtAt/component
 
 import { useScreenVariants as useScreenVariantsqbGzfD819Z3T3 } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: QBGzfD819Z3t3/globalVariant
 
@@ -49,6 +51,9 @@ import MedicineDrugHealthMedicalSmartphonePharmacyTabletSvgrepoCom1SvgIcon from 
 import HeartbeatHeartHealthPulseSmartphoneMedicalRateSvgrepoCom1SvgIcon from "./icons/PlasmicIcon__HeartbeatHeartHealthPulseSmartphoneMedicalRateSvgrepoCom1Svg"; // plasmic-import: KmthYfnQUS/icon
 import MedicineDrugHealthMedicalSmartphonePharmacyTablet2SvgrepoComsvgIcon from "./icons/PlasmicIcon__MedicineDrugHealthMedicalSmartphonePharmacyTablet2SvgrepoComsvg"; // plasmic-import: VzvMwKKQ1a/icon
 import MobilePhoneChatHealthDeviceTelephoneSmartphoneSvgrepoComsvgIcon from "./icons/PlasmicIcon__MobilePhoneChatHealthDeviceTelephoneSmartphoneSvgrepoComsvg"; // plasmic-import: KLL8rlOJRh/icon
+import SearchsvgIcon from "./icons/PlasmicIcon__Searchsvg"; // plasmic-import: f56tcMEMxe4/icon
+import ChecksvgIcon from "./icons/PlasmicIcon__Checksvg"; // plasmic-import: 1I82Ralll34/icon
+import IconIcon from "./icons/PlasmicIcon__Icon"; // plasmic-import: m0QQT_49MIS/icon
 
 export type PlasmicHomepage__VariantMembers = {};
 export type PlasmicHomepage__VariantsArgs = {};
@@ -71,6 +76,9 @@ export type PlasmicHomepage__OverridesType = {
   card7?: p.Flex<"div">;
   card8?: p.Flex<"div">;
   faq?: p.Flex<"div">;
+  who2?: p.Flex<"div">;
+  form?: p.Flex<"form">;
+  button?: p.Flex<typeof Button>;
   footer?: p.Flex<"div">;
 };
 
@@ -365,7 +373,7 @@ function PlasmicHomepage__RenderFunc(props: {
                   )}
                 >
                   {
-                    "Regulatory Sandbox adalah mekanisme pengujian untuk penyelenggara inovasi digital kesehatan (IDK) yang dilakukan oleh Kementerian Kesehatan RI  untuk menilai keandalan proses bisnis, model bisnis, teknologi, tata kelola Pembelajaran selama proses uji dapat menjadi rekomendasi pengembangan regulasi berbasis bukti. \n\nIDK dikelompokan kedalam klaster-klaster seperti telekesehatan, telefarmasi, on-demand healthcare (lokapasar kesehatan), artifcial inteligence, dan berbagai IDK lainnya yang berkembang sesuai dengan perkembangan teknologi. Pembelajaran selama proses uji dapat menjadi rekomendasi pengembangan regulasi untuk IDK pada kategori spesifik."
+                    "Regulatory Sandbox adalah mekanisme pengujian untuk penyelenggara inovasi digital kesehatan (IDK) yang dilakukan oleh Kementerian Kesehatan RI  untuk menilai keandalan proses bisnis, model bisnis, teknologi, serta tata kelola sebagai pembelajaran selama proses uji yang dapat menjadi rekomendasi pengembangan regulasi berbasis bukti.\n\nIDK dikelompokan kedalam klaster-klaster seperti telekesehatan, telefarmasi, on-demand healthcare (lokapasar kesehatan), artifcial inteligence, dan berbagai IDK lainnya yang berkembang sesuai dengan perkembangan teknologi. Pembelajaran selama proses uji dapat menjadi rekomendasi pengembangan regulasi untuk IDK pada kategori spesifik."
                   }
                 </div>
               </p.Stack>
@@ -1156,6 +1164,139 @@ function PlasmicHomepage__RenderFunc(props: {
             ) : null}
           </div>
 
+          <div
+            data-plasmic-name={"who2"}
+            data-plasmic-override={overrides.who2}
+            className={classNames(projectcss.all, sty.who2)}
+          >
+            {true ? (
+              <p.Stack
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox__yCz4Q)}
+              >
+                {true ? (
+                  <p.Stack
+                    as={"div"}
+                    hasGap={true}
+                    className={classNames(projectcss.all, sty.columns__bYukj)}
+                  >
+                    <p.Stack
+                      as={"div"}
+                      hasGap={true}
+                      className={classNames(projectcss.all, sty.column__daMui)}
+                    >
+                      <h2
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.h2,
+                          projectcss.__wab_text,
+                          sty.h2___65Db7
+                        )}
+                      >
+                        {"Hubungi Kami"}
+                      </h2>
+
+                      {true ? (
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__awVvC
+                          )}
+                        >
+                          {
+                            "Untuk pertanyaan umum Anda dapat mengirimkan email melalui form yang telah kami sediakan, jangan ragu untuk menghubungi kami jika anda memiliki pertanyaan seputar regulatori sandbox"
+                          }
+                        </div>
+                      ) : null}
+                    </p.Stack>
+
+                    <p.Stack
+                      as={"div"}
+                      hasGap={true}
+                      className={classNames(projectcss.all, sty.column__bu6Tg)}
+                    >
+                      {true ? (
+                        <p.Stack
+                          as={"form"}
+                          data-plasmic-name={"form"}
+                          data-plasmic-override={overrides.form}
+                          hasGap={true}
+                          className={classNames(projectcss.all, sty.form)}
+                        >
+                          {true ? (
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                sty.freeBox__q4Suv
+                              )}
+                            >
+                              <div
+                                className={classNames(
+                                  projectcss.all,
+                                  projectcss.__wab_text,
+                                  sty.text___1EqDu
+                                )}
+                              >
+                                {"Email"}
+                              </div>
+
+                              <TextInput
+                                className={classNames(
+                                  "__wab_instance",
+                                  sty.textInput__fkk5V
+                                )}
+                                placeholder={"Email pengirim" as const}
+                              />
+                            </div>
+                          ) : null}
+                          {true ? (
+                            <p.Stack
+                              as={"div"}
+                              hasGap={true}
+                              className={classNames(
+                                projectcss.all,
+                                sty.freeBox__rgoeK
+                              )}
+                            >
+                              <div
+                                className={classNames(
+                                  projectcss.all,
+                                  projectcss.__wab_text,
+                                  sty.text__k2Jlv
+                                )}
+                              >
+                                {"Pesan"}
+                              </div>
+
+                              <TextInput
+                                className={classNames(
+                                  "__wab_instance",
+                                  sty.textInput___8Two5
+                                )}
+                                placeholder={"Tulis Pesan" as const}
+                              />
+                            </p.Stack>
+                          ) : null}
+
+                          <Button
+                            data-plasmic-name={"button"}
+                            data-plasmic-override={overrides.button}
+                            className={classNames("__wab_instance", sty.button)}
+                            color={"green" as const}
+                          >
+                            {"Kirim Email"}
+                          </Button>
+                        </p.Stack>
+                      ) : null}
+                    </p.Stack>
+                  </p.Stack>
+                ) : null}
+              </p.Stack>
+            ) : null}
+          </div>
+
           <p.Stack
             as={"div"}
             data-plasmic-name={"footer"}
@@ -1210,6 +1351,9 @@ const PlasmicDescendants = {
     "card7",
     "card8",
     "faq",
+    "who2",
+    "form",
+    "button",
     "footer"
   ],
   header: ["header", "navigationBar"],
@@ -1222,6 +1366,9 @@ const PlasmicDescendants = {
   card7: ["card7"],
   card8: ["card8"],
   faq: ["faq"],
+  who2: ["who2", "form", "button"],
+  form: ["form", "button"],
+  button: ["button"],
   footer: ["footer"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
@@ -1239,6 +1386,9 @@ type NodeDefaultElementType = {
   card7: "div";
   card8: "div";
   faq: "div";
+  who2: "div";
+  form: "form";
+  button: typeof Button;
   footer: "div";
 };
 
@@ -1313,6 +1463,9 @@ export const PlasmicHomepage = Object.assign(
     card7: makeNodeComponent("card7"),
     card8: makeNodeComponent("card8"),
     faq: makeNodeComponent("faq"),
+    who2: makeNodeComponent("who2"),
+    form: makeNodeComponent("form"),
+    button: makeNodeComponent("button"),
     footer: makeNodeComponent("footer"),
 
     // Metadata about props expected for PlasmicHomepage

@@ -233,6 +233,34 @@
           "cssFilePath": "plasmic/sandbox_satuhsehat/PlasmicCollapsible.module.css",
           "scheme": "blackbox",
           "componentType": "component"
+        },
+        {
+          "id": "i1n34K5kn_z",
+          "name": "TextInput",
+          "type": "managed",
+          "projectId": "mazsTSCdeXMvNewzsED8CP",
+          "renderModuleFilePath": "plasmic/sandbox_satuhsehat/PlasmicTextInput.tsx",
+          "importSpec": {
+            "modulePath": "TextInput.tsx"
+          },
+          "cssFilePath": "plasmic/sandbox_satuhsehat/PlasmicTextInput.module.css",
+          "scheme": "blackbox",
+          "componentType": "component",
+          "plumeType": "text-input"
+        },
+        {
+          "id": "Gt-Lz5BwtAt",
+          "name": "Button",
+          "type": "managed",
+          "projectId": "mazsTSCdeXMvNewzsED8CP",
+          "renderModuleFilePath": "plasmic/sandbox_satuhsehat/PlasmicButton.tsx",
+          "importSpec": {
+            "modulePath": "Button.tsx"
+          },
+          "cssFilePath": "plasmic/sandbox_satuhsehat/PlasmicButton.module.css",
+          "scheme": "blackbox",
+          "componentType": "component",
+          "plumeType": "button"
         }
       ],
       "icons": [
@@ -290,6 +318,21 @@
           "id": "F5gVYOG9tO",
           "name": "ArrowDownCircleSvgrepoComsvgIcon",
           "moduleFilePath": "plasmic/sandbox_satuhsehat/icons/PlasmicIcon__ArrowDownCircleSvgrepoComsvg.tsx"
+        },
+        {
+          "id": "f56tcMEMxe4",
+          "name": "SearchsvgIcon",
+          "moduleFilePath": "plasmic/sandbox_satuhsehat/icons/PlasmicIcon__Searchsvg.tsx"
+        },
+        {
+          "id": "1I82Ralll34",
+          "name": "ChecksvgIcon",
+          "moduleFilePath": "plasmic/sandbox_satuhsehat/icons/PlasmicIcon__Checksvg.tsx"
+        },
+        {
+          "id": "m0QQT_49MIS",
+          "name": "IconIcon",
+          "moduleFilePath": "plasmic/sandbox_satuhsehat/icons/PlasmicIcon__Icon.tsx"
         }
       ],
       "images": [
