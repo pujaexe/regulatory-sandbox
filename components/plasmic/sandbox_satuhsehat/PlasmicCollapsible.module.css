@@ -17,14 +17,16 @@
   -webkit-transition-duration: 2s;
   border-radius: 12px;
   padding: 0px;
-  border: 1px solid #d3d3d3;
+  border: 1px none #d3d3d3;
 }
 .collapse:focus-within {
   box-shadow: 0px 6px 12px 0px transparent;
   outline: none;
+  border-style: solid;
 }
 .collapse:active {
   box-shadow: 0px 6px 12px 0px transparent;
+  border-style: solid;
 }
 .button {
   display: flex;
@@ -39,14 +41,18 @@
   cursor: pointer;
   min-width: 0;
   border-radius: 12px;
-  padding: 12px;
+  padding: 16px 12px;
 }
 .collapse:focus-within .button {
   box-shadow: 0px 4px 16px 0px #0000000f;
   outline: none;
+  border-width: 1px;
+  border-style: none;
 }
 .collapse:active .button {
   box-shadow: 0px 4px 16px 0px #0000000f;
+  border-width: 1px;
+  border-style: none;
 }
 .freeBox {
   display: flex;
@@ -63,6 +69,7 @@
   position: relative;
   object-fit: cover;
   max-width: 100%;
+  color: #27ada7;
   width: 1em;
   flex-shrink: 0;
   height: 1em;
@@ -78,6 +85,7 @@
   position: relative;
   object-fit: cover;
   max-width: 100%;
+  color: #979797;
   width: 1em;
   flex-shrink: 0;
   height: 1em;
