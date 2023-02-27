@@ -1267,6 +1267,39 @@ function PlasmicHomepage__RenderFunc(props: {
                 </div>
               </p.Stack>
             ) : null}
+
+            <Collapse
+              className={classNames("__wab_instance", sty.antdCollapse__iNj0Y)}
+            >
+              <CollapsePanel
+                className={classNames(
+                  "__wab_instance",
+                  sty.antdCollapsePanel__xkktS
+                )}
+                header={
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__dHwrD
+                    )}
+                  >
+                    {"tester"}
+                  </div>
+                }
+                key={"1" as const}
+              >
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__uc8L
+                  )}
+                >
+                  {"Insert text here"}
+                </div>
+              </CollapsePanel>
+            </Collapse>
           </div>
 
           <p.Stack
