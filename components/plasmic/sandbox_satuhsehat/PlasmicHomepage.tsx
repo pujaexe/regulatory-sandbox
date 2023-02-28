@@ -1223,7 +1223,12 @@ function PlasmicHomepage__RenderFunc(props: {
                           data-plasmic-name={"form"}
                           data-plasmic-override={overrides.form}
                           hasGap={true}
+                          action={
+                            "mailto:ecosystem@dto.kemkes.go.id?subject=Feedback Regulatory Sandbox" as const
+                          }
                           className={classNames(projectcss.all, sty.form)}
+                          encType={"text/plain" as const}
+                          method={"post" as const}
                         >
                           {true ? (
                             <div
@@ -1247,6 +1252,7 @@ function PlasmicHomepage__RenderFunc(props: {
                                   "__wab_instance",
                                   sty.textInput__fkk5V
                                 )}
+                                name={"email" as const}
                                 placeholder={"Email pengirim" as const}
                               />
                             </div>
@@ -1275,6 +1281,7 @@ function PlasmicHomepage__RenderFunc(props: {
                                   "__wab_instance",
                                   sty.textInput___8Two5
                                 )}
+                                name={"message" as const}
                                 placeholder={"Tulis Pesan" as const}
                               />
                             </p.Stack>
