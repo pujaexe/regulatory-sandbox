@@ -163,7 +163,35 @@ function PlasmicHomepage__RenderFunc(props: {
 
   return (
     <React.Fragment>
-      <Head></Head>
+      <Head>
+        <meta name="twitter:card" content="summary" />
+        <title key="title">{PlasmicHomepage.pageMetadata.title}</title>
+        <meta
+          key="og:title"
+          property="og:title"
+          content={PlasmicHomepage.pageMetadata.title}
+        />
+        <meta
+          key="twitter:title"
+          name="twitter:title"
+          content={PlasmicHomepage.pageMetadata.title}
+        />
+        <meta
+          key="description"
+          name="description"
+          content={PlasmicHomepage.pageMetadata.description}
+        />
+        <meta
+          key="og:description"
+          property="og:description"
+          content={PlasmicHomepage.pageMetadata.description}
+        />
+        <meta
+          key="twitter:description"
+          name="twitter:description"
+          content={PlasmicHomepage.pageMetadata.description}
+        />
+      </Head>
 
       <style>{`
         body {
@@ -189,11 +217,6 @@ function PlasmicHomepage__RenderFunc(props: {
             data-plasmic-name={"head"}
             data-plasmic-override={overrides.head}
             className={classNames("__wab_instance", sty.head)}
-            description={
-              "Regulatory sandbox adalah mekanisme pengujian bagi penyelenggara inovasi digital kesehatan (IDK) yang dilakukan oleh Kementerian Kesehatan RI (Kemenkes) untuk menilai keandalan proses bisnis, model bisnis, teknologi, dan tata kelola. Pembelajaran selama proses uji dapat menjadi rekomendasi pengembangan kebijakan berbasis bukti oleh Kemenkes." as const
-            }
-            image={"/plasmic/sandbox_satuhsehat/images/logokemkespng2.png"}
-            title={"Regulatory Sandbox" as const}
           />
 
           <div
@@ -1617,8 +1640,9 @@ export const PlasmicHomepage = Object.assign(
 
     // Page metadata
     pageMetadata: {
-      title: "",
-      description: "",
+      title: "Regulatory Sandbox | Kemenkes RI",
+      description:
+        "Regulatory sandbox adalah mekanisme pengujian bagi penyelenggara inovasi digital kesehatan (IDK) yang dilakukan oleh Kementerian Kesehatan RI (Kemenkes)",
       ogImageSrc: "",
       canonical: ""
     }
