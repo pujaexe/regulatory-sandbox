@@ -45,12 +45,12 @@
         {
           "type": "renderModule",
           "assetId": "2kkee5R7hDuz",
-          "checksum": "5e8beb1cd63bf4ccf4a67e257dac40d9"
+          "checksum": "2262a7943893ff2537f1ae8a125388ec"
         },
         {
           "type": "cssRules",
           "assetId": "2kkee5R7hDuz",
-          "checksum": "5e8beb1cd63bf4ccf4a67e257dac40d9"
+          "checksum": "2262a7943893ff2537f1ae8a125388ec"
         },
         {
           "type": "icon",
@@ -120,12 +120,12 @@
         {
           "type": "renderModule",
           "assetId": "Z0pRxdl5sa",
-          "checksum": "8efd49cc422680e73b963e557318ce14"
+          "checksum": "97f920aa539c94a88871b7a37b8041c3"
         },
         {
           "type": "cssRules",
           "assetId": "Z0pRxdl5sa",
-          "checksum": "8efd49cc422680e73b963e557318ce14"
+          "checksum": "97f920aa539c94a88871b7a37b8041c3"
         },
         {
           "type": "icon",
@@ -140,22 +140,22 @@
         {
           "type": "renderModule",
           "assetId": "i1n34K5kn_z",
-          "checksum": "05c5503c890fee6903f08a49601e4a7b"
+          "checksum": "2af58dc6d1b13ba7372024cdb4e14984"
         },
         {
           "type": "cssRules",
           "assetId": "i1n34K5kn_z",
-          "checksum": "05c5503c890fee6903f08a49601e4a7b"
+          "checksum": "2af58dc6d1b13ba7372024cdb4e14984"
         },
         {
           "type": "renderModule",
           "assetId": "Gt-Lz5BwtAt",
-          "checksum": "092bc95e31b3d3adbd1f86554ce93e17"
+          "checksum": "c39e5d4edb3c9b01c6b4c28da5c2206b"
         },
         {
           "type": "cssRules",
           "assetId": "Gt-Lz5BwtAt",
-          "checksum": "092bc95e31b3d3adbd1f86554ce93e17"
+          "checksum": "c39e5d4edb3c9b01c6b4c28da5c2206b"
         },
         {
           "type": "icon",
@@ -176,6 +176,11 @@
           "assetId": "mazsTSCdeXMvNewzsED8CP",
           "type": "projectCss",
           "checksum": "0862cca87567cb6cf5a7680ad88d070a"
+        },
+        {
+          "type": "image",
+          "assetId": "HGlSaLjAs",
+          "checksum": "fb1c57a4b89dce7bf60ddba272fb5c38"
         }
       ],
       "codegenVersion": "0.0.1"

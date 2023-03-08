@@ -355,6 +355,11 @@
           "id": "JD0pYdHy7",
           "name": "sandbox.png",
           "filePath": "../public/plasmic/sandbox_satuhsehat/images/sandboxpng.png"
+        },
+        {
+          "id": "HGlSaLjAs",
+          "name": "logokemkes.png 2",
+          "filePath": "../public/plasmic/sandbox_satuhsehat/images/logokemkespng2.png"
         }
       ],
       "indirect": false,
@@ -387,6 +392,6 @@
   "nextjsConfig": {
     "pagesDir": "../pages"
   },
-  "cliVersion": "0.1.216",
-  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.216/dist/plasmic.schema.json"
+  "cliVersion": "0.1.221",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.221/dist/plasmic.schema.json"
 }

@@ -35,6 +35,7 @@ import {
   deriveRenderOpts,
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
+import { PlasmicHead } from "@plasmicapp/react-web"; // plasmic-import: 7EBFWZs-Lh/codeComponent
 import { NavigationBar } from "@plasmicpkgs/plasmic-nav"; // plasmic-import: jGx9tiKJoex/codeComponent
 import Collapsible from "../../Collapsible"; // plasmic-import: Z0pRxdl5sa/component
 import TextInput from "../../TextInput"; // plasmic-import: i1n34K5kn_z/component
@@ -66,6 +67,7 @@ export const PlasmicHomepage__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicHomepage__OverridesType = {
   root?: p.Flex<"div">;
+  head?: p.Flex<typeof PlasmicHead>;
   header?: p.Flex<"div">;
   navigationBar?: p.Flex<typeof NavigationBar>;
   hero?: p.Flex<"section">;
@@ -78,6 +80,9 @@ export type PlasmicHomepage__OverridesType = {
   faq?: p.Flex<"div">;
   who2?: p.Flex<"div">;
   form?: p.Flex<"form">;
+  textInput?: p.Flex<typeof TextInput>;
+  textbox?: p.Flex<"input">;
+  textInput2?: p.Flex<typeof TextInput>;
   button?: p.Flex<typeof Button>;
   footer?: p.Flex<"div">;
 };
@@ -92,6 +97,13 @@ const __wrapUserPromise =
     return await promise;
   });
 
+function useNextRouter() {
+  try {
+    return useRouter();
+  } catch {}
+  return undefined;
+}
+
 function PlasmicHomepage__RenderFunc(props: {
   variants: PlasmicHomepage__VariantsArgs;
   args: PlasmicHomepage__ArgsType;
@@ -100,7 +112,7 @@ function PlasmicHomepage__RenderFunc(props: {
   forNode?: string;
 }) {
   const { variants, overrides, forNode } = props;
-  const __nextRouter = useRouter();
+  const __nextRouter = useNextRouter();
 
   const $ctx = ph.useDataEnv?.() || {};
   const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
@@ -113,8 +125,37 @@ function PlasmicHomepage__RenderFunc(props: {
   const $refs = refsRef.current;
 
   const currentUser = p.useCurrentUser?.() || {};
-
   const [$queries, setDollarQueries] = React.useState({});
+  const stateSpecs = React.useMemo(
+    () => [
+      {
+        path: "textInput.value",
+        type: "private",
+        variableType: "text",
+        initFunc: true
+          ? ({ $props, $state, $queries, $ctx }) => undefined
+          : undefined
+      },
+      {
+        path: "textInput2.value",
+        type: "private",
+        variableType: "text",
+        initFunc: true
+          ? ({ $props, $state, $queries, $ctx }) => undefined
+          : undefined
+      },
+      {
+        path: "textbox.value",
+        type: "private",
+        variableType: "text",
+        initFunc: true
+          ? ({ $props, $state, $queries, $ctx }) => "" as const
+          : undefined
+      }
+    ],
+    [$props, $ctx]
+  );
+  const $state = p.useDollarState(stateSpecs, { $props, $ctx, $queries });
 
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariantsqbGzfD819Z3T3()
@@ -144,6 +185,17 @@ function PlasmicHomepage__RenderFunc(props: {
             sty.root
           )}
         >
+          <PlasmicHead
+            data-plasmic-name={"head"}
+            data-plasmic-override={overrides.head}
+            className={classNames("__wab_instance", sty.head)}
+            description={
+              "Regulatory sandbox adalah mekanisme pengujian bagi penyelenggara inovasi digital kesehatan (IDK) yang dilakukan oleh Kementerian Kesehatan RI (Kemenkes) untuk menilai keandalan proses bisnis, model bisnis, teknologi, dan tata kelola. Pembelajaran selama proses uji dapat menjadi rekomendasi pengembangan kebijakan berbasis bukti oleh Kemenkes." as const
+            }
+            image={"/plasmic/sandbox_satuhsehat/images/logokemkespng2.png"}
+            title={"Regulatory Sandbox" as const}
+          />
+
           <div
             data-plasmic-name={"header"}
             data-plasmic-override={overrides.header}
@@ -373,7 +425,7 @@ function PlasmicHomepage__RenderFunc(props: {
                   )}
                 >
                   {
-                    "Regulatory Sandbox adalah mekanisme pengujian untuk penyelenggara inovasi digital kesehatan (IDK) yang dilakukan oleh Kementerian Kesehatan RI  untuk menilai keandalan proses bisnis, model bisnis, teknologi, serta tata kelola sebagai pembelajaran selama proses uji yang dapat menjadi rekomendasi pengembangan regulasi berbasis bukti.\n\nIDK dikelompokan kedalam klaster-klaster seperti telekesehatan, telefarmasi, on-demand healthcare (lokapasar kesehatan), artifcial inteligence, dan berbagai IDK lainnya yang berkembang sesuai dengan perkembangan teknologi. Pembelajaran selama proses uji dapat menjadi rekomendasi pengembangan regulasi untuk IDK pada kategori spesifik."
+                    "Regulatory sandbox adalah mekanisme pengujian bagi penyelenggara inovasi digital kesehatan (IDK) yang dilakukan oleh Kementerian Kesehatan RI (Kemenkes) untuk menilai keandalan proses bisnis, model bisnis, teknologi, dan tata kelola. Pembelajaran selama proses uji dapat menjadi rekomendasi pengembangan kebijakan berbasis bukti oleh Kemenkes.\n\nIDK akan dikelompokkan ke dalam klaster prioritas, seperti telekesehatan, telefarmasi, on-demand healthcare (lokapasar kesehatan), artificial intelligence dan klaster lainnya sesuai dengan perkembangan teknologi.\n\nSkema uji coba inovasi digital kesehatan melalui regulatory sandbox telah dilakukan pertama kali di Indonesia pada penyakit malaria melalui Keputusan Direktorat Jenderal Pencegahan dan Pengendalian Penyakit No. HK.02.02/1/3090/2021 pada 2021-2023. Dari pengalaman tersebut, Kemenkes RI kini memperluas penerapan regulatory sandbox pada model bisnis IDK yang lebih beragam."
                   }
                 </div>
               </p.Stack>
@@ -671,7 +723,7 @@ function PlasmicHomepage__RenderFunc(props: {
                           }
                         >
                           {
-                            "Regulatory sandbox adalah mekanisme pengujian untuk penyelenggara inovasi digital kesehatan (IDK) yang dilakukan oleh Kementerian Kesehatan untuk menilai keandalan proses bisnis, model bisnis, teknologi, tata kelola. \n\nPembelajaran selama proses uji dapat menjadi rekomendasi pengembangan regulasi berbasis bukti."
+                            "Regulatory sandbox adalah mekanisme pengujian untuk penyelenggara inovasi digital kesehatan (IDK) yang dilakukan oleh Kementerian Kesehatan RI  untuk menilai keandalan proses bisnis, model bisnis, teknologi, serta tata kelola sebagai pembelajaran selama proses uji yang dapat menjadi rekomendasi pengembangan regulasi berbasis bukti."
                           }
                         </Collapsible>
                       </div>
@@ -709,7 +761,7 @@ function PlasmicHomepage__RenderFunc(props: {
                             )}
                           >
                             {
-                              "Peserta Regulatory Sandbox merupakan penyelenggara IDK yang memenuhi ketentuan sebagaimana dimaksud dalam panduan ini yaitu sebagai berikut:"
+                              "Peserta regulatory sandbox merupakan penyelenggara IDK yang memenuhi ketentuan sebagaimana dimaksud dalam panduan ini yaitu sebagai berikut:"
                             }
                           </div>
 
@@ -729,7 +781,7 @@ function PlasmicHomepage__RenderFunc(props: {
                               )}
                             >
                               {
-                                "Pelaku usaha non perseroangan sebagaimana diatur dalam peraturan perundang-undangan terkait perizinan usaha terintegrasi"
+                                "Pelaku usaha non perseorangan sebagaimana diatur dalam peraturan perundang-undangan terkait perizinan usaha terintegrasi;"
                               }
                             </li>
 
@@ -742,7 +794,7 @@ function PlasmicHomepage__RenderFunc(props: {
                               )}
                             >
                               {
-                                "Melaksanakan kegiatan usaha secara luas atau sudah dilaksanakan (pengguna dan kegiatan usaha) pada minimal dua provinsi"
+                                "Melaksanakan kegiatan usaha secara luas atau sudah dilaksanakan (pengguna dan kegiatan usaha) pada minimal dua provinsi;"
                               }
                             </li>
 
@@ -755,7 +807,7 @@ function PlasmicHomepage__RenderFunc(props: {
                               )}
                             >
                               {
-                                "Inovasi yang dapat menimbulkan kompleksitas dari sisi teknologi dan penggunaannya"
+                                "Inovasi yang dapat menimbulkan kompleksitas dari sisi teknologi dan penggunaannya; dan"
                               }
                             </li>
 
@@ -768,20 +820,7 @@ function PlasmicHomepage__RenderFunc(props: {
                               )}
                             >
                               {
-                                "Merupakan bagian dari klaster yang tengah menjadi fokus regulatory sandbox (untuk tahap awal ini klaster telekesehatan yang terdiri dari Telekonsultasi, Telemonitoring, Telemedicine, Komunikasi, Edukasi, Informasi (KIE), dan teknologi telekesehatan lainnya)"
-                              }
-                            </li>
-
-                            <li
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.li,
-                                projectcss.__wab_text,
-                                sty.li__ulmb7
-                              )}
-                            >
-                              {
-                                "Merupakan bagian dari klaster yang tengah menjadi fokus regulatory sandbox (untuk tahap awal ini klaster telekesehatan yang terdiri dari Telekonsultasi, Telemonitoring, Telemedicine, Komunikasi, Edukasi, Informasi (KIE), dan teknologi telekesehatan lainnya)"
+                                "Merupakan bagian dari klaster yang tengah menjadi fokus regulatory sandbox yakni pada tahap awal ini klaster telekesehatan yang terdiri dari Telekonsultasi, Telemonitoring, Telemedicine, Komunikasi, Edukasi dan Informasi, serta teknologi telekesehatan lainnya."
                               }
                             </li>
                           </ul>
@@ -794,7 +833,7 @@ function PlasmicHomepage__RenderFunc(props: {
                             )}
                           >
                             {
-                              "Pelaku usaha non perseroangan sebagaimana diatur dalam peraturan perundang-undangan terkait perizinan usaha terintegrasi, antara lain"
+                              "Pelaku usaha non perseorangan sebagaimana diatur dalam peraturan perundang-undangan terkait perizinan usaha terintegrasi, antara lain:"
                             }
                           </div>
 
@@ -813,7 +852,7 @@ function PlasmicHomepage__RenderFunc(props: {
                                 sty.li___9Z2X8
                               )}
                             >
-                              {"Perseroan terbatas"}
+                              {"Perseroan terbatas;"}
                             </li>
 
                             <li
@@ -824,7 +863,7 @@ function PlasmicHomepage__RenderFunc(props: {
                                 sty.li__p1JPj
                               )}
                             >
-                              {"Perusahaan umum"}
+                              {"Perusahaan umum;"}
                             </li>
 
                             <li
@@ -835,7 +874,7 @@ function PlasmicHomepage__RenderFunc(props: {
                                 sty.li__ymrdh
                               )}
                             >
-                              {"Perusahaan umum daerah"}
+                              {"Perusahaan umum daerah;"}
                             </li>
 
                             <li
@@ -846,7 +885,7 @@ function PlasmicHomepage__RenderFunc(props: {
                                 sty.li__sr7H2
                               )}
                             >
-                              {"Badan hukum lainnya yang dimiliki oleh negara"}
+                              {"Badan hukum lainnya yang dimiliki oleh negara;"}
                             </li>
 
                             <li
@@ -857,7 +896,7 @@ function PlasmicHomepage__RenderFunc(props: {
                                 sty.li__feSa9
                               )}
                             >
-                              {"Badan layanan umum"}
+                              {"Badan layanan umum;"}
                             </li>
 
                             <li
@@ -868,7 +907,7 @@ function PlasmicHomepage__RenderFunc(props: {
                                 sty.li__fnx5K
                               )}
                             >
-                              {"Lembaga penyiaran"}
+                              {"Lembaga penyiaran;"}
                             </li>
 
                             <li
@@ -879,7 +918,7 @@ function PlasmicHomepage__RenderFunc(props: {
                                 sty.li__ckmbT
                               )}
                             >
-                              {"Badan usaha yang didirikan oleh yayasan"}
+                              {"Badan usaha yang didirikan oleh yayasan;"}
                             </li>
 
                             <li
@@ -890,7 +929,7 @@ function PlasmicHomepage__RenderFunc(props: {
                                 sty.li__z8QmI
                               )}
                             >
-                              {"Koperasi"}
+                              {"Koperasi;"}
                             </li>
 
                             <li
@@ -901,7 +940,7 @@ function PlasmicHomepage__RenderFunc(props: {
                                 sty.li__ofpKl
                               )}
                             >
-                              {"Persekutuan komanditer"}
+                              {"Persekutuan komanditer;"}
                             </li>
 
                             <li
@@ -923,7 +962,7 @@ function PlasmicHomepage__RenderFunc(props: {
                                 sty.li__iBkEk
                               )}
                             >
-                              {"Persekutuan perdata"}
+                              {"Persekutuan perdata."}
                             </li>
                           </ul>
                         </Collapsible>
@@ -1077,7 +1116,7 @@ function PlasmicHomepage__RenderFunc(props: {
                             )}
                           >
                             {
-                              'Regulatory sandbox menguji penyelenggara IDK pada aspek berikut:\n- Penerimaan pengguna (user acceptance test)\n- Standar teknologi\n- Keamanan dan perlindungan data pengguna\n- Inklusivitas\n\nTerdapat juga aspek-aspek lain yang diuji pada masing-masing klaster yang akan ditentukan oleh Kementerian Kesehatan dan tim panel."'
+                              "Regulatory sandbox menguji penyelenggara IDK pada aspek berikut:\n- Penerimaan pengguna (user acceptance test)\n- Standar teknologi\n- Keamanan dan perlindungan data pengguna\n- Inklusivitas\n\nTerdapat juga aspek-aspek lain yang diuji pada masing-masing klaster yang akan ditentukan oleh Kementerian Kesehatan dan tim panel."
                             }
                           </div>
                         </Collapsible>
@@ -1113,7 +1152,7 @@ function PlasmicHomepage__RenderFunc(props: {
                             )}
                           >
                             {
-                              '"Proses pendaftaran regulatory sandbox meliputi:\n\n1. Pengisian formulir pendaftaran\nTahap ini terdiri atas pengisian formulir pendaftaran secara online. \n\n2. Verifikasi dan validasi pendaftaran\nPenyelenggara IDK yang lolos verifikasi dan validasi akan diberikan status tercatat. Selanjutnya peserta akan mendapatkan nomor registrasi atas status tercatat.\n\n3. Seleksi dan kategorisasi klaster inovasi\nPada tahap ini, penyelenggara IDK akan melanjutkan proses seleksi untuk dapat ikut serta dalam regulatory sandbox. Pengumuman akan diinformasikan melalui kanal publikasi resmi Kementerian Kesehatan Republik Indonesia kepada penyelenggara IDK."'
+                              "Proses pendaftaran regulatory sandbox meliputi:\n\n1. Pengisian formulir pendaftaran\nTahap ini terdiri atas pengisian formulir pendaftaran secara online. \n\n2. Verifikasi dan validasi pendaftaran\nPenyelenggara IDK yang lolos verifikasi dan validasi akan diberikan status tercatat. Selanjutnya peserta akan mendapatkan nomor registrasi atas status tercatat.\n\n3. Seleksi dan kategorisasi klaster inovasi\nPada tahap ini, penyelenggara IDK akan melanjutkan proses seleksi untuk dapat ikut serta dalam regulatory sandbox. Pengumuman akan diinformasikan melalui kanal publikasi resmi Kementerian Kesehatan Republik Indonesia kepada penyelenggara IDK."
                             }
                           </div>
                         </Collapsible>
@@ -1152,7 +1191,7 @@ function PlasmicHomepage__RenderFunc(props: {
                             )}
                           >
                             {
-                              'Total estimasi waktu yang dibutuhkan untuk menyelesaikan proses pendaftaran hingga pemberian rekomendasi pada regulatory sandbox adalah 8-14 bulan. Perbedaan waktu keluarnya rekomendasi tergantung dengan ada atau tidaknya perbaikan, berikut simulasi waktu perihal tahapan yang disebutkan:\n\n- Pendaftaran sampai Seleksi dan Kategorisasi Klaster : 2 Bulan\n- Pengujian sampai Rekomendasi (tanpa perbaikan) : 6 bulan\n- Pengujian sampai Rekomendasi (dengan waktu perbaikan maksimal) : 14 bulan"""'
+                              "Total estimasi waktu yang dibutuhkan untuk menyelesaikan proses pendaftaran hingga pemberian rekomendasi pada regulatory sandbox adalah 8-14 bulan. Perbedaan waktu keluarnya rekomendasi tergantung dengan ada atau tidaknya perbaikan, berikut simulasi waktu perihal tahapan yang disebutkan:\n\n- Pendaftaran sampai Seleksi dan Kategorisasi Klaster : 2 Bulan\n- Pengujian sampai Rekomendasi (tanpa perbaikan) : 6 bulan\n- Pengujian sampai Rekomendasi (dengan waktu perbaikan maksimal) : 14 bulan"
                             }
                           </div>
                         </Collapsible>
@@ -1206,7 +1245,7 @@ function PlasmicHomepage__RenderFunc(props: {
                           )}
                         >
                           {
-                            "Untuk pertanyaan umum Anda dapat mengirimkan email melalui form yang telah kami sediakan, jangan ragu untuk menghubungi kami jika anda memiliki pertanyaan seputar regulatori sandbox"
+                            "Punya pertanyaan lebih lanjut tentang Regulatory Sandbox? Hubungi kami melalui email dengan kirim pesan pada form di samping."
                           }
                         </div>
                       ) : null}
@@ -1224,7 +1263,7 @@ function PlasmicHomepage__RenderFunc(props: {
                           data-plasmic-override={overrides.form}
                           hasGap={true}
                           action={
-                            "mailto:ecosystem@dto.kemkes.go.id?subject=Feedback Regulatory Sandbox" as const
+                            "mailto:regulatory-sandbox@kemkes.go.id?subject=Feedback Regulatory Sandbox" as const
                           }
                           className={classNames(projectcss.all, sty.form)}
                           encType={"text/plain" as const}
@@ -1244,16 +1283,82 @@ function PlasmicHomepage__RenderFunc(props: {
                                   sty.text___1EqDu
                                 )}
                               >
-                                {"Email"}
+                                {"Nama"}
                               </div>
 
                               <TextInput
+                                data-plasmic-name={"textInput"}
+                                data-plasmic-override={overrides.textInput}
                                 className={classNames(
                                   "__wab_instance",
-                                  sty.textInput__fkk5V
+                                  sty.textInput
                                 )}
-                                name={"email" as const}
-                                placeholder={"Email pengirim" as const}
+                                name={"nama" as const}
+                                onChange={(...args) => {
+                                  p.generateStateOnChangeProp($state, [
+                                    "textInput",
+
+                                    "value"
+                                  ])((e => e.target?.value).apply(null, args));
+                                }}
+                                placeholder={"Nama pengirim" as const}
+                                required={true}
+                                value={p.generateStateValueProp($state, [
+                                  "textInput",
+
+                                  "value"
+                                ])}
+                              />
+                            </div>
+                          ) : null}
+                          {true ? (
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                sty.freeBox__lTclf
+                              )}
+                            >
+                              <div
+                                className={classNames(
+                                  projectcss.all,
+                                  projectcss.__wab_text,
+                                  sty.text__w3DKg
+                                )}
+                              >
+                                {"Email"}
+                              </div>
+
+                              <input
+                                data-plasmic-name={"textbox"}
+                                data-plasmic-override={overrides.textbox}
+                                className={classNames(
+                                  projectcss.all,
+                                  projectcss.input,
+                                  sty.textbox
+                                )}
+                                disabled={false}
+                                onChange={e => {
+                                  p.generateStateOnChangeProp($state, [
+                                    "textbox",
+
+                                    "value"
+                                  ])(e.target.value);
+                                }}
+                                pattern={
+                                  "[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,}$" as const
+                                }
+                                placeholder={"Alamat Email" as const}
+                                ref={ref => {
+                                  $refs["textbox"] = ref;
+                                }}
+                                required={true}
+                                size={1 as const}
+                                type={"email" as const}
+                                value={p.generateStateValueProp($state, [
+                                  "textbox",
+
+                                  "value"
+                                ])}
                               />
                             </div>
                           ) : null}
@@ -1277,12 +1382,27 @@ function PlasmicHomepage__RenderFunc(props: {
                               </div>
 
                               <TextInput
+                                data-plasmic-name={"textInput2"}
+                                data-plasmic-override={overrides.textInput2}
                                 className={classNames(
                                   "__wab_instance",
-                                  sty.textInput___8Two5
+                                  sty.textInput2
                                 )}
                                 name={"message" as const}
+                                onChange={(...args) => {
+                                  p.generateStateOnChangeProp($state, [
+                                    "textInput2",
+
+                                    "value"
+                                  ])((e => e.target?.value).apply(null, args));
+                                }}
                                 placeholder={"Tulis Pesan" as const}
+                                required={true}
+                                value={p.generateStateValueProp($state, [
+                                  "textInput2",
+
+                                  "value"
+                                ])}
                               />
                             </p.Stack>
                           ) : null}
@@ -1348,6 +1468,7 @@ function PlasmicHomepage__RenderFunc(props: {
 const PlasmicDescendants = {
   root: [
     "root",
+    "head",
     "header",
     "navigationBar",
     "hero",
@@ -1360,9 +1481,13 @@ const PlasmicDescendants = {
     "faq",
     "who2",
     "form",
+    "textInput",
+    "textbox",
+    "textInput2",
     "button",
     "footer"
   ],
+  head: ["head"],
   header: ["header", "navigationBar"],
   navigationBar: ["navigationBar"],
   hero: ["hero"],
@@ -1373,8 +1498,11 @@ const PlasmicDescendants = {
   card7: ["card7"],
   card8: ["card8"],
   faq: ["faq"],
-  who2: ["who2", "form", "button"],
-  form: ["form", "button"],
+  who2: ["who2", "form", "textInput", "textbox", "textInput2", "button"],
+  form: ["form", "textInput", "textbox", "textInput2", "button"],
+  textInput: ["textInput"],
+  textbox: ["textbox"],
+  textInput2: ["textInput2"],
   button: ["button"],
   footer: ["footer"]
 } as const;
@@ -1383,6 +1511,7 @@ type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
   root: "div";
+  head: typeof PlasmicHead;
   header: "div";
   navigationBar: typeof NavigationBar;
   hero: "section";
@@ -1395,6 +1524,9 @@ type NodeDefaultElementType = {
   faq: "div";
   who2: "div";
   form: "form";
+  textInput: typeof TextInput;
+  textbox: "input";
+  textInput2: typeof TextInput;
   button: typeof Button;
   footer: "div";
 };
@@ -1460,6 +1592,7 @@ export const PlasmicHomepage = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
+    head: makeNodeComponent("head"),
     header: makeNodeComponent("header"),
     navigationBar: makeNodeComponent("navigationBar"),
     hero: makeNodeComponent("hero"),
@@ -1472,6 +1605,9 @@ export const PlasmicHomepage = Object.assign(
     faq: makeNodeComponent("faq"),
     who2: makeNodeComponent("who2"),
     form: makeNodeComponent("form"),
+    textInput: makeNodeComponent("textInput"),
+    textbox: makeNodeComponent("textbox"),
+    textInput2: makeNodeComponent("textInput2"),
     button: makeNodeComponent("button"),
     footer: makeNodeComponent("footer"),
 
