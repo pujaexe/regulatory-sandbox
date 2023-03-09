@@ -1233,33 +1233,14 @@ function PlasmicHomepage__RenderFunc(props: {
                                 "Untuk pertanyaan umum Anda dapat mengirimkan email ke "
                               }
                             </React.Fragment>
-                            {
-                              <p.PlasmicLink
-                                className={classNames(
-                                  projectcss.all,
-                                  projectcss.a,
-                                  projectcss.__wab_text,
-                                  projectcss.plasmic_default__inline,
-                                  sty.link__cbXtp
-                                )}
-                                component={Link}
-                                href={
-                                  "regulatory-sandbox@kemkes.go.id" as const
-                                }
-                                platform={"nextjs"}
-                              >
-                                <React.Fragment>
-                                  <span
-                                    className={
-                                      "plasmic_default__all plasmic_default__span"
-                                    }
-                                    style={{ color: "#FFFFFF" }}
-                                  >
-                                    {"regulatory-sandbox@kemkes.go.id"}
-                                  </span>
-                                </React.Fragment>
-                              </p.PlasmicLink>
-                            }
+                            <span
+                              className={
+                                "plasmic_default__all plasmic_default__span"
+                              }
+                              style={{ color: "#FFFEFE", fontWeight: 700 }}
+                            >
+                              {"regulatory-sandbox@kemkes.go.id"}
+                            </span>
                             <React.Fragment>
                               {
                                 ",  jangan ragu untuk menghubungi kami jika anda memiliki pertanyaan seputar regulatory sandbox."
