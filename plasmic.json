@@ -360,6 +360,16 @@
           "id": "HGlSaLjAs",
           "name": "logokemkes.png 2",
           "filePath": "../public/plasmic/sandbox_satuhsehat/images/logokemkespng2.png"
+        },
+        {
+          "id": "l1tr5BmAP",
+          "name": "email-candy.png",
+          "filePath": "../public/plasmic/sandbox_satuhsehat/images/emailCandypng.png"
+        },
+        {
+          "id": "SQPp6e1Fw",
+          "name": "mail-sand.png",
+          "filePath": "../public/plasmic/sandbox_satuhsehat/images/mailSandpng.png"
         }
       ],
       "indirect": false,

@@ -38,8 +38,6 @@ import {
 import { PlasmicHead } from "@plasmicapp/react-web"; // plasmic-import: 7EBFWZs-Lh/codeComponent
 import { NavigationBar } from "@plasmicpkgs/plasmic-nav"; // plasmic-import: jGx9tiKJoex/codeComponent
 import Collapsible from "../../Collapsible"; // plasmic-import: Z0pRxdl5sa/component
-import TextInput from "../../TextInput"; // plasmic-import: i1n34K5kn_z/component
-import Button from "../../Button"; // plasmic-import: Gt-Lz5BwtAt/component
 
 import { useScreenVariants as useScreenVariantsqbGzfD819Z3T3 } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: QBGzfD819Z3t3/globalVariant
 
@@ -52,9 +50,6 @@ import MedicineDrugHealthMedicalSmartphonePharmacyTabletSvgrepoCom1SvgIcon from 
 import HeartbeatHeartHealthPulseSmartphoneMedicalRateSvgrepoCom1SvgIcon from "./icons/PlasmicIcon__HeartbeatHeartHealthPulseSmartphoneMedicalRateSvgrepoCom1Svg"; // plasmic-import: KmthYfnQUS/icon
 import MedicineDrugHealthMedicalSmartphonePharmacyTablet2SvgrepoComsvgIcon from "./icons/PlasmicIcon__MedicineDrugHealthMedicalSmartphonePharmacyTablet2SvgrepoComsvg"; // plasmic-import: VzvMwKKQ1a/icon
 import MobilePhoneChatHealthDeviceTelephoneSmartphoneSvgrepoComsvgIcon from "./icons/PlasmicIcon__MobilePhoneChatHealthDeviceTelephoneSmartphoneSvgrepoComsvg"; // plasmic-import: KLL8rlOJRh/icon
-import SearchsvgIcon from "./icons/PlasmicIcon__Searchsvg"; // plasmic-import: f56tcMEMxe4/icon
-import ChecksvgIcon from "./icons/PlasmicIcon__Checksvg"; // plasmic-import: 1I82Ralll34/icon
-import IconIcon from "./icons/PlasmicIcon__Icon"; // plasmic-import: m0QQT_49MIS/icon
 
 export type PlasmicHomepage__VariantMembers = {};
 export type PlasmicHomepage__VariantsArgs = {};
@@ -79,11 +74,6 @@ export type PlasmicHomepage__OverridesType = {
   card8?: p.Flex<"div">;
   faq?: p.Flex<"div">;
   who2?: p.Flex<"div">;
-  form?: p.Flex<"form">;
-  textInput?: p.Flex<typeof TextInput>;
-  textbox?: p.Flex<"input">;
-  textInput2?: p.Flex<typeof TextInput>;
-  button?: p.Flex<typeof Button>;
   footer?: p.Flex<"div">;
 };
 
@@ -126,36 +116,6 @@ function PlasmicHomepage__RenderFunc(props: {
 
   const currentUser = p.useCurrentUser?.() || {};
   const [$queries, setDollarQueries] = React.useState({});
-  const stateSpecs = React.useMemo(
-    () => [
-      {
-        path: "textInput.value",
-        type: "private",
-        variableType: "text",
-        initFunc: true
-          ? ({ $props, $state, $queries, $ctx }) => undefined
-          : undefined
-      },
-      {
-        path: "textInput2.value",
-        type: "private",
-        variableType: "text",
-        initFunc: true
-          ? ({ $props, $state, $queries, $ctx }) => undefined
-          : undefined
-      },
-      {
-        path: "textbox.value",
-        type: "private",
-        variableType: "text",
-        initFunc: true
-          ? ({ $props, $state, $queries, $ctx }) => "" as const
-          : undefined
-      }
-    ],
-    [$props, $ctx]
-  );
-  const $state = p.useDollarState(stateSpecs, { $props, $ctx, $queries });
 
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariantsqbGzfD819Z3T3()
@@ -1267,9 +1227,45 @@ function PlasmicHomepage__RenderFunc(props: {
                             sty.text__awVvC
                           )}
                         >
-                          {
-                            "Punya pertanyaan lebih lanjut tentang Regulatory Sandbox? Hubungi kami melalui email dengan kirim pesan pada form di samping."
-                          }
+                          <React.Fragment>
+                            <React.Fragment>
+                              {
+                                "Untuk pertanyaan umum Anda dapat mengirimkan email ke "
+                              }
+                            </React.Fragment>
+                            {
+                              <p.PlasmicLink
+                                className={classNames(
+                                  projectcss.all,
+                                  projectcss.a,
+                                  projectcss.__wab_text,
+                                  projectcss.plasmic_default__inline,
+                                  sty.link__cbXtp
+                                )}
+                                component={Link}
+                                href={
+                                  "regulatory-sandbox@kemkes.go.id" as const
+                                }
+                                platform={"nextjs"}
+                              >
+                                <React.Fragment>
+                                  <span
+                                    className={
+                                      "plasmic_default__all plasmic_default__span"
+                                    }
+                                    style={{ color: "#FFFFFF" }}
+                                  >
+                                    {"regulatory-sandbox@kemkes.go.id"}
+                                  </span>
+                                </React.Fragment>
+                              </p.PlasmicLink>
+                            }
+                            <React.Fragment>
+                              {
+                                ",  jangan ragu untuk menghubungi kami jika anda memiliki pertanyaan seputar regulatory sandbox."
+                              }
+                            </React.Fragment>
+                          </React.Fragment>
                         </div>
                       ) : null}
                     </p.Stack>
@@ -1279,167 +1275,23 @@ function PlasmicHomepage__RenderFunc(props: {
                       hasGap={true}
                       className={classNames(projectcss.all, sty.column__bu6Tg)}
                     >
-                      {true ? (
-                        <p.Stack
-                          as={"form"}
-                          data-plasmic-name={"form"}
-                          data-plasmic-override={overrides.form}
-                          hasGap={true}
-                          action={
-                            "mailto:regulatory-sandbox@kemkes.go.id?subject=Feedback Regulatory Sandbox" as const
-                          }
-                          className={classNames(projectcss.all, sty.form)}
-                          encType={"text/plain" as const}
-                          method={"post" as const}
-                        >
-                          {true ? (
-                            <div
-                              className={classNames(
-                                projectcss.all,
-                                sty.freeBox__q4Suv
-                              )}
-                            >
-                              <div
-                                className={classNames(
-                                  projectcss.all,
-                                  projectcss.__wab_text,
-                                  sty.text___1EqDu
-                                )}
-                              >
-                                {"Nama"}
-                              </div>
-
-                              <TextInput
-                                data-plasmic-name={"textInput"}
-                                data-plasmic-override={overrides.textInput}
-                                className={classNames(
-                                  "__wab_instance",
-                                  sty.textInput
-                                )}
-                                name={"nama" as const}
-                                onChange={(...args) => {
-                                  p.generateStateOnChangeProp($state, [
-                                    "textInput",
-
-                                    "value"
-                                  ])((e => e.target?.value).apply(null, args));
-                                }}
-                                placeholder={"Nama pengirim" as const}
-                                required={true}
-                                value={p.generateStateValueProp($state, [
-                                  "textInput",
-
-                                  "value"
-                                ])}
-                              />
-                            </div>
-                          ) : null}
-                          {true ? (
-                            <div
-                              className={classNames(
-                                projectcss.all,
-                                sty.freeBox__lTclf
-                              )}
-                            >
-                              <div
-                                className={classNames(
-                                  projectcss.all,
-                                  projectcss.__wab_text,
-                                  sty.text__w3DKg
-                                )}
-                              >
-                                {"Email"}
-                              </div>
-
-                              <input
-                                data-plasmic-name={"textbox"}
-                                data-plasmic-override={overrides.textbox}
-                                className={classNames(
-                                  projectcss.all,
-                                  projectcss.input,
-                                  sty.textbox
-                                )}
-                                disabled={false}
-                                onChange={e => {
-                                  p.generateStateOnChangeProp($state, [
-                                    "textbox",
-
-                                    "value"
-                                  ])(e.target.value);
-                                }}
-                                pattern={
-                                  "[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,}$" as const
-                                }
-                                placeholder={"Alamat Email" as const}
-                                ref={ref => {
-                                  $refs["textbox"] = ref;
-                                }}
-                                required={true}
-                                size={1 as const}
-                                type={"email" as const}
-                                value={p.generateStateValueProp($state, [
-                                  "textbox",
-
-                                  "value"
-                                ])}
-                              />
-                            </div>
-                          ) : null}
-                          {true ? (
-                            <p.Stack
-                              as={"div"}
-                              hasGap={true}
-                              className={classNames(
-                                projectcss.all,
-                                sty.freeBox__rgoeK
-                              )}
-                            >
-                              <div
-                                className={classNames(
-                                  projectcss.all,
-                                  projectcss.__wab_text,
-                                  sty.text__k2Jlv
-                                )}
-                              >
-                                {"Pesan"}
-                              </div>
-
-                              <TextInput
-                                data-plasmic-name={"textInput2"}
-                                data-plasmic-override={overrides.textInput2}
-                                className={classNames(
-                                  "__wab_instance",
-                                  sty.textInput2
-                                )}
-                                name={"message" as const}
-                                onChange={(...args) => {
-                                  p.generateStateOnChangeProp($state, [
-                                    "textInput2",
-
-                                    "value"
-                                  ])((e => e.target?.value).apply(null, args));
-                                }}
-                                placeholder={"Tulis Pesan" as const}
-                                required={true}
-                                value={p.generateStateValueProp($state, [
-                                  "textInput2",
-
-                                  "value"
-                                ])}
-                              />
-                            </p.Stack>
-                          ) : null}
-
-                          <Button
-                            data-plasmic-name={"button"}
-                            data-plasmic-override={overrides.button}
-                            className={classNames("__wab_instance", sty.button)}
-                            color={"green" as const}
-                          >
-                            {"Kirim Email"}
-                          </Button>
-                        </p.Stack>
-                      ) : null}
+                      <p.PlasmicImg
+                        alt={""}
+                        className={classNames(sty.img__xhv34)}
+                        displayHeight={"auto" as const}
+                        displayMaxHeight={"none" as const}
+                        displayMaxWidth={"none" as const}
+                        displayMinHeight={"0" as const}
+                        displayMinWidth={"0" as const}
+                        displayWidth={"60%" as const}
+                        loading={"lazy" as const}
+                        src={{
+                          src: "/plasmic/sandbox_satuhsehat/images/mailSandpng.png",
+                          fullWidth: 710,
+                          fullHeight: 710,
+                          aspectRatio: undefined
+                        }}
+                      />
                     </p.Stack>
                   </p.Stack>
                 ) : null}
@@ -1503,11 +1355,6 @@ const PlasmicDescendants = {
     "card8",
     "faq",
     "who2",
-    "form",
-    "textInput",
-    "textbox",
-    "textInput2",
-    "button",
     "footer"
   ],
   head: ["head"],
@@ -1521,12 +1368,7 @@ const PlasmicDescendants = {
   card7: ["card7"],
   card8: ["card8"],
   faq: ["faq"],
-  who2: ["who2", "form", "textInput", "textbox", "textInput2", "button"],
-  form: ["form", "textInput", "textbox", "textInput2", "button"],
-  textInput: ["textInput"],
-  textbox: ["textbox"],
-  textInput2: ["textInput2"],
-  button: ["button"],
+  who2: ["who2"],
   footer: ["footer"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
@@ -1546,11 +1388,6 @@ type NodeDefaultElementType = {
   card8: "div";
   faq: "div";
   who2: "div";
-  form: "form";
-  textInput: typeof TextInput;
-  textbox: "input";
-  textInput2: typeof TextInput;
-  button: typeof Button;
   footer: "div";
 };
 
@@ -1627,11 +1464,6 @@ export const PlasmicHomepage = Object.assign(
     card8: makeNodeComponent("card8"),
     faq: makeNodeComponent("faq"),
     who2: makeNodeComponent("who2"),
-    form: makeNodeComponent("form"),
-    textInput: makeNodeComponent("textInput"),
-    textbox: makeNodeComponent("textbox"),
-    textInput2: makeNodeComponent("textInput2"),
-    button: makeNodeComponent("button"),
     footer: makeNodeComponent("footer"),
 
     // Metadata about props expected for PlasmicHomepage
