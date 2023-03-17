@@ -383,25 +383,27 @@ function PlasmicHomepage__RenderFunc(props: {
                   {"Pendaftaran dibuka tanggal 21 Maret - 19 April 2023"}
                 </div>
 
-                <p.PlasmicLink
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.a,
-                    sty.link__efIw5
-                  )}
-                  component={Link}
-                  platform={"nextjs"}
-                >
-                  <div
+                {true ? (
+                  <p.PlasmicLink
                     className={classNames(
                       projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text___2OBi
+                      projectcss.a,
+                      sty.link__efIw5
                     )}
+                    component={Link}
+                    platform={"nextjs"}
                   >
-                    {"Daftar Sekarang"}
-                  </div>
-                </p.PlasmicLink>
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text___2OBi
+                      )}
+                    >
+                      {"Daftar Sekarang"}
+                    </div>
+                  </p.PlasmicLink>
+                ) : null}
               </p.Stack>
             </div>
           </p.Stack>
