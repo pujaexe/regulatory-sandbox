@@ -555,10 +555,10 @@
     tiny-glob "^0.2.9"
     tslib "^2.4.0"
 
-"@plasmicapp/cli@^0.1.221":
-  version "0.1.221"
-  resolved "https://registry.yarnpkg.com/@plasmicapp/cli/-/cli-0.1.221.tgz#cd29483ad704c5454be1365bf169840a07f3c37e"
-  integrity sha512-Dyaxid7VZDJUjNJPyD/2Ci/obRi2EIK2a2b7R5xhraifg+yeX6p5JEwXSBwuONAL4cS8zDna7jypUQUUVkGq6w==
+"@plasmicapp/cli@^0.1.231":
+  version "0.1.231"
+  resolved "https://registry.yarnpkg.com/@plasmicapp/cli/-/cli-0.1.231.tgz#907562d76584ebc47eb15c4d6300cf4737a3d003"
+  integrity sha512-puYpDUj7MHGSjg6QeXHIHCZqhrMrrnXCtjQP0nCPgaQx+SBoSv32wT9MNoxnO+y+bFd63BUZknnZAmR7gwJZqQ==
   dependencies:
     "@babel/core" "^7.12.3"
     "@babel/generator" "^7.12.1"

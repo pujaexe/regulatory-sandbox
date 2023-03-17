@@ -261,6 +261,19 @@
           "scheme": "blackbox",
           "componentType": "component",
           "plumeType": "button"
+        },
+        {
+          "id": "GYtZRuZNRU",
+          "name": "Dokumen",
+          "type": "managed",
+          "projectId": "mazsTSCdeXMvNewzsED8CP",
+          "renderModuleFilePath": "plasmic/sandbox_satuhsehat/PlasmicDokumen.tsx",
+          "importSpec": {
+            "modulePath": "../pages/dokumen.tsx"
+          },
+          "cssFilePath": "plasmic/sandbox_satuhsehat/PlasmicDokumen.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
         }
       ],
       "icons": [
@@ -333,6 +346,11 @@
           "id": "m0QQT_49MIS",
           "name": "IconIcon",
           "moduleFilePath": "plasmic/sandbox_satuhsehat/icons/PlasmicIcon__Icon.tsx"
+        },
+        {
+          "id": "rn5oD25wmM",
+          "name": "DownloadsvgIcon",
+          "moduleFilePath": "plasmic/sandbox_satuhsehat/icons/PlasmicIcon__Downloadsvg.tsx"
         }
       ],
       "images": [
@@ -370,6 +388,16 @@
           "id": "SQPp6e1Fw",
           "name": "mail-sand.png",
           "filePath": "../public/plasmic/sandbox_satuhsehat/images/mailSandpng.png"
+        },
+        {
+          "id": "TE7hb2hHN",
+          "name": "Group 2321.png",
+          "filePath": "../public/plasmic/sandbox_satuhsehat/images/group2321Png.png"
+        },
+        {
+          "id": "AxtR56i_O",
+          "name": "image 30.png",
+          "filePath": "../public/plasmic/sandbox_satuhsehat/images/image30Png.png"
         }
       ],
       "indirect": false,
@@ -402,6 +430,6 @@
   "nextjsConfig": {
     "pagesDir": "../pages"
   },
-  "cliVersion": "0.1.221",
-  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.221/dist/plasmic.schema.json"
+  "cliVersion": "0.1.231",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.231/dist/plasmic.schema.json"
 }
