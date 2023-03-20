@@ -487,52 +487,6 @@ function PlasmicDokumen__RenderFunc(props: {
                 className={classNames(
                   projectcss.all,
                   projectcss.a,
-                  sty.link__anzDb
-                )}
-                component={Link}
-                platform={"nextjs"}
-              >
-                <p.PlasmicImg
-                  alt={""}
-                  className={classNames(sty.img___5XPva)}
-                  displayHeight={"auto" as const}
-                  displayMaxHeight={"none" as const}
-                  displayMaxWidth={"100%" as const}
-                  displayMinHeight={"0" as const}
-                  displayMinWidth={"0" as const}
-                  displayWidth={"auto" as const}
-                  loading={"lazy" as const}
-                  src={{
-                    src: "/plasmic/sandbox_satuhsehat/images/image30Png.png",
-                    fullWidth: 34,
-                    fullHeight: 42,
-                    aspectRatio: undefined
-                  }}
-                />
-
-                <h5
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.h5,
-                    projectcss.__wab_text,
-                    sty.h5__rjIx2
-                  )}
-                >
-                  {"Surat Permohonan Pencatatan IDK"}
-                </h5>
-
-                <DownloadsvgIcon
-                  className={classNames(projectcss.all, sty.svg__f8MuY)}
-                  role={"img"}
-                />
-              </p.Stack>
-
-              <p.Stack
-                as={p.PlasmicLink}
-                hasGap={true}
-                className={classNames(
-                  projectcss.all,
-                  projectcss.a,
                   sty.link__cOmQu
                 )}
                 component={Link}
