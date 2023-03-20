@@ -504,7 +504,7 @@ function PlasmicHomepage__RenderFunc(props: {
                   )}
                 >
                   {
-                    "Regulatory Sandbox akan dimulai bagi pelaku usaha non perseorangan Inovasi Digital Kesehatan (IDK) yang telah terdaftar sebagai Penyelenggara Inovasi Digital Kesehatan (IDK) dan memiliki bisnis pada klaster Telekesehatan berikut:"
+                    "Regulatory Sandbox akan dimulai bagi pelaku usaha non perseorangan Inovasi Digital Kesehatan (IDK) yang telah terdaftar sebagai Penyelenggara Sistem Elektronik (PSE) dan memiliki bisnis pada klaster Telekesehatan berikut"
                   }
                 </div>
 
