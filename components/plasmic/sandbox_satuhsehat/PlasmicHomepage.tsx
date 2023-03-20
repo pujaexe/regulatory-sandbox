@@ -504,7 +504,7 @@ function PlasmicHomepage__RenderFunc(props: {
                   )}
                 >
                   {
-                    "Regulatory Sandbox akan dimulai bagi pelaku usaha non perseorangan Inovasi Digital Kesehatan (IDK) pada klaster Telekesehatan "
+                    "Regulatory Sandbox akan dimulai bagi pelaku usaha non perseorangan Inovasi Digital Kesehatan (IDK) yang telah terdaftar sebagai Penyelenggara Inovasi Digital Kesehatan (IDK) dan memiliki bisnis pada klaster Telekesehatan berikut:"
                   }
                 </div>
 
@@ -846,7 +846,7 @@ function PlasmicHomepage__RenderFunc(props: {
                               )}
                             >
                               {
-                                "Melaksanakan kegiatan usaha secara luas atau sudah dilaksanakan (pengguna dan kegiatan usaha) pada minimal dua provinsi;"
+                                "Melaksanakan kegiatan usaha secara luas atau sudah dilaksanakan (pengguna dan kegiatan usaha) pada minimal dua provinsi; dan"
                               }
                             </li>
 
@@ -859,7 +859,7 @@ function PlasmicHomepage__RenderFunc(props: {
                               )}
                             >
                               {
-                                "Inovasi yang dapat menimbulkan kompleksitas dari sisi teknologi dan penggunaannya; dan"
+                                "Inovasi yang dapat menimbulkan kompleksitas dari sisi teknologi dan penggunaannya;"
                               }
                             </li>
 
@@ -871,9 +871,26 @@ function PlasmicHomepage__RenderFunc(props: {
                                 sty.li__gDisU
                               )}
                             >
-                              {
-                                "Merupakan bagian dari klaster yang tengah menjadi fokus regulatory sandbox yakni pada tahap awal ini klaster telekesehatan yang terdiri dari Telekonsultasi, Telemonitoring, Telemedicine, Komunikasi, Edukasi dan Informasi, serta teknologi telekesehatan lainnya."
-                              }
+                              <React.Fragment>
+                                <React.Fragment>
+                                  {
+                                    "Merupakan bagian dari klaster yang tengah menjadi fokus "
+                                  }
+                                </React.Fragment>
+                                <span
+                                  className={
+                                    "plasmic_default__all plasmic_default__span"
+                                  }
+                                  style={{ fontStyle: "italic" }}
+                                >
+                                  {"regulatory sandbox"}
+                                </span>
+                                <React.Fragment>
+                                  {
+                                    " (untuk tahap awal ini klaster telekesehatan yang terdiri dari Telekonsultasi, Telemonitoring, Telemedicine, Komunikasi, Edukasi, Informasi (KIE), dan teknologi telekesehatan lainnya."
+                                  }
+                                </React.Fragment>
+                              </React.Fragment>
                             </li>
                           </ul>
 
@@ -1031,12 +1048,50 @@ function PlasmicHomepage__RenderFunc(props: {
                             "__wab_instance",
                             sty.collapsible__avl0B
                           )}
+                          isopen={true}
                           slot={
                             <div
                               className={classNames(
                                 projectcss.all,
                                 projectcss.__wab_text,
                                 sty.text__xvg9Z
+                              )}
+                            >
+                              {"Kenapa perlu mendaftar regulatory sandbox?"}
+                            </div>
+                          }
+                        >
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.text__qTfii
+                            )}
+                          >
+                            {
+                              "Dengan menjadi peserta regulatory sandbox, penyelenggara IDK berhak untuk:\n1. Mendapatkan asesmen kesesuaian dengan regulasi dan praktik baik inovasi\n2. Berpartisipasi dalam pemberian rekomendasi kebijakan terkait teknologi kesehatan\n3. Terdaftar sebagai mitra resmi Kemenkes untuk pengembangan regulasi dan ekosistem kesehatan di Indonesia"
+                            }
+                          </div>
+                        </Collapsible>
+                      </div>
+
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__h8Po
+                        )}
+                      >
+                        <Collapsible
+                          className={classNames(
+                            "__wab_instance",
+                            sty.collapsible__hGmig
+                          )}
+                          slot={
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.__wab_text,
+                                sty.text__gSGoN
                               )}
                             >
                               {
@@ -1049,7 +1104,7 @@ function PlasmicHomepage__RenderFunc(props: {
                             className={classNames(
                               projectcss.all,
                               projectcss.__wab_text,
-                              sty.text__qTfii
+                              sty.text___3P3V
                             )}
                           >
                             <React.Fragment>

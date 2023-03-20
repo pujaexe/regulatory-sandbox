@@ -1032,6 +1032,28 @@
 .text__xvg9Z {
   padding-top: 0px;
 }
+.freeBox__h8Po {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: auto;
+  height: auto;
+  justify-content: flex-start;
+  align-items: center;
+}
+.collapsible__hGmig:global(.__wab_instance) {
+  position: relative;
+}
+.text___3P3V {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  min-width: 0;
+}
+.text__gSGoN {
+  padding-top: 0px;
+}
 .freeBox__l2Bw8 {
   display: flex;
   position: relative;
