@@ -356,7 +356,7 @@ function PlasmicDokumen__RenderFunc(props: {
               >
                 <p.PlasmicImg
                   alt={""}
-                  className={classNames(sty.img__wscPx)}
+                  className={classNames(sty.img__jFzt6)}
                   displayHeight={"auto" as const}
                   displayMaxHeight={"none" as const}
                   displayMaxWidth={"100%" as const}
@@ -402,18 +402,18 @@ function PlasmicDokumen__RenderFunc(props: {
               >
                 <p.PlasmicImg
                   alt={""}
-                  className={classNames(sty.img__iW7Vl)}
-                  displayHeight={"auto" as const}
+                  className={classNames(sty.img__gcu4G)}
+                  displayHeight={"34px" as const}
                   displayMaxHeight={"none" as const}
                   displayMaxWidth={"100%" as const}
                   displayMinHeight={"0" as const}
                   displayMinWidth={"0" as const}
-                  displayWidth={"auto" as const}
+                  displayWidth={"34px" as const}
                   loading={"lazy" as const}
                   src={{
-                    src: "/plasmic/sandbox_satuhsehat/images/image30Png.png",
-                    fullWidth: 34,
-                    fullHeight: 42,
+                    src: "/plasmic/sandbox_satuhsehat/images/excelSvgrepoCom1Png.png",
+                    fullWidth: 800,
+                    fullHeight: 800,
                     aspectRatio: undefined
                   }}
                 />
@@ -448,7 +448,7 @@ function PlasmicDokumen__RenderFunc(props: {
               >
                 <p.PlasmicImg
                   alt={""}
-                  className={classNames(sty.img__qpwZw)}
+                  className={classNames(sty.img__w5V6Y)}
                   displayHeight={"auto" as const}
                   displayMaxHeight={"none" as const}
                   displayMaxWidth={"100%" as const}
