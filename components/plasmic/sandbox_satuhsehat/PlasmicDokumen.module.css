@@ -268,7 +268,7 @@
   > img {
   margin-top: 24px;
 }
-.h4 {
+.h4__vwFzq {
   position: relative;
   width: 100%;
   height: auto;
@@ -276,7 +276,14 @@
   margin-bottom: 24px;
   min-width: 0;
 }
-.link__imcOm {
+.text__phhM3 {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  min-width: 0;
+}
+.link__bjr6P {
   display: flex;
   position: relative;
   flex-direction: row;
@@ -286,11 +293,12 @@
   background: #ebf7f7;
   box-shadow: 0px 4px 8px 0px #00000033;
   cursor: pointer;
+  margin-bottom: 32px;
   min-width: 0;
   border-radius: 12px;
   padding: 32px;
 }
-.link__imcOm > :global(.__wab_flex-container) {
+.link__bjr6P > :global(.__wab_flex-container) {
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
@@ -298,40 +306,56 @@
   margin-left: calc(0px - 24px);
   width: calc(100% + 24px);
 }
-.link__imcOm > :global(.__wab_flex-container) > *,
-.link__imcOm > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
-.link__imcOm > :global(.__wab_flex-container) > picture > img,
-.link__imcOm
+.link__bjr6P > :global(.__wab_flex-container) > *,
+.link__bjr6P > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.link__bjr6P > :global(.__wab_flex-container) > picture > img,
+.link__bjr6P
   > :global(.__wab_flex-container)
   > :global(.__wab_slot)
   > picture
   > img {
   margin-left: 24px;
 }
-.img__jFzt6 {
+.img__jSyv6 {
   position: relative;
   object-fit: cover;
   max-width: 100%;
 }
-.img__jFzt6 > picture > img {
+.img__jSyv6 > picture > img {
   object-fit: cover;
 }
-.img__jFzt6 > :global(.__wab_img-spacer) > img {
+.img__jSyv6 > :global(.__wab_img-spacer) > img {
   object-fit: cover;
 }
-.h5__aqyF7 {
+.h5__bnkKc {
   position: relative;
   width: 100%;
   height: auto;
   min-width: 0;
 }
-.svg___5Fpx1 {
+.svg___3CRkg {
   position: relative;
   object-fit: cover;
   max-width: 100%;
   width: 24px;
   height: 24px;
   flex-shrink: 0;
+}
+.h4__ykrHa {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  margin-bottom: 24px;
+  margin-top: calc(24px + 24px) !important;
+  min-width: 0;
+}
+.text__pxjq7 {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  min-width: 0;
 }
 .link__v9VWi {
   display: flex;
@@ -365,7 +389,7 @@
   > img {
   margin-left: 24px;
 }
-.img__gcu4G {
+.img__esvbU {
   position: relative;
   object-fit: cover;
   max-width: 100%;
@@ -373,10 +397,10 @@
   height: 34px;
   flex-shrink: 0;
 }
-.img__gcu4G > picture > img {
+.img__esvbU > picture > img {
   object-fit: cover;
 }
-.img__gcu4G > :global(.__wab_img-spacer) > img {
+.img__esvbU > :global(.__wab_img-spacer) > img {
   object-fit: cover;
 }
 .h5__wHdjh {

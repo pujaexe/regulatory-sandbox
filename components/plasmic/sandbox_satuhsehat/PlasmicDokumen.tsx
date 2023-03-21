@@ -64,7 +64,6 @@ export type PlasmicDokumen__OverridesType = {
   navigationBar?: p.Flex<typeof NavigationBar>;
   columns?: p.Flex<"div">;
   h2?: p.Flex<"h2">;
-  h4?: p.Flex<"h4">;
   footer?: p.Flex<"div">;
 };
 
@@ -329,19 +328,27 @@ function PlasmicDokumen__RenderFunc(props: {
               className={classNames(projectcss.all, sty.freeBox__hfGoJ)}
             >
               <h4
-                data-plasmic-name={"h4"}
-                data-plasmic-override={overrides.h4}
                 className={classNames(
                   projectcss.all,
                   projectcss.h4,
                   projectcss.__wab_text,
-                  sty.h4
+                  sty.h4__vwFzq
+                )}
+              >
+                {"Dokumen Pendukung"}
+              </h4>
+
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__phhM3
                 )}
               >
                 {
-                  "Berikut ini merupakan dokumen-dokumen terkait penyelenggaraan regulatory sandbox"
+                  "Regulatory sandbox hadir sebagai ruang uji bagi penyelenggara inovasi digital kesehatan (IDK) untuk mendukung pengembangan regulasi dan ekosistem inovasi digital kesehatan di Indonesia yang implementasinya didasarkan pada Keputusan Menteri Kesehatan (KMK) Republik Indonesia Nomor HK.01.07/MENKES/   /2023.\n\nPada KMK tersebut, dijelaskan mengenai tahapan pelaksanaan regulatory sandbox serta penggunaan identitas visual status kepesertaan bagi penyelenggara IDK yang mendapatkan rekomendasi maupun pembinaan dari Kemenkes RI.\n\nUntuk informasi selengkapnya, unduh KMK"
                 }
-              </h4>
+              </div>
 
               <p.Stack
                 as={p.PlasmicLink}
@@ -349,14 +356,14 @@ function PlasmicDokumen__RenderFunc(props: {
                 className={classNames(
                   projectcss.all,
                   projectcss.a,
-                  sty.link__imcOm
+                  sty.link__bjr6P
                 )}
                 component={Link}
                 platform={"nextjs"}
               >
                 <p.PlasmicImg
                   alt={""}
-                  className={classNames(sty.img__jFzt6)}
+                  className={classNames(sty.img__jSyv6)}
                   displayHeight={"auto" as const}
                   displayMaxHeight={"none" as const}
                   displayMaxWidth={"100%" as const}
@@ -377,17 +384,40 @@ function PlasmicDokumen__RenderFunc(props: {
                     projectcss.all,
                     projectcss.h5,
                     projectcss.__wab_text,
-                    sty.h5__aqyF7
+                    sty.h5__bnkKc
                   )}
                 >
                   {"KMK Regulatory Sandbox"}
                 </h5>
 
                 <DownloadsvgIcon
-                  className={classNames(projectcss.all, sty.svg___5Fpx1)}
+                  className={classNames(projectcss.all, sty.svg___3CRkg)}
                   role={"img"}
                 />
               </p.Stack>
+
+              <h4
+                className={classNames(
+                  projectcss.all,
+                  projectcss.h4,
+                  projectcss.__wab_text,
+                  sty.h4__ykrHa
+                )}
+              >
+                {"Dokumen Persyaratan Regulatory Sandbox"}
+              </h4>
+
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__pxjq7
+                )}
+              >
+                {
+                  "Penyelenggara IDK yang mengajukan pendaftaran regulatory sandbox wajib menyertakan dokumen berikut untuk kelengkapan persyaratan administrasi:"
+                }
+              </div>
 
               <p.Stack
                 as={p.PlasmicLink}
@@ -402,7 +432,7 @@ function PlasmicDokumen__RenderFunc(props: {
               >
                 <p.PlasmicImg
                   alt={""}
-                  className={classNames(sty.img__gcu4G)}
+                  className={classNames(sty.img__esvbU)}
                   displayHeight={"34px" as const}
                   displayMaxHeight={"none" as const}
                   displayMaxWidth={"100%" as const}
@@ -411,9 +441,9 @@ function PlasmicDokumen__RenderFunc(props: {
                   displayWidth={"34px" as const}
                   loading={"lazy" as const}
                   src={{
-                    src: "/plasmic/sandbox_satuhsehat/images/excelSvgrepoCom1Png.png",
-                    fullWidth: 800,
-                    fullHeight: 800,
+                    src: "/plasmic/sandbox_satuhsehat/images/docsFileSvgrepoCom1Png.png",
+                    fullWidth: 52,
+                    fullHeight: 52,
                     aspectRatio: undefined
                   }}
                 />
@@ -472,7 +502,7 @@ function PlasmicDokumen__RenderFunc(props: {
                     sty.h5__ycpct
                   )}
                 >
-                  {"Surat Pernyataan"}
+                  {"Format Surat Pernyataan dan Permohonan Pencatatan"}
                 </h5>
 
                 <DownloadsvgIcon
@@ -571,22 +601,12 @@ function PlasmicDokumen__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: [
-    "root",
-    "head",
-    "header",
-    "navigationBar",
-    "columns",
-    "h2",
-    "h4",
-    "footer"
-  ],
+  root: ["root", "head", "header", "navigationBar", "columns", "h2", "footer"],
   head: ["head"],
   header: ["header", "navigationBar"],
   navigationBar: ["navigationBar"],
   columns: ["columns", "h2"],
   h2: ["h2"],
-  h4: ["h4"],
   footer: ["footer"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
@@ -599,7 +619,6 @@ type NodeDefaultElementType = {
   navigationBar: typeof NavigationBar;
   columns: "div";
   h2: "h2";
-  h4: "h4";
   footer: "div";
 };
 
@@ -668,7 +687,6 @@ export const PlasmicDokumen = Object.assign(
     navigationBar: makeNodeComponent("navigationBar"),
     columns: makeNodeComponent("columns"),
     h2: makeNodeComponent("h2"),
-    h4: makeNodeComponent("h4"),
     footer: makeNodeComponent("footer"),
 
     // Metadata about props expected for PlasmicDokumen
