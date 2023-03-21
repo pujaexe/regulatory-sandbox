@@ -351,6 +351,26 @@
           "id": "rn5oD25wmM",
           "name": "DownloadsvgIcon",
           "moduleFilePath": "plasmic/sandbox_satuhsehat/icons/PlasmicIcon__Downloadsvg.tsx"
+        },
+        {
+          "id": "ue3envAm7I",
+          "name": "LawSvgrepoComsvgIcon",
+          "moduleFilePath": "plasmic/sandbox_satuhsehat/icons/PlasmicIcon__LawSvgrepoComsvg.tsx"
+        },
+        {
+          "id": "jj3V4MmrRO",
+          "name": "LawSvgrepoCom1SvgIcon",
+          "moduleFilePath": "plasmic/sandbox_satuhsehat/icons/PlasmicIcon__LawSvgrepoCom1Svg.tsx"
+        },
+        {
+          "id": "d11xSBFAIc",
+          "name": "JusticeSvgrepoCom1SvgIcon",
+          "moduleFilePath": "plasmic/sandbox_satuhsehat/icons/PlasmicIcon__JusticeSvgrepoCom1Svg.tsx"
+        },
+        {
+          "id": "HdY_vWMIj2",
+          "name": "Frame1000001301SvgIcon",
+          "moduleFilePath": "plasmic/sandbox_satuhsehat/icons/PlasmicIcon__Frame1000001301Svg.tsx"
         }
       ],
       "images": [
@@ -430,6 +450,6 @@
   "nextjsConfig": {
     "pagesDir": "../pages"
   },
-  "cliVersion": "0.1.231",
-  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.231/dist/plasmic.schema.json"
+  "cliVersion": "0.1.234",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.234/dist/plasmic.schema.json"
 }

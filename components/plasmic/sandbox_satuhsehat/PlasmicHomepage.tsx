@@ -47,6 +47,9 @@ import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic_sandbox_satuhsehat.module.css"; // plasmic-import: mazsTSCdeXMvNewzsED8CP/projectcss
 import sty from "./PlasmicHomepage.module.css"; // plasmic-import: 2kkee5R7hDuz/css
 
+import LawSvgrepoCom1SvgIcon from "./icons/PlasmicIcon__LawSvgrepoCom1Svg"; // plasmic-import: jj3V4MmrRO/icon
+import JusticeSvgrepoCom1SvgIcon from "./icons/PlasmicIcon__JusticeSvgrepoCom1Svg"; // plasmic-import: d11xSBFAIc/icon
+import Frame1000001301SvgIcon from "./icons/PlasmicIcon__Frame1000001301Svg"; // plasmic-import: HdY_vWMIj2/icon
 import MedicineDrugHealthMedicalSmartphonePharmacyTabletSvgrepoCom1SvgIcon from "./icons/PlasmicIcon__MedicineDrugHealthMedicalSmartphonePharmacyTabletSvgrepoCom1Svg"; // plasmic-import: a7fWEtdh_m/icon
 import HeartbeatHeartHealthPulseSmartphoneMedicalRateSvgrepoCom1SvgIcon from "./icons/PlasmicIcon__HeartbeatHeartHealthPulseSmartphoneMedicalRateSvgrepoCom1Svg"; // plasmic-import: KmthYfnQUS/icon
 import MedicineDrugHealthMedicalSmartphonePharmacyTablet2SvgrepoComsvgIcon from "./icons/PlasmicIcon__MedicineDrugHealthMedicalSmartphonePharmacyTablet2SvgrepoComsvg"; // plasmic-import: VzvMwKKQ1a/icon
@@ -68,6 +71,7 @@ export type PlasmicHomepage__OverridesType = {
   navigationBar?: p.Flex<typeof NavigationBar>;
   hero?: p.Flex<"section">;
   about?: p.Flex<"div">;
+  why?: p.Flex<"div">;
   who?: p.Flex<"div">;
   card5?: p.Flex<"div">;
   card6?: p.Flex<"div">;
@@ -472,6 +476,128 @@ function PlasmicHomepage__RenderFunc(props: {
                 />
               </p.Stack>
             </p.Stack>
+          </div>
+
+          <div
+            data-plasmic-name={"why"}
+            data-plasmic-override={overrides.why}
+            className={classNames(projectcss.all, sty.why)}
+          >
+            {true ? (
+              <p.Stack
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox__bPSc)}
+              >
+                <h2
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.h2,
+                    projectcss.__wab_text,
+                    sty.h2__klQik
+                  )}
+                >
+                  {"Kenapa perlu mendaftar regulatory sandbox?"}
+                </h2>
+
+                <p.Stack
+                  as={"div"}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.columns__gmBQr)}
+                >
+                  <div
+                    className={classNames(projectcss.all, sty.column__ypesh)}
+                  >
+                    <p.Stack
+                      as={"div"}
+                      hasGap={true}
+                      className={classNames(projectcss.all, sty.freeBox__yrUkV)}
+                    >
+                      <LawSvgrepoCom1SvgIcon
+                        className={classNames(projectcss.all, sty.svg___0ThFw)}
+                        role={"img"}
+                      />
+
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__ePgj
+                        )}
+                      >
+                        {
+                          "Mendapatkan asesmen kesesuaian dengan regulasi dan praktik baik inovasi"
+                        }
+                      </div>
+                    </p.Stack>
+                  </div>
+
+                  <div
+                    className={classNames(projectcss.all, sty.column__uzDl4)}
+                  >
+                    {true ? (
+                      <p.Stack
+                        as={"div"}
+                        hasGap={true}
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__urVdx
+                        )}
+                      >
+                        <JusticeSvgrepoCom1SvgIcon
+                          className={classNames(projectcss.all, sty.svg__ch6D)}
+                          role={"img"}
+                        />
+
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__cq33R
+                          )}
+                        >
+                          {
+                            "Berpartisipasi dalam pemberian rekomendasi kebijakan terkait teknologi kesehatan"
+                          }
+                        </div>
+                      </p.Stack>
+                    ) : null}
+                  </div>
+
+                  <div
+                    className={classNames(projectcss.all, sty.column___95Stj)}
+                  >
+                    {true ? (
+                      <p.Stack
+                        as={"div"}
+                        hasGap={true}
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__fMuiY
+                        )}
+                      >
+                        <Frame1000001301SvgIcon
+                          className={classNames(projectcss.all, sty.svg__eOQom)}
+                          role={"img"}
+                        />
+
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text___2Wz4D
+                          )}
+                        >
+                          {
+                            "Terdaftar sebagai mitra resmi Kemenkes untuk pengembangan regulasi dan ekosistem kesehatan di Indonesia"
+                          }
+                        </div>
+                      </p.Stack>
+                    ) : null}
+                  </div>
+                </p.Stack>
+              </p.Stack>
+            ) : null}
           </div>
 
           <div
@@ -1034,44 +1160,6 @@ function PlasmicHomepage__RenderFunc(props: {
                               {"Persekutuan perdata."}
                             </li>
                           </ul>
-                        </Collapsible>
-                      </div>
-
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          sty.freeBox__mu3Y
-                        )}
-                      >
-                        <Collapsible
-                          className={classNames(
-                            "__wab_instance",
-                            sty.collapsible__avl0B
-                          )}
-                          isopen={true}
-                          slot={
-                            <div
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.__wab_text,
-                                sty.text__xvg9Z
-                              )}
-                            >
-                              {"Kenapa perlu mendaftar regulatory sandbox?"}
-                            </div>
-                          }
-                        >
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.__wab_text,
-                              sty.text__qTfii
-                            )}
-                          >
-                            {
-                              "Dengan menjadi peserta regulatory sandbox, penyelenggara IDK berhak untuk:\n1. Mendapatkan asesmen kesesuaian dengan regulasi dan praktik baik inovasi\n2. Berpartisipasi dalam pemberian rekomendasi kebijakan terkait teknologi kesehatan\n3. Terdaftar sebagai mitra resmi Kemenkes untuk pengembangan regulasi dan ekosistem kesehatan di Indonesia"
-                            }
-                          </div>
                         </Collapsible>
                       </div>
 
@@ -2099,6 +2187,7 @@ const PlasmicDescendants = {
     "navigationBar",
     "hero",
     "about",
+    "why",
     "who",
     "card5",
     "card6",
@@ -2113,6 +2202,7 @@ const PlasmicDescendants = {
   navigationBar: ["navigationBar"],
   hero: ["hero"],
   about: ["about"],
+  why: ["why"],
   who: ["who", "card5", "card6", "card7", "card8"],
   card5: ["card5"],
   card6: ["card6"],
@@ -2132,6 +2222,7 @@ type NodeDefaultElementType = {
   navigationBar: typeof NavigationBar;
   hero: "section";
   about: "div";
+  why: "div";
   who: "div";
   card5: "div";
   card6: "div";
@@ -2207,6 +2298,7 @@ export const PlasmicHomepage = Object.assign(
     navigationBar: makeNodeComponent("navigationBar"),
     hero: makeNodeComponent("hero"),
     about: makeNodeComponent("about"),
+    why: makeNodeComponent("why"),
     who: makeNodeComponent("who"),
     card5: makeNodeComponent("card5"),
     card6: makeNodeComponent("card6"),
