@@ -181,7 +181,7 @@ function PlasmicDokumen__RenderFunc(props: {
               closeButton={
                 <p.PlasmicImg
                   alt={""}
-                  className={classNames(sty.img__xE5G2)}
+                  className={classNames(sty.img___4NBny)}
                   displayHeight={"auto" as const}
                   displayMaxHeight={"none" as const}
                   displayMaxWidth={"none" as const}
@@ -207,7 +207,6 @@ function PlasmicDokumen__RenderFunc(props: {
                   >
                     {"Beranda"}
                   </p.PlasmicLink>
-
                   <p.PlasmicLink
                     className={classNames(
                       projectcss.all,
@@ -221,7 +220,6 @@ function PlasmicDokumen__RenderFunc(props: {
                   >
                     {"Tentang"}
                   </p.PlasmicLink>
-
                   <p.PlasmicLink
                     className={classNames(
                       projectcss.all,
@@ -235,7 +233,6 @@ function PlasmicDokumen__RenderFunc(props: {
                   >
                     {"FAQ"}
                   </p.PlasmicLink>
-
                   <p.PlasmicLink
                     className={classNames(
                       projectcss.all,
@@ -254,7 +251,7 @@ function PlasmicDokumen__RenderFunc(props: {
               openButton={
                 <p.PlasmicImg
                   alt={""}
-                  className={classNames(sty.img__wvgnt)}
+                  className={classNames(sty.img___58Vc)}
                   displayHeight={"auto" as const}
                   displayMaxHeight={"none" as const}
                   displayMaxWidth={"none" as const}
@@ -267,7 +264,6 @@ function PlasmicDokumen__RenderFunc(props: {
               responsiveBreakpoint={768 as const}
             />
           </div>
-
           <div className={classNames(projectcss.all, sty.freeBox__kY1UP)}>
             <div
               data-plasmic-name={"columns"}
@@ -292,7 +288,6 @@ function PlasmicDokumen__RenderFunc(props: {
                   {"Dokumen Penyelenggaraan Regulatory Sandbox"}
                 </h2>
               </p.Stack>
-
               <div className={classNames(projectcss.all, sty.column___6XIuV)}>
                 {(
                   hasVariant(globalVariants, "screen", "mobileOnly")
@@ -320,7 +315,6 @@ function PlasmicDokumen__RenderFunc(props: {
               </div>
             </div>
           </div>
-
           <div className={classNames(projectcss.all, sty.freeBox___4PhDc)}>
             <p.Stack
               as={"div"}
@@ -337,7 +331,6 @@ function PlasmicDokumen__RenderFunc(props: {
               >
                 {"Dokumen Pendukung"}
               </h4>
-
               <div
                 className={classNames(
                   projectcss.all,
@@ -349,7 +342,6 @@ function PlasmicDokumen__RenderFunc(props: {
                   "Regulatory sandbox hadir sebagai ruang uji bagi penyelenggara inovasi digital kesehatan (IDK) untuk mendukung pengembangan regulasi dan ekosistem inovasi digital kesehatan di Indonesia yang implementasinya didasarkan pada Keputusan Menteri Kesehatan (KMK) Republik Indonesia Nomor HK.01.07/MENKES/   /2023.\n\nPada KMK tersebut, dijelaskan mengenai tahapan pelaksanaan regulatory sandbox serta penggunaan identitas visual status kepesertaan bagi penyelenggara IDK yang mendapatkan rekomendasi maupun pembinaan dari Kemenkes RI.\n\nUntuk informasi selengkapnya, unduh KMK"
                 }
               </div>
-
               <p.Stack
                 as={p.PlasmicLink}
                 hasGap={true}
@@ -389,13 +381,11 @@ function PlasmicDokumen__RenderFunc(props: {
                 >
                   {"KMK Regulatory Sandbox"}
                 </h5>
-
                 <DownloadsvgIcon
                   className={classNames(projectcss.all, sty.svg___3CRkg)}
                   role={"img"}
                 />
               </p.Stack>
-
               <h4
                 className={classNames(
                   projectcss.all,
@@ -406,7 +396,6 @@ function PlasmicDokumen__RenderFunc(props: {
               >
                 {"Dokumen Persyaratan Regulatory Sandbox"}
               </h4>
-
               <div
                 className={classNames(
                   projectcss.all,
@@ -418,7 +407,6 @@ function PlasmicDokumen__RenderFunc(props: {
                   "Penyelenggara IDK yang mengajukan pendaftaran regulatory sandbox wajib menyertakan dokumen berikut untuk kelengkapan persyaratan administrasi:"
                 }
               </div>
-
               <p.Stack
                 as={p.PlasmicLink}
                 hasGap={true}
@@ -458,13 +446,11 @@ function PlasmicDokumen__RenderFunc(props: {
                 >
                   {"Pedoman Pengisian Formulir Pendaftaran"}
                 </h5>
-
                 <DownloadsvgIcon
                   className={classNames(projectcss.all, sty.svg__hcmcf)}
                   role={"img"}
                 />
               </p.Stack>
-
               <p.Stack
                 as={p.PlasmicLink}
                 hasGap={true}
@@ -504,13 +490,11 @@ function PlasmicDokumen__RenderFunc(props: {
                 >
                   {"Format Surat Pernyataan dan Permohonan Pencatatan"}
                 </h5>
-
                 <DownloadsvgIcon
                   className={classNames(projectcss.all, sty.svg__dgI7T)}
                   role={"img"}
                 />
               </p.Stack>
-
               <p.Stack
                 as={p.PlasmicLink}
                 hasGap={true}
@@ -550,7 +534,6 @@ function PlasmicDokumen__RenderFunc(props: {
                 >
                   {"Alur Regulatory Sandbox"}
                 </h5>
-
                 <DownloadsvgIcon
                   className={classNames(projectcss.all, sty.svg__kwawh)}
                   role={"img"}
@@ -558,7 +541,6 @@ function PlasmicDokumen__RenderFunc(props: {
               </p.Stack>
             </p.Stack>
           </div>
-
           <p.Stack
             as={"div"}
             data-plasmic-name={"footer"}
@@ -580,7 +562,6 @@ function PlasmicDokumen__RenderFunc(props: {
               >
                 {"© Kementerian Kesehatan RI "}
               </div>
-
               <div
                 className={classNames(
                   projectcss.all,

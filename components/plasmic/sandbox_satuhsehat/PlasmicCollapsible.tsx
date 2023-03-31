@@ -124,9 +124,7 @@ function PlasmicCollapsible__RenderFunc(props: {
         path: "isopen",
         type: "private",
         variableType: "variant",
-        initFunc: true
-          ? ({ $props, $state, $queries, $ctx }) => $props.isopen
-          : undefined
+        initFunc: ({ $props, $state, $queries, $ctx }) => $props.isopen
       }
     ],
     [$props, $ctx]
@@ -182,7 +180,6 @@ function PlasmicCollapsible__RenderFunc(props: {
             className: classNames(sty.slotTargetSlot)
           })}
         </div>
-
         {(
           triggers.active_collapse
             ? true
@@ -212,7 +209,6 @@ function PlasmicCollapsible__RenderFunc(props: {
           />
         ) : null}
       </button>
-
       {(
         triggers.active_collapse
           ? true

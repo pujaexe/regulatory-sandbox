@@ -182,49 +182,37 @@ function PlasmicButton__RenderFunc(props: {
         path: "showStartIcon",
         type: "private",
         variableType: "variant",
-        initFunc: true
-          ? ({ $props, $state, $queries, $ctx }) => $props.showStartIcon
-          : undefined
+        initFunc: ({ $props, $state, $queries, $ctx }) => $props.showStartIcon
       },
       {
         path: "showEndIcon",
         type: "private",
         variableType: "variant",
-        initFunc: true
-          ? ({ $props, $state, $queries, $ctx }) => $props.showEndIcon
-          : undefined
+        initFunc: ({ $props, $state, $queries, $ctx }) => $props.showEndIcon
       },
       {
         path: "isDisabled",
         type: "private",
         variableType: "variant",
-        initFunc: true
-          ? ({ $props, $state, $queries, $ctx }) => $props.isDisabled
-          : undefined
+        initFunc: ({ $props, $state, $queries, $ctx }) => $props.isDisabled
       },
       {
         path: "shape",
         type: "private",
         variableType: "variant",
-        initFunc: true
-          ? ({ $props, $state, $queries, $ctx }) => $props.shape
-          : undefined
+        initFunc: ({ $props, $state, $queries, $ctx }) => $props.shape
       },
       {
         path: "size",
         type: "private",
         variableType: "variant",
-        initFunc: true
-          ? ({ $props, $state, $queries, $ctx }) => $props.size
-          : undefined
+        initFunc: ({ $props, $state, $queries, $ctx }) => $props.size
       },
       {
         path: "color",
         type: "private",
         variableType: "variant",
-        initFunc: true
-          ? ({ $props, $state, $queries, $ctx }) => $props.color
-          : undefined
+        initFunc: ({ $props, $state, $queries, $ctx }) => $props.color
       }
     ],
     [$props, $ctx]
@@ -403,7 +391,6 @@ function PlasmicButton__RenderFunc(props: {
           })}
         </div>
       ) : null}
-
       <div
         data-plasmic-name={"contentContainer"}
         data-plasmic-override={overrides.contentContainer}
@@ -529,7 +516,6 @@ function PlasmicButton__RenderFunc(props: {
           })
         })}
       </div>
-
       {(hasVariant($state, "showEndIcon", "showEndIcon") ? true : false) ? (
         <div
           data-plasmic-name={"endIconContainer"}

@@ -224,7 +224,7 @@ function PlasmicHomepage__RenderFunc(props: {
               closeButton={
                 <p.PlasmicImg
                   alt={""}
-                  className={classNames(sty.img__nQCpK)}
+                  className={classNames(sty.img__jymhg)}
                   displayHeight={"auto" as const}
                   displayMaxHeight={"none" as const}
                   displayMaxWidth={"none" as const}
@@ -250,7 +250,6 @@ function PlasmicHomepage__RenderFunc(props: {
                   >
                     {"Beranda"}
                   </p.PlasmicLink>
-
                   <p.PlasmicLink
                     className={classNames(
                       projectcss.all,
@@ -264,7 +263,6 @@ function PlasmicHomepage__RenderFunc(props: {
                   >
                     {"Tentang"}
                   </p.PlasmicLink>
-
                   <p.PlasmicLink
                     className={classNames(
                       projectcss.all,
@@ -278,7 +276,6 @@ function PlasmicHomepage__RenderFunc(props: {
                   >
                     {"FAQ"}
                   </p.PlasmicLink>
-
                   <p.PlasmicLink
                     className={classNames(
                       projectcss.all,
@@ -297,7 +294,7 @@ function PlasmicHomepage__RenderFunc(props: {
               openButton={
                 <p.PlasmicImg
                   alt={""}
-                  className={classNames(sty.img__yp4VX)}
+                  className={classNames(sty.img__iMaYa)}
                   displayHeight={"auto" as const}
                   displayMaxHeight={"none" as const}
                   displayMaxWidth={"none" as const}
@@ -310,7 +307,6 @@ function PlasmicHomepage__RenderFunc(props: {
               responsiveBreakpoint={768 as const}
             />
           </div>
-
           <p.Stack
             as={"section"}
             data-plasmic-name={"hero"}
@@ -348,7 +344,6 @@ function PlasmicHomepage__RenderFunc(props: {
                   className={classNames(projectcss.all, sty.column___3HaNp)}
                 />
               ) : null}
-
               <p.Stack
                 as={"div"}
                 hasGap={true}
@@ -364,7 +359,6 @@ function PlasmicHomepage__RenderFunc(props: {
                 >
                   {"Regulatory Sandbox Kemenkes RI"}
                 </h2>
-
                 <div
                   className={classNames(
                     projectcss.all,
@@ -376,7 +370,6 @@ function PlasmicHomepage__RenderFunc(props: {
                     "Ruang Uji Bagi Penyelenggara Inovasi Digital Kesehatan di Indonesia"
                   }
                 </div>
-
                 <div
                   className={classNames(
                     projectcss.all,
@@ -386,7 +379,6 @@ function PlasmicHomepage__RenderFunc(props: {
                 >
                   {"Pendaftaran dibuka tanggal 21 Maret - 19 April 2023"}
                 </div>
-
                 {true ? (
                   <p.PlasmicLink
                     className={classNames(
@@ -411,7 +403,6 @@ function PlasmicHomepage__RenderFunc(props: {
               </p.Stack>
             </div>
           </p.Stack>
-
           <div
             data-plasmic-name={"about"}
             data-plasmic-override={overrides.about}
@@ -438,7 +429,6 @@ function PlasmicHomepage__RenderFunc(props: {
                 >
                   {"Apa itu Regulatory Sandbox ?"}
                 </h2>
-
                 <div
                   className={classNames(
                     projectcss.all,
@@ -451,7 +441,6 @@ function PlasmicHomepage__RenderFunc(props: {
                   }
                 </div>
               </p.Stack>
-
               <p.Stack
                 as={"div"}
                 hasGap={true}
@@ -477,7 +466,6 @@ function PlasmicHomepage__RenderFunc(props: {
               </p.Stack>
             </p.Stack>
           </div>
-
           <div
             data-plasmic-name={"why"}
             data-plasmic-override={overrides.why}
@@ -499,7 +487,6 @@ function PlasmicHomepage__RenderFunc(props: {
                 >
                   {"Kenapa perlu mendaftar regulatory sandbox?"}
                 </h2>
-
                 <p.Stack
                   as={"div"}
                   hasGap={true}
@@ -531,7 +518,6 @@ function PlasmicHomepage__RenderFunc(props: {
                       </div>
                     </p.Stack>
                   </div>
-
                   <div
                     className={classNames(projectcss.all, sty.column__uzDl4)}
                   >
@@ -563,7 +549,6 @@ function PlasmicHomepage__RenderFunc(props: {
                       </p.Stack>
                     ) : null}
                   </div>
-
                   <div
                     className={classNames(projectcss.all, sty.column___95Stj)}
                   >
@@ -599,7 +584,6 @@ function PlasmicHomepage__RenderFunc(props: {
               </p.Stack>
             ) : null}
           </div>
-
           <div
             data-plasmic-name={"who"}
             data-plasmic-override={overrides.who}
@@ -621,7 +605,6 @@ function PlasmicHomepage__RenderFunc(props: {
                 >
                   {"Untuk Siapa ?"}
                 </h2>
-
                 <div
                   className={classNames(
                     projectcss.all,
@@ -633,7 +616,6 @@ function PlasmicHomepage__RenderFunc(props: {
                     "Regulatory Sandbox akan dimulai bagi pelaku usaha non perseorangan Inovasi Digital Kesehatan (IDK) yang telah terdaftar sebagai Penyelenggara Sistem Elektronik (PSE) dan memiliki bisnis pada klaster Telekesehatan berikut"
                   }
                 </div>
-
                 <div className={classNames(projectcss.all, sty.freeBox__mF6Gg)}>
                   <div
                     className={classNames(projectcss.all, sty.freeBox__kfMsy)}
@@ -661,7 +643,6 @@ function PlasmicHomepage__RenderFunc(props: {
                           />
                         </div>
                       ) : null}
-
                       <h5
                         className={classNames(
                           projectcss.all,
@@ -674,7 +655,6 @@ function PlasmicHomepage__RenderFunc(props: {
                       </h5>
                     </p.Stack>
                   </div>
-
                   <div
                     className={classNames(projectcss.all, sty.freeBox__r6Rz5)}
                   >
@@ -701,7 +681,6 @@ function PlasmicHomepage__RenderFunc(props: {
                           />
                         </div>
                       ) : null}
-
                       <h5
                         className={classNames(
                           projectcss.all,
@@ -714,7 +693,6 @@ function PlasmicHomepage__RenderFunc(props: {
                       </h5>
                     </p.Stack>
                   </div>
-
                   <div
                     className={classNames(projectcss.all, sty.freeBox__gwehn)}
                   >
@@ -741,7 +719,6 @@ function PlasmicHomepage__RenderFunc(props: {
                           />
                         </div>
                       ) : null}
-
                       <h5
                         className={classNames(
                           projectcss.all,
@@ -754,7 +731,6 @@ function PlasmicHomepage__RenderFunc(props: {
                       </h5>
                     </p.Stack>
                   </div>
-
                   <div
                     className={classNames(projectcss.all, sty.freeBox__fLlBg)}
                   >
@@ -781,7 +757,6 @@ function PlasmicHomepage__RenderFunc(props: {
                           />
                         </div>
                       ) : null}
-
                       <h5
                         className={classNames(
                           projectcss.all,
@@ -795,7 +770,6 @@ function PlasmicHomepage__RenderFunc(props: {
                     </p.Stack>
                   </div>
                 </div>
-
                 <h5
                   className={classNames(
                     projectcss.all,
@@ -809,7 +783,6 @@ function PlasmicHomepage__RenderFunc(props: {
               </p.Stack>
             ) : null}
           </div>
-
           <div
             data-plasmic-name={"faq"}
             data-plasmic-override={overrides.faq}
@@ -832,7 +805,6 @@ function PlasmicHomepage__RenderFunc(props: {
                 >
                   {"FAQ"}
                 </h2>
-
                 <div className={classNames(projectcss.all, sty.columns__hShR)}>
                   <div
                     className={classNames(projectcss.all, sty.column__d8HRl)}
@@ -892,7 +864,6 @@ function PlasmicHomepage__RenderFunc(props: {
                           </div>
                         </Collapsible>
                       </div>
-
                       <div
                         className={classNames(
                           projectcss.all,
@@ -942,7 +913,6 @@ function PlasmicHomepage__RenderFunc(props: {
                               </React.Fragment>
                             </React.Fragment>
                           </div>
-
                           <ul
                             className={classNames(
                               projectcss.all,
@@ -962,7 +932,6 @@ function PlasmicHomepage__RenderFunc(props: {
                                 "Pelaku usaha non perseorangan sebagaimana diatur dalam peraturan perundang-undangan terkait perizinan usaha terintegrasi;"
                               }
                             </li>
-
                             <li
                               className={classNames(
                                 projectcss.all,
@@ -975,7 +944,6 @@ function PlasmicHomepage__RenderFunc(props: {
                                 "Melaksanakan kegiatan usaha secara luas atau sudah dilaksanakan (pengguna dan kegiatan usaha) pada minimal dua provinsi; dan"
                               }
                             </li>
-
                             <li
                               className={classNames(
                                 projectcss.all,
@@ -988,7 +956,6 @@ function PlasmicHomepage__RenderFunc(props: {
                                 "Inovasi yang dapat menimbulkan kompleksitas dari sisi teknologi dan penggunaannya;"
                               }
                             </li>
-
                             <li
                               className={classNames(
                                 projectcss.all,
@@ -1019,7 +986,6 @@ function PlasmicHomepage__RenderFunc(props: {
                               </React.Fragment>
                             </li>
                           </ul>
-
                           <div
                             className={classNames(
                               projectcss.all,
@@ -1031,7 +997,6 @@ function PlasmicHomepage__RenderFunc(props: {
                               "Pelaku usaha non perseorangan sebagaimana diatur dalam peraturan perundang-undangan terkait perizinan usaha terintegrasi, antara lain:"
                             }
                           </div>
-
                           <ul
                             className={classNames(
                               projectcss.all,
@@ -1049,7 +1014,6 @@ function PlasmicHomepage__RenderFunc(props: {
                             >
                               {"Perseroan terbatas;"}
                             </li>
-
                             <li
                               className={classNames(
                                 projectcss.all,
@@ -1060,7 +1024,6 @@ function PlasmicHomepage__RenderFunc(props: {
                             >
                               {"Perusahaan umum;"}
                             </li>
-
                             <li
                               className={classNames(
                                 projectcss.all,
@@ -1071,7 +1034,6 @@ function PlasmicHomepage__RenderFunc(props: {
                             >
                               {"Perusahaan umum daerah;"}
                             </li>
-
                             <li
                               className={classNames(
                                 projectcss.all,
@@ -1082,7 +1044,6 @@ function PlasmicHomepage__RenderFunc(props: {
                             >
                               {"Badan hukum lainnya yang dimiliki oleh negara;"}
                             </li>
-
                             <li
                               className={classNames(
                                 projectcss.all,
@@ -1093,7 +1054,6 @@ function PlasmicHomepage__RenderFunc(props: {
                             >
                               {"Badan layanan umum;"}
                             </li>
-
                             <li
                               className={classNames(
                                 projectcss.all,
@@ -1104,7 +1064,6 @@ function PlasmicHomepage__RenderFunc(props: {
                             >
                               {"Lembaga penyiaran;"}
                             </li>
-
                             <li
                               className={classNames(
                                 projectcss.all,
@@ -1115,7 +1074,6 @@ function PlasmicHomepage__RenderFunc(props: {
                             >
                               {"Badan usaha yang didirikan oleh yayasan;"}
                             </li>
-
                             <li
                               className={classNames(
                                 projectcss.all,
@@ -1126,7 +1084,6 @@ function PlasmicHomepage__RenderFunc(props: {
                             >
                               {"Koperasi;"}
                             </li>
-
                             <li
                               className={classNames(
                                 projectcss.all,
@@ -1137,7 +1094,6 @@ function PlasmicHomepage__RenderFunc(props: {
                             >
                               {"Persekutuan komanditer;"}
                             </li>
-
                             <li
                               className={classNames(
                                 projectcss.all,
@@ -1148,7 +1104,6 @@ function PlasmicHomepage__RenderFunc(props: {
                             >
                               {"Persekutuan firma; dan"}
                             </li>
-
                             <li
                               className={classNames(
                                 projectcss.all,
@@ -1162,7 +1117,6 @@ function PlasmicHomepage__RenderFunc(props: {
                           </ul>
                         </Collapsible>
                       </div>
-
                       <div
                         className={classNames(
                           projectcss.all,
@@ -1216,7 +1170,6 @@ function PlasmicHomepage__RenderFunc(props: {
                           </div>
                         </Collapsible>
                       </div>
-
                       <div
                         className={classNames(
                           projectcss.all,
@@ -1281,7 +1234,6 @@ function PlasmicHomepage__RenderFunc(props: {
                           </div>
                         </Collapsible>
                       </div>
-
                       <div
                         className={classNames(
                           projectcss.all,
@@ -1310,7 +1262,6 @@ function PlasmicHomepage__RenderFunc(props: {
                           }
                         </Collapsible>
                       </div>
-
                       <div
                         className={classNames(
                           projectcss.all,
@@ -1363,7 +1314,6 @@ function PlasmicHomepage__RenderFunc(props: {
                       </div>
                     </div>
                   </div>
-
                   <div
                     className={classNames(projectcss.all, sty.column__ufAmx)}
                   >
@@ -1446,7 +1396,6 @@ function PlasmicHomepage__RenderFunc(props: {
                           </div>
                         </Collapsible>
                       </div>
-
                       <div
                         className={classNames(
                           projectcss.all,
@@ -1502,7 +1451,6 @@ function PlasmicHomepage__RenderFunc(props: {
                           </div>
                         </Collapsible>
                       </div>
-
                       <div
                         className={classNames(
                           projectcss.all,
@@ -1539,7 +1487,6 @@ function PlasmicHomepage__RenderFunc(props: {
                               "Berikut ini beberapa dokumen yang perlu disiapkan untuk mendaftar regulatory sandbox, yaitu:"
                             }
                           </div>
-
                           <ul
                             className={classNames(
                               projectcss.all,
@@ -1559,7 +1506,6 @@ function PlasmicHomepage__RenderFunc(props: {
                                 "Persyaratan dasar (proses lintas kementerian/lembaga)\n"
                               }
                             </li>
-
                             <li
                               className={classNames(
                                 projectcss.all,
@@ -1593,7 +1539,6 @@ function PlasmicHomepage__RenderFunc(props: {
                                     }
                                   })()}
                                 </li>
-
                                 <li
                                   className={classNames(
                                     projectcss.all,
@@ -1613,7 +1558,6 @@ function PlasmicHomepage__RenderFunc(props: {
                                     }
                                   })()}
                                 </li>
-
                                 <li
                                   className={classNames(
                                     projectcss.all,
@@ -1633,7 +1577,6 @@ function PlasmicHomepage__RenderFunc(props: {
                                     }
                                   })()}
                                 </li>
-
                                 <li
                                   className={classNames(
                                     projectcss.all,
@@ -1656,7 +1599,6 @@ function PlasmicHomepage__RenderFunc(props: {
                               </ul>
                             </li>
                           </ul>
-
                           <ul
                             className={classNames(
                               projectcss.all,
@@ -1674,7 +1616,6 @@ function PlasmicHomepage__RenderFunc(props: {
                             >
                               {"Informasi Perusahaan"}
                             </li>
-
                             <li
                               className={classNames(
                                 projectcss.all,
@@ -1699,7 +1640,6 @@ function PlasmicHomepage__RenderFunc(props: {
                                 >
                                   {"Profil perusahaan"}
                                 </li>
-
                                 <li
                                   className={classNames(
                                     projectcss.all,
@@ -1712,7 +1652,6 @@ function PlasmicHomepage__RenderFunc(props: {
                                     "Model bisnis yang dijalankan dan yang akan dikembangkan\n"
                                   }
                                 </li>
-
                                 <li
                                   className={classNames(
                                     projectcss.all,
@@ -1723,7 +1662,6 @@ function PlasmicHomepage__RenderFunc(props: {
                                 >
                                   {"Penjelasan mengenai produk "}
                                 </li>
-
                                 <li
                                   className={classNames(
                                     projectcss.all,
@@ -1736,7 +1674,6 @@ function PlasmicHomepage__RenderFunc(props: {
                                     "Kebijakan penyimpanan data dan privasi produk (syarat dan ketentuan)"
                                   }
                                 </li>
-
                                 <li
                                   className={classNames(
                                     projectcss.all,
@@ -1750,7 +1687,6 @@ function PlasmicHomepage__RenderFunc(props: {
                               </ul>
                             </li>
                           </ul>
-
                           <ul
                             className={classNames(
                               projectcss.all,
@@ -1769,7 +1705,6 @@ function PlasmicHomepage__RenderFunc(props: {
                               {"Surat permohonan dilakukannya pencatatan;"}
                             </li>
                           </ul>
-
                           <ul
                             className={classNames(
                               projectcss.all,
@@ -1790,7 +1725,6 @@ function PlasmicHomepage__RenderFunc(props: {
                               }
                             </li>
                           </ul>
-
                           <div
                             className={classNames(
                               projectcss.all,
@@ -1804,7 +1738,6 @@ function PlasmicHomepage__RenderFunc(props: {
                           </div>
                         </Collapsible>
                       </div>
-
                       <div
                         className={classNames(
                           projectcss.all,
@@ -1886,7 +1819,6 @@ function PlasmicHomepage__RenderFunc(props: {
                           </div>
                         </Collapsible>
                       </div>
-
                       <div
                         className={classNames(
                           projectcss.all,
@@ -1942,7 +1874,6 @@ function PlasmicHomepage__RenderFunc(props: {
                           </div>
                         </Collapsible>
                       </div>
-
                       <div
                         className={classNames(
                           projectcss.all,
@@ -1998,7 +1929,6 @@ function PlasmicHomepage__RenderFunc(props: {
                           </div>
                         </Collapsible>
                       </div>
-
                       <div
                         className={classNames(
                           projectcss.all,
@@ -2037,13 +1967,50 @@ function PlasmicHomepage__RenderFunc(props: {
                           </div>
                         </Collapsible>
                       </div>
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__x7Wkb
+                        )}
+                      >
+                        <Collapsible
+                          className={classNames(
+                            "__wab_instance",
+                            sty.collapsible__aGjZa
+                          )}
+                          slot={
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.__wab_text,
+                                sty.text__tt5Ky
+                              )}
+                            >
+                              {
+                                "Syarat dan ketentuan mendaftar regulatory sandbox"
+                              }
+                            </div>
+                          }
+                        >
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.text__sIqoB
+                            )}
+                          >
+                            {
+                              "1. Pelaku usaha non perseorangan\n2. Terdaftar sebagai PSE di Kementerian Komunikasi dan Informatika\n3. Isi dan lengkapi formulir pendaftaran (link)\n4. Unggah dokumen berikut (format PDF) pada formulir pendaftaran untuk kelengkapan administrasi:\na. Company deck\nb. Surat Pernyataan (unduh template)"
+                            }
+                          </div>
+                        </Collapsible>
+                      </div>
                     </div>
                   </div>
                 </div>
               </p.Stack>
             ) : null}
           </div>
-
           <div
             data-plasmic-name={"who2"}
             data-plasmic-override={overrides.who2}
@@ -2076,7 +2043,6 @@ function PlasmicHomepage__RenderFunc(props: {
                       >
                         {"Hubungi Kami"}
                       </h2>
-
                       {true ? (
                         <div
                           className={classNames(
@@ -2108,7 +2074,6 @@ function PlasmicHomepage__RenderFunc(props: {
                         </div>
                       ) : null}
                     </p.Stack>
-
                     <p.Stack
                       as={"div"}
                       hasGap={true}
@@ -2137,7 +2102,6 @@ function PlasmicHomepage__RenderFunc(props: {
               </p.Stack>
             ) : null}
           </div>
-
           <p.Stack
             as={"div"}
             data-plasmic-name={"footer"}
@@ -2159,7 +2123,6 @@ function PlasmicHomepage__RenderFunc(props: {
               >
                 {"© Kementerian Kesehatan RI "}
               </div>
-
               <div
                 className={classNames(
                   projectcss.all,
