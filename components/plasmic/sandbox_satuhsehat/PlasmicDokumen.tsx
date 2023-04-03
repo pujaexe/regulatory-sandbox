@@ -321,71 +321,77 @@ function PlasmicDokumen__RenderFunc(props: {
               hasGap={true}
               className={classNames(projectcss.all, sty.freeBox__hfGoJ)}
             >
-              <h4
-                className={classNames(
-                  projectcss.all,
-                  projectcss.h4,
-                  projectcss.__wab_text,
-                  sty.h4__vwFzq
-                )}
-              >
-                {"Dokumen Pendukung"}
-              </h4>
-              <div
-                className={classNames(
-                  projectcss.all,
-                  projectcss.__wab_text,
-                  sty.text__phhM3
-                )}
-              >
-                {
-                  "Regulatory sandbox hadir sebagai ruang uji bagi penyelenggara inovasi digital kesehatan (IDK) untuk mendukung pengembangan regulasi dan ekosistem inovasi digital kesehatan di Indonesia yang implementasinya didasarkan pada Keputusan Menteri Kesehatan (KMK) Republik Indonesia Nomor HK.01.07/MENKES/   /2023.\n\nPada KMK tersebut, dijelaskan mengenai tahapan pelaksanaan regulatory sandbox serta penggunaan identitas visual status kepesertaan bagi penyelenggara IDK yang mendapatkan rekomendasi maupun pembinaan dari Kemenkes RI.\n\nUntuk informasi selengkapnya, unduh KMK"
-                }
-              </div>
-              <p.Stack
-                as={p.PlasmicLink}
-                hasGap={true}
-                className={classNames(
-                  projectcss.all,
-                  projectcss.a,
-                  sty.link__bjr6P
-                )}
-                component={Link}
-                platform={"nextjs"}
-              >
-                <p.PlasmicImg
-                  alt={""}
-                  className={classNames(sty.img__jSyv6)}
-                  displayHeight={"auto" as const}
-                  displayMaxHeight={"none" as const}
-                  displayMaxWidth={"100%" as const}
-                  displayMinHeight={"0" as const}
-                  displayMinWidth={"0" as const}
-                  displayWidth={"auto" as const}
-                  loading={"lazy" as const}
-                  src={{
-                    src: "/plasmic/sandbox_satuhsehat/images/image30Png.png",
-                    fullWidth: 34,
-                    fullHeight: 42,
-                    aspectRatio: undefined
-                  }}
-                />
-
-                <h5
+              {true ? (
+                <h4
                   className={classNames(
                     projectcss.all,
-                    projectcss.h5,
+                    projectcss.h4,
                     projectcss.__wab_text,
-                    sty.h5__bnkKc
+                    sty.h4__vwFzq
                   )}
                 >
-                  {"KMK Regulatory Sandbox"}
-                </h5>
-                <DownloadsvgIcon
-                  className={classNames(projectcss.all, sty.svg___3CRkg)}
-                  role={"img"}
-                />
-              </p.Stack>
+                  {"Dokumen Pendukung"}
+                </h4>
+              ) : null}
+              {true ? (
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__phhM3
+                  )}
+                >
+                  {
+                    "Regulatory sandbox hadir sebagai ruang uji bagi penyelenggara inovasi digital kesehatan (IDK) untuk mendukung pengembangan regulasi dan ekosistem inovasi digital kesehatan di Indonesia yang implementasinya didasarkan pada Keputusan Menteri Kesehatan (KMK) Republik Indonesia Nomor HK.01.07/MENKES/   /2023.\n\nPada KMK tersebut, dijelaskan mengenai tahapan pelaksanaan regulatory sandbox serta penggunaan identitas visual status kepesertaan bagi penyelenggara IDK yang mendapatkan rekomendasi maupun pembinaan dari Kemenkes RI.\n\nUntuk informasi selengkapnya, unduh KMK"
+                  }
+                </div>
+              ) : null}
+              {true ? (
+                <p.Stack
+                  as={p.PlasmicLink}
+                  hasGap={true}
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.a,
+                    sty.link__bjr6P
+                  )}
+                  component={Link}
+                  platform={"nextjs"}
+                >
+                  <p.PlasmicImg
+                    alt={""}
+                    className={classNames(sty.img__jSyv6)}
+                    displayHeight={"auto" as const}
+                    displayMaxHeight={"none" as const}
+                    displayMaxWidth={"100%" as const}
+                    displayMinHeight={"0" as const}
+                    displayMinWidth={"0" as const}
+                    displayWidth={"auto" as const}
+                    loading={"lazy" as const}
+                    src={{
+                      src: "/plasmic/sandbox_satuhsehat/images/image30Png.png",
+                      fullWidth: 34,
+                      fullHeight: 42,
+                      aspectRatio: undefined
+                    }}
+                  />
+
+                  <h5
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.h5,
+                      projectcss.__wab_text,
+                      sty.h5__bnkKc
+                    )}
+                  >
+                    {"KMK Regulatory Sandbox"}
+                  </h5>
+                  <DownloadsvgIcon
+                    className={classNames(projectcss.all, sty.svg___3CRkg)}
+                    role={"img"}
+                  />
+                </p.Stack>
+              ) : null}
               <h4
                 className={classNames(
                   projectcss.all,
@@ -416,6 +422,9 @@ function PlasmicDokumen__RenderFunc(props: {
                   sty.link__v9VWi
                 )}
                 component={Link}
+                href={
+                  "https://drive.google.com/drive/folders/14xFj5viJbSH5soELtmKUGld8ztEisoYj?usp=share_link" as const
+                }
                 platform={"nextjs"}
               >
                 <p.PlasmicImg
@@ -460,6 +469,9 @@ function PlasmicDokumen__RenderFunc(props: {
                   sty.link__wdDGu
                 )}
                 component={Link}
+                href={
+                  "https://drive.google.com/drive/folders/1bdfztReb0apHCLn6hr4XTSQuDAt_UDxp?usp=share_link" as const
+                }
                 platform={"nextjs"}
               >
                 <p.PlasmicImg
@@ -504,6 +516,9 @@ function PlasmicDokumen__RenderFunc(props: {
                   sty.link__cOmQu
                 )}
                 component={Link}
+                href={
+                  "https://drive.google.com/drive/folders/1KwVnJzstFNXgB81zCMrrp1X3LSudCKKK" as const
+                }
                 platform={"nextjs"}
               >
                 <p.PlasmicImg

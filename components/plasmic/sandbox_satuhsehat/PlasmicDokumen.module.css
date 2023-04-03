@@ -275,16 +275,18 @@
   max-width: 800px;
   margin-bottom: 24px;
   min-width: 0;
+  display: none;
 }
 .text__phhM3 {
   position: relative;
   width: 100%;
   height: auto;
   max-width: 800px;
+  padding-bottom: 0px;
   min-width: 0;
+  display: none;
 }
 .link__bjr6P {
-  display: flex;
   position: relative;
   flex-direction: row;
   width: 100%;
@@ -295,6 +297,7 @@
   cursor: pointer;
   margin-bottom: 32px;
   min-width: 0;
+  display: none;
   border-radius: 12px;
   padding: 32px;
 }

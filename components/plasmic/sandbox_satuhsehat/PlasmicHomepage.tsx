@@ -377,7 +377,7 @@ function PlasmicHomepage__RenderFunc(props: {
                     sty.text__y1NcY
                   )}
                 >
-                  {"Pendaftaran dibuka tanggal 21 Maret - 19 April 2023"}
+                  {"Pendaftaran dibuka tanggal 3 April  - 5 Mei 2023"}
                 </div>
                 {true ? (
                   <p.PlasmicLink
@@ -387,6 +387,7 @@ function PlasmicHomepage__RenderFunc(props: {
                       sty.link__efIw5
                     )}
                     component={Link}
+                    href={"https://ee-kobo.kemkes.go.id/x/9DmKdgeZ" as const}
                     platform={"nextjs"}
                   >
                     <div
