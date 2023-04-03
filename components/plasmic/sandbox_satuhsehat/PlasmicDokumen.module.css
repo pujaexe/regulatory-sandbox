@@ -119,6 +119,7 @@
   width: 100%;
   height: auto;
   max-width: 100%;
+  background: #ffffff;
   min-width: 0;
   padding: 92px 0px 72px;
 }
@@ -133,7 +134,7 @@
   flex-wrap: nowrap;
   max-width: 1280px;
   min-width: 0;
-  padding: 0px 16px;
+  padding: 0px 0px 0px 16px;
 }
 .columns > :nth-child(2n + 1) {
   width: calc((100% - 2 * 0px) * 6 / 12);
@@ -162,6 +163,7 @@
   width: 100%;
   height: auto;
   max-width: 100%;
+  background: none;
   min-width: 0;
   padding: 8px;
 }
@@ -195,6 +197,14 @@
     font-size: 36px;
   }
 }
+.text__nudSh {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  padding-bottom: 0px;
+  min-width: 0;
+}
 .column___6XIuV {
   display: flex;
   position: relative;
@@ -207,21 +217,27 @@
   min-width: 0;
   padding: 8px;
 }
-.img__axSti {
+.freeBox__iuDt {
+  display: block;
   position: relative;
+  width: 100%;
+  height: 600px;
+  max-width: 100%;
+  background: url("/plasmic/sandbox_satuhsehat/images/bgDocspng.png") top 0% right 1.27% / contain no-repeat;
+  min-width: 0;
+  flex-shrink: 0;
+}
+.svg__bTpsR {
+  position: sticky;
   object-fit: cover;
   max-width: 100%;
-}
-.img__axSti > picture > img {
-  object-fit: cover;
-}
-.img__axSti > :global(.__wab_img-spacer) > img {
-  object-fit: cover;
-}
-@media (min-width: 0px) and (max-width: 768px) {
-  .img__axSti {
-    display: none !important;
-  }
+  width: 32px;
+  height: 32px;
+  left: 0px;
+  top: auto;
+  z-index: 1;
+  bottom: 72px;
+  flex-shrink: 0;
 }
 .freeBox___4PhDc {
   display: flex;
@@ -233,7 +249,7 @@
   height: auto;
   max-width: 100%;
   min-width: 0;
-  padding: 92px 0px 72px;
+  padding: 72px 0px;
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .freeBox___4PhDc {

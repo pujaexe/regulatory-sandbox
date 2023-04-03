@@ -39,13 +39,12 @@ import {
 import { PlasmicHead } from "@plasmicapp/react-web"; // plasmic-import: 7EBFWZs-Lh/codeComponent
 import { NavigationBar } from "@plasmicpkgs/plasmic-nav"; // plasmic-import: jGx9tiKJoex/codeComponent
 
-import { useScreenVariants as useScreenVariantsqbGzfD819Z3T3 } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: QBGzfD819Z3t3/globalVariant
-
 import "@plasmicapp/react-web/lib/plasmic.css";
 
 import projectcss from "./plasmic_sandbox_satuhsehat.module.css"; // plasmic-import: mazsTSCdeXMvNewzsED8CP/projectcss
 import sty from "./PlasmicDokumen.module.css"; // plasmic-import: GYtZRuZNRU/css
 
+import DownSmSvgrepoComsvgIcon from "./icons/PlasmicIcon__DownSmSvgrepoComsvg"; // plasmic-import: zXZ3XcPzrU/icon
 import DownloadsvgIcon from "./icons/PlasmicIcon__Downloadsvg"; // plasmic-import: rn5oD25wmM/icon
 
 export type PlasmicDokumen__VariantMembers = {};
@@ -105,10 +104,6 @@ function PlasmicDokumen__RenderFunc(props: {
 
   const currentUser = p.useCurrentUser?.() || {};
   const [$queries, setDollarQueries] = React.useState({});
-
-  const globalVariants = ensureGlobalVariants({
-    screen: useScreenVariantsqbGzfD819Z3T3()
-  });
 
   return (
     <React.Fragment>
@@ -287,33 +282,28 @@ function PlasmicDokumen__RenderFunc(props: {
                 >
                   {"Dokumen Penyelenggaraan Regulatory Sandbox"}
                 </h2>
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__nudSh
+                  )}
+                >
+                  {
+                    "Bergabunglah bersama kami untuk membentuk masa depan industri  Digital Kesehatan di Indonesia"
+                  }
+                </div>
               </p.Stack>
               <div className={classNames(projectcss.all, sty.column___6XIuV)}>
-                {(
-                  hasVariant(globalVariants, "screen", "mobileOnly")
-                    ? true
-                    : true
-                ) ? (
-                  <p.PlasmicImg
-                    alt={""}
-                    className={classNames(sty.img__axSti)}
-                    displayHeight={"auto" as const}
-                    displayMaxHeight={"none" as const}
-                    displayMaxWidth={"100%" as const}
-                    displayMinHeight={"0" as const}
-                    displayMinWidth={"0" as const}
-                    displayWidth={"auto" as const}
-                    loading={"lazy" as const}
-                    src={{
-                      src: "/plasmic/sandbox_satuhsehat/images/group2321Png.png",
-                      fullWidth: 599,
-                      fullHeight: 434,
-                      aspectRatio: undefined
-                    }}
-                  />
-                ) : null}
+                <div
+                  className={classNames(projectcss.all, sty.freeBox__iuDt)}
+                />
               </div>
             </div>
+            <DownSmSvgrepoComsvgIcon
+              className={classNames(projectcss.all, sty.svg__bTpsR)}
+              role={"img"}
+            />
           </div>
           <div className={classNames(projectcss.all, sty.freeBox___4PhDc)}>
             <p.Stack

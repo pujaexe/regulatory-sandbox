@@ -371,6 +371,11 @@
           "id": "HdY_vWMIj2",
           "name": "Frame1000001301SvgIcon",
           "moduleFilePath": "plasmic/sandbox_satuhsehat/icons/PlasmicIcon__Frame1000001301Svg.tsx"
+        },
+        {
+          "id": "zXZ3XcPzrU",
+          "name": "DownSmSvgrepoComsvgIcon",
+          "moduleFilePath": "plasmic/sandbox_satuhsehat/icons/PlasmicIcon__DownSmSvgrepoComsvg.tsx"
         }
       ],
       "images": [
@@ -428,6 +433,16 @@
           "id": "LtgxLjliy",
           "name": "docs-file-svgrepo-com 1.png",
           "filePath": "../public/plasmic/sandbox_satuhsehat/images/docsFileSvgrepoCom1Png.png"
+        },
+        {
+          "id": "h4iOzIhET",
+          "name": "bg-docs.png",
+          "filePath": "../public/plasmic/sandbox_satuhsehat/images/bgDocspng.png"
+        },
+        {
+          "id": "7_ZKaQiyN",
+          "name": "bg-docs2.png",
+          "filePath": "../public/plasmic/sandbox_satuhsehat/images/bgDocs2Png.png"
         }
       ],
       "indirect": false,
