@@ -15,12 +15,13 @@ module.exports = {
           },
           { key: "X-Frame-Options", value: "SAMEORIGIN" },
           { key: "X-Content-Type-Options", value: "nosniff" },
-          { key: "Referrer-Policy", value: "same-site" },
+          { key: "Referrer-Policy", value: "same-origin" },
           {
             key: "Permissions-Policy",
             value:
               "picture-in-picture=(), geolocation=(), camera=(), microphone=()",
           },
+          { key: "Access-Control-Allow-Origin", value: "*" },
         ],
       },
     ];
