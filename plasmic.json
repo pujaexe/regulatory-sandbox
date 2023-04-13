@@ -76,7 +76,11 @@
         {
           "id": "SAEWraOT2YV",
           "name": "Checkbox",
-          "componentImportPath": "antd/lib/checkbox/Checkbox"
+          "componentImportPath": "antd/lib/checkbox/Checkbox",
+          "helper": {
+            "name": "checkboxHelpers",
+            "importPath": "@plasmicpkgs/antd/skinny/registerCheckbox"
+          }
         },
         {
           "id": "m5zFS-kMOL-",
@@ -116,22 +120,38 @@
         {
           "id": "tO9wrxr8Nbb",
           "name": "Input",
-          "componentImportPath": "antd/lib/input"
+          "componentImportPath": "antd/lib/input",
+          "helper": {
+            "name": "inputHelpers",
+            "importPath": "@plasmicpkgs/antd/skinny/registerInput"
+          }
         },
         {
           "id": "ZJIPHLoTjkN",
           "name": "TextArea",
-          "componentImportPath": "antd/lib/input/TextArea"
+          "componentImportPath": "antd/lib/input/TextArea",
+          "helper": {
+            "name": "inputHelpers",
+            "importPath": "@plasmicpkgs/antd/skinny/registerInput"
+          }
         },
         {
           "id": "zDcn8vsMldu",
           "name": "Search",
-          "componentImportPath": "antd/lib/input/Search"
+          "componentImportPath": "antd/lib/input/Search",
+          "helper": {
+            "name": "inputHelpers",
+            "importPath": "@plasmicpkgs/antd/skinny/registerInput"
+          }
         },
         {
           "id": "fTDg0FM1tnD",
           "name": "Password",
-          "componentImportPath": "antd/lib/input/Password"
+          "componentImportPath": "antd/lib/input/Password",
+          "helper": {
+            "name": "inputHelpers",
+            "importPath": "@plasmicpkgs/antd/skinny/registerInput"
+          }
         },
         {
           "id": "uZueUXuqePq",
@@ -178,8 +198,7 @@
           "name": "TableValue",
           "componentImportPath": "@plasmicpkgs/antd/skinny/registerTable"
         }
-      ],
-      "jsBundleThemes": []
+      ]
     },
     {
       "projectId": "7nJ7UcFmq9UzB6eXfC5z4a",
@@ -198,8 +217,7 @@
           "name": "NavigationBar",
           "componentImportPath": "@plasmicpkgs/plasmic-nav"
         }
-      ],
-      "jsBundleThemes": []
+      ]
     },
     {
       "projectId": "mazsTSCdeXMvNewzsED8CP",
@@ -475,6 +493,6 @@
   "nextjsConfig": {
     "pagesDir": "../pages"
   },
-  "cliVersion": "0.1.249",
-  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.249/dist/plasmic.schema.json"
+  "cliVersion": "0.1.257",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.257/dist/plasmic.schema.json"
 }

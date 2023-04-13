@@ -64,22 +64,22 @@
 .img__w7T3I > :global(.__wab_img-spacer) > img {
   object-fit: cover;
 }
-.img___58Vc {
+.img__cJwp0 {
   object-fit: cover;
 }
-.img___58Vc > picture > img {
+.img__cJwp0 > picture > img {
   object-fit: cover;
 }
-.img___58Vc > :global(.__wab_img-spacer) > img {
+.img__cJwp0 > :global(.__wab_img-spacer) > img {
   object-fit: cover;
 }
-.img___4NBny {
+.img__x6X0H {
   object-fit: cover;
 }
-.img___4NBny > picture > img {
+.img__x6X0H > picture > img {
   object-fit: cover;
 }
-.img___4NBny > :global(.__wab_img-spacer) > img {
+.img__x6X0H > :global(.__wab_img-spacer) > img {
   object-fit: cover;
 }
 .link__hrn27 {
@@ -185,6 +185,19 @@
   > img {
   margin-top: 24px;
 }
+.column___7Xzgm {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  justify-content: center;
+  align-items: flex-start;
+  background: none;
+  min-width: 0;
+  padding: 8px;
+}
 .h2 {
   position: relative;
   width: 100%;
@@ -284,6 +297,18 @@
   > img {
   margin-top: 24px;
 }
+.freeBox__hfGoJ {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  max-width: 1280px;
+  min-width: 0;
+  padding: 0px 16px;
+}
 .h4__vwFzq {
   position: relative;
   width: 100%;
@@ -291,18 +316,18 @@
   max-width: 800px;
   margin-bottom: 24px;
   min-width: 0;
-  display: none;
+  display: block;
 }
 .text__phhM3 {
   position: relative;
   width: 100%;
   height: auto;
   max-width: 800px;
-  padding-bottom: 0px;
   min-width: 0;
-  display: none;
+  display: block;
 }
 .link__bjr6P {
+  display: flex;
   position: relative;
   flex-direction: row;
   width: 100%;
@@ -313,7 +338,6 @@
   cursor: pointer;
   margin-bottom: 32px;
   min-width: 0;
-  display: none;
   border-radius: 12px;
   padding: 32px;
 }
@@ -334,6 +358,23 @@
   > picture
   > img {
   margin-left: 24px;
+}
+.link__bjr6P {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  background: #ebf7f7;
+  box-shadow: 0px 4px 8px 0px #00000033;
+  cursor: pointer;
+  margin-bottom: 32px;
+  min-width: 0;
+  border-radius: 12px;
+  padding: 32px;
 }
 .img__jSyv6 {
   position: relative;
@@ -408,6 +449,22 @@
   > img {
   margin-left: 24px;
 }
+.link__v9VWi {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  background: #ebf7f7;
+  box-shadow: 0px 4px 8px 0px #00000033;
+  cursor: pointer;
+  min-width: 0;
+  border-radius: 12px;
+  padding: 32px;
+}
 .img__esvbU {
   position: relative;
   object-fit: cover;
@@ -468,6 +525,22 @@
   > img {
   margin-left: 24px;
 }
+.link__wdDGu {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  background: #ebf7f7;
+  box-shadow: 0px 4px 8px 0px #00000033;
+  cursor: pointer;
+  min-width: 0;
+  border-radius: 12px;
+  padding: 32px;
+}
 .img__w5V6Y {
   position: relative;
   object-fit: cover;
@@ -525,6 +598,22 @@
   > img {
   margin-left: 24px;
 }
+.link__cOmQu {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  background: #ebf7f7;
+  box-shadow: 0px 4px 8px 0px #00000033;
+  cursor: pointer;
+  min-width: 0;
+  border-radius: 12px;
+  padding: 32px;
+}
 .img__kywPw {
   position: relative;
   object-fit: cover;
@@ -580,6 +669,20 @@
   > img {
   margin-top: 24px;
 }
+.footer {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  background: #27ada7;
+  min-width: 0;
+}
 .freeBox__fXpT4 {
   display: flex;
   position: relative;
@@ -608,6 +711,19 @@
   > picture
   > img {
   margin-top: 24px;
+}
+.freeBox__fXpT4 {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: auto;
+  max-width: 1280px;
+  padding-left: 16px;
+  padding-right: 16px;
+  min-width: 0;
 }
 .text__kUrgY {
   position: relative;

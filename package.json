@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@plasmicapp/cli": "^0.1.249",
+    "@plasmicapp/cli": "^0.1.257",
     "@plasmicapp/host": "^1.0.107",
     "@plasmicapp/react-web": "^0.2.188",
     "@plasmicpkgs/antd": "^2.0.23",
@@ -17,7 +17,7 @@
     "@types/node": "18.14.1",
     "@types/react": "18.0.28",
     "@types/react-dom": "18.0.11",
-    "antd": "^5.3.3",
+    "antd": "^5.4.2",
     "eslint": "8.34.0",
     "eslint-config-next": "13.2.1",
     "next": "13.2.1",

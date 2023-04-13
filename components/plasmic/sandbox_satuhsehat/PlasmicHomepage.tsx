@@ -174,6 +174,7 @@ function PlasmicHomepage__RenderFunc(props: {
             projectcss.root_reset,
             projectcss.plasmic_default_styles,
             projectcss.plasmic_mixins,
+            projectcss.plasmic_tokens,
             sty.root
           )}
         >
@@ -224,7 +225,7 @@ function PlasmicHomepage__RenderFunc(props: {
               closeButton={
                 <p.PlasmicImg
                   alt={""}
-                  className={classNames(sty.img__jymhg)}
+                  className={classNames(sty.img__yqMwJ)}
                   displayHeight={"auto" as const}
                   displayMaxHeight={"none" as const}
                   displayMaxWidth={"none" as const}
@@ -294,7 +295,7 @@ function PlasmicHomepage__RenderFunc(props: {
               openButton={
                 <p.PlasmicImg
                   alt={""}
-                  className={classNames(sty.img__iMaYa)}
+                  className={classNames(sty.img__oG0Ko)}
                   displayHeight={"auto" as const}
                   displayMaxHeight={"none" as const}
                   displayMaxWidth={"none" as const}

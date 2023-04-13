@@ -126,6 +126,7 @@ function PlasmicDokumen__RenderFunc(props: {
             projectcss.root_reset,
             projectcss.plasmic_default_styles,
             projectcss.plasmic_mixins,
+            projectcss.plasmic_tokens,
             sty.root
           )}
         >
@@ -176,7 +177,7 @@ function PlasmicDokumen__RenderFunc(props: {
               closeButton={
                 <p.PlasmicImg
                   alt={""}
-                  className={classNames(sty.img___4NBny)}
+                  className={classNames(sty.img__x6X0H)}
                   displayHeight={"auto" as const}
                   displayMaxHeight={"none" as const}
                   displayMaxWidth={"none" as const}
@@ -246,7 +247,7 @@ function PlasmicDokumen__RenderFunc(props: {
               openButton={
                 <p.PlasmicImg
                   alt={""}
-                  className={classNames(sty.img___58Vc)}
+                  className={classNames(sty.img__cJwp0)}
                   displayHeight={"auto" as const}
                   displayMaxHeight={"none" as const}
                   displayMaxWidth={"none" as const}
@@ -332,7 +333,7 @@ function PlasmicDokumen__RenderFunc(props: {
                   )}
                 >
                   {
-                    "Regulatory sandbox hadir sebagai ruang uji bagi penyelenggara inovasi digital kesehatan (IDK) untuk mendukung pengembangan regulasi dan ekosistem inovasi digital kesehatan di Indonesia yang implementasinya didasarkan pada Keputusan Menteri Kesehatan (KMK) Republik Indonesia Nomor HK.01.07/MENKES/   /2023.\n\nPada KMK tersebut, dijelaskan mengenai tahapan pelaksanaan regulatory sandbox serta penggunaan identitas visual status kepesertaan bagi penyelenggara IDK yang mendapatkan rekomendasi maupun pembinaan dari Kemenkes RI.\n\nUntuk informasi selengkapnya, unduh KMK"
+                    "Regulatory sandbox hadir sebagai ruang uji bagi penyelenggara inovasi digital kesehatan (IDK) untuk mendukung pengembangan regulasi dan ekosistem inovasi digital kesehatan di Indonesia yang implementasinya didasarkan pada Keputusan Menteri Kesehatan (KMK) Republik Indonesia Nomor HK.01.07/MENKES/1280/2023\n\nPada KMK tersebut, dijelaskan mengenai tahapan pelaksanaan regulatory sandbox serta penggunaan identitas visual status kepesertaan bagi penyelenggara IDK yang mendapatkan rekomendasi maupun pembinaan dari Kemenkes RI.\n\nUntuk informasi selengkapnya, silahkan unduh KMK di bawah ini"
                   }
                 </div>
               ) : null}
@@ -346,6 +347,9 @@ function PlasmicDokumen__RenderFunc(props: {
                     sty.link__bjr6P
                   )}
                   component={Link}
+                  href={
+                    "https://drive.google.com/file/d/1yYJzCBYEZ6Za-4AfBuuGqJtzxoHCQOXT/view?usp=share_link" as const
+                  }
                   platform={"nextjs"}
                 >
                   <p.PlasmicImg
