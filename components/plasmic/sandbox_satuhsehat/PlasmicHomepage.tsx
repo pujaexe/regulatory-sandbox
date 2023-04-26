@@ -378,7 +378,7 @@ function PlasmicHomepage__RenderFunc(props: {
                     sty.text__y1NcY
                   )}
                 >
-                  {"Pendaftaran dibuka tanggal 3 April  - 5 Mei 2023"}
+                  {"Pendaftaran dibuka tanggal 3 April  - 12 Mei 2023"}
                 </div>
                 {true ? (
                   <p.PlasmicLink

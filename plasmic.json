@@ -198,7 +198,8 @@
           "name": "TableValue",
           "componentImportPath": "@plasmicpkgs/antd/skinny/registerTable"
         }
-      ]
+      ],
+      "jsBundleThemes": []
     },
     {
       "projectId": "7nJ7UcFmq9UzB6eXfC5z4a",
@@ -217,7 +218,8 @@
           "name": "NavigationBar",
           "componentImportPath": "@plasmicpkgs/plasmic-nav"
         }
-      ]
+      ],
+      "jsBundleThemes": []
     },
     {
       "projectId": "mazsTSCdeXMvNewzsED8CP",
@@ -493,6 +495,6 @@
   "nextjsConfig": {
     "pagesDir": "../pages"
   },
-  "cliVersion": "0.1.257",
-  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.257/dist/plasmic.schema.json"
+  "cliVersion": "0.1.265",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.265/dist/plasmic.schema.json"
 }
