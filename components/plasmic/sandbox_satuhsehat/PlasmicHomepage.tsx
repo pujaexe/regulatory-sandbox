@@ -44,6 +44,8 @@ import { useScreenVariants as useScreenVariantsqbGzfD819Z3T3 } from "./PlasmicGl
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
+import plasmic_antd_5_hostless_css from "../antd_5_hostless/plasmic_antd_5_hostless.module.css"; // plasmic-import: ohDidvG9XsCeFumugENU3J/projectcss
+import plasmic_plasmic_rich_components_css from "../plasmic_rich_components/plasmic_plasmic_rich_components.module.css"; // plasmic-import: jkU633o1Cz7HrJdwdxhVHk/projectcss
 import projectcss from "./plasmic_sandbox_satuhsehat.module.css"; // plasmic-import: mazsTSCdeXMvNewzsED8CP/projectcss
 import sty from "./PlasmicHomepage.module.css"; // plasmic-import: 2kkee5R7hDuz/css
 
@@ -175,6 +177,8 @@ function PlasmicHomepage__RenderFunc(props: {
             projectcss.plasmic_default_styles,
             projectcss.plasmic_mixins,
             projectcss.plasmic_tokens,
+            plasmic_antd_5_hostless_css.plasmic_tokens,
+            plasmic_plasmic_rich_components_css.plasmic_tokens,
             sty.root
           )}
         >
@@ -225,7 +229,7 @@ function PlasmicHomepage__RenderFunc(props: {
               closeButton={
                 <p.PlasmicImg
                   alt={""}
-                  className={classNames(sty.img__yqMwJ)}
+                  className={classNames(sty.img___3Y8Qz)}
                   displayHeight={"auto" as const}
                   displayMaxHeight={"none" as const}
                   displayMaxWidth={"none" as const}
@@ -295,7 +299,7 @@ function PlasmicHomepage__RenderFunc(props: {
               openButton={
                 <p.PlasmicImg
                   alt={""}
-                  className={classNames(sty.img__oG0Ko)}
+                  className={classNames(sty.img__kp6Lz)}
                   displayHeight={"auto" as const}
                   displayMaxHeight={"none" as const}
                   displayMaxWidth={"none" as const}
@@ -828,7 +832,6 @@ function PlasmicHomepage__RenderFunc(props: {
                             "__wab_instance",
                             sty.collapsible__w9KY
                           )}
-                          isopen={true}
                           slot={
                             <div
                               className={classNames(
@@ -1259,9 +1262,17 @@ function PlasmicHomepage__RenderFunc(props: {
                             </div>
                           }
                         >
-                          {
-                            "Setiap penyelenggara IDK pada klaster prioritas yang telah diumumkan oleh Kementerian Kesehatan RI, diberikan waktu satu bulan untuk melakukan pendaftaran dan mengikuti proses pendaftaran untuk mendapatkan rekomendasi."
-                          }
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.text__g35Y
+                            )}
+                          >
+                            {
+                              "Setiap penyelenggara IDK pada klaster prioritas yang telah diumumkan oleh Kementerian Kesehatan RI, diberikan waktu satu bulan untuk melakukan pendaftaran dan mengikuti proses pendaftaran untuk mendapatkan rekomendasi."
+                            }
+                          </div>
                         </Collapsible>
                       </div>
                       <div

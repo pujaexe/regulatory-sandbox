@@ -1,0 +1,114 @@
+.root {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+  max-width: 1280px;
+  justify-self: flex-start;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  grid-column-start: 1;
+  grid-column-end: -1;
+}
+.logo {
+  position: relative;
+  object-fit: cover;
+  max-width: 100%;
+  height: 50px;
+}
+.logo > picture > img {
+  object-fit: cover;
+}
+.logo > :global(.__wab_img-spacer) > img {
+  object-fit: cover;
+}
+.freeBox {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  padding-right: 50px;
+  min-width: 0;
+}
+.freeBox > :global(.__wab_flex-container) {
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+  margin-left: calc(0px - 24px);
+  width: calc(100% + 24px);
+}
+.freeBox > :global(.__wab_flex-container) > *,
+.freeBox > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.freeBox > :global(.__wab_flex-container) > picture > img,
+.freeBox
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 24px;
+}
+.freeBox {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  padding-right: 50px;
+  min-width: 0;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .freeBox {
+    display: none;
+  }
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .freeBox {
+    display: none;
+  }
+}
+.link__is3DD {
+  position: relative;
+  font-size: 14px;
+  color: #000000;
+}
+.link__tXiWw {
+  position: relative;
+  color: #000000;
+}
+.link__brGjE {
+  position: relative;
+  height: auto;
+  color: #000000;
+}
+.link__k3PGh {
+  position: relative;
+  color: #000000;
+}
+.button {
+  position: relative;
+  height: auto;
+  cursor: pointer;
+  display: none;
+  border-style: none;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .button {
+    display: flex;
+  }
+}
+.svg___0A88X {
+  object-fit: cover;
+  max-width: 100%;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
