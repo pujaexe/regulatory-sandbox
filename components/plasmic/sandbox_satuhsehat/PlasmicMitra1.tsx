@@ -237,7 +237,7 @@ function PlasmicMitra1__RenderFunc(props: {
                       sty.h1
                     )}
                   >
-                    {"Penyelenggaran Inovasi Digital Kesehatan"}
+                    {"Penyelenggaran Inovasi Kesehatan Digital"}
                   </h1>
                   <div
                     className={classNames(
@@ -247,7 +247,7 @@ function PlasmicMitra1__RenderFunc(props: {
                     )}
                   >
                     {
-                      "Daftar penyelenggara Inovasi Digital Kesehatan yang telah bergabung dan dibina oleh Regulatory Sandbox kementrian Kesehatan RI"
+                      "Daftar penyelenggara Inovasi Kesehatan Digital yang telah bergabung dan dibina oleh Regulatory Sandbox kementrian Kesehatan RI"
                     }
                   </div>
                 </p.Stack>
@@ -277,7 +277,7 @@ function PlasmicMitra1__RenderFunc(props: {
                       sty.h2
                     )}
                   >
-                    {"Daftar Inovasi Digital Kesehatan"}
+                    {"Daftar Inovasi Kesehatan Digital"}
                   </h2>
                 </p.Stack>
                 <div
