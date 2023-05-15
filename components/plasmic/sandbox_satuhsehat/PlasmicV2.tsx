@@ -40,6 +40,7 @@ import Navbarv2 from "../../Navbarv2"; // plasmic-import: NCicNLzCjc/component
 import SlideMitra from "../../SlideMitra"; // plasmic-import: HjExHmE43ji/component
 import Collapsiblev2 from "../../Collapsiblev2"; // plasmic-import: vrBPAsBs7q/component
 import MenuOverlay from "../../MenuOverlay"; // plasmic-import: 8v397mSlg-/component
+import { Embed } from "@plasmicpkgs/plasmic-basic-components"; // plasmic-import: PKldDYkH42/codeComponent
 
 import { useScreenVariants as useScreenVariantsqbGzfD819Z3T3 } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: QBGzfD819Z3t3/globalVariant
 
@@ -102,6 +103,7 @@ export type PlasmicV2__OverridesType = {
   collapsiblev214?: p.Flex<typeof Collapsiblev2>;
   footer?: p.Flex<"div">;
   menuOverlay?: p.Flex<typeof MenuOverlay>;
+  embedHtml?: p.Flex<typeof Embed>;
 };
 
 export interface DefaultV2Props {}
@@ -3096,6 +3098,14 @@ function PlasmicV2__RenderFunc(props: {
               </p.PlasmicLink>
             </MenuOverlay>
           ) : null}
+          <Embed
+            data-plasmic-name={"embedHtml"}
+            data-plasmic-override={overrides.embedHtml}
+            className={classNames("__wab_instance", sty.embedHtml)}
+            code={
+              '<link rel="stylesheet" type="text/css" charset="UTF-8" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" /> \n<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />' as const
+            }
+          />
         </div>
       </div>
     </React.Fragment>
@@ -3133,7 +3143,8 @@ const PlasmicDescendants = {
     "collapsiblev213",
     "collapsiblev214",
     "footer",
-    "menuOverlay"
+    "menuOverlay",
+    "embedHtml"
   ],
   header: ["header", "navbarv2"],
   navbarv2: ["navbarv2"],
@@ -3179,7 +3190,8 @@ const PlasmicDescendants = {
   collapsiblev213: ["collapsiblev213"],
   collapsiblev214: ["collapsiblev214"],
   footer: ["footer"],
-  menuOverlay: ["menuOverlay"]
+  menuOverlay: ["menuOverlay"],
+  embedHtml: ["embedHtml"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -3215,6 +3227,7 @@ type NodeDefaultElementType = {
   collapsiblev214: typeof Collapsiblev2;
   footer: "div";
   menuOverlay: typeof MenuOverlay;
+  embedHtml: typeof Embed;
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -3306,6 +3319,7 @@ export const PlasmicV2 = Object.assign(
     collapsiblev214: makeNodeComponent("collapsiblev214"),
     footer: makeNodeComponent("footer"),
     menuOverlay: makeNodeComponent("menuOverlay"),
+    embedHtml: makeNodeComponent("embedHtml"),
 
     // Metadata about props expected for PlasmicV2
     internalVariantProps: PlasmicV2__VariantProps,
