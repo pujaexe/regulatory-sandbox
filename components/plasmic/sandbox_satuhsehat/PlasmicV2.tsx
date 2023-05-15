@@ -37,7 +37,7 @@ import {
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
 import Navbarv2 from "../../Navbarv2"; // plasmic-import: NCicNLzCjc/component
-import Button from "../../Button"; // plasmic-import: Gt-Lz5BwtAt/component
+import SlideMitra from "../../SlideMitra"; // plasmic-import: HjExHmE43ji/component
 import Collapsiblev2 from "../../Collapsiblev2"; // plasmic-import: vrBPAsBs7q/component
 import MenuOverlay from "../../MenuOverlay"; // plasmic-import: 8v397mSlg-/component
 
@@ -51,8 +51,6 @@ import projectcss from "./plasmic_sandbox_satuhsehat.module.css"; // plasmic-imp
 import sty from "./PlasmicV2.module.css"; // plasmic-import: yDGFBarhsW/css
 
 import MenuSvgrepoComsvgIcon from "./icons/PlasmicIcon__MenuSvgrepoComsvg"; // plasmic-import: yxVuo-XHb-/icon
-import ChecksvgIcon from "./icons/PlasmicIcon__Checksvg"; // plasmic-import: 1I82Ralll34/icon
-import IconIcon from "./icons/PlasmicIcon__Icon"; // plasmic-import: m0QQT_49MIS/icon
 import LawSvgrepoCom1SvgIcon from "./icons/PlasmicIcon__LawSvgrepoCom1Svg"; // plasmic-import: jj3V4MmrRO/icon
 import JusticeSvgrepoCom1SvgIcon from "./icons/PlasmicIcon__JusticeSvgrepoCom1Svg"; // plasmic-import: d11xSBFAIc/icon
 import Frame1000001301SvgIcon from "./icons/PlasmicIcon__Frame1000001301Svg"; // plasmic-import: HdY_vWMIj2/icon
@@ -78,9 +76,9 @@ export type PlasmicV2__OverridesType = {
   header?: p.Flex<"div">;
   navbarv2?: p.Flex<typeof Navbarv2>;
   hero?: p.Flex<"div">;
-  h1?: p.Flex<"h1">;
-  button?: p.Flex<typeof Button>;
   about?: p.Flex<"div">;
+  mitra?: p.Flex<"div">;
+  slideMitra?: p.Flex<typeof SlideMitra>;
   why?: p.Flex<"div">;
   who?: p.Flex<"div">;
   card5?: p.Flex<"div">;
@@ -290,121 +288,15 @@ function PlasmicV2__RenderFunc(props: {
                   "navbarv2",
                   "isMenuShow"
                 ])}
-              >
-                <p.PlasmicLink
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.a,
-                    projectcss.__wab_text,
-                    sty.link___9WNEq
-                  )}
-                  component={Link}
-                  href={`/v-2`}
-                  platform={"nextjs"}
-                >
-                  {"Beranda"}
-                </p.PlasmicLink>
-                <p.PlasmicLink
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.a,
-                    projectcss.__wab_text,
-                    sty.link__aFflp
-                  )}
-                  component={Link}
-                  href={`/v-2`}
-                  platform={"nextjs"}
-                >
-                  {"tentang"}
-                </p.PlasmicLink>
-                <p.PlasmicLink
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.a,
-                    projectcss.__wab_text,
-                    sty.link__ryqxO
-                  )}
-                  component={Link}
-                  href={`/v-2`}
-                  platform={"nextjs"}
-                >
-                  {"FAQ"}
-                </p.PlasmicLink>
-                <p.PlasmicLink
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.a,
-                    projectcss.__wab_text,
-                    sty.link__pJlWx
-                  )}
-                  component={Link}
-                  href={`/doc-v-2`}
-                  platform={"nextjs"}
-                >
-                  {"Dokumen"}
-                </p.PlasmicLink>
-              </Navbarv2>
+              />
             </div>
           ) : null}
           <div
             data-plasmic-name={"hero"}
             data-plasmic-override={overrides.hero}
             className={classNames(projectcss.all, sty.hero)}
-          >
-            <p.Stack
-              as={"div"}
-              hasGap={true}
-              className={classNames(projectcss.all, sty.columns__hPd8U)}
-            >
-              <p.Stack
-                as={"div"}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.column__a2Ovu)}
-              >
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__mcFyt
-                  )}
-                >
-                  {
-                    "Ruang Uji Bagi Penyelenggara Inovasi Digital Kesehatan di Indonesia"
-                  }
-                </div>
-                <h1
-                  data-plasmic-name={"h1"}
-                  data-plasmic-override={overrides.h1}
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.h1,
-                    projectcss.__wab_text,
-                    sty.h1
-                  )}
-                >
-                  {"Regulatory Sandbox Kemenkes RI"}
-                </h1>
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__os3Ac
-                  )}
-                >
-                  {"Pendaftaran dibuka tanggal 3 April  - 12 Mei 2023"}
-                </div>
-                <Button
-                  data-plasmic-name={"button"}
-                  data-plasmic-override={overrides.button}
-                  className={classNames("__wab_instance", sty.button)}
-                  color={"white" as const}
-                >
-                  {"Daftar Sekarang"}
-                </Button>
-              </p.Stack>
-              <div className={classNames(projectcss.all, sty.column__ncmS9)} />
-            </p.Stack>
-          </div>
+          />
+
           <div
             data-plasmic-name={"about"}
             data-plasmic-override={overrides.about}
@@ -476,9 +368,9 @@ function PlasmicV2__RenderFunc(props: {
             </p.Stack>
           </div>
           <div
-            data-plasmic-name={"why"}
-            data-plasmic-override={overrides.why}
-            className={classNames(projectcss.all, sty.why)}
+            data-plasmic-name={"mitra"}
+            data-plasmic-override={overrides.mitra}
+            className={classNames(projectcss.all, sty.mitra)}
           >
             {true ? (
               <p.Stack
@@ -494,23 +386,52 @@ function PlasmicV2__RenderFunc(props: {
                     sty.h2___3ROgy
                   )}
                 >
+                  {"Mitra penyelenggara inovasi digital kesehatan"}
+                </h2>
+                <SlideMitra
+                  data-plasmic-name={"slideMitra"}
+                  data-plasmic-override={overrides.slideMitra}
+                  className={classNames("__wab_instance", sty.slideMitra)}
+                />
+              </p.Stack>
+            ) : null}
+          </div>
+          <div
+            data-plasmic-name={"why"}
+            data-plasmic-override={overrides.why}
+            className={classNames(projectcss.all, sty.why)}
+          >
+            {true ? (
+              <p.Stack
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox__o0TGt)}
+              >
+                <h2
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.h2,
+                    projectcss.__wab_text,
+                    sty.h2__uPbJ
+                  )}
+                >
                   {"Kenapa perlu mendaftar regulatory sandbox?"}
                 </h2>
                 <p.Stack
                   as={"div"}
                   hasGap={true}
-                  className={classNames(projectcss.all, sty.columns___0Ed1M)}
+                  className={classNames(projectcss.all, sty.columns__aQkzr)}
                 >
                   <div
-                    className={classNames(projectcss.all, sty.column__fqjYt)}
+                    className={classNames(projectcss.all, sty.column___2IItn)}
                   >
                     <p.Stack
                       as={"div"}
                       hasGap={true}
-                      className={classNames(projectcss.all, sty.freeBox__hrpGg)}
+                      className={classNames(projectcss.all, sty.freeBox__xqb0)}
                     >
                       <LawSvgrepoCom1SvgIcon
-                        className={classNames(projectcss.all, sty.svg__swJwS)}
+                        className={classNames(projectcss.all, sty.svg___5Fw2Q)}
                         role={"img"}
                       />
 
@@ -518,7 +439,7 @@ function PlasmicV2__RenderFunc(props: {
                         className={classNames(
                           projectcss.all,
                           projectcss.__wab_text,
-                          sty.text__hWsL
+                          sty.text__skuhc
                         )}
                       >
                         {
@@ -528,7 +449,7 @@ function PlasmicV2__RenderFunc(props: {
                     </p.Stack>
                   </div>
                   <div
-                    className={classNames(projectcss.all, sty.column___5QWwO)}
+                    className={classNames(projectcss.all, sty.column___47YAu)}
                   >
                     {true ? (
                       <p.Stack
@@ -536,11 +457,11 @@ function PlasmicV2__RenderFunc(props: {
                         hasGap={true}
                         className={classNames(
                           projectcss.all,
-                          sty.freeBox___27IDe
+                          sty.freeBox__xYkrn
                         )}
                       >
                         <JusticeSvgrepoCom1SvgIcon
-                          className={classNames(projectcss.all, sty.svg__afrlt)}
+                          className={classNames(projectcss.all, sty.svg__eUQmm)}
                           role={"img"}
                         />
 
@@ -548,7 +469,7 @@ function PlasmicV2__RenderFunc(props: {
                           className={classNames(
                             projectcss.all,
                             projectcss.__wab_text,
-                            sty.text__cS7Tk
+                            sty.text__wFToo
                           )}
                         >
                           {
@@ -558,18 +479,23 @@ function PlasmicV2__RenderFunc(props: {
                       </p.Stack>
                     ) : null}
                   </div>
-                  <div className={classNames(projectcss.all, sty.column__nhSu)}>
+                  <div
+                    className={classNames(projectcss.all, sty.column___2SlxN)}
+                  >
                     {true ? (
                       <p.Stack
                         as={"div"}
                         hasGap={true}
                         className={classNames(
                           projectcss.all,
-                          sty.freeBox__yjzjw
+                          sty.freeBox__v502
                         )}
                       >
                         <Frame1000001301SvgIcon
-                          className={classNames(projectcss.all, sty.svg__aZuWq)}
+                          className={classNames(
+                            projectcss.all,
+                            sty.svg___82MEv
+                          )}
                           role={"img"}
                         />
 
@@ -577,7 +503,7 @@ function PlasmicV2__RenderFunc(props: {
                           className={classNames(
                             projectcss.all,
                             projectcss.__wab_text,
-                            sty.text__psR11
+                            sty.text__b54Iu
                           )}
                         >
                           {
@@ -3182,9 +3108,9 @@ const PlasmicDescendants = {
     "header",
     "navbarv2",
     "hero",
-    "h1",
-    "button",
     "about",
+    "mitra",
+    "slideMitra",
     "why",
     "who",
     "card5",
@@ -3211,10 +3137,10 @@ const PlasmicDescendants = {
   ],
   header: ["header", "navbarv2"],
   navbarv2: ["navbarv2"],
-  hero: ["hero", "h1", "button"],
-  h1: ["h1"],
-  button: ["button"],
+  hero: ["hero"],
   about: ["about"],
+  mitra: ["mitra", "slideMitra"],
+  slideMitra: ["slideMitra"],
   why: ["why"],
   who: ["who", "card5", "card6", "card7", "card8"],
   card5: ["card5"],
@@ -3263,9 +3189,9 @@ type NodeDefaultElementType = {
   header: "div";
   navbarv2: typeof Navbarv2;
   hero: "div";
-  h1: "h1";
-  button: typeof Button;
   about: "div";
+  mitra: "div";
+  slideMitra: typeof SlideMitra;
   why: "div";
   who: "div";
   card5: "div";
@@ -3354,9 +3280,9 @@ export const PlasmicV2 = Object.assign(
     header: makeNodeComponent("header"),
     navbarv2: makeNodeComponent("navbarv2"),
     hero: makeNodeComponent("hero"),
-    h1: makeNodeComponent("h1"),
-    button: makeNodeComponent("button"),
     about: makeNodeComponent("about"),
+    mitra: makeNodeComponent("mitra"),
+    slideMitra: makeNodeComponent("slideMitra"),
     why: makeNodeComponent("why"),
     who: makeNodeComponent("who"),
     card5: makeNodeComponent("card5"),

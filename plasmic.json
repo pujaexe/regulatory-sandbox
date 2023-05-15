@@ -198,8 +198,7 @@
           "name": "TableValue",
           "componentImportPath": "@plasmicpkgs/antd/skinny/registerTable"
         }
-      ],
-      "jsBundleThemes": []
+      ]
     },
     {
       "projectId": "7nJ7UcFmq9UzB6eXfC5z4a",
@@ -218,8 +217,7 @@
           "name": "NavigationBar",
           "componentImportPath": "@plasmicpkgs/plasmic-nav"
         }
-      ],
-      "jsBundleThemes": []
+      ]
     },
     {
       "projectId": "mazsTSCdeXMvNewzsED8CP",
@@ -348,19 +346,6 @@
           "componentType": "page"
         },
         {
-          "id": "Jat-LigOLR",
-          "name": "Mitra1",
-          "type": "managed",
-          "projectId": "mazsTSCdeXMvNewzsED8CP",
-          "renderModuleFilePath": "plasmic/sandbox_satuhsehat/PlasmicMitra1.tsx",
-          "importSpec": {
-            "modulePath": "../pages/mitra-1.tsx"
-          },
-          "cssFilePath": "plasmic/sandbox_satuhsehat/PlasmicMitra1.module.css",
-          "scheme": "blackbox",
-          "componentType": "page"
-        },
-        {
           "id": "rueRHuGiXL",
           "name": "TableItem",
           "type": "managed",
@@ -374,19 +359,6 @@
           "componentType": "component"
         },
         {
-          "id": "OVqjk0nNAZQ",
-          "name": "Mitra2",
-          "type": "managed",
-          "projectId": "mazsTSCdeXMvNewzsED8CP",
-          "renderModuleFilePath": "plasmic/sandbox_satuhsehat/PlasmicMitra2.tsx",
-          "importSpec": {
-            "modulePath": "../pages/mitra-2.tsx"
-          },
-          "cssFilePath": "plasmic/sandbox_satuhsehat/PlasmicMitra2.module.css",
-          "scheme": "blackbox",
-          "componentType": "page"
-        },
-        {
           "id": "8v397mSlg-",
           "name": "MenuOverlay",
           "type": "managed",
@@ -398,6 +370,84 @@
           "cssFilePath": "plasmic/sandbox_satuhsehat/PlasmicMenuOverlay.module.css",
           "scheme": "blackbox",
           "componentType": "component"
+        },
+        {
+          "id": "Jat-LigOLR",
+          "name": "MitraTerdaftar1",
+          "type": "managed",
+          "projectId": "mazsTSCdeXMvNewzsED8CP",
+          "renderModuleFilePath": "plasmic/sandbox_satuhsehat/PlasmicMitraTerdaftar1.tsx",
+          "importSpec": {
+            "modulePath": "../pages/mitra-terdaftar-1.tsx"
+          },
+          "cssFilePath": "plasmic/sandbox_satuhsehat/PlasmicMitraTerdaftar1.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "OVqjk0nNAZQ",
+          "name": "MitraTerdaftar2",
+          "type": "managed",
+          "projectId": "mazsTSCdeXMvNewzsED8CP",
+          "renderModuleFilePath": "plasmic/sandbox_satuhsehat/PlasmicMitraTerdaftar2.tsx",
+          "importSpec": {
+            "modulePath": "../pages/mitra-terdaftar-2.tsx"
+          },
+          "cssFilePath": "plasmic/sandbox_satuhsehat/PlasmicMitraTerdaftar2.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "HjExHmE43ji",
+          "name": "SlideMitra",
+          "type": "managed",
+          "projectId": "mazsTSCdeXMvNewzsED8CP",
+          "renderModuleFilePath": "plasmic/sandbox_satuhsehat/PlasmicSlideMitra.tsx",
+          "importSpec": {
+            "modulePath": "SlideMitra.tsx"
+          },
+          "cssFilePath": "plasmic/sandbox_satuhsehat/PlasmicSlideMitra.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "2Eus14HlTe",
+          "name": "SliderMitra",
+          "type": "managed",
+          "projectId": "mazsTSCdeXMvNewzsED8CP",
+          "renderModuleFilePath": "plasmic/sandbox_satuhsehat/PlasmicSliderMitra.tsx",
+          "importSpec": {
+            "modulePath": "SliderMitra.tsx"
+          },
+          "cssFilePath": "plasmic/sandbox_satuhsehat/PlasmicSliderMitra.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "5Buw-2ZEH6",
+          "name": "ItemListMitraThumbnail",
+          "type": "managed",
+          "projectId": "mazsTSCdeXMvNewzsED8CP",
+          "renderModuleFilePath": "plasmic/sandbox_satuhsehat/PlasmicItemListMitraThumbnail.tsx",
+          "importSpec": {
+            "modulePath": "ItemListMitraThumbnail.tsx"
+          },
+          "cssFilePath": "plasmic/sandbox_satuhsehat/PlasmicItemListMitraThumbnail.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "IVTbCxM9Wzl",
+          "name": "MitraDiawasi1",
+          "type": "managed",
+          "projectId": "mazsTSCdeXMvNewzsED8CP",
+          "renderModuleFilePath": "plasmic/sandbox_satuhsehat/PlasmicMitraDiawasi1.tsx",
+          "importSpec": {
+            "modulePath": "../pages/mitra-diawasi-1.tsx"
+          },
+          "cssFilePath": "plasmic/sandbox_satuhsehat/PlasmicMitraDiawasi1.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
         }
       ],
       "icons": [
@@ -602,6 +652,21 @@
           "id": "FtZG6lsun",
           "name": "Menu Icons.png",
           "filePath": "../public/plasmic/sandbox_satuhsehat/images/menuIconspng.png"
+        },
+        {
+          "id": "zlFqlISFR",
+          "name": "bannermin.png",
+          "filePath": "../public/plasmic/sandbox_satuhsehat/images/bannerminpng.png"
+        },
+        {
+          "id": "9zNNjpY7C",
+          "name": "banner-mobile.png",
+          "filePath": "../public/plasmic/sandbox_satuhsehat/images/bannerMobilepng.png"
+        },
+        {
+          "id": "LsGN_S8MH",
+          "name": "banner-mobile.png 2",
+          "filePath": "../public/plasmic/sandbox_satuhsehat/images/bannerMobilepng2.png"
         }
       ],
       "indirect": false,
@@ -817,8 +882,26 @@
           "name": "UploadWrapper",
           "componentImportPath": "@plasmicpkgs/antd5/skinny/registerUpload"
         }
-      ],
-      "jsBundleThemes": []
+      ]
+    },
+    {
+      "projectId": "r3ASNrnyvLLLAtDvzUioQ",
+      "projectApiToken": "eSFGpQaYCtO9sRbPuQ2Ll9dmLOg8I4oKhx6e1PuCrsfmUIVbFbSXcy32UrPTwF9zX2HVXA0xaIKJNhCMHvA",
+      "projectName": "react-slick",
+      "version": "3.14.0",
+      "cssFilePath": "plasmic/react_slick/plasmic_react_slick.module.css",
+      "components": [],
+      "icons": [],
+      "images": [],
+      "indirect": true,
+      "globalContextsFilePath": "",
+      "codeComponents": [
+        {
+          "id": "HOQUyOpClJ",
+          "name": "Slider",
+          "componentImportPath": "react-slick"
+        }
+      ]
     }
   ],
   "globalVariants": {
@@ -835,6 +918,6 @@
   "nextjsConfig": {
     "pagesDir": "../pages"
   },
-  "cliVersion": "0.1.273",
-  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.273/dist/plasmic.schema.json"
+  "cliVersion": "0.1.275",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.275/dist/plasmic.schema.json"
 }

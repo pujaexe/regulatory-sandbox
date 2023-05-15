@@ -54,14 +54,12 @@ type VariantPropType = keyof PlasmicNavbarv2__VariantsArgs;
 export const PlasmicNavbarv2__VariantProps = new Array<VariantPropType>();
 
 export type PlasmicNavbarv2__ArgsType = {
-  children?: React.ReactNode;
   slot?: React.ReactNode;
   isMenuShow?: boolean;
   onIsMenuShowChange?: (val: string) => void;
 };
 type ArgPropType = keyof PlasmicNavbarv2__ArgsType;
 export const PlasmicNavbarv2__ArgProps = new Array<ArgPropType>(
-  "children",
   "slot",
   "isMenuShow",
   "onIsMenuShowChange"
@@ -75,7 +73,6 @@ export type PlasmicNavbarv2__OverridesType = {
 };
 
 export interface DefaultNavbarv2Props {
-  children?: React.ReactNode;
   slot?: React.ReactNode;
   isMenuShow?: boolean;
   onIsMenuShowChange?: (val: string) => void;
@@ -188,65 +185,71 @@ function PlasmicNavbarv2__RenderFunc(props: {
           hasGap={true}
           className={classNames(projectcss.all, sty.freeBox)}
         >
-          {p.renderPlasmicSlot({
-            defaultContents: (
-              <React.Fragment>
-                <p.PlasmicLink
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.a,
-                    projectcss.__wab_text,
-                    sty.link__is3DD
-                  )}
-                  component={Link}
-                  href={"https://www.plasmic.app/" as const}
-                  platform={"nextjs"}
-                >
-                  {"Beranda"}
-                </p.PlasmicLink>
-                <p.PlasmicLink
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.a,
-                    projectcss.__wab_text,
-                    sty.link__tXiWw
-                  )}
-                  component={Link}
-                  href={"https://www.plasmic.app/" as const}
-                  platform={"nextjs"}
-                >
-                  {"tentang"}
-                </p.PlasmicLink>
-                <p.PlasmicLink
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.a,
-                    projectcss.__wab_text,
-                    sty.link__brGjE
-                  )}
-                  component={Link}
-                  href={"https://www.plasmic.app/" as const}
-                  platform={"nextjs"}
-                >
-                  {"FAQ"}
-                </p.PlasmicLink>
-                <p.PlasmicLink
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.a,
-                    projectcss.__wab_text,
-                    sty.link__k3PGh
-                  )}
-                  component={Link}
-                  href={"https://www.plasmic.app/" as const}
-                  platform={"nextjs"}
-                >
-                  {"Dokumen"}
-                </p.PlasmicLink>
-              </React.Fragment>
-            ),
-            value: args.children
-          })}
+          <p.PlasmicLink
+            className={classNames(
+              projectcss.all,
+              projectcss.a,
+              projectcss.__wab_text,
+              sty.link__is3DD
+            )}
+            component={Link}
+            href={`/v-2`}
+            platform={"nextjs"}
+          >
+            {"Beranda"}
+          </p.PlasmicLink>
+          <p.PlasmicLink
+            className={classNames(
+              projectcss.all,
+              projectcss.a,
+              projectcss.__wab_text,
+              sty.link__tXiWw
+            )}
+            component={Link}
+            href={`/v-2`}
+            platform={"nextjs"}
+          >
+            {"Tentang"}
+          </p.PlasmicLink>
+          <p.PlasmicLink
+            className={classNames(
+              projectcss.all,
+              projectcss.a,
+              projectcss.__wab_text,
+              sty.link__l2Ec6
+            )}
+            component={Link}
+            href={`/mitra-terdaftar-1`}
+            platform={"nextjs"}
+          >
+            {"Mitra"}
+          </p.PlasmicLink>
+          <p.PlasmicLink
+            className={classNames(
+              projectcss.all,
+              projectcss.a,
+              projectcss.__wab_text,
+              sty.link__brGjE
+            )}
+            component={Link}
+            href={`/v-2`}
+            platform={"nextjs"}
+          >
+            {"FAQ"}
+          </p.PlasmicLink>
+          <p.PlasmicLink
+            className={classNames(
+              projectcss.all,
+              projectcss.a,
+              projectcss.__wab_text,
+              sty.link__k3PGh
+            )}
+            component={Link}
+            href={`/doc-v-2`}
+            platform={"nextjs"}
+          >
+            {"Dokumen"}
+          </p.PlasmicLink>
         </p.Stack>
       ) : null}
       {(hasVariant(globalVariants, "screen", "mobileOnly") ? true : true) ? (

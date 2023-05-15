@@ -68,7 +68,7 @@ export const PlasmicHomepage__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicHomepage__OverridesType = {
   root?: p.Flex<"div">;
-  head?: p.Flex<typeof PlasmicHead>;
+  pageMetadataOverride?: p.Flex<typeof PlasmicHead>;
   header?: p.Flex<"div">;
   navigationBar?: p.Flex<typeof NavigationBar>;
   hero?: p.Flex<"section">;
@@ -183,9 +183,9 @@ function PlasmicHomepage__RenderFunc(props: {
           )}
         >
           <PlasmicHead
-            data-plasmic-name={"head"}
-            data-plasmic-override={overrides.head}
-            className={classNames("__wab_instance", sty.head)}
+            data-plasmic-name={"pageMetadataOverride"}
+            data-plasmic-override={overrides.pageMetadataOverride}
+            className={classNames("__wab_instance", sty.pageMetadataOverride)}
           />
 
           <div
@@ -2158,7 +2158,7 @@ function PlasmicHomepage__RenderFunc(props: {
 const PlasmicDescendants = {
   root: [
     "root",
-    "head",
+    "pageMetadataOverride",
     "header",
     "navigationBar",
     "hero",
@@ -2173,7 +2173,7 @@ const PlasmicDescendants = {
     "who2",
     "footer"
   ],
-  head: ["head"],
+  pageMetadataOverride: ["pageMetadataOverride"],
   header: ["header", "navigationBar"],
   navigationBar: ["navigationBar"],
   hero: ["hero"],
@@ -2193,7 +2193,7 @@ type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
   root: "div";
-  head: typeof PlasmicHead;
+  pageMetadataOverride: typeof PlasmicHead;
   header: "div";
   navigationBar: typeof NavigationBar;
   hero: "section";
@@ -2269,7 +2269,7 @@ export const PlasmicHomepage = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
-    head: makeNodeComponent("head"),
+    pageMetadataOverride: makeNodeComponent("pageMetadataOverride"),
     header: makeNodeComponent("header"),
     navigationBar: makeNodeComponent("navigationBar"),
     hero: makeNodeComponent("hero"),

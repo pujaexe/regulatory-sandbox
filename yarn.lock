@@ -744,10 +744,10 @@
     tiny-glob "^0.2.9"
     tslib "^2.4.0"
 
-"@plasmicapp/cli@^0.1.273":
-  version "0.1.273"
-  resolved "https://registry.yarnpkg.com/@plasmicapp/cli/-/cli-0.1.273.tgz#66ce8550ccfb497a4a8a7b52b6094921c379ca29"
-  integrity sha512-qiUs2VN21pRg+Aqdw/2IsS9qyk03B1mKR28QzEBRQe7THgOnqwEGHxNEeqE06jBwIKCMwaPHX05p8iANjTVUfA==
+"@plasmicapp/cli@^0.1.275":
+  version "0.1.275"
+  resolved "https://registry.yarnpkg.com/@plasmicapp/cli/-/cli-0.1.275.tgz#29b5a47c1c6baed7ec1e32ddd90b9f11e61d8924"
+  integrity sha512-2FxYyU979nB/8hyDO9GxXqR9G76BLjmMsLhlPUnL2ege0W0PMUOUahJRdW6xjIKFGse1Bd9S1hBCg8TeuQWYUA==
   dependencies:
     "@babel/core" "^7.12.3"
     "@babel/generator" "^7.12.1"
@@ -1650,10 +1650,63 @@ antd@^4.19.5:
     rc-util "^5.22.5"
     scroll-into-view-if-needed "^2.2.25"
 
-antd@^5.1.6, antd@^5.4.6:
+antd@^5.1.6:
   version "5.4.6"
   resolved "https://registry.yarnpkg.com/antd/-/antd-5.4.6.tgz#9a41b14687c570e5191609dfd5c8150293279fbe"
   integrity sha512-va8fmtigdSoyO5BTrOQXRI2N22rWqtmd6FNGPlU4xV2S7Bi13/IJvm0BxO+WaNAVrcZuKIruZ+1EI3UHU80/vw==
+  dependencies:
+    "@ant-design/colors" "^7.0.0"
+    "@ant-design/cssinjs" "^1.9.1"
+    "@ant-design/icons" "^5.0.0"
+    "@ant-design/react-slick" "~1.0.0"
+    "@babel/runtime" "^7.18.3"
+    "@ctrl/tinycolor" "^3.6.0"
+    "@rc-component/mutate-observer" "^1.0.0"
+    "@rc-component/tour" "~1.8.0"
+    "@rc-component/trigger" "^1.7.0"
+    classnames "^2.2.6"
+    copy-to-clipboard "^3.2.0"
+    dayjs "^1.11.1"
+    qrcode.react "^3.1.0"
+    rc-cascader "~3.10.0"
+    rc-checkbox "~3.0.0"
+    rc-collapse "~3.5.2"
+    rc-dialog "~9.1.0"
+    rc-drawer "~6.1.1"
+    rc-dropdown "~4.0.0"
+    rc-field-form "~1.30.0"
+    rc-image "~5.16.0"
+    rc-input "~1.0.4"
+    rc-input-number "~7.4.0"
+    rc-mentions "~2.2.0"
+    rc-menu "~9.8.3"
+    rc-motion "^2.7.3"
+    rc-notification "~5.0.0"
+    rc-pagination "~3.3.1"
+    rc-picker "~3.6.1"
+    rc-progress "~3.4.1"
+    rc-rate "~2.10.0"
+    rc-resize-observer "^1.2.0"
+    rc-segmented "~2.1.2"
+    rc-select "~14.4.3"
+    rc-slider "~10.1.0"
+    rc-steps "~6.0.0"
+    rc-switch "~4.1.0"
+    rc-table "~7.31.0"
+    rc-tabs "~12.5.6"
+    rc-textarea "~1.2.2"
+    rc-tooltip "~6.0.0"
+    rc-tree "~5.7.0"
+    rc-tree-select "~5.8.0"
+    rc-upload "~4.3.0"
+    rc-util "^5.27.0"
+    scroll-into-view-if-needed "^3.0.3"
+    throttle-debounce "^5.0.0"
+
+antd@^5.4.7:
+  version "5.4.7"
+  resolved "https://registry.yarnpkg.com/antd/-/antd-5.4.7.tgz#8655f03fd7a3488f3d48327fe178e3d7e06a456d"
+  integrity sha512-kFClbdlrultV1SJh8oxHSCCsO3iLGc6QFu0IIHGNuC4JHkDc2Ed94sk7XSmOTcENLcTd7BQYP0A4nK0VERp7vA==
   dependencies:
     "@ant-design/colors" "^7.0.0"
     "@ant-design/cssinjs" "^1.9.1"
@@ -2287,6 +2340,11 @@ enhanced-resolve@^5.10.0:
   dependencies:
     graceful-fs "^4.2.4"
     tapable "^2.2.0"
+
+enquire.js@^2.1.6:
+  version "2.1.6"
+  resolved "https://registry.yarnpkg.com/enquire.js/-/enquire.js-2.1.6.tgz#3e8780c9b8b835084c3f60e166dbc3c2a3c89814"
+  integrity sha512-/KujNpO+PT63F7Hlpu4h3pE3TokKRHN26JYmQpPyjkRD/N57R7bPDNojMXdi7uveAKjYB7yQnartCxZnFWr0Xw==
 
 es-abstract@^1.19.0, es-abstract@^1.20.4:
   version "1.21.1"
@@ -3477,6 +3535,11 @@ locate-path@^6.0.0:
   dependencies:
     p-locate "^5.0.0"
 
+lodash.debounce@^4.0.8:
+  version "4.0.8"
+  resolved "https://registry.yarnpkg.com/lodash.debounce/-/lodash.debounce-4.0.8.tgz#82d79bff30a67c4005ffd5e2515300ad9ca4d7af"
+  integrity sha512-FT1yDzDYEoYWhnSGnpE/4Kj1fLZkDFyqRb7fNt6FdYOSxlUWAtp42Eh6Wb0rGIv/m9Bgo7x4GhQbm5Ys4SG5ow==
+
 lodash.merge@^4.6.2:
   version "4.6.2"
   resolved "https://registry.npmjs.org/lodash.merge/-/lodash.merge-4.6.2.tgz"
@@ -4626,6 +4689,17 @@ react-lifecycles-compat@^3.0.4:
   resolved "https://registry.yarnpkg.com/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz#4f1a273afdfc8f3488a8c516bfda78f872352362"
   integrity sha512-fBASbA6LnOU9dOU2eW7aQ8xmYBSXUIWr+UmF9b1efZBazGNO+rcXT/icdKnYm2pTwcRylVUYwW7H1PHfLekVzA==
 
+react-slick@^0.29.0:
+  version "0.29.0"
+  resolved "https://registry.yarnpkg.com/react-slick/-/react-slick-0.29.0.tgz#0bed5ea42bf75a23d40c0259b828ed27627b51bb"
+  integrity sha512-TGdOKE+ZkJHHeC4aaoH85m8RnFyWqdqRfAGkhd6dirmATXMZWAxOpTLmw2Ll/jPTQ3eEG7ercFr/sbzdeYCJXA==
+  dependencies:
+    classnames "^2.2.5"
+    enquire.js "^2.1.6"
+    json2mq "^0.2.0"
+    lodash.debounce "^4.0.8"
+    resize-observer-polyfill "^1.5.0"
+
 react-sortable-hoc@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/react-sortable-hoc/-/react-sortable-hoc-2.0.0.tgz#f6780d8aa4b922a21f3e754af542f032677078b7"
@@ -4701,7 +4775,7 @@ require-main-filename@^2.0.0:
   resolved "https://registry.npmjs.org/require-main-filename/-/require-main-filename-2.0.0.tgz"
   integrity sha512-NKN5kMDylKuldxYLSUfrbo5Tuzh4hd+2E8NPPX02mZtn1VuREQToYe/ZdlJy+J3uCpfaiGF05e7B8W0iXbQHmg==
 
-resize-observer-polyfill@^1.5.1:
+resize-observer-polyfill@^1.5.0, resize-observer-polyfill@^1.5.1:
   version "1.5.1"
   resolved "https://registry.npmjs.org/resize-observer-polyfill/-/resize-observer-polyfill-1.5.1.tgz"
   integrity sha512-LwZrotdHOo12nQuZlHEmtuXdqGoOD0OhaxopaNFxWzInpEgaLWoVuAMbTzixuosCx2nEG58ngzW3vxdWoxIgdg==
@@ -4899,6 +4973,11 @@ slash@^4.0.0:
   version "4.0.0"
   resolved "https://registry.npmjs.org/slash/-/slash-4.0.0.tgz"
   integrity sha512-3dOsAHXXUkQTpOYcoAxLIorMTp4gIQr5IW3iVb7A7lFIp0VHhnynm9izx6TssdrIcVIESAlVjtnO2K8bg+Coew==
+
+slick-carousel@^1.8.1:
+  version "1.8.1"
+  resolved "https://registry.yarnpkg.com/slick-carousel/-/slick-carousel-1.8.1.tgz#a4bfb29014887bb66ce528b90bd0cda262cc8f8d"
+  integrity sha512-XB9Ftrf2EEKfzoQXt3Nitrt/IPbT+f1fgqBdoxO3W/+JYvtEOW6EgxnWfr9GH6nmULv7Y2tPmEX3koxThVmebA==
 
 socket.io-client@^4.1.2:
   version "4.6.1"

@@ -158,60 +158,7 @@ function PlasmicDocV2__RenderFunc(props: {
                   "navbarv2",
                   "isMenuShow"
                 ])}
-              >
-                <p.PlasmicLink
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.a,
-                    projectcss.__wab_text,
-                    sty.link__eLIj
-                  )}
-                  component={Link}
-                  href={`/v-2`}
-                  platform={"nextjs"}
-                >
-                  {"Beranda"}
-                </p.PlasmicLink>
-                <p.PlasmicLink
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.a,
-                    projectcss.__wab_text,
-                    sty.link__de63S
-                  )}
-                  component={Link}
-                  href={`/v-2`}
-                  platform={"nextjs"}
-                >
-                  {"tentang"}
-                </p.PlasmicLink>
-                <p.PlasmicLink
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.a,
-                    projectcss.__wab_text,
-                    sty.link__kyIpk
-                  )}
-                  component={Link}
-                  href={`/v-2`}
-                  platform={"nextjs"}
-                >
-                  {"FAQ"}
-                </p.PlasmicLink>
-                <p.PlasmicLink
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.a,
-                    projectcss.__wab_text,
-                    sty.link___5DXr
-                  )}
-                  component={Link}
-                  href={`/doc-v-2`}
-                  platform={"nextjs"}
-                >
-                  {"Dokumen"}
-                </p.PlasmicLink>
-              </Navbarv2>
+              />
             </div>
           ) : null}
           <div className={classNames(projectcss.all, sty.freeBox__yVqwH)}>
