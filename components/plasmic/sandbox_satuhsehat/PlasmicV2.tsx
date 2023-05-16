@@ -433,35 +433,37 @@ function PlasmicV2__RenderFunc(props: {
               </div>
             </p.Stack>
           </div>
-          <div
-            data-plasmic-name={"mitra"}
-            data-plasmic-override={overrides.mitra}
-            className={classNames(projectcss.all, sty.mitra)}
-          >
-            {true ? (
-              <p.Stack
-                as={"div"}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.freeBox__wtcah)}
-              >
-                <h2
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.h2,
-                    projectcss.__wab_text,
-                    sty.h2___3ROgy
-                  )}
+          {true ? (
+            <div
+              data-plasmic-name={"mitra"}
+              data-plasmic-override={overrides.mitra}
+              className={classNames(projectcss.all, sty.mitra)}
+            >
+              {true ? (
+                <p.Stack
+                  as={"div"}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.freeBox__wtcah)}
                 >
-                  {"Mitra penyelenggara inovasi digital kesehatan"}
-                </h2>
-                <SlideMitra
-                  data-plasmic-name={"slideMitra"}
-                  data-plasmic-override={overrides.slideMitra}
-                  className={classNames("__wab_instance", sty.slideMitra)}
-                />
-              </p.Stack>
-            ) : null}
-          </div>
+                  <h2
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.h2,
+                      projectcss.__wab_text,
+                      sty.h2___3ROgy
+                    )}
+                  >
+                    {"Mitra penyelenggara inovasi digital kesehatan"}
+                  </h2>
+                  <SlideMitra
+                    data-plasmic-name={"slideMitra"}
+                    data-plasmic-override={overrides.slideMitra}
+                    className={classNames("__wab_instance", sty.slideMitra)}
+                  />
+                </p.Stack>
+              ) : null}
+            </div>
+          ) : null}
           <div
             data-plasmic-name={"why"}
             data-plasmic-override={overrides.why}
