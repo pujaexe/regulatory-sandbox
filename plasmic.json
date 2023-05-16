@@ -669,6 +669,11 @@
           "id": "LsGN_S8MH",
           "name": "banner-mobile.png 2",
           "filePath": "../public/plasmic/sandbox_satuhsehat/images/bannerMobilepng2.png"
+        },
+        {
+          "id": "iVPkSeOT2",
+          "name": "banner-new.png",
+          "filePath": "../public/plasmic/sandbox_satuhsehat/images/bannerNewpng.png"
         }
       ],
       "indirect": false,
@@ -939,7 +944,8 @@
           "name": "DataProvider",
           "componentImportPath": "@plasmicpkgs/plasmic-basic-components"
         }
-      ]
+      ],
+      "jsBundleThemes": []
     }
   ],
   "globalVariants": {

@@ -77,6 +77,8 @@ export type PlasmicV2__OverridesType = {
   header?: p.Flex<"div">;
   navbarv2?: p.Flex<typeof Navbarv2>;
   hero?: p.Flex<"div">;
+  h1?: p.Flex<"h1">;
+  h4?: p.Flex<"h4">;
   about?: p.Flex<"div">;
   mitra?: p.Flex<"div">;
   slideMitra?: p.Flex<typeof SlideMitra>;
@@ -297,8 +299,70 @@ function PlasmicV2__RenderFunc(props: {
             data-plasmic-name={"hero"}
             data-plasmic-override={overrides.hero}
             className={classNames(projectcss.all, sty.hero)}
-          />
-
+          >
+            <div className={classNames(projectcss.all, sty.columns__rwLvN)}>
+              <p.Stack
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.column__hp3I)}
+              >
+                <h1
+                  data-plasmic-name={"h1"}
+                  data-plasmic-override={overrides.h1}
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.h1,
+                    projectcss.__wab_text,
+                    sty.h1
+                  )}
+                >
+                  {"Pendaftaran Ditutup!"}
+                </h1>
+                <h5
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.h5,
+                    projectcss.__wab_text,
+                    sty.h5__qkIkt
+                  )}
+                >
+                  <React.Fragment>
+                    <React.Fragment>
+                      {"Terima kasih kepada 50+ penyelenggara "}
+                    </React.Fragment>
+                    <span
+                      className={"plasmic_default__all plasmic_default__span"}
+                      style={{ fontWeight: 700 }}
+                    >
+                      {"inovasi digital (IDK)"}
+                    </span>
+                    <React.Fragment>
+                      {" klaster telekesehatan yang telah mendaftar"}
+                    </React.Fragment>
+                  </React.Fragment>
+                </h5>
+                <h4
+                  data-plasmic-name={"h4"}
+                  data-plasmic-override={overrides.h4}
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.h4,
+                    projectcss.__wab_text,
+                    sty.h4
+                  )}
+                >
+                  {"Pengumuman lolos verifikasi 28 Mei 2023"}
+                </h4>
+              </p.Stack>
+              {(
+                hasVariant(globalVariants, "screen", "mobileOnly") ? true : true
+              ) ? (
+                <div
+                  className={classNames(projectcss.all, sty.column__fcy6C)}
+                />
+              ) : null}
+            </div>
+          </div>
           <div
             data-plasmic-name={"about"}
             data-plasmic-override={overrides.about}
@@ -3118,6 +3182,8 @@ const PlasmicDescendants = {
     "header",
     "navbarv2",
     "hero",
+    "h1",
+    "h4",
     "about",
     "mitra",
     "slideMitra",
@@ -3148,7 +3214,9 @@ const PlasmicDescendants = {
   ],
   header: ["header", "navbarv2"],
   navbarv2: ["navbarv2"],
-  hero: ["hero"],
+  hero: ["hero", "h1", "h4"],
+  h1: ["h1"],
+  h4: ["h4"],
   about: ["about"],
   mitra: ["mitra", "slideMitra"],
   slideMitra: ["slideMitra"],
@@ -3201,6 +3269,8 @@ type NodeDefaultElementType = {
   header: "div";
   navbarv2: typeof Navbarv2;
   hero: "div";
+  h1: "h1";
+  h4: "h4";
   about: "div";
   mitra: "div";
   slideMitra: typeof SlideMitra;
@@ -3293,6 +3363,8 @@ export const PlasmicV2 = Object.assign(
     header: makeNodeComponent("header"),
     navbarv2: makeNodeComponent("navbarv2"),
     hero: makeNodeComponent("hero"),
+    h1: makeNodeComponent("h1"),
+    h4: makeNodeComponent("h4"),
     about: makeNodeComponent("about"),
     mitra: makeNodeComponent("mitra"),
     slideMitra: makeNodeComponent("slideMitra"),

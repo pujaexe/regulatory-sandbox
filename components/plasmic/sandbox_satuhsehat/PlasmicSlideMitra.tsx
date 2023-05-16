@@ -226,6 +226,10 @@ function PlasmicSlideMitra__RenderFunc(props: {
                         },
                         () =>
                           (({ vgroup, value }) => {
+                            if (typeof value === "string") {
+                              value = [value];
+                            }
+
                             p.set($state, vgroup, false);
                             return false;
                           })?.apply(null, [actionArgs]),
@@ -300,6 +304,10 @@ function PlasmicSlideMitra__RenderFunc(props: {
                         },
                         () =>
                           (({ vgroup, value }) => {
+                            if (typeof value === "string") {
+                              value = [value];
+                            }
+
                             p.set($state, vgroup, true);
                             return true;
                           })?.apply(null, [actionArgs]),
