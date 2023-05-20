@@ -2787,6 +2787,9 @@ function PlasmicV2__RenderFunc(props: {
                           },
                           () =>
                             (({ variable, value, startIndex, deleteCount }) => {
+                              if (!variable) {
+                                return;
+                              }
                               const { objRoot, variablePath } = variable;
 
                               p.set(objRoot, variablePath, value);
@@ -2870,6 +2873,9 @@ function PlasmicV2__RenderFunc(props: {
                           },
                           () =>
                             (({ variable, value, startIndex, deleteCount }) => {
+                              if (!variable) {
+                                return;
+                              }
                               const { objRoot, variablePath } = variable;
 
                               p.set(objRoot, variablePath, value);
@@ -2953,6 +2959,9 @@ function PlasmicV2__RenderFunc(props: {
                           },
                           () =>
                             (({ variable, value, startIndex, deleteCount }) => {
+                              if (!variable) {
+                                return;
+                              }
                               const { objRoot, variablePath } = variable;
 
                               p.set(objRoot, variablePath, value);
@@ -3036,6 +3045,9 @@ function PlasmicV2__RenderFunc(props: {
                           },
                           () =>
                             (({ variable, value, startIndex, deleteCount }) => {
+                              if (!variable) {
+                                return;
+                              }
                               const { objRoot, variablePath } = variable;
 
                               p.set(objRoot, variablePath, value);
@@ -3124,6 +3136,9 @@ function PlasmicV2__RenderFunc(props: {
                           },
                           () =>
                             (({ variable, value, startIndex, deleteCount }) => {
+                              if (!variable) {
+                                return;
+                              }
                               const { objRoot, variablePath } = variable;
 
                               p.set(objRoot, variablePath, value);

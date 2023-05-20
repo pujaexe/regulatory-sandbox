@@ -191,6 +191,9 @@ function PlasmicCollapsiblev2__RenderFunc(props: {
                     },
                     () =>
                       (({ variable, value, startIndex, deleteCount }) => {
+                        if (!variable) {
+                          return;
+                        }
                         const { objRoot, variablePath } = variable;
 
                         const oldValue = p.get(objRoot, variablePath);

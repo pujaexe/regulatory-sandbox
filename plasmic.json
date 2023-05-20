@@ -716,9 +716,13 @@
             "name": "tableHelpers",
             "importPath": "@plasmicpkgs/plasmic-rich-components"
           }
+        },
+        {
+          "id": "zV8WqibK3ZnC",
+          "name": "RichDetails",
+          "componentImportPath": "@plasmicpkgs/plasmic-rich-components"
         }
-      ],
-      "jsBundleThemes": []
+      ]
     },
     {
       "projectId": "ohDidvG9XsCeFumugENU3J",
@@ -888,9 +892,13 @@
           "id": "Zzbfw0tfhA",
           "name": "UploadWrapper",
           "componentImportPath": "@plasmicpkgs/antd5/skinny/registerUpload"
+        },
+        {
+          "id": "-gkBqPikhk",
+          "name": "AntdSwitch",
+          "componentImportPath": "@plasmicpkgs/antd5/skinny/registerSwitch"
         }
-      ],
-      "jsBundleThemes": []
+      ]
     },
     {
       "projectId": "r3ASNrnyvLLLAtDvzUioQ",
@@ -962,6 +970,6 @@
   "nextjsConfig": {
     "pagesDir": "../pages"
   },
-  "cliVersion": "0.1.275",
-  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.275/dist/plasmic.schema.json"
+  "cliVersion": "0.1.284",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.284/dist/plasmic.schema.json"
 }

@@ -253,6 +253,7 @@ function PlasmicSlideMitra__RenderFunc(props: {
                 }
               }}
               shape={"rounded" as const}
+              submitsForm={true}
             >
               {"Mitra Terdaftar"}
             </Button>
@@ -331,6 +332,7 @@ function PlasmicSlideMitra__RenderFunc(props: {
                 }
               }}
               shape={"rounded" as const}
+              submitsForm={true}
             >
               {"Mitra Diawasi"}
             </Button>
