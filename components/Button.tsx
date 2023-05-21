@@ -9,7 +9,7 @@ import {
   HtmlButtonOnlyProps
 } from "@plasmicapp/react-web";
 
-interface ButtonProps extends DefaultButtonProps {
+interface ButtonProps extends HtmlAnchorOnlyProps {
   target?: HTMLAttributeAnchorTarget | undefined;
   // Feel free to add any additional props that this component should receive
 }
