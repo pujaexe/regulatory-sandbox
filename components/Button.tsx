@@ -10,7 +10,6 @@ import {
 } from "@plasmicapp/react-web";
 
 interface ButtonProps extends HtmlAnchorOnlyProps {
-  target?: HTMLAttributeAnchorTarget | undefined;
   // Feel free to add any additional props that this component should receive
 }
 function Button_(props: ButtonProps, ref: ButtonRef) {
