@@ -211,21 +211,6 @@ function PlasmicNavbarv2__RenderFunc(props: {
           >
             {"Tentang"}
           </p.PlasmicLink>
-          {true ? (
-            <p.PlasmicLink
-              className={classNames(
-                projectcss.all,
-                projectcss.a,
-                projectcss.__wab_text,
-                sty.link__l2Ec6
-              )}
-              component={Link}
-              href={`/mitra-terdaftar-1`}
-              platform={"nextjs"}
-            >
-              {"Mitra"}
-            </p.PlasmicLink>
-          ) : null}
           <p.PlasmicLink
             className={classNames(
               projectcss.all,
