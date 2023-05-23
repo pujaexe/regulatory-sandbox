@@ -37,8 +37,10 @@ import {
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
 import { PlasmicHead } from "@plasmicapp/react-web"; // plasmic-import: 7EBFWZs-Lh/codeComponent
-import { NavigationBar } from "@plasmicpkgs/plasmic-nav"; // plasmic-import: jGx9tiKJoex/codeComponent
-import Collapsible from "../../Collapsible"; // plasmic-import: Z0pRxdl5sa/component
+import Navbarv2 from "../../Navbarv2"; // plasmic-import: NCicNLzCjc/component
+import Collapsiblev2 from "../../Collapsiblev2"; // plasmic-import: vrBPAsBs7q/component
+import { Embed } from "@plasmicpkgs/plasmic-basic-components"; // plasmic-import: PKldDYkH42/codeComponent
+import MenuOverlay from "../../MenuOverlay"; // plasmic-import: 8v397mSlg-/component
 
 import { useScreenVariants as useScreenVariantsqbGzfD819Z3T3 } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: QBGzfD819Z3t3/globalVariant
 
@@ -49,6 +51,7 @@ import plasmic_plasmic_rich_components_css from "../plasmic_rich_components/plas
 import projectcss from "./plasmic_sandbox_satuhsehat.module.css"; // plasmic-import: mazsTSCdeXMvNewzsED8CP/projectcss
 import sty from "./PlasmicHomepage.module.css"; // plasmic-import: 2kkee5R7hDuz/css
 
+import MenuSvgrepoComsvgIcon from "./icons/PlasmicIcon__MenuSvgrepoComsvg"; // plasmic-import: yxVuo-XHb-/icon
 import LawSvgrepoCom1SvgIcon from "./icons/PlasmicIcon__LawSvgrepoCom1Svg"; // plasmic-import: jj3V4MmrRO/icon
 import JusticeSvgrepoCom1SvgIcon from "./icons/PlasmicIcon__JusticeSvgrepoCom1Svg"; // plasmic-import: d11xSBFAIc/icon
 import Frame1000001301SvgIcon from "./icons/PlasmicIcon__Frame1000001301Svg"; // plasmic-import: HdY_vWMIj2/icon
@@ -56,6 +59,9 @@ import MedicineDrugHealthMedicalSmartphonePharmacyTabletSvgrepoCom1SvgIcon from 
 import HeartbeatHeartHealthPulseSmartphoneMedicalRateSvgrepoCom1SvgIcon from "./icons/PlasmicIcon__HeartbeatHeartHealthPulseSmartphoneMedicalRateSvgrepoCom1Svg"; // plasmic-import: KmthYfnQUS/icon
 import MedicineDrugHealthMedicalSmartphonePharmacyTablet2SvgrepoComsvgIcon from "./icons/PlasmicIcon__MedicineDrugHealthMedicalSmartphonePharmacyTablet2SvgrepoComsvg"; // plasmic-import: VzvMwKKQ1a/icon
 import MobilePhoneChatHealthDeviceTelephoneSmartphoneSvgrepoComsvgIcon from "./icons/PlasmicIcon__MobilePhoneChatHealthDeviceTelephoneSmartphoneSvgrepoComsvg"; // plasmic-import: KLL8rlOJRh/icon
+import ArrowCircleRightSvgrepoComsvgIcon from "./icons/PlasmicIcon__ArrowCircleRightSvgrepoComsvg"; // plasmic-import: Zlge9B9cCO/icon
+import ArrowCircleDownSvgrepoComsvgIcon from "./icons/PlasmicIcon__ArrowCircleDownSvgrepoComsvg"; // plasmic-import: gVLgtkvi5O/icon
+import CloseBoldSvgrepoComsvgIcon from "./icons/PlasmicIcon__CloseBoldSvgrepoComsvg"; // plasmic-import: DGAC4EtneT/icon
 
 export type PlasmicHomepage__VariantMembers = {};
 export type PlasmicHomepage__VariantsArgs = {};
@@ -70,8 +76,10 @@ export type PlasmicHomepage__OverridesType = {
   root?: p.Flex<"div">;
   pageMetadataOverride?: p.Flex<typeof PlasmicHead>;
   header?: p.Flex<"div">;
-  navigationBar?: p.Flex<typeof NavigationBar>;
-  hero?: p.Flex<"section">;
+  navbarv2?: p.Flex<typeof Navbarv2>;
+  hero?: p.Flex<"div">;
+  h1?: p.Flex<"h1">;
+  h4?: p.Flex<"h4">;
   about?: p.Flex<"div">;
   why?: p.Flex<"div">;
   who?: p.Flex<"div">;
@@ -80,8 +88,23 @@ export type PlasmicHomepage__OverridesType = {
   card7?: p.Flex<"div">;
   card8?: p.Flex<"div">;
   faq?: p.Flex<"div">;
-  who2?: p.Flex<"div">;
+  collapsiblev2?: p.Flex<typeof Collapsiblev2>;
+  collapsiblev22?: p.Flex<typeof Collapsiblev2>;
+  collapsiblev23?: p.Flex<typeof Collapsiblev2>;
+  collapsiblev24?: p.Flex<typeof Collapsiblev2>;
+  collapsiblev25?: p.Flex<typeof Collapsiblev2>;
+  collapsiblev26?: p.Flex<typeof Collapsiblev2>;
+  collapsiblev27?: p.Flex<typeof Collapsiblev2>;
+  collapsiblev28?: p.Flex<typeof Collapsiblev2>;
+  collapsiblev29?: p.Flex<typeof Collapsiblev2>;
+  collapsiblev210?: p.Flex<typeof Collapsiblev2>;
+  collapsiblev211?: p.Flex<typeof Collapsiblev2>;
+  collapsiblev212?: p.Flex<typeof Collapsiblev2>;
+  collapsiblev213?: p.Flex<typeof Collapsiblev2>;
+  collapsiblev214?: p.Flex<typeof Collapsiblev2>;
   footer?: p.Flex<"div">;
+  embedHtml?: p.Flex<typeof Embed>;
+  menuOverlay?: p.Flex<typeof MenuOverlay>;
 };
 
 export interface DefaultHomepageProps {}
@@ -122,6 +145,102 @@ function PlasmicHomepage__RenderFunc(props: {
 
   const currentUser = p.useCurrentUser?.() || {};
   const [$queries, setDollarQueries] = React.useState({});
+  const stateSpecs = React.useMemo(
+    () => [
+      {
+        path: "navbarv2.isMenuShow",
+        type: "private",
+        variableType: "boolean",
+        initFunc: ({ $props, $state, $queries, $ctx }) => false
+      },
+      {
+        path: "collapsiblev2.isCollapse",
+        type: "private",
+        variableType: "boolean",
+        initFunc: ({ $props, $state, $queries, $ctx }) => false
+      },
+      {
+        path: "collapsiblev22.isCollapse",
+        type: "private",
+        variableType: "boolean",
+        initFunc: ({ $props, $state, $queries, $ctx }) => false
+      },
+      {
+        path: "collapsiblev23.isCollapse",
+        type: "private",
+        variableType: "boolean",
+        initFunc: ({ $props, $state, $queries, $ctx }) => false
+      },
+      {
+        path: "collapsiblev24.isCollapse",
+        type: "private",
+        variableType: "boolean",
+        initFunc: ({ $props, $state, $queries, $ctx }) => false
+      },
+      {
+        path: "collapsiblev25.isCollapse",
+        type: "private",
+        variableType: "boolean",
+        initFunc: ({ $props, $state, $queries, $ctx }) => false
+      },
+      {
+        path: "collapsiblev26.isCollapse",
+        type: "private",
+        variableType: "boolean",
+        initFunc: ({ $props, $state, $queries, $ctx }) => false
+      },
+      {
+        path: "collapsiblev27.isCollapse",
+        type: "private",
+        variableType: "boolean",
+        initFunc: ({ $props, $state, $queries, $ctx }) => false
+      },
+      {
+        path: "collapsiblev28.isCollapse",
+        type: "private",
+        variableType: "boolean",
+        initFunc: ({ $props, $state, $queries, $ctx }) => false
+      },
+      {
+        path: "collapsiblev29.isCollapse",
+        type: "private",
+        variableType: "boolean",
+        initFunc: ({ $props, $state, $queries, $ctx }) => false
+      },
+      {
+        path: "collapsiblev210.isCollapse",
+        type: "private",
+        variableType: "boolean",
+        initFunc: ({ $props, $state, $queries, $ctx }) => false
+      },
+      {
+        path: "collapsiblev211.isCollapse",
+        type: "private",
+        variableType: "boolean",
+        initFunc: ({ $props, $state, $queries, $ctx }) => false
+      },
+      {
+        path: "collapsiblev212.isCollapse",
+        type: "private",
+        variableType: "boolean",
+        initFunc: ({ $props, $state, $queries, $ctx }) => false
+      },
+      {
+        path: "collapsiblev213.isCollapse",
+        type: "private",
+        variableType: "boolean",
+        initFunc: ({ $props, $state, $queries, $ctx }) => false
+      },
+      {
+        path: "collapsiblev214.isCollapse",
+        type: "private",
+        variableType: "boolean",
+        initFunc: ({ $props, $state, $queries, $ctx }) => false
+      }
+    ],
+    [$props, $ctx]
+  );
+  const $state = p.useDollarState(stateSpecs, { $props, $ctx, $queries });
 
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariantsqbGzfD819Z3T3()
@@ -188,288 +307,163 @@ function PlasmicHomepage__RenderFunc(props: {
             className={classNames("__wab_instance", sty.pageMetadataOverride)}
           />
 
+          {true ? (
+            <div
+              data-plasmic-name={"header"}
+              data-plasmic-override={overrides.header}
+              className={classNames(projectcss.all, sty.header)}
+            >
+              <Navbarv2
+                data-plasmic-name={"navbarv2"}
+                data-plasmic-override={overrides.navbarv2}
+                className={classNames("__wab_instance", sty.navbarv2)}
+                isMenuShow={p.generateStateValueProp($state, [
+                  "navbarv2",
+                  "isMenuShow"
+                ])}
+                onIsMenuShowChange={p.generateStateOnChangeProp($state, [
+                  "navbarv2",
+                  "isMenuShow"
+                ])}
+              />
+            </div>
+          ) : null}
           <div
-            data-plasmic-name={"header"}
-            data-plasmic-override={overrides.header}
-            className={classNames(projectcss.all, sty.header)}
-          >
-            <NavigationBar
-              data-plasmic-name={"navigationBar"}
-              data-plasmic-override={overrides.navigationBar}
-              brand={
-                <p.PlasmicLink
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.a,
-                    sty.link___0UK4U
-                  )}
-                  component={Link}
-                  href={"#" as const}
-                  platform={"nextjs"}
-                >
-                  <p.PlasmicImg
-                    alt={""}
-                    className={classNames(sty.img__ny0Wy)}
-                    displayHeight={"40px" as const}
-                    displayMaxHeight={"none" as const}
-                    displayMaxWidth={"none" as const}
-                    displayMinHeight={"0" as const}
-                    displayMinWidth={"0" as const}
-                    displayWidth={"auto" as const}
-                    src={{
-                      src: "/plasmic/sandbox_satuhsehat/images/logokemkespng.png",
-                      fullWidth: 133,
-                      fullHeight: 60,
-                      aspectRatio: undefined
-                    }}
-                  />
-                </p.PlasmicLink>
-              }
-              className={classNames("__wab_instance", sty.navigationBar)}
-              closeButton={
-                <p.PlasmicImg
-                  alt={""}
-                  className={classNames(sty.img___3Y8Qz)}
-                  displayHeight={"auto" as const}
-                  displayMaxHeight={"none" as const}
-                  displayMaxWidth={"none" as const}
-                  displayMinHeight={"0" as const}
-                  displayMinWidth={"0" as const}
-                  displayWidth={"auto" as const}
-                  src={"https://static1.plasmic.app/close.svg" as const}
-                />
-              }
-              itemsGap={24 as const}
-              menuItems={
-                <React.Fragment>
-                  <p.PlasmicLink
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.a,
-                      projectcss.__wab_text,
-                      sty.link__epZxe
-                    )}
-                    component={Link}
-                    href={"/" as const}
-                    platform={"nextjs"}
-                  >
-                    {"Beranda"}
-                  </p.PlasmicLink>
-                  <p.PlasmicLink
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.a,
-                      projectcss.__wab_text,
-                      sty.link__mkVy2
-                    )}
-                    component={Link}
-                    href={"#about" as const}
-                    platform={"nextjs"}
-                  >
-                    {"Tentang"}
-                  </p.PlasmicLink>
-                  <p.PlasmicLink
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.a,
-                      projectcss.__wab_text,
-                      sty.link__vlKCv
-                    )}
-                    component={Link}
-                    href={"#faq" as const}
-                    platform={"nextjs"}
-                  >
-                    {"FAQ"}
-                  </p.PlasmicLink>
-                  <p.PlasmicLink
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.a,
-                      projectcss.__wab_text,
-                      sty.link__wmLvq
-                    )}
-                    component={Link}
-                    href={`/dokumen`}
-                    platform={"nextjs"}
-                  >
-                    {"Dokumen"}
-                  </p.PlasmicLink>
-                </React.Fragment>
-              }
-              openButton={
-                <p.PlasmicImg
-                  alt={""}
-                  className={classNames(sty.img__kp6Lz)}
-                  displayHeight={"auto" as const}
-                  displayMaxHeight={"none" as const}
-                  displayMaxWidth={"none" as const}
-                  displayMinHeight={"0" as const}
-                  displayMinWidth={"0" as const}
-                  displayWidth={"auto" as const}
-                  src={"https://static1.plasmic.app/menu.svg" as const}
-                />
-              }
-              responsiveBreakpoint={768 as const}
-            />
-          </div>
-          <p.Stack
-            as={"section"}
             data-plasmic-name={"hero"}
             data-plasmic-override={overrides.hero}
-            hasGap={true}
             className={classNames(projectcss.all, sty.hero)}
           >
-            <p.PlasmicImg
-              alt={""}
-              className={classNames(sty.img___4N5Sd)}
-              displayHeight={
-                hasVariant(globalVariants, "screen", "mobileOnly")
-                  ? ("500px" as const)
-                  : ("auto" as const)
-              }
-              displayMaxHeight={"none" as const}
-              displayMaxWidth={"100%" as const}
-              displayMinHeight={"0" as const}
-              displayMinWidth={"0" as const}
-              displayWidth={"auto" as const}
-              loading={"lazy" as const}
-              src={{
-                src: "/plasmic/sandbox_satuhsehat/images/_22022023BannerRegsan5760X2252Px3Fa2Minjpg.jpeg",
-                fullWidth: 5760,
-                fullHeight: 2252,
-                aspectRatio: undefined
-              }}
-            />
-
-            <div className={classNames(projectcss.all, sty.columns__paJd)}>
+            <div className={classNames(projectcss.all, sty.columns__f0TOe)}>
+              <p.Stack
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.column__wmmQn)}
+              >
+                <h1
+                  data-plasmic-name={"h1"}
+                  data-plasmic-override={overrides.h1}
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.h1,
+                    projectcss.__wab_text,
+                    sty.h1
+                  )}
+                >
+                  {"Pendaftaran Ditutup!"}
+                </h1>
+                <h5
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.h5,
+                    projectcss.__wab_text,
+                    sty.h5__rsLzc
+                  )}
+                >
+                  <React.Fragment>
+                    <React.Fragment>
+                      {"Terima kasih kepada 50+ penyelenggara "}
+                    </React.Fragment>
+                    <span
+                      className={"plasmic_default__all plasmic_default__span"}
+                      style={{ fontWeight: 700 }}
+                    >
+                      {"inovasi digital (IDK)"}
+                    </span>
+                    <React.Fragment>
+                      {" klaster telekesehatan yang telah mendaftar"}
+                    </React.Fragment>
+                  </React.Fragment>
+                </h5>
+                <h4
+                  data-plasmic-name={"h4"}
+                  data-plasmic-override={overrides.h4}
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.h4,
+                    projectcss.__wab_text,
+                    sty.h4
+                  )}
+                >
+                  {"Pengumuman lolos verifikasi 28 Mei 2023"}
+                </h4>
+              </p.Stack>
               {(
                 hasVariant(globalVariants, "screen", "mobileOnly") ? true : true
               ) ? (
                 <div
-                  className={classNames(projectcss.all, sty.column___3HaNp)}
+                  className={classNames(projectcss.all, sty.column__j16Qt)}
                 />
               ) : null}
-              <p.Stack
-                as={"div"}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.column__h3TZk)}
-              >
-                <h2
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.h2,
-                    projectcss.__wab_text,
-                    sty.h2__jklqH
-                  )}
-                >
-                  {"Regulatory Sandbox Kemenkes RI"}
-                </h2>
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__ln55V
-                  )}
-                >
-                  {
-                    "Ruang Uji Bagi Penyelenggara Inovasi Digital Kesehatan di Indonesia"
-                  }
-                </div>
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__y1NcY
-                  )}
-                >
-                  {"Pendaftaran dibuka tanggal 3 April  - 12 Mei 2023"}
-                </div>
-                {true ? (
-                  <p.PlasmicLink
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.a,
-                      sty.link__efIw5
-                    )}
-                    component={Link}
-                    href={"https://ee-kobo.kemkes.go.id/x/9DmKdgeZ" as const}
-                    platform={"nextjs"}
-                  >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text___2OBi
-                      )}
-                    >
-                      {"Daftar Sekarang"}
-                    </div>
-                  </p.PlasmicLink>
-                ) : null}
-              </p.Stack>
             </div>
-          </p.Stack>
+          </div>
           <div
             data-plasmic-name={"about"}
             data-plasmic-override={overrides.about}
             className={classNames(projectcss.all, sty.about)}
-            id={"about" as const}
           >
             <p.Stack
               as={"div"}
               hasGap={true}
-              className={classNames(projectcss.all, sty.columns__xctZw)}
+              className={classNames(projectcss.all, sty.freeBox__qan96)}
             >
-              <p.Stack
-                as={"div"}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.column__lvHhf)}
+              <h2
+                className={classNames(
+                  projectcss.all,
+                  projectcss.h2,
+                  projectcss.__wab_text,
+                  sty.h2__yEIu4
+                )}
               >
-                <h2
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.h2,
-                    projectcss.__wab_text,
-                    sty.h2___3JdzJ
-                  )}
-                >
-                  {"Apa itu Regulatory Sandbox ?"}
-                </h2>
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__hT3NR
-                  )}
-                >
-                  {
-                    "Regulatory sandbox adalah mekanisme pengujian bagi penyelenggara inovasi digital kesehatan (IDK) yang dilakukan oleh Kementerian Kesehatan RI (Kemenkes) untuk menilai keandalan proses bisnis, model bisnis, teknologi, dan tata kelola. Pembelajaran selama proses uji dapat menjadi rekomendasi pengembangan kebijakan berbasis bukti oleh Kemenkes.\n\nIDK akan dikelompokkan ke dalam klaster prioritas, seperti telekesehatan, telefarmasi, on-demand healthcare (lokapasar kesehatan), artificial intelligence dan klaster lainnya sesuai dengan perkembangan teknologi.\n\nSkema uji coba inovasi digital kesehatan melalui regulatory sandbox telah dilakukan pertama kali di Indonesia pada penyakit malaria melalui Keputusan Direktorat Jenderal Pencegahan dan Pengendalian Penyakit No. HK.02.02/1/3090/2021 pada 2021-2023. Dari pengalaman tersebut, Kemenkes RI kini memperluas penerapan regulatory sandbox pada model bisnis IDK yang lebih beragam."
-                  }
-                </div>
-              </p.Stack>
-              <p.Stack
-                as={"div"}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.column__yEbrg)}
+                <React.Fragment>
+                  <React.Fragment>{"Apa itu "}</React.Fragment>
+                  <span
+                    className={"plasmic_default__all plasmic_default__span"}
+                    style={{ color: "#1290AC" }}
+                  >
+                    {"Regulatory Sandbox ?"}
+                  </span>
+                </React.Fragment>
+              </h2>
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__zzPlk
+                )}
               >
-                <p.PlasmicImg
-                  alt={""}
-                  className={classNames(sty.img__g3Ah8)}
-                  displayHeight={"auto" as const}
-                  displayMaxHeight={"none" as const}
-                  displayMaxWidth={"100%" as const}
-                  displayMinHeight={"0" as const}
-                  displayMinWidth={"0" as const}
-                  displayWidth={"auto" as const}
-                  loading={"lazy" as const}
-                  src={{
-                    src: "/plasmic/sandbox_satuhsehat/images/sandboxpng.png",
-                    fullWidth: 899,
-                    fullHeight: 899,
-                    aspectRatio: undefined
-                  }}
-                />
-              </p.Stack>
+                {
+                  "Regulatory sandbox adalah mekanisme pengujian bagi penyelenggara inovasi digital kesehatan (IDK) yang dilakukan oleh Kementerian Kesehatan RI (Kemenkes) untuk menilai keandalan proses bisnis, model bisnis, teknologi, dan tata kelola. Pembelajaran selama proses uji dapat menjadi rekomendasi pengembangan kebijakan berbasis bukti oleh Kemenkes.\n\nIDK akan dikelompokkan ke dalam klaster prioritas, seperti telekesehatan, telefarmasi, on-demand healthcare (lokapasar kesehatan), artificial intelligence dan klaster lainnya sesuai dengan perkembangan teknologi."
+                }
+              </div>
+              <p.PlasmicImg
+                alt={""}
+                className={classNames(sty.img__zrFgH)}
+                displayHeight={"auto" as const}
+                displayMaxHeight={"none" as const}
+                displayMaxWidth={"100%" as const}
+                displayMinHeight={"0" as const}
+                displayMinWidth={"0" as const}
+                displayWidth={"910px" as const}
+                loading={"lazy" as const}
+                src={{
+                  src: "/plasmic/sandbox_satuhsehat/images/aboutTelepng.png",
+                  fullWidth: 910,
+                  fullHeight: 341,
+                  aspectRatio: undefined
+                }}
+              />
+
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__y9Ru
+                )}
+              >
+                {
+                  "Skema uji coba inovasi digital kesehatan melalui regulatory sandbox telah dilakukan pertama kali di Indonesia pada penyakit malaria melalui Keputusan Direktorat Jenderal Pencegahan dan Pengendalian Penyakit No. HK.02.02/1/3090/2021 pada 2021-2023. Dari pengalaman tersebut, Kemenkes RI kini memperluas penerapan regulatory sandbox pada model bisnis IDK yang lebih beragam."
+                }
+              </div>
             </p.Stack>
           </div>
           <div
@@ -481,14 +475,14 @@ function PlasmicHomepage__RenderFunc(props: {
               <p.Stack
                 as={"div"}
                 hasGap={true}
-                className={classNames(projectcss.all, sty.freeBox__bPSc)}
+                className={classNames(projectcss.all, sty.freeBox__vh9Yt)}
               >
                 <h2
                   className={classNames(
                     projectcss.all,
                     projectcss.h2,
                     projectcss.__wab_text,
-                    sty.h2__klQik
+                    sty.h2___2Gg4F
                   )}
                 >
                   {"Kenapa perlu mendaftar regulatory sandbox?"}
@@ -496,18 +490,18 @@ function PlasmicHomepage__RenderFunc(props: {
                 <p.Stack
                   as={"div"}
                   hasGap={true}
-                  className={classNames(projectcss.all, sty.columns__gmBQr)}
+                  className={classNames(projectcss.all, sty.columns__xijfK)}
                 >
                   <div
-                    className={classNames(projectcss.all, sty.column__ypesh)}
+                    className={classNames(projectcss.all, sty.column___63U1X)}
                   >
                     <p.Stack
                       as={"div"}
                       hasGap={true}
-                      className={classNames(projectcss.all, sty.freeBox__yrUkV)}
+                      className={classNames(projectcss.all, sty.freeBox__b3CtD)}
                     >
                       <LawSvgrepoCom1SvgIcon
-                        className={classNames(projectcss.all, sty.svg___0ThFw)}
+                        className={classNames(projectcss.all, sty.svg__jwRrk)}
                         role={"img"}
                       />
 
@@ -515,7 +509,7 @@ function PlasmicHomepage__RenderFunc(props: {
                         className={classNames(
                           projectcss.all,
                           projectcss.__wab_text,
-                          sty.text__ePgj
+                          sty.text__ucds2
                         )}
                       >
                         {
@@ -525,7 +519,7 @@ function PlasmicHomepage__RenderFunc(props: {
                     </p.Stack>
                   </div>
                   <div
-                    className={classNames(projectcss.all, sty.column__uzDl4)}
+                    className={classNames(projectcss.all, sty.column__jw9JM)}
                   >
                     {true ? (
                       <p.Stack
@@ -533,11 +527,14 @@ function PlasmicHomepage__RenderFunc(props: {
                         hasGap={true}
                         className={classNames(
                           projectcss.all,
-                          sty.freeBox__urVdx
+                          sty.freeBox__lgyE5
                         )}
                       >
                         <JusticeSvgrepoCom1SvgIcon
-                          className={classNames(projectcss.all, sty.svg__ch6D)}
+                          className={classNames(
+                            projectcss.all,
+                            sty.svg___7UqId
+                          )}
                           role={"img"}
                         />
 
@@ -545,7 +542,7 @@ function PlasmicHomepage__RenderFunc(props: {
                           className={classNames(
                             projectcss.all,
                             projectcss.__wab_text,
-                            sty.text__cq33R
+                            sty.text__slqHa
                           )}
                         >
                           {
@@ -556,7 +553,7 @@ function PlasmicHomepage__RenderFunc(props: {
                     ) : null}
                   </div>
                   <div
-                    className={classNames(projectcss.all, sty.column___95Stj)}
+                    className={classNames(projectcss.all, sty.column___4FdP9)}
                   >
                     {true ? (
                       <p.Stack
@@ -564,11 +561,11 @@ function PlasmicHomepage__RenderFunc(props: {
                         hasGap={true}
                         className={classNames(
                           projectcss.all,
-                          sty.freeBox__fMuiY
+                          sty.freeBox__ycgh8
                         )}
                       >
                         <Frame1000001301SvgIcon
-                          className={classNames(projectcss.all, sty.svg__eOQom)}
+                          className={classNames(projectcss.all, sty.svg__byYlp)}
                           role={"img"}
                         />
 
@@ -576,7 +573,7 @@ function PlasmicHomepage__RenderFunc(props: {
                           className={classNames(
                             projectcss.all,
                             projectcss.__wab_text,
-                            sty.text___2Wz4D
+                            sty.text__pYrax
                           )}
                         >
                           {
@@ -599,14 +596,14 @@ function PlasmicHomepage__RenderFunc(props: {
               <p.Stack
                 as={"div"}
                 hasGap={true}
-                className={classNames(projectcss.all, sty.freeBox__iRftO)}
+                className={classNames(projectcss.all, sty.freeBox__aZytH)}
               >
                 <h2
                   className={classNames(
                     projectcss.all,
                     projectcss.h2,
                     projectcss.__wab_text,
-                    sty.h2___7F7JD
+                    sty.h2__zdXI
                   )}
                 >
                   {"Untuk Siapa ?"}
@@ -615,16 +612,16 @@ function PlasmicHomepage__RenderFunc(props: {
                   className={classNames(
                     projectcss.all,
                     projectcss.__wab_text,
-                    sty.text__aqkHv
+                    sty.text__y103O
                   )}
                 >
                   {
                     "Regulatory Sandbox akan dimulai bagi pelaku usaha non perseorangan Inovasi Digital Kesehatan (IDK) yang telah terdaftar sebagai Penyelenggara Sistem Elektronik (PSE) dan memiliki bisnis pada klaster Telekesehatan berikut"
                   }
                 </div>
-                <div className={classNames(projectcss.all, sty.freeBox__mF6Gg)}>
+                <div className={classNames(projectcss.all, sty.freeBox__yCuJ)}>
                   <div
-                    className={classNames(projectcss.all, sty.freeBox__kfMsy)}
+                    className={classNames(projectcss.all, sty.freeBox__qu8F5)}
                   >
                     <p.Stack
                       as={"div"}
@@ -637,13 +634,13 @@ function PlasmicHomepage__RenderFunc(props: {
                         <div
                           className={classNames(
                             projectcss.all,
-                            sty.freeBox__sPn
+                            sty.freeBox__rqhvC
                           )}
                         >
                           <MedicineDrugHealthMedicalSmartphonePharmacyTabletSvgrepoCom1SvgIcon
                             className={classNames(
                               projectcss.all,
-                              sty.svg__jO5Ze
+                              sty.svg__aedGz
                             )}
                             role={"img"}
                           />
@@ -654,7 +651,7 @@ function PlasmicHomepage__RenderFunc(props: {
                           projectcss.all,
                           projectcss.h5,
                           projectcss.__wab_text,
-                          sty.h5___7Hjci
+                          sty.h5__c3PWx
                         )}
                       >
                         {"Telekonsultasi"}
@@ -662,7 +659,7 @@ function PlasmicHomepage__RenderFunc(props: {
                     </p.Stack>
                   </div>
                   <div
-                    className={classNames(projectcss.all, sty.freeBox__r6Rz5)}
+                    className={classNames(projectcss.all, sty.freeBox__xaE3)}
                   >
                     <p.Stack
                       as={"div"}
@@ -675,13 +672,13 @@ function PlasmicHomepage__RenderFunc(props: {
                         <div
                           className={classNames(
                             projectcss.all,
-                            sty.freeBox__gSluH
+                            sty.freeBox__jN1LR
                           )}
                         >
                           <HeartbeatHeartHealthPulseSmartphoneMedicalRateSvgrepoCom1SvgIcon
                             className={classNames(
                               projectcss.all,
-                              sty.svg__qZu3G
+                              sty.svg__sr0C
                             )}
                             role={"img"}
                           />
@@ -692,7 +689,7 @@ function PlasmicHomepage__RenderFunc(props: {
                           projectcss.all,
                           projectcss.h5,
                           projectcss.__wab_text,
-                          sty.h5__aMpuF
+                          sty.h5__nwOmu
                         )}
                       >
                         {"Telemonitoring"}
@@ -700,7 +697,7 @@ function PlasmicHomepage__RenderFunc(props: {
                     </p.Stack>
                   </div>
                   <div
-                    className={classNames(projectcss.all, sty.freeBox__gwehn)}
+                    className={classNames(projectcss.all, sty.freeBox__gF8Md)}
                   >
                     <p.Stack
                       as={"div"}
@@ -713,13 +710,13 @@ function PlasmicHomepage__RenderFunc(props: {
                         <div
                           className={classNames(
                             projectcss.all,
-                            sty.freeBox__q8AXb
+                            sty.freeBox__wSvg6
                           )}
                         >
                           <MedicineDrugHealthMedicalSmartphonePharmacyTablet2SvgrepoComsvgIcon
                             className={classNames(
                               projectcss.all,
-                              sty.svg__ey6Br
+                              sty.svg__zVpBd
                             )}
                             role={"img"}
                           />
@@ -730,7 +727,7 @@ function PlasmicHomepage__RenderFunc(props: {
                           projectcss.all,
                           projectcss.h5,
                           projectcss.__wab_text,
-                          sty.h5___1TMro
+                          sty.h5__vRg7
                         )}
                       >
                         {"Telemedicine"}
@@ -738,7 +735,7 @@ function PlasmicHomepage__RenderFunc(props: {
                     </p.Stack>
                   </div>
                   <div
-                    className={classNames(projectcss.all, sty.freeBox__fLlBg)}
+                    className={classNames(projectcss.all, sty.freeBox__egI7)}
                   >
                     <p.Stack
                       as={"div"}
@@ -751,13 +748,13 @@ function PlasmicHomepage__RenderFunc(props: {
                         <div
                           className={classNames(
                             projectcss.all,
-                            sty.freeBox__msco
+                            sty.freeBox__iv8B
                           )}
                         >
                           <MobilePhoneChatHealthDeviceTelephoneSmartphoneSvgrepoComsvgIcon
                             className={classNames(
                               projectcss.all,
-                              sty.svg__zkEL
+                              sty.svg___1AUiK
                             )}
                             role={"img"}
                           />
@@ -768,7 +765,7 @@ function PlasmicHomepage__RenderFunc(props: {
                           projectcss.all,
                           projectcss.h5,
                           projectcss.__wab_text,
-                          sty.h5__chDaq
+                          sty.h5__o2Z93
                         )}
                       >
                         {"Komunikasi, Informasi, Edukasi Kesehatan"}
@@ -781,7 +778,7 @@ function PlasmicHomepage__RenderFunc(props: {
                     projectcss.all,
                     projectcss.h5,
                     projectcss.__wab_text,
-                    sty.h5__e2M0T
+                    sty.h5__kQIvr
                   )}
                 >
                   {"dan praktik telekesehatan lainnya"}
@@ -793,188 +790,138 @@ function PlasmicHomepage__RenderFunc(props: {
             data-plasmic-name={"faq"}
             data-plasmic-override={overrides.faq}
             className={classNames(projectcss.all, sty.faq)}
-            id={"faq" as const}
           >
             {true ? (
               <p.Stack
                 as={"div"}
                 hasGap={true}
-                className={classNames(projectcss.all, sty.freeBox__rdoCr)}
+                className={classNames(projectcss.all, sty.freeBox__nHyxB)}
               >
                 <h2
                   className={classNames(
                     projectcss.all,
                     projectcss.h2,
                     projectcss.__wab_text,
-                    sty.h2__hrT60
+                    sty.h2__oNw5
                   )}
                 >
                   {"FAQ"}
                 </h2>
-                <div className={classNames(projectcss.all, sty.columns__hShR)}>
-                  <div
-                    className={classNames(projectcss.all, sty.column__d8HRl)}
+                <p.Stack
+                  as={"div"}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.columns__vpLwB)}
+                >
+                  <p.Stack
+                    as={"div"}
+                    hasGap={true}
+                    className={classNames(projectcss.all, sty.column__ic74O)}
                   >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        sty.freeBox___4ADdi
-                      )}
-                    >
-                      <div
+                    {true ? (
+                      <Collapsiblev2
+                        data-plasmic-name={"collapsiblev2"}
+                        data-plasmic-override={overrides.collapsiblev2}
                         className={classNames(
-                          projectcss.all,
-                          sty.freeBox__egpu9
+                          "__wab_instance",
+                          sty.collapsiblev2
                         )}
-                      >
-                        <Collapsible
-                          className={classNames(
-                            "__wab_instance",
-                            sty.collapsible__w9KY
-                          )}
-                          slot={
-                            <div
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.__wab_text,
-                                sty.text__aCapP
-                              )}
-                            >
-                              {"Apa itu regulatory sandbox?"}
-                            </div>
-                          }
-                        >
+                        isCollapse={p.generateStateValueProp($state, [
+                          "collapsiblev2",
+                          "isCollapse"
+                        ])}
+                        onIsCollapseChange={p.generateStateOnChangeProp(
+                          $state,
+                          ["collapsiblev2", "isCollapse"]
+                        )}
+                        slot={
                           <div
                             className={classNames(
                               projectcss.all,
                               projectcss.__wab_text,
-                              sty.text__rgsO0
+                              sty.text___3PWl
                             )}
                           >
-                            <React.Fragment>
-                              <span
-                                className={
-                                  "plasmic_default__all plasmic_default__span"
-                                }
-                                style={{ fontStyle: "italic" }}
-                              >
-                                {"Regulatory sandbox"}
-                              </span>
-                              <React.Fragment>
-                                {
-                                  " adalah mekanisme pengujian untuk penyelenggara inovasi digital kesehatan (IDK) yang dilakukan oleh Kementerian Kesehatan RI  untuk menilai keandalan proses bisnis, model bisnis, teknologi, serta tata kelola sebagai pembelajaran selama proses uji yang dapat menjadi rekomendasi pengembangan regulasi berbasis bukti."
-                                }
-                              </React.Fragment>
-                            </React.Fragment>
+                            {
+                              "Regulatory sandbox  adalah mekanisme pengujian untuk penyelenggara inovasi digital kesehatan (IDK) yang dilakukan oleh Kementerian Kesehatan RI  untuk menilai keandalan proses bisnis, model bisnis, teknologi, serta tata kelola sebagai pembelajaran selama proses uji yang dapat menjadi rekomendasi pengembangan regulasi berbasis bukti."
+                            }
                           </div>
-                        </Collapsible>
-                      </div>
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          sty.freeBox__dMn8B
-                        )}
+                        }
                       >
-                        <Collapsible
+                        <h5
                           className={classNames(
-                            "__wab_instance",
-                            sty.collapsible__xezpa
+                            projectcss.all,
+                            projectcss.h5,
+                            projectcss.__wab_text,
+                            sty.h5__uQyxb
                           )}
-                          slot={
+                        >
+                          {"Apa itu regulatory sandbox?"}
+                        </h5>
+                        {(() => {
+                          try {
+                            return $state.isCollapse ? false : true;
+                          } catch (e) {
+                            if (e instanceof TypeError) {
+                              return true;
+                            }
+                            throw e;
+                          }
+                        })() ? (
+                          <ArrowCircleRightSvgrepoComsvgIcon
+                            className={classNames(
+                              projectcss.all,
+                              sty.svg___6CnBh
+                            )}
+                            role={"img"}
+                          />
+                        ) : null}
+                        {(() => {
+                          try {
+                            return $state.isCollapse ? true : false;
+                          } catch (e) {
+                            if (e instanceof TypeError) {
+                              return true;
+                            }
+                            throw e;
+                          }
+                        })() ? (
+                          <ArrowCircleDownSvgrepoComsvgIcon
+                            className={classNames(
+                              projectcss.all,
+                              sty.svg__vxtC
+                            )}
+                            role={"img"}
+                          />
+                        ) : null}
+                      </Collapsiblev2>
+                    ) : null}
+                    {true ? (
+                      <Collapsiblev2
+                        data-plasmic-name={"collapsiblev22"}
+                        data-plasmic-override={overrides.collapsiblev22}
+                        className={classNames(
+                          "__wab_instance",
+                          sty.collapsiblev22
+                        )}
+                        isCollapse={p.generateStateValueProp($state, [
+                          "collapsiblev22",
+                          "isCollapse"
+                        ])}
+                        onIsCollapseChange={p.generateStateOnChangeProp(
+                          $state,
+                          ["collapsiblev22", "isCollapse"]
+                        )}
+                        slot={
+                          <React.Fragment>
                             <div
                               className={classNames(
                                 projectcss.all,
                                 projectcss.__wab_text,
-                                sty.text__eBkoX
-                              )}
-                            >
-                              {
-                                "Siapa yang dapat mendaftar regulatory sandbox? "
-                              }
-                            </div>
-                          }
-                        >
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.__wab_text,
-                              sty.text__vdh2W
-                            )}
-                          >
-                            <React.Fragment>
-                              <React.Fragment>{"Peserta "}</React.Fragment>
-                              <span
-                                className={
-                                  "plasmic_default__all plasmic_default__span"
-                                }
-                                style={{ fontStyle: "italic" }}
-                              >
-                                {"regulatory sandbox"}
-                              </span>
-                              <React.Fragment>
-                                {
-                                  " merupakan penyelenggara IDK yang memenuhi ketentuan sebagaimana dimaksud dalam panduan ini yaitu sebagai berikut:"
-                                }
-                              </React.Fragment>
-                            </React.Fragment>
-                          </div>
-                          <ul
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.ul,
-                              sty.ul__k10Mq
-                            )}
-                          >
-                            <li
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.li,
-                                projectcss.__wab_text,
-                                sty.li__voZvY
-                              )}
-                            >
-                              {
-                                "Pelaku usaha non perseorangan sebagaimana diatur dalam peraturan perundang-undangan terkait perizinan usaha terintegrasi;"
-                              }
-                            </li>
-                            <li
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.li,
-                                projectcss.__wab_text,
-                                sty.li___6QaCt
-                              )}
-                            >
-                              {
-                                "Melaksanakan kegiatan usaha secara luas atau sudah dilaksanakan (pengguna dan kegiatan usaha) pada minimal dua provinsi; dan"
-                              }
-                            </li>
-                            <li
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.li,
-                                projectcss.__wab_text,
-                                sty.li___9KGho
-                              )}
-                            >
-                              {
-                                "Inovasi yang dapat menimbulkan kompleksitas dari sisi teknologi dan penggunaannya;"
-                              }
-                            </li>
-                            <li
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.li,
-                                projectcss.__wab_text,
-                                sty.li__gDisU
+                                sty.text__pNl7Q
                               )}
                             >
                               <React.Fragment>
-                                <React.Fragment>
-                                  {
-                                    "Merupakan bagian dari klaster yang tengah menjadi fokus "
-                                  }
-                                </React.Fragment>
+                                <React.Fragment>{"Peserta "}</React.Fragment>
                                 <span
                                   className={
                                     "plasmic_default__all plasmic_default__span"
@@ -985,173 +932,288 @@ function PlasmicHomepage__RenderFunc(props: {
                                 </span>
                                 <React.Fragment>
                                   {
-                                    " (untuk tahap awal ini klaster telekesehatan yang terdiri dari Telekonsultasi, Telemonitoring, Telemedicine, Komunikasi, Edukasi, Informasi (KIE), dan teknologi telekesehatan lainnya."
+                                    " merupakan penyelenggara IDK yang memenuhi ketentuan sebagaimana dimaksud dalam panduan ini yaitu sebagai berikut:"
                                   }
                                 </React.Fragment>
                               </React.Fragment>
-                            </li>
-                          </ul>
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.__wab_text,
-                              sty.text__yApCq
-                            )}
-                          >
-                            {
-                              "Pelaku usaha non perseorangan sebagaimana diatur dalam peraturan perundang-undangan terkait perizinan usaha terintegrasi, antara lain:"
-                            }
-                          </div>
-                          <ul
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.ul,
-                              sty.ul__hYvN
-                            )}
-                          >
-                            <li
+                            </div>
+                            <ul
                               className={classNames(
                                 projectcss.all,
-                                projectcss.li,
-                                projectcss.__wab_text,
-                                sty.li___9Z2X8
+                                projectcss.ul,
+                                sty.ul__obo0U
                               )}
                             >
-                              {"Perseroan terbatas;"}
-                            </li>
-                            <li
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.li,
-                                projectcss.__wab_text,
-                                sty.li__p1JPj
-                              )}
-                            >
-                              {"Perusahaan umum;"}
-                            </li>
-                            <li
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.li,
-                                projectcss.__wab_text,
-                                sty.li__ymrdh
-                              )}
-                            >
-                              {"Perusahaan umum daerah;"}
-                            </li>
-                            <li
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.li,
-                                projectcss.__wab_text,
-                                sty.li__sr7H2
-                              )}
-                            >
-                              {"Badan hukum lainnya yang dimiliki oleh negara;"}
-                            </li>
-                            <li
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.li,
-                                projectcss.__wab_text,
-                                sty.li__feSa9
-                              )}
-                            >
-                              {"Badan layanan umum;"}
-                            </li>
-                            <li
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.li,
-                                projectcss.__wab_text,
-                                sty.li__fnx5K
-                              )}
-                            >
-                              {"Lembaga penyiaran;"}
-                            </li>
-                            <li
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.li,
-                                projectcss.__wab_text,
-                                sty.li__ckmbT
-                              )}
-                            >
-                              {"Badan usaha yang didirikan oleh yayasan;"}
-                            </li>
-                            <li
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.li,
-                                projectcss.__wab_text,
-                                sty.li__z8QmI
-                              )}
-                            >
-                              {"Koperasi;"}
-                            </li>
-                            <li
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.li,
-                                projectcss.__wab_text,
-                                sty.li__ofpKl
-                              )}
-                            >
-                              {"Persekutuan komanditer;"}
-                            </li>
-                            <li
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.li,
-                                projectcss.__wab_text,
-                                sty.li__tWyCg
-                              )}
-                            >
-                              {"Persekutuan firma; dan"}
-                            </li>
-                            <li
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.li,
-                                projectcss.__wab_text,
-                                sty.li__iBkEk
-                              )}
-                            >
-                              {"Persekutuan perdata."}
-                            </li>
-                          </ul>
-                        </Collapsible>
-                      </div>
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          sty.freeBox__h8Po
-                        )}
-                      >
-                        <Collapsible
-                          className={classNames(
-                            "__wab_instance",
-                            sty.collapsible__hGmig
-                          )}
-                          slot={
+                              <li
+                                className={classNames(
+                                  projectcss.all,
+                                  projectcss.li,
+                                  projectcss.__wab_text,
+                                  sty.li__hoxRg
+                                )}
+                              >
+                                {
+                                  "Pelaku usaha non perseorangan sebagaimana diatur dalam peraturan perundang-undangan terkait perizinan usaha terintegrasi;"
+                                }
+                              </li>
+                              <li
+                                className={classNames(
+                                  projectcss.all,
+                                  projectcss.li,
+                                  projectcss.__wab_text,
+                                  sty.li__i8Nat
+                                )}
+                              >
+                                {
+                                  "Melaksanakan kegiatan usaha secara luas atau sudah dilaksanakan (pengguna dan kegiatan usaha) pada minimal dua provinsi; dan"
+                                }
+                              </li>
+                              <li
+                                className={classNames(
+                                  projectcss.all,
+                                  projectcss.li,
+                                  projectcss.__wab_text,
+                                  sty.li__pfLex
+                                )}
+                              >
+                                {
+                                  "Inovasi yang dapat menimbulkan kompleksitas dari sisi teknologi dan penggunaannya;"
+                                }
+                              </li>
+                              <li
+                                className={classNames(
+                                  projectcss.all,
+                                  projectcss.li,
+                                  projectcss.__wab_text,
+                                  sty.li__ypBb9
+                                )}
+                              >
+                                <React.Fragment>
+                                  <React.Fragment>
+                                    {
+                                      "Merupakan bagian dari klaster yang tengah menjadi fokus "
+                                    }
+                                  </React.Fragment>
+                                  <span
+                                    className={
+                                      "plasmic_default__all plasmic_default__span"
+                                    }
+                                    style={{ fontStyle: "italic" }}
+                                  >
+                                    {"regulatory sandbox"}
+                                  </span>
+                                  <React.Fragment>
+                                    {
+                                      " (untuk tahap awal ini klaster telekesehatan yang terdiri dari Telekonsultasi, Telemonitoring, Telemedicine, Komunikasi, Edukasi, Informasi (KIE), dan teknologi telekesehatan lainnya."
+                                    }
+                                  </React.Fragment>
+                                </React.Fragment>
+                              </li>
+                            </ul>
                             <div
                               className={classNames(
                                 projectcss.all,
                                 projectcss.__wab_text,
-                                sty.text__gSGoN
+                                sty.text___8UwO
                               )}
                             >
                               {
-                                "Apakah ada kewajiban setiap penyelenggara IDK mengikuti regulatory sandbox?"
+                                "Pelaku usaha non perseorangan sebagaimana diatur dalam peraturan perundang-undangan terkait perizinan usaha terintegrasi, antara lain:"
                               }
                             </div>
-                          }
+                            <ul
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.ul,
+                                sty.ul__tKwn2
+                              )}
+                            >
+                              <li
+                                className={classNames(
+                                  projectcss.all,
+                                  projectcss.li,
+                                  projectcss.__wab_text,
+                                  sty.li__ctaB2
+                                )}
+                              >
+                                {"Perseroan terbatas;"}
+                              </li>
+                              <li
+                                className={classNames(
+                                  projectcss.all,
+                                  projectcss.li,
+                                  projectcss.__wab_text,
+                                  sty.li___606Qm
+                                )}
+                              >
+                                {"Perusahaan umum;"}
+                              </li>
+                              <li
+                                className={classNames(
+                                  projectcss.all,
+                                  projectcss.li,
+                                  projectcss.__wab_text,
+                                  sty.li___17Sk0
+                                )}
+                              >
+                                {"Perusahaan umum daerah;"}
+                              </li>
+                              <li
+                                className={classNames(
+                                  projectcss.all,
+                                  projectcss.li,
+                                  projectcss.__wab_text,
+                                  sty.li___8DWkz
+                                )}
+                              >
+                                {
+                                  "Badan hukum lainnya yang dimiliki oleh negara;"
+                                }
+                              </li>
+                              <li
+                                className={classNames(
+                                  projectcss.all,
+                                  projectcss.li,
+                                  projectcss.__wab_text,
+                                  sty.li__vrQ6X
+                                )}
+                              >
+                                {"Badan layanan umum;"}
+                              </li>
+                              <li
+                                className={classNames(
+                                  projectcss.all,
+                                  projectcss.li,
+                                  projectcss.__wab_text,
+                                  sty.li__a5Yi
+                                )}
+                              >
+                                {"Lembaga penyiaran;"}
+                              </li>
+                              <li
+                                className={classNames(
+                                  projectcss.all,
+                                  projectcss.li,
+                                  projectcss.__wab_text,
+                                  sty.li__iInX
+                                )}
+                              >
+                                {"Badan usaha yang didirikan oleh yayasan;"}
+                              </li>
+                              <li
+                                className={classNames(
+                                  projectcss.all,
+                                  projectcss.li,
+                                  projectcss.__wab_text,
+                                  sty.li__ibQW
+                                )}
+                              >
+                                {"Koperasi;"}
+                              </li>
+                              <li
+                                className={classNames(
+                                  projectcss.all,
+                                  projectcss.li,
+                                  projectcss.__wab_text,
+                                  sty.li__nmvWw
+                                )}
+                              >
+                                {"Persekutuan komanditer;"}
+                              </li>
+                              <li
+                                className={classNames(
+                                  projectcss.all,
+                                  projectcss.li,
+                                  projectcss.__wab_text,
+                                  sty.li__cLMxD
+                                )}
+                              >
+                                {"Persekutuan firma; dan"}
+                              </li>
+                              <li
+                                className={classNames(
+                                  projectcss.all,
+                                  projectcss.li,
+                                  projectcss.__wab_text,
+                                  sty.li__ePtts
+                                )}
+                              >
+                                {"Persekutuan perdata."}
+                              </li>
+                            </ul>
+                          </React.Fragment>
+                        }
+                      >
+                        <h5
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.h5,
+                            projectcss.__wab_text,
+                            sty.h5__eQai
+                          )}
                         >
+                          {"Siapa yang dapat mendaftar regulatory sandbox? "}
+                        </h5>
+                        {(() => {
+                          try {
+                            return $state.isCollapse ? false : true;
+                          } catch (e) {
+                            if (e instanceof TypeError) {
+                              return true;
+                            }
+                            throw e;
+                          }
+                        })() ? (
+                          <ArrowCircleRightSvgrepoComsvgIcon
+                            className={classNames(
+                              projectcss.all,
+                              sty.svg___3F835
+                            )}
+                            role={"img"}
+                          />
+                        ) : null}
+                        {(() => {
+                          try {
+                            return $state.isCollapse ? true : false;
+                          } catch (e) {
+                            if (e instanceof TypeError) {
+                              return true;
+                            }
+                            throw e;
+                          }
+                        })() ? (
+                          <ArrowCircleDownSvgrepoComsvgIcon
+                            className={classNames(
+                              projectcss.all,
+                              sty.svg__cgc9X
+                            )}
+                            role={"img"}
+                          />
+                        ) : null}
+                      </Collapsiblev2>
+                    ) : null}
+                    {true ? (
+                      <Collapsiblev2
+                        data-plasmic-name={"collapsiblev23"}
+                        data-plasmic-override={overrides.collapsiblev23}
+                        className={classNames(
+                          "__wab_instance",
+                          sty.collapsiblev23
+                        )}
+                        isCollapse={p.generateStateValueProp($state, [
+                          "collapsiblev23",
+                          "isCollapse"
+                        ])}
+                        onIsCollapseChange={p.generateStateOnChangeProp(
+                          $state,
+                          ["collapsiblev23", "isCollapse"]
+                        )}
+                        slot={
                           <div
                             className={classNames(
                               projectcss.all,
                               projectcss.__wab_text,
-                              sty.text___3P3V
+                              sty.text__uSPZ
                             )}
                           >
                             <React.Fragment>
@@ -1173,38 +1235,80 @@ function PlasmicHomepage__RenderFunc(props: {
                               </React.Fragment>
                             </React.Fragment>
                           </div>
-                        </Collapsible>
-                      </div>
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          sty.freeBox__l2Bw8
-                        )}
+                        }
                       >
-                        <Collapsible
+                        <h5
                           className={classNames(
-                            "__wab_instance",
-                            sty.collapsible__xzoog
+                            projectcss.all,
+                            projectcss.h5,
+                            projectcss.__wab_text,
+                            sty.h5__vkCcM
                           )}
-                          slot={
-                            <div
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.__wab_text,
-                                sty.text___5YZmC
-                              )}
-                            >
-                              {
-                                "Apakah regulatory sandbox hanya untuk inovasi digital kesehatan dalam negeri?"
-                              }
-                            </div>
-                          }
                         >
+                          {
+                            "Apakah ada kewajiban setiap penyelenggara IDK mengikuti regulatory sandbox?"
+                          }
+                        </h5>
+                        {(() => {
+                          try {
+                            return $state.isCollapse ? false : true;
+                          } catch (e) {
+                            if (e instanceof TypeError) {
+                              return true;
+                            }
+                            throw e;
+                          }
+                        })() ? (
+                          <ArrowCircleRightSvgrepoComsvgIcon
+                            className={classNames(
+                              projectcss.all,
+                              sty.svg__tSuG
+                            )}
+                            role={"img"}
+                          />
+                        ) : null}
+                        {(() => {
+                          try {
+                            return $state.isCollapse ? true : false;
+                          } catch (e) {
+                            if (e instanceof TypeError) {
+                              return true;
+                            }
+                            throw e;
+                          }
+                        })() ? (
+                          <ArrowCircleDownSvgrepoComsvgIcon
+                            className={classNames(
+                              projectcss.all,
+                              sty.svg__yydy
+                            )}
+                            role={"img"}
+                          />
+                        ) : null}
+                      </Collapsiblev2>
+                    ) : null}
+                    {true ? (
+                      <Collapsiblev2
+                        data-plasmic-name={"collapsiblev24"}
+                        data-plasmic-override={overrides.collapsiblev24}
+                        className={classNames(
+                          "__wab_instance",
+                          sty.collapsiblev24
+                        )}
+                        isCollapse={p.generateStateValueProp($state, [
+                          "collapsiblev24",
+                          "isCollapse"
+                        ])}
+                        onIsCollapseChange={p.generateStateOnChangeProp(
+                          $state,
+                          ["collapsiblev24", "isCollapse"]
+                        )}
+                        slot={
                           <div
                             className={classNames(
                               projectcss.all,
                               projectcss.__wab_text,
-                              sty.text__oEczg
+                              sty.text__keLne
                             )}
                           >
                             <React.Fragment>
@@ -1237,74 +1341,158 @@ function PlasmicHomepage__RenderFunc(props: {
                               </React.Fragment>
                             </React.Fragment>
                           </div>
-                        </Collapsible>
-                      </div>
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          sty.freeBox__gk5Ov
-                        )}
+                        }
                       >
-                        <Collapsible
+                        <h5
                           className={classNames(
-                            "__wab_instance",
-                            sty.collapsible___6Dkqd
+                            projectcss.all,
+                            projectcss.h5,
+                            projectcss.__wab_text,
+                            sty.h5__hmeKr
                           )}
-                          slot={
-                            <div
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.__wab_text,
-                                sty.text__tcXuz
-                              )}
-                            >
-                              {"Kapan saya perlu mengikuti Regulatory Sandbox?"}
-                            </div>
-                          }
                         >
+                          {
+                            "Apakah regulatory sandbox hanya untuk inovasi digital kesehatan dalam negeri?"
+                          }
+                        </h5>
+                        {(() => {
+                          try {
+                            return $state.isCollapse ? false : true;
+                          } catch (e) {
+                            if (e instanceof TypeError) {
+                              return true;
+                            }
+                            throw e;
+                          }
+                        })() ? (
+                          <ArrowCircleRightSvgrepoComsvgIcon
+                            className={classNames(
+                              projectcss.all,
+                              sty.svg__uBvZr
+                            )}
+                            role={"img"}
+                          />
+                        ) : null}
+                        {(() => {
+                          try {
+                            return $state.isCollapse ? true : false;
+                          } catch (e) {
+                            if (e instanceof TypeError) {
+                              return true;
+                            }
+                            throw e;
+                          }
+                        })() ? (
+                          <ArrowCircleDownSvgrepoComsvgIcon
+                            className={classNames(
+                              projectcss.all,
+                              sty.svg__dkFxT
+                            )}
+                            role={"img"}
+                          />
+                        ) : null}
+                      </Collapsiblev2>
+                    ) : null}
+                    {true ? (
+                      <Collapsiblev2
+                        data-plasmic-name={"collapsiblev25"}
+                        data-plasmic-override={overrides.collapsiblev25}
+                        className={classNames(
+                          "__wab_instance",
+                          sty.collapsiblev25
+                        )}
+                        isCollapse={p.generateStateValueProp($state, [
+                          "collapsiblev25",
+                          "isCollapse"
+                        ])}
+                        onIsCollapseChange={p.generateStateOnChangeProp(
+                          $state,
+                          ["collapsiblev25", "isCollapse"]
+                        )}
+                        slot={
                           <div
                             className={classNames(
                               projectcss.all,
                               projectcss.__wab_text,
-                              sty.text__g35Y
+                              sty.text__apMc
                             )}
                           >
                             {
                               "Setiap penyelenggara IDK pada klaster prioritas yang telah diumumkan oleh Kementerian Kesehatan RI, diberikan waktu satu bulan untuk melakukan pendaftaran dan mengikuti proses pendaftaran untuk mendapatkan rekomendasi."
                             }
                           </div>
-                        </Collapsible>
-                      </div>
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          sty.freeBox__iiDg
-                        )}
+                        }
                       >
-                        <Collapsible
+                        <h5
                           className={classNames(
-                            "__wab_instance",
-                            sty.collapsible__kq4En
+                            projectcss.all,
+                            projectcss.h5,
+                            projectcss.__wab_text,
+                            sty.h5__nkdY1
                           )}
-                          slot={
-                            <div
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.__wab_text,
-                                sty.text__egbym
-                              )}
-                            >
-                              {
-                                "Ruang lingkup apa saja yang diuji dalam regulatory sandbox?"
-                              }
-                            </div>
-                          }
                         >
+                          {"Kapan saya perlu mengikuti Regulatory Sandbox?"}
+                        </h5>
+                        {(() => {
+                          try {
+                            return $state.isCollapse ? false : true;
+                          } catch (e) {
+                            if (e instanceof TypeError) {
+                              return true;
+                            }
+                            throw e;
+                          }
+                        })() ? (
+                          <ArrowCircleRightSvgrepoComsvgIcon
+                            className={classNames(
+                              projectcss.all,
+                              sty.svg___9E425
+                            )}
+                            role={"img"}
+                          />
+                        ) : null}
+                        {(() => {
+                          try {
+                            return $state.isCollapse ? true : false;
+                          } catch (e) {
+                            if (e instanceof TypeError) {
+                              return true;
+                            }
+                            throw e;
+                          }
+                        })() ? (
+                          <ArrowCircleDownSvgrepoComsvgIcon
+                            className={classNames(
+                              projectcss.all,
+                              sty.svg___3JrKe
+                            )}
+                            role={"img"}
+                          />
+                        ) : null}
+                      </Collapsiblev2>
+                    ) : null}
+                    {true ? (
+                      <Collapsiblev2
+                        data-plasmic-name={"collapsiblev26"}
+                        data-plasmic-override={overrides.collapsiblev26}
+                        className={classNames(
+                          "__wab_instance",
+                          sty.collapsiblev26
+                        )}
+                        isCollapse={p.generateStateValueProp($state, [
+                          "collapsiblev26",
+                          "isCollapse"
+                        ])}
+                        onIsCollapseChange={p.generateStateOnChangeProp(
+                          $state,
+                          ["collapsiblev26", "isCollapse"]
+                        )}
+                        slot={
                           <div
                             className={classNames(
                               projectcss.all,
                               projectcss.__wab_text,
-                              sty.text__w01Cm
+                              sty.text__mgycr
                             )}
                           >
                             <React.Fragment>
@@ -1323,43 +1511,80 @@ function PlasmicHomepage__RenderFunc(props: {
                               </React.Fragment>
                             </React.Fragment>
                           </div>
-                        </Collapsible>
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    className={classNames(projectcss.all, sty.column__ufAmx)}
-                  >
-                    <div
-                      className={classNames(projectcss.all, sty.freeBox__iZcV1)}
-                    >
-                      <div
-                        className={classNames(projectcss.all, sty.freeBox__h6P)}
+                        }
                       >
-                        <Collapsible
+                        <h5
                           className={classNames(
-                            "__wab_instance",
-                            sty.collapsible__aJCwZ
+                            projectcss.all,
+                            projectcss.h5,
+                            projectcss.__wab_text,
+                            sty.h5__jJvVv
                           )}
-                          slot={
-                            <div
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.__wab_text,
-                                sty.text__oeR6V
-                              )}
-                            >
-                              {
-                                "Bagaimana proses pendaftaran regulatory sandbox"
-                              }
-                            </div>
-                          }
                         >
+                          {
+                            "Ruang lingkup apa saja yang diuji dalam regulatory sandbox?"
+                          }
+                        </h5>
+                        {(() => {
+                          try {
+                            return $state.isCollapse ? false : true;
+                          } catch (e) {
+                            if (e instanceof TypeError) {
+                              return true;
+                            }
+                            throw e;
+                          }
+                        })() ? (
+                          <ArrowCircleRightSvgrepoComsvgIcon
+                            className={classNames(
+                              projectcss.all,
+                              sty.svg__vvzCj
+                            )}
+                            role={"img"}
+                          />
+                        ) : null}
+                        {(() => {
+                          try {
+                            return $state.isCollapse ? true : false;
+                          } catch (e) {
+                            if (e instanceof TypeError) {
+                              return true;
+                            }
+                            throw e;
+                          }
+                        })() ? (
+                          <ArrowCircleDownSvgrepoComsvgIcon
+                            className={classNames(
+                              projectcss.all,
+                              sty.svg__yYbOr
+                            )}
+                            role={"img"}
+                          />
+                        ) : null}
+                      </Collapsiblev2>
+                    ) : null}
+                    {true ? (
+                      <Collapsiblev2
+                        data-plasmic-name={"collapsiblev27"}
+                        data-plasmic-override={overrides.collapsiblev27}
+                        className={classNames(
+                          "__wab_instance",
+                          sty.collapsiblev27
+                        )}
+                        isCollapse={p.generateStateValueProp($state, [
+                          "collapsiblev27",
+                          "isCollapse"
+                        ])}
+                        onIsCollapseChange={p.generateStateOnChangeProp(
+                          $state,
+                          ["collapsiblev27", "isCollapse"]
+                        )}
+                        slot={
                           <div
                             className={classNames(
                               projectcss.all,
                               projectcss.__wab_text,
-                              sty.text__cu0Zh
+                              sty.text__g9RAp
                             )}
                           >
                             <React.Fragment>
@@ -1407,38 +1632,84 @@ function PlasmicHomepage__RenderFunc(props: {
                               </React.Fragment>
                             </React.Fragment>
                           </div>
-                        </Collapsible>
-                      </div>
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          sty.freeBox__hyAz
-                        )}
+                        }
                       >
-                        <Collapsible
+                        <h5
                           className={classNames(
-                            "__wab_instance",
-                            sty.collapsible__bEvrH
+                            projectcss.all,
+                            projectcss.h5,
+                            projectcss.__wab_text,
+                            sty.h5___962G
                           )}
-                          slot={
-                            <div
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.__wab_text,
-                                sty.text__sviyU
-                              )}
-                            >
-                              {
-                                "Berapa lama waktu yang diperlukan untuk mendaftar sampai mendapatkan rekomendasi regulatory sandbox?"
-                              }
-                            </div>
-                          }
                         >
+                          {"Bagaimana proses pendaftaran regulatory sandbox"}
+                        </h5>
+                        {(() => {
+                          try {
+                            return $state.isCollapse ? false : true;
+                          } catch (e) {
+                            if (e instanceof TypeError) {
+                              return true;
+                            }
+                            throw e;
+                          }
+                        })() ? (
+                          <ArrowCircleRightSvgrepoComsvgIcon
+                            className={classNames(
+                              projectcss.all,
+                              sty.svg___288P9
+                            )}
+                            role={"img"}
+                          />
+                        ) : null}
+                        {(() => {
+                          try {
+                            return $state.isCollapse ? true : false;
+                          } catch (e) {
+                            if (e instanceof TypeError) {
+                              return true;
+                            }
+                            throw e;
+                          }
+                        })() ? (
+                          <ArrowCircleDownSvgrepoComsvgIcon
+                            className={classNames(
+                              projectcss.all,
+                              sty.svg__buZGg
+                            )}
+                            role={"img"}
+                          />
+                        ) : null}
+                      </Collapsiblev2>
+                    ) : null}
+                  </p.Stack>
+                  <p.Stack
+                    as={"div"}
+                    hasGap={true}
+                    className={classNames(projectcss.all, sty.column__tYrac)}
+                  >
+                    {true ? (
+                      <Collapsiblev2
+                        data-plasmic-name={"collapsiblev28"}
+                        data-plasmic-override={overrides.collapsiblev28}
+                        className={classNames(
+                          "__wab_instance",
+                          sty.collapsiblev28
+                        )}
+                        isCollapse={p.generateStateValueProp($state, [
+                          "collapsiblev28",
+                          "isCollapse"
+                        ])}
+                        onIsCollapseChange={p.generateStateOnChangeProp(
+                          $state,
+                          ["collapsiblev28", "isCollapse"]
+                        )}
+                        slot={
                           <div
                             className={classNames(
                               projectcss.all,
                               projectcss.__wab_text,
-                              sty.text__u7U8C
+                              sty.text__wHuR
                             )}
                           >
                             <React.Fragment>
@@ -1462,325 +1733,411 @@ function PlasmicHomepage__RenderFunc(props: {
                               </React.Fragment>
                             </React.Fragment>
                           </div>
-                        </Collapsible>
-                      </div>
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          sty.freeBox__vbP88
-                        )}
+                        }
                       >
-                        <Collapsible
+                        <h5
                           className={classNames(
-                            "__wab_instance",
-                            sty.collapsible__ludLz
+                            projectcss.all,
+                            projectcss.h5,
+                            projectcss.__wab_text,
+                            sty.h5__p6Bf0
                           )}
-                          slot={
+                        >
+                          {
+                            "Berapa lama waktu yang diperlukan untuk mendaftar sampai mendapatkan rekomendasi regulatory sandbox?"
+                          }
+                        </h5>
+                        {(() => {
+                          try {
+                            return $state.isCollapse ? false : true;
+                          } catch (e) {
+                            if (e instanceof TypeError) {
+                              return true;
+                            }
+                            throw e;
+                          }
+                        })() ? (
+                          <ArrowCircleRightSvgrepoComsvgIcon
+                            className={classNames(
+                              projectcss.all,
+                              sty.svg__w9Yzg
+                            )}
+                            role={"img"}
+                          />
+                        ) : null}
+                        {(() => {
+                          try {
+                            return $state.isCollapse ? true : false;
+                          } catch (e) {
+                            if (e instanceof TypeError) {
+                              return true;
+                            }
+                            throw e;
+                          }
+                        })() ? (
+                          <ArrowCircleDownSvgrepoComsvgIcon
+                            className={classNames(
+                              projectcss.all,
+                              sty.svg__duHxD
+                            )}
+                            role={"img"}
+                          />
+                        ) : null}
+                      </Collapsiblev2>
+                    ) : null}
+                    {true ? (
+                      <Collapsiblev2
+                        data-plasmic-name={"collapsiblev29"}
+                        data-plasmic-override={overrides.collapsiblev29}
+                        className={classNames(
+                          "__wab_instance",
+                          sty.collapsiblev29
+                        )}
+                        isCollapse={p.generateStateValueProp($state, [
+                          "collapsiblev29",
+                          "isCollapse"
+                        ])}
+                        onIsCollapseChange={p.generateStateOnChangeProp(
+                          $state,
+                          ["collapsiblev29", "isCollapse"]
+                        )}
+                        slot={
+                          <React.Fragment>
                             <div
                               className={classNames(
                                 projectcss.all,
                                 projectcss.__wab_text,
-                                sty.text___6Rzcp
+                                sty.text__kwVhi
                               )}
                             >
                               {
-                                "Dokumen apa saja yang diperlukan untuk mendaftar regulatory sandbox?"
+                                "Berikut ini beberapa dokumen yang perlu disiapkan untuk mendaftar regulatory sandbox, yaitu:"
                               }
                             </div>
-                          }
-                        >
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.__wab_text,
-                              sty.text__fhGUr
-                            )}
-                          >
-                            {
-                              "Berikut ini beberapa dokumen yang perlu disiapkan untuk mendaftar regulatory sandbox, yaitu:"
-                            }
-                          </div>
-                          <ul
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.ul,
-                              sty.ul__cv3Us
-                            )}
-                          >
-                            <li
+                            <ul
                               className={classNames(
                                 projectcss.all,
-                                projectcss.li,
-                                projectcss.__wab_text,
-                                sty.li__xaaAb
+                                projectcss.ul,
+                                sty.ul__l91Xs
                               )}
                             >
-                              {
-                                "Persyaratan dasar (proses lintas kementerian/lembaga)\n"
-                              }
-                            </li>
-                            <li
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.li,
-                                sty.li__mfwSw
-                              )}
-                            >
-                              <ul
+                              <li
                                 className={classNames(
                                   projectcss.all,
-                                  projectcss.ul,
-                                  sty.ul__fQnAk
+                                  projectcss.li,
+                                  projectcss.__wab_text,
+                                  sty.li___5Pwbr
                                 )}
                               >
-                                <li
-                                  className={classNames(
-                                    projectcss.all,
-                                    projectcss.li,
-                                    projectcss.__wab_text,
-                                    sty.li__qQyKq
-                                  )}
-                                >
-                                  {(() => {
-                                    try {
-                                      return "Memiliki Akta Pendirian Perusahaan dari Kementerian Hukum dan Hak Asasi Manusia (Kementerian Hukum dan Hak Asasi Manusia RI);";
-                                    } catch (e) {
-                                      if (e instanceof TypeError) {
-                                        return "Enter some text";
-                                      }
-                                      throw e;
-                                    }
-                                  })()}
-                                </li>
-                                <li
-                                  className={classNames(
-                                    projectcss.all,
-                                    projectcss.li,
-                                    projectcss.__wab_text,
-                                    sty.li___1HgQ
-                                  )}
-                                >
-                                  {(() => {
-                                    try {
-                                      return "Memiliki Nomor Induk Berusaha (NIB) dari Sistem Online Single Submission (OSS) dan Klasifikasi Baku Lapangan Usaha Indonesia (KBLI);";
-                                    } catch (e) {
-                                      if (e instanceof TypeError) {
-                                        return "Enter some text";
-                                      }
-                                      throw e;
-                                    }
-                                  })()}
-                                </li>
-                                <li
-                                  className={classNames(
-                                    projectcss.all,
-                                    projectcss.li,
-                                    projectcss.__wab_text,
-                                    sty.li__txfKj
-                                  )}
-                                >
-                                  {(() => {
-                                    try {
-                                      return "Memiliki bukti registrasi dari Kominfo sebagai Penyelenggara Sistem Elektronik (PSE); dan";
-                                    } catch (e) {
-                                      if (e instanceof TypeError) {
-                                        return "Enter some text";
-                                      }
-                                      throw e;
-                                    }
-                                  })()}
-                                </li>
-                                <li
-                                  className={classNames(
-                                    projectcss.all,
-                                    projectcss.li,
-                                    projectcss.__wab_text,
-                                    sty.li___0StEz
-                                  )}
-                                >
-                                  {(() => {
-                                    try {
-                                      return "Mencantumkan bukti telah melakukan penetration testing (pentest) atau mencantumkan sertifikasi keamanan yang dimiliki.";
-                                    } catch (e) {
-                                      if (e instanceof TypeError) {
-                                        return "Enter some text";
-                                      }
-                                      throw e;
-                                    }
-                                  })()}
-                                </li>
-                              </ul>
-                            </li>
-                          </ul>
-                          <ul
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.ul,
-                              sty.ul___1Oadw
-                            )}
-                          >
-                            <li
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.li,
-                                projectcss.__wab_text,
-                                sty.li__re1Qt
-                              )}
-                            >
-                              {"Informasi Perusahaan"}
-                            </li>
-                            <li
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.li,
-                                sty.li__zi4SB
-                              )}
-                            >
-                              <ul
+                                {
+                                  "Persyaratan dasar (proses lintas kementerian/lembaga)\n"
+                                }
+                              </li>
+                              <li
                                 className={classNames(
                                   projectcss.all,
-                                  projectcss.ul,
-                                  sty.ul__ruvSg
+                                  projectcss.li,
+                                  sty.li__eNZn
                                 )}
                               >
-                                <li
+                                <ul
                                   className={classNames(
                                     projectcss.all,
-                                    projectcss.li,
-                                    projectcss.__wab_text,
-                                    sty.li__eh7Et
+                                    projectcss.ul,
+                                    sty.ul___2AtD
                                   )}
                                 >
-                                  {"Profil perusahaan"}
-                                </li>
-                                <li
-                                  className={classNames(
-                                    projectcss.all,
-                                    projectcss.li,
-                                    projectcss.__wab_text,
-                                    sty.li__bRhzK
-                                  )}
-                                >
-                                  {
-                                    "Model bisnis yang dijalankan dan yang akan dikembangkan\n"
-                                  }
-                                </li>
-                                <li
-                                  className={classNames(
-                                    projectcss.all,
-                                    projectcss.li,
-                                    projectcss.__wab_text,
-                                    sty.li__pfa2N
-                                  )}
-                                >
-                                  {"Penjelasan mengenai produk "}
-                                </li>
-                                <li
-                                  className={classNames(
-                                    projectcss.all,
-                                    projectcss.li,
-                                    projectcss.__wab_text,
-                                    sty.li___3YbPt
-                                  )}
-                                >
-                                  {
-                                    "Kebijakan penyimpanan data dan privasi produk (syarat dan ketentuan)"
-                                  }
-                                </li>
-                                <li
-                                  className={classNames(
-                                    projectcss.all,
-                                    projectcss.li,
-                                    projectcss.__wab_text,
-                                    sty.li__sf5N
-                                  )}
-                                >
-                                  {"Rencana bisnis 5-10 tahun ke depan"}
-                                </li>
-                              </ul>
-                            </li>
-                          </ul>
-                          <ul
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.ul,
-                              sty.ul__gaaoQ
-                            )}
-                          >
-                            <li
+                                  <li
+                                    className={classNames(
+                                      projectcss.all,
+                                      projectcss.li,
+                                      projectcss.__wab_text,
+                                      sty.li__cTdp
+                                    )}
+                                  >
+                                    {(() => {
+                                      try {
+                                        return "Memiliki Akta Pendirian Perusahaan dari Kementerian Hukum dan Hak Asasi Manusia (Kementerian Hukum dan Hak Asasi Manusia RI);";
+                                      } catch (e) {
+                                        if (e instanceof TypeError) {
+                                          return "Enter some text";
+                                        }
+                                        throw e;
+                                      }
+                                    })()}
+                                  </li>
+                                  <li
+                                    className={classNames(
+                                      projectcss.all,
+                                      projectcss.li,
+                                      projectcss.__wab_text,
+                                      sty.li___3Rpt3
+                                    )}
+                                  >
+                                    {(() => {
+                                      try {
+                                        return "Memiliki Nomor Induk Berusaha (NIB) dari Sistem Online Single Submission (OSS) dan Klasifikasi Baku Lapangan Usaha Indonesia (KBLI);";
+                                      } catch (e) {
+                                        if (e instanceof TypeError) {
+                                          return "Enter some text";
+                                        }
+                                        throw e;
+                                      }
+                                    })()}
+                                  </li>
+                                  <li
+                                    className={classNames(
+                                      projectcss.all,
+                                      projectcss.li,
+                                      projectcss.__wab_text,
+                                      sty.li__pHnF
+                                    )}
+                                  >
+                                    {(() => {
+                                      try {
+                                        return "Memiliki bukti registrasi dari Kominfo sebagai Penyelenggara Sistem Elektronik (PSE); dan";
+                                      } catch (e) {
+                                        if (e instanceof TypeError) {
+                                          return "Enter some text";
+                                        }
+                                        throw e;
+                                      }
+                                    })()}
+                                  </li>
+                                  <li
+                                    className={classNames(
+                                      projectcss.all,
+                                      projectcss.li,
+                                      projectcss.__wab_text,
+                                      sty.li__nOAwP
+                                    )}
+                                  >
+                                    {(() => {
+                                      try {
+                                        return "Mencantumkan bukti telah melakukan penetration testing (pentest) atau mencantumkan sertifikasi keamanan yang dimiliki.";
+                                      } catch (e) {
+                                        if (e instanceof TypeError) {
+                                          return "Enter some text";
+                                        }
+                                        throw e;
+                                      }
+                                    })()}
+                                  </li>
+                                </ul>
+                              </li>
+                            </ul>
+                            <ul
                               className={classNames(
                                 projectcss.all,
-                                projectcss.li,
-                                projectcss.__wab_text,
-                                sty.li__hqPr1
+                                projectcss.ul,
+                                sty.ul__fjUro
                               )}
                             >
-                              {"Surat permohonan dilakukannya pencatatan;"}
-                            </li>
-                          </ul>
-                          <ul
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.ul,
-                              sty.ul__y0Prf
-                            )}
-                          >
-                            <li
+                              <li
+                                className={classNames(
+                                  projectcss.all,
+                                  projectcss.li,
+                                  projectcss.__wab_text,
+                                  sty.li___53ANe
+                                )}
+                              >
+                                {"Informasi Perusahaan"}
+                              </li>
+                              <li
+                                className={classNames(
+                                  projectcss.all,
+                                  projectcss.li,
+                                  sty.li__gNqBw
+                                )}
+                              >
+                                <ul
+                                  className={classNames(
+                                    projectcss.all,
+                                    projectcss.ul,
+                                    sty.ul__z41C7
+                                  )}
+                                >
+                                  <li
+                                    className={classNames(
+                                      projectcss.all,
+                                      projectcss.li,
+                                      projectcss.__wab_text,
+                                      sty.li___30OWf
+                                    )}
+                                  >
+                                    {"Profil perusahaan"}
+                                  </li>
+                                  <li
+                                    className={classNames(
+                                      projectcss.all,
+                                      projectcss.li,
+                                      projectcss.__wab_text,
+                                      sty.li__dkAe
+                                    )}
+                                  >
+                                    {
+                                      "Model bisnis yang dijalankan dan yang akan dikembangkan\n"
+                                    }
+                                  </li>
+                                  <li
+                                    className={classNames(
+                                      projectcss.all,
+                                      projectcss.li,
+                                      projectcss.__wab_text,
+                                      sty.li__araM
+                                    )}
+                                  >
+                                    {"Penjelasan mengenai produk "}
+                                  </li>
+                                  <li
+                                    className={classNames(
+                                      projectcss.all,
+                                      projectcss.li,
+                                      projectcss.__wab_text,
+                                      sty.li__ronuH
+                                    )}
+                                  >
+                                    {
+                                      "Kebijakan penyimpanan data dan privasi produk (syarat dan ketentuan)"
+                                    }
+                                  </li>
+                                  <li
+                                    className={classNames(
+                                      projectcss.all,
+                                      projectcss.li,
+                                      projectcss.__wab_text,
+                                      sty.li__c99Ru
+                                    )}
+                                  >
+                                    {"Rencana bisnis 5-10 tahun ke depan"}
+                                  </li>
+                                </ul>
+                              </li>
+                            </ul>
+                            <ul
                               className={classNames(
                                 projectcss.all,
-                                projectcss.li,
-                                projectcss.__wab_text,
-                                sty.li___3Flif
+                                projectcss.ul,
+                                sty.ul__cfFaP
                               )}
                             >
-                              {
-                                "Surat pernyataan bersedia mematuhi peraturan perundang-undangan di Indonesia"
-                              }
-                            </li>
-                          </ul>
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.__wab_text,
-                              sty.text__p4Lu
-                            )}
-                          >
-                            {
-                              "Selengkapnya dapat dilihat pada formulir pendaftaran atau panduan pengisian pendaftaran pada bagian dokumen."
-                            }
-                          </div>
-                        </Collapsible>
-                      </div>
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          sty.freeBox__aZc5R
-                        )}
-                      >
-                        <Collapsible
-                          className={classNames(
-                            "__wab_instance",
-                            sty.collapsible__c8Tz
-                          )}
-                          slot={
+                              <li
+                                className={classNames(
+                                  projectcss.all,
+                                  projectcss.li,
+                                  projectcss.__wab_text,
+                                  sty.li__elnA
+                                )}
+                              >
+                                {"Surat permohonan dilakukannya pencatatan;"}
+                              </li>
+                            </ul>
+                            <ul
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.ul,
+                                sty.ul__dy3Yn
+                              )}
+                            >
+                              <li
+                                className={classNames(
+                                  projectcss.all,
+                                  projectcss.li,
+                                  projectcss.__wab_text,
+                                  sty.li__yVUwb
+                                )}
+                              >
+                                {
+                                  "Surat pernyataan bersedia mematuhi peraturan perundang-undangan di Indonesia"
+                                }
+                              </li>
+                            </ul>
                             <div
                               className={classNames(
                                 projectcss.all,
                                 projectcss.__wab_text,
-                                sty.text__etsm
+                                sty.text__g3GxD
                               )}
                             >
                               {
-                                "Apakah implikasi dari status tercatat, dibina, dan diawasi pada regulatory sandbox?"
+                                "Selengkapnya dapat dilihat pada formulir pendaftaran atau panduan pengisian pendaftaran pada bagian dokumen."
                               }
                             </div>
-                          }
+                          </React.Fragment>
+                        }
+                      >
+                        <h5
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.h5,
+                            projectcss.__wab_text,
+                            sty.h5__rj5L
+                          )}
                         >
+                          {
+                            "Dokumen apa saja yang diperlukan untuk mendaftar regulatory sandbox?"
+                          }
+                        </h5>
+                        {(() => {
+                          try {
+                            return $state.isCollapse ? false : true;
+                          } catch (e) {
+                            if (e instanceof TypeError) {
+                              return true;
+                            }
+                            throw e;
+                          }
+                        })() ? (
+                          <ArrowCircleRightSvgrepoComsvgIcon
+                            className={classNames(
+                              projectcss.all,
+                              sty.svg__rctng
+                            )}
+                            role={"img"}
+                          />
+                        ) : null}
+                        {(() => {
+                          try {
+                            return $state.isCollapse ? true : false;
+                          } catch (e) {
+                            if (e instanceof TypeError) {
+                              return true;
+                            }
+                            throw e;
+                          }
+                        })() ? (
+                          <ArrowCircleDownSvgrepoComsvgIcon
+                            className={classNames(
+                              projectcss.all,
+                              sty.svg__nbaG
+                            )}
+                            role={"img"}
+                          />
+                        ) : null}
+                      </Collapsiblev2>
+                    ) : null}
+                    {true ? (
+                      <Collapsiblev2
+                        data-plasmic-name={"collapsiblev210"}
+                        data-plasmic-override={overrides.collapsiblev210}
+                        className={classNames(
+                          "__wab_instance",
+                          sty.collapsiblev210
+                        )}
+                        isCollapse={p.generateStateValueProp($state, [
+                          "collapsiblev210",
+                          "isCollapse"
+                        ])}
+                        onIsCollapseChange={p.generateStateOnChangeProp(
+                          $state,
+                          ["collapsiblev210", "isCollapse"]
+                        )}
+                        slot={
                           <div
                             className={classNames(
                               projectcss.all,
                               projectcss.__wab_text,
-                              sty.text__jFD9
+                              sty.text__u2Dfb
                             )}
                           >
                             <React.Fragment>
@@ -1830,38 +2187,80 @@ function PlasmicHomepage__RenderFunc(props: {
                               </React.Fragment>
                             </React.Fragment>
                           </div>
-                        </Collapsible>
-                      </div>
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          sty.freeBox__dyXk
-                        )}
+                        }
                       >
-                        <Collapsible
+                        <h5
                           className={classNames(
-                            "__wab_instance",
-                            sty.collapsible___2CYGw
+                            projectcss.all,
+                            projectcss.h5,
+                            projectcss.__wab_text,
+                            sty.h5___7OsN
                           )}
-                          slot={
-                            <div
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.__wab_text,
-                                sty.text__uAawT
-                              )}
-                            >
-                              {
-                                "Berapa lama masa berlaku rekomendasi yang diberikan ?"
-                              }
-                            </div>
-                          }
                         >
+                          {
+                            "Apakah implikasi dari status tercatat, dibina, dan diawasi pada regulatory sandbox?"
+                          }
+                        </h5>
+                        {(() => {
+                          try {
+                            return $state.isCollapse ? false : true;
+                          } catch (e) {
+                            if (e instanceof TypeError) {
+                              return true;
+                            }
+                            throw e;
+                          }
+                        })() ? (
+                          <ArrowCircleRightSvgrepoComsvgIcon
+                            className={classNames(
+                              projectcss.all,
+                              sty.svg___5STjX
+                            )}
+                            role={"img"}
+                          />
+                        ) : null}
+                        {(() => {
+                          try {
+                            return $state.isCollapse ? true : false;
+                          } catch (e) {
+                            if (e instanceof TypeError) {
+                              return true;
+                            }
+                            throw e;
+                          }
+                        })() ? (
+                          <ArrowCircleDownSvgrepoComsvgIcon
+                            className={classNames(
+                              projectcss.all,
+                              sty.svg__qc8LM
+                            )}
+                            role={"img"}
+                          />
+                        ) : null}
+                      </Collapsiblev2>
+                    ) : null}
+                    {true ? (
+                      <Collapsiblev2
+                        data-plasmic-name={"collapsiblev211"}
+                        data-plasmic-override={overrides.collapsiblev211}
+                        className={classNames(
+                          "__wab_instance",
+                          sty.collapsiblev211
+                        )}
+                        isCollapse={p.generateStateValueProp($state, [
+                          "collapsiblev211",
+                          "isCollapse"
+                        ])}
+                        onIsCollapseChange={p.generateStateOnChangeProp(
+                          $state,
+                          ["collapsiblev211", "isCollapse"]
+                        )}
+                        slot={
                           <div
                             className={classNames(
                               projectcss.all,
                               projectcss.__wab_text,
-                              sty.text__ncD8T
+                              sty.text__ro8Ss
                             )}
                           >
                             <React.Fragment>
@@ -1885,38 +2284,80 @@ function PlasmicHomepage__RenderFunc(props: {
                               </React.Fragment>
                             </React.Fragment>
                           </div>
-                        </Collapsible>
-                      </div>
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          sty.freeBox__nOQbT
-                        )}
+                        }
                       >
-                        <Collapsible
+                        <h5
                           className={classNames(
-                            "__wab_instance",
-                            sty.collapsible__lIbQ8
+                            projectcss.all,
+                            projectcss.h5,
+                            projectcss.__wab_text,
+                            sty.h5__amShi
                           )}
-                          slot={
-                            <div
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.__wab_text,
-                                sty.text__qfuHo
-                              )}
-                            >
-                              {
-                                "Apakah akan dilakukan monitoring dan evaluasi berjalan pada inovasi yang direkomendasikan ?"
-                              }
-                            </div>
-                          }
                         >
+                          {
+                            "Berapa lama masa berlaku rekomendasi yang diberikan ?"
+                          }
+                        </h5>
+                        {(() => {
+                          try {
+                            return $state.isCollapse ? false : true;
+                          } catch (e) {
+                            if (e instanceof TypeError) {
+                              return true;
+                            }
+                            throw e;
+                          }
+                        })() ? (
+                          <ArrowCircleRightSvgrepoComsvgIcon
+                            className={classNames(
+                              projectcss.all,
+                              sty.svg__xDksd
+                            )}
+                            role={"img"}
+                          />
+                        ) : null}
+                        {(() => {
+                          try {
+                            return $state.isCollapse ? true : false;
+                          } catch (e) {
+                            if (e instanceof TypeError) {
+                              return true;
+                            }
+                            throw e;
+                          }
+                        })() ? (
+                          <ArrowCircleDownSvgrepoComsvgIcon
+                            className={classNames(
+                              projectcss.all,
+                              sty.svg__goA3I
+                            )}
+                            role={"img"}
+                          />
+                        ) : null}
+                      </Collapsiblev2>
+                    ) : null}
+                    {true ? (
+                      <Collapsiblev2
+                        data-plasmic-name={"collapsiblev212"}
+                        data-plasmic-override={overrides.collapsiblev212}
+                        className={classNames(
+                          "__wab_instance",
+                          sty.collapsiblev212
+                        )}
+                        isCollapse={p.generateStateValueProp($state, [
+                          "collapsiblev212",
+                          "isCollapse"
+                        ])}
+                        onIsCollapseChange={p.generateStateOnChangeProp(
+                          $state,
+                          ["collapsiblev212", "isCollapse"]
+                        )}
+                        slot={
                           <div
                             className={classNames(
                               projectcss.all,
                               projectcss.__wab_text,
-                              sty.text__p9Uyw
+                              sty.text__gZzdv
                             )}
                           >
                             <React.Fragment>
@@ -1940,180 +2381,319 @@ function PlasmicHomepage__RenderFunc(props: {
                               </React.Fragment>
                             </React.Fragment>
                           </div>
-                        </Collapsible>
-                      </div>
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          sty.freeBox___22TQd
-                        )}
+                        }
                       >
-                        <Collapsible
+                        <h5
                           className={classNames(
-                            "__wab_instance",
-                            sty.collapsible__amYB
+                            projectcss.all,
+                            projectcss.h5,
+                            projectcss.__wab_text,
+                            sty.h5__zZtuz
                           )}
-                          slot={
-                            <div
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.__wab_text,
-                                sty.text__sfhbP
-                              )}
-                            >
-                              {
-                                "Bagaimana alur dari pelaksanaan regulatory sandbox?"
-                              }
-                            </div>
-                          }
                         >
+                          {
+                            "Apakah akan dilakukan monitoring dan evaluasi berjalan pada inovasi yang direkomendasikan ?"
+                          }
+                        </h5>
+                        {(() => {
+                          try {
+                            return $state.isCollapse ? false : true;
+                          } catch (e) {
+                            if (e instanceof TypeError) {
+                              return true;
+                            }
+                            throw e;
+                          }
+                        })() ? (
+                          <ArrowCircleRightSvgrepoComsvgIcon
+                            className={classNames(
+                              projectcss.all,
+                              sty.svg__zvaJm
+                            )}
+                            role={"img"}
+                          />
+                        ) : null}
+                        {(() => {
+                          try {
+                            return $state.isCollapse ? true : false;
+                          } catch (e) {
+                            if (e instanceof TypeError) {
+                              return true;
+                            }
+                            throw e;
+                          }
+                        })() ? (
+                          <ArrowCircleDownSvgrepoComsvgIcon
+                            className={classNames(
+                              projectcss.all,
+                              sty.svg___3SycL
+                            )}
+                            role={"img"}
+                          />
+                        ) : null}
+                      </Collapsiblev2>
+                    ) : null}
+                    {true ? (
+                      <Collapsiblev2
+                        data-plasmic-name={"collapsiblev213"}
+                        data-plasmic-override={overrides.collapsiblev213}
+                        className={classNames(
+                          "__wab_instance",
+                          sty.collapsiblev213
+                        )}
+                        isCollapse={p.generateStateValueProp($state, [
+                          "collapsiblev213",
+                          "isCollapse"
+                        ])}
+                        onIsCollapseChange={p.generateStateOnChangeProp(
+                          $state,
+                          ["collapsiblev213", "isCollapse"]
+                        )}
+                        slot={
                           <div
                             className={classNames(
                               projectcss.all,
                               projectcss.__wab_text,
-                              sty.text__lth8K
+                              sty.text__gs1NW
                             )}
                           >
                             {
                               "Alur dari pelaksanaan regulatory sandbox dapat diunduh di bagian dokumen"
                             }
                           </div>
-                        </Collapsible>
-                      </div>
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          sty.freeBox__x7Wkb
-                        )}
+                        }
                       >
-                        <Collapsible
+                        <h5
                           className={classNames(
-                            "__wab_instance",
-                            sty.collapsible__aGjZa
+                            projectcss.all,
+                            projectcss.h5,
+                            projectcss.__wab_text,
+                            sty.h5__qsoTd
                           )}
-                          slot={
-                            <div
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.__wab_text,
-                                sty.text__tt5Ky
-                              )}
-                            >
-                              {
-                                "Syarat dan ketentuan mendaftar regulatory sandbox"
-                              }
-                            </div>
-                          }
                         >
+                          {
+                            "Bagaimana alur dari pelaksanaan regulatory sandbox?"
+                          }
+                        </h5>
+                        {(() => {
+                          try {
+                            return $state.isCollapse ? false : true;
+                          } catch (e) {
+                            if (e instanceof TypeError) {
+                              return true;
+                            }
+                            throw e;
+                          }
+                        })() ? (
+                          <ArrowCircleRightSvgrepoComsvgIcon
+                            className={classNames(
+                              projectcss.all,
+                              sty.svg___4Ccy1
+                            )}
+                            role={"img"}
+                          />
+                        ) : null}
+                        {(() => {
+                          try {
+                            return $state.isCollapse ? true : false;
+                          } catch (e) {
+                            if (e instanceof TypeError) {
+                              return true;
+                            }
+                            throw e;
+                          }
+                        })() ? (
+                          <ArrowCircleDownSvgrepoComsvgIcon
+                            className={classNames(
+                              projectcss.all,
+                              sty.svg__szOng
+                            )}
+                            role={"img"}
+                          />
+                        ) : null}
+                      </Collapsiblev2>
+                    ) : null}
+                    {true ? (
+                      <Collapsiblev2
+                        data-plasmic-name={"collapsiblev214"}
+                        data-plasmic-override={overrides.collapsiblev214}
+                        className={classNames(
+                          "__wab_instance",
+                          sty.collapsiblev214
+                        )}
+                        isCollapse={p.generateStateValueProp($state, [
+                          "collapsiblev214",
+                          "isCollapse"
+                        ])}
+                        onIsCollapseChange={p.generateStateOnChangeProp(
+                          $state,
+                          ["collapsiblev214", "isCollapse"]
+                        )}
+                        slot={
                           <div
                             className={classNames(
                               projectcss.all,
                               projectcss.__wab_text,
-                              sty.text__sIqoB
+                              sty.text__vmCvm
                             )}
                           >
                             {
                               "1. Pelaku usaha non perseorangan\n2. Terdaftar sebagai PSE di Kementerian Komunikasi dan Informatika\n3. Isi dan lengkapi formulir pendaftaran (link)\n4. Unggah dokumen berikut (format PDF) pada formulir pendaftaran untuk kelengkapan administrasi:\na. Company deck\nb. Surat Pernyataan (unduh template)"
                             }
                           </div>
-                        </Collapsible>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                        }
+                      >
+                        <h5
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.h5,
+                            projectcss.__wab_text,
+                            sty.h5___3U7Qx
+                          )}
+                        >
+                          {"Syarat dan ketentuan mendaftar regulatory sandbox"}
+                        </h5>
+                        {(() => {
+                          try {
+                            return $state.isCollapse ? false : true;
+                          } catch (e) {
+                            if (e instanceof TypeError) {
+                              return true;
+                            }
+                            throw e;
+                          }
+                        })() ? (
+                          <ArrowCircleRightSvgrepoComsvgIcon
+                            className={classNames(
+                              projectcss.all,
+                              sty.svg___5M2Wt
+                            )}
+                            role={"img"}
+                          />
+                        ) : null}
+                        {(() => {
+                          try {
+                            return $state.isCollapse ? true : false;
+                          } catch (e) {
+                            if (e instanceof TypeError) {
+                              return true;
+                            }
+                            throw e;
+                          }
+                        })() ? (
+                          <ArrowCircleDownSvgrepoComsvgIcon
+                            className={classNames(
+                              projectcss.all,
+                              sty.svg__qqvU7
+                            )}
+                            role={"img"}
+                          />
+                        ) : null}
+                      </Collapsiblev2>
+                    ) : null}
+                  </p.Stack>
+                </p.Stack>
               </p.Stack>
             ) : null}
           </div>
-          <div
-            data-plasmic-name={"who2"}
-            data-plasmic-override={overrides.who2}
-            className={classNames(projectcss.all, sty.who2)}
-          >
-            {true ? (
-              <p.Stack
-                as={"div"}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.freeBox__yCz4Q)}
-              >
-                {true ? (
+          <div className={classNames(projectcss.all, sty.freeBox__drWj0)}>
+            <div className={classNames(projectcss.all, sty.freeBox___5RfUx)}>
+              {true ? (
+                <p.Stack
+                  as={"div"}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.columns__ud0N)}
+                >
                   <p.Stack
                     as={"div"}
                     hasGap={true}
-                    className={classNames(projectcss.all, sty.columns__bYukj)}
+                    className={classNames(projectcss.all, sty.column__xXimu)}
                   >
-                    <p.Stack
-                      as={"div"}
-                      hasGap={true}
-                      className={classNames(projectcss.all, sty.column__daMui)}
+                    <h2
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.h2,
+                        projectcss.__wab_text,
+                        sty.h2__kahSa
+                      )}
                     >
-                      <h2
+                      {"Hubungi Kami"}
+                    </h2>
+                    {true ? (
+                      <div
                         className={classNames(
                           projectcss.all,
-                          projectcss.h2,
                           projectcss.__wab_text,
-                          sty.h2___65Db7
+                          sty.text___1QP8P
                         )}
                       >
-                        {"Hubungi Kami"}
-                      </h2>
-                      {true ? (
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text__awVvC
-                          )}
-                        >
+                        <React.Fragment>
                           <React.Fragment>
-                            <React.Fragment>
-                              {
-                                "Untuk pertanyaan umum Anda dapat mengirimkan email ke "
-                              }
-                            </React.Fragment>
-                            <span
-                              className={
-                                "plasmic_default__all plasmic_default__span"
-                              }
-                              style={{ color: "#FFFEFE", fontWeight: 700 }}
-                            >
-                              {"regulatory-sandbox@kemkes.go.id"}
-                            </span>
-                            <React.Fragment>
-                              {
-                                ",  jangan ragu untuk menghubungi kami jika anda memiliki pertanyaan seputar regulatory sandbox."
-                              }
-                            </React.Fragment>
+                            {
+                              "Untuk pertanyaan umum Anda dapat mengirimkan email ke"
+                            }
                           </React.Fragment>
-                        </div>
-                      ) : null}
-                    </p.Stack>
-                    <p.Stack
-                      as={"div"}
-                      hasGap={true}
-                      className={classNames(projectcss.all, sty.column__bu6Tg)}
-                    >
-                      <p.PlasmicImg
-                        alt={""}
-                        className={classNames(sty.img__xhv34)}
-                        displayHeight={"auto" as const}
-                        displayMaxHeight={"none" as const}
-                        displayMaxWidth={"none" as const}
-                        displayMinHeight={"0" as const}
-                        displayMinWidth={"0" as const}
-                        displayWidth={"60%" as const}
-                        loading={"lazy" as const}
-                        src={{
-                          src: "/plasmic/sandbox_satuhsehat/images/mailSandpng.png",
-                          fullWidth: 710,
-                          fullHeight: 710,
-                          aspectRatio: undefined
-                        }}
-                      />
-                    </p.Stack>
+                          <span
+                            className={
+                              "plasmic_default__all plasmic_default__span"
+                            }
+                            style={{ color: "#1290AC" }}
+                          >
+                            {" "}
+                          </span>
+                          <React.Fragment>{""}</React.Fragment>
+                          <span
+                            className={
+                              "plasmic_default__all plasmic_default__span"
+                            }
+                            style={{ color: "#1290AC", fontWeight: 700 }}
+                          >
+                            {"regulatory-sandbox@kemkes.go.id"}
+                          </span>
+                          <React.Fragment>{""}</React.Fragment>
+                          <span
+                            className={
+                              "plasmic_default__all plasmic_default__span"
+                            }
+                            style={{ color: "#FFFEFE" }}
+                          >
+                            {","}
+                          </span>
+                          <React.Fragment>
+                            {
+                              "  jangan ragu untuk menghubungi kami jika anda memiliki pertanyaan seputar regulatory sandbox."
+                            }
+                          </React.Fragment>
+                        </React.Fragment>
+                      </div>
+                    ) : null}
                   </p.Stack>
-                ) : null}
-              </p.Stack>
-            ) : null}
+                  <p.Stack
+                    as={"div"}
+                    hasGap={true}
+                    className={classNames(projectcss.all, sty.column__pb40P)}
+                  >
+                    <p.PlasmicImg
+                      alt={""}
+                      className={classNames(sty.img__f60L)}
+                      displayHeight={"auto" as const}
+                      displayMaxHeight={"none" as const}
+                      displayMaxWidth={"none" as const}
+                      displayMinHeight={"0" as const}
+                      displayMinWidth={"0" as const}
+                      displayWidth={"60%" as const}
+                      loading={"lazy" as const}
+                      src={{
+                        src: "/plasmic/sandbox_satuhsehat/images/mailSandpng.png",
+                        fullWidth: 710,
+                        fullHeight: 710,
+                        aspectRatio: undefined
+                      }}
+                    />
+                  </p.Stack>
+                </p.Stack>
+              ) : null}
+            </div>
           </div>
           <p.Stack
             as={"div"}
@@ -2125,13 +2705,13 @@ function PlasmicHomepage__RenderFunc(props: {
             <p.Stack
               as={"div"}
               hasGap={true}
-              className={classNames(projectcss.all, sty.freeBox__xwWwp)}
+              className={classNames(projectcss.all, sty.freeBox__rm34L)}
             >
               <div
                 className={classNames(
                   projectcss.all,
                   projectcss.__wab_text,
-                  sty.text__ig2Ze
+                  sty.text__e4W3
                 )}
               >
                 {"© Kementerian Kesehatan RI "}
@@ -2140,7 +2720,7 @@ function PlasmicHomepage__RenderFunc(props: {
                 className={classNames(
                   projectcss.all,
                   projectcss.__wab_text,
-                  sty.text___68O7R
+                  sty.text__i4SZi
                 )}
               >
                 {
@@ -2149,6 +2729,198 @@ function PlasmicHomepage__RenderFunc(props: {
               </div>
             </p.Stack>
           </p.Stack>
+          <Embed
+            data-plasmic-name={"embedHtml"}
+            data-plasmic-override={overrides.embedHtml}
+            className={classNames("__wab_instance", sty.embedHtml)}
+            code={
+              '<link rel="stylesheet" type="text/css" charset="UTF-8" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" /> \n<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />' as const
+            }
+          />
+
+          {(
+            hasVariant(globalVariants, "screen", "mobileOnly")
+              ? (() => {
+                  try {
+                    return $state.navbarv2.isMenuShow;
+                  } catch (e) {
+                    if (e instanceof TypeError) {
+                      return true;
+                    }
+                    throw e;
+                  }
+                })()
+              : true
+          ) ? (
+            <MenuOverlay
+              data-plasmic-name={"menuOverlay"}
+              data-plasmic-override={overrides.menuOverlay}
+              className={classNames("__wab_instance", sty.menuOverlay)}
+            >
+              <p.PlasmicLink
+                className={classNames(
+                  projectcss.all,
+                  projectcss.a,
+                  sty.link__o4BX0
+                )}
+                component={Link}
+                onClick={async event => {
+                  const $steps = {};
+                  $steps["updateNavbarv2IsMenuShow"] = true
+                    ? (() => {
+                        const actionArgs = {
+                          variable: __wrapUserFunction(
+                            {
+                              type: "InteractionArgLoc",
+                              actionName: "updateVariable",
+                              interactionUuid: "nsmV9XeejC",
+                              componentUuid: "2kkee5R7hDuz",
+                              argName: "variable"
+                            },
+                            () => ({
+                              objRoot: $state,
+                              variablePath: ["navbarv2", "isMenuShow"]
+                            })
+                          ),
+                          operation: __wrapUserFunction(
+                            {
+                              type: "InteractionArgLoc",
+                              actionName: "updateVariable",
+                              interactionUuid: "nsmV9XeejC",
+                              componentUuid: "2kkee5R7hDuz",
+                              argName: "operation"
+                            },
+                            () => 4
+                          )
+                        };
+                        return __wrapUserFunction(
+                          {
+                            type: "InteractionLoc",
+                            actionName: "updateVariable",
+                            interactionUuid: "nsmV9XeejC",
+                            componentUuid: "2kkee5R7hDuz"
+                          },
+                          () =>
+                            (({ variable, value, startIndex, deleteCount }) => {
+                              if (!variable) {
+                                return;
+                              }
+                              const { objRoot, variablePath } = variable;
+
+                              const oldValue = p.get(objRoot, variablePath);
+                              p.set(objRoot, variablePath, !oldValue);
+                              return !oldValue;
+                            })?.apply(null, [actionArgs]),
+                          actionArgs
+                        );
+                      })()
+                    : undefined;
+                  if (
+                    typeof $steps["updateNavbarv2IsMenuShow"] === "object" &&
+                    typeof $steps["updateNavbarv2IsMenuShow"].then ===
+                      "function"
+                  ) {
+                    $steps["updateNavbarv2IsMenuShow"] =
+                      await __wrapUserPromise(
+                        {
+                          type: "InteractionLoc",
+                          actionName: "updateVariable",
+                          interactionUuid: "nsmV9XeejC",
+                          componentUuid: "2kkee5R7hDuz"
+                        },
+                        $steps["updateNavbarv2IsMenuShow"]
+                      );
+                  }
+                }}
+                platform={"nextjs"}
+              >
+                <CloseBoldSvgrepoComsvgIcon
+                  className={classNames(projectcss.all, sty.svg__vCKts)}
+                  role={"img"}
+                />
+              </p.PlasmicLink>
+              <p.PlasmicLink
+                className={classNames(
+                  projectcss.all,
+                  projectcss.a,
+                  sty.link__aEbrR
+                )}
+                component={Link}
+                href={`/v-2`}
+                platform={"nextjs"}
+              >
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__cw1QJ
+                  )}
+                >
+                  {"Beranda"}
+                </div>
+              </p.PlasmicLink>
+              <p.PlasmicLink
+                className={classNames(
+                  projectcss.all,
+                  projectcss.a,
+                  sty.link__h3Ryj
+                )}
+                component={Link}
+                href={`/v-2`}
+                platform={"nextjs"}
+              >
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__r1J8
+                  )}
+                >
+                  {"Tentang"}
+                </div>
+              </p.PlasmicLink>
+              <p.PlasmicLink
+                className={classNames(
+                  projectcss.all,
+                  projectcss.a,
+                  sty.link___4VVq
+                )}
+                component={Link}
+                href={`/v-2`}
+                platform={"nextjs"}
+              >
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__isKd
+                  )}
+                >
+                  {"FAQ"}
+                </div>
+              </p.PlasmicLink>
+              <p.PlasmicLink
+                className={classNames(
+                  projectcss.all,
+                  projectcss.a,
+                  sty.link__lIy0O
+                )}
+                component={Link}
+                href={`/doc-v-2`}
+                platform={"nextjs"}
+              >
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__kEdLv
+                  )}
+                >
+                  {"Dokumen"}
+                </div>
+              </p.PlasmicLink>
+            </MenuOverlay>
+          ) : null}
         </div>
       </div>
     </React.Fragment>
@@ -2160,8 +2932,10 @@ const PlasmicDescendants = {
     "root",
     "pageMetadataOverride",
     "header",
-    "navigationBar",
+    "navbarv2",
     "hero",
+    "h1",
+    "h4",
     "about",
     "why",
     "who",
@@ -2170,13 +2944,30 @@ const PlasmicDescendants = {
     "card7",
     "card8",
     "faq",
-    "who2",
-    "footer"
+    "collapsiblev2",
+    "collapsiblev22",
+    "collapsiblev23",
+    "collapsiblev24",
+    "collapsiblev25",
+    "collapsiblev26",
+    "collapsiblev27",
+    "collapsiblev28",
+    "collapsiblev29",
+    "collapsiblev210",
+    "collapsiblev211",
+    "collapsiblev212",
+    "collapsiblev213",
+    "collapsiblev214",
+    "footer",
+    "embedHtml",
+    "menuOverlay"
   ],
   pageMetadataOverride: ["pageMetadataOverride"],
-  header: ["header", "navigationBar"],
-  navigationBar: ["navigationBar"],
-  hero: ["hero"],
+  header: ["header", "navbarv2"],
+  navbarv2: ["navbarv2"],
+  hero: ["hero", "h1", "h4"],
+  h1: ["h1"],
+  h4: ["h4"],
   about: ["about"],
   why: ["why"],
   who: ["who", "card5", "card6", "card7", "card8"],
@@ -2184,9 +2975,40 @@ const PlasmicDescendants = {
   card6: ["card6"],
   card7: ["card7"],
   card8: ["card8"],
-  faq: ["faq"],
-  who2: ["who2"],
-  footer: ["footer"]
+  faq: [
+    "faq",
+    "collapsiblev2",
+    "collapsiblev22",
+    "collapsiblev23",
+    "collapsiblev24",
+    "collapsiblev25",
+    "collapsiblev26",
+    "collapsiblev27",
+    "collapsiblev28",
+    "collapsiblev29",
+    "collapsiblev210",
+    "collapsiblev211",
+    "collapsiblev212",
+    "collapsiblev213",
+    "collapsiblev214"
+  ],
+  collapsiblev2: ["collapsiblev2"],
+  collapsiblev22: ["collapsiblev22"],
+  collapsiblev23: ["collapsiblev23"],
+  collapsiblev24: ["collapsiblev24"],
+  collapsiblev25: ["collapsiblev25"],
+  collapsiblev26: ["collapsiblev26"],
+  collapsiblev27: ["collapsiblev27"],
+  collapsiblev28: ["collapsiblev28"],
+  collapsiblev29: ["collapsiblev29"],
+  collapsiblev210: ["collapsiblev210"],
+  collapsiblev211: ["collapsiblev211"],
+  collapsiblev212: ["collapsiblev212"],
+  collapsiblev213: ["collapsiblev213"],
+  collapsiblev214: ["collapsiblev214"],
+  footer: ["footer"],
+  embedHtml: ["embedHtml"],
+  menuOverlay: ["menuOverlay"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -2195,8 +3017,10 @@ type NodeDefaultElementType = {
   root: "div";
   pageMetadataOverride: typeof PlasmicHead;
   header: "div";
-  navigationBar: typeof NavigationBar;
-  hero: "section";
+  navbarv2: typeof Navbarv2;
+  hero: "div";
+  h1: "h1";
+  h4: "h4";
   about: "div";
   why: "div";
   who: "div";
@@ -2205,8 +3029,23 @@ type NodeDefaultElementType = {
   card7: "div";
   card8: "div";
   faq: "div";
-  who2: "div";
+  collapsiblev2: typeof Collapsiblev2;
+  collapsiblev22: typeof Collapsiblev2;
+  collapsiblev23: typeof Collapsiblev2;
+  collapsiblev24: typeof Collapsiblev2;
+  collapsiblev25: typeof Collapsiblev2;
+  collapsiblev26: typeof Collapsiblev2;
+  collapsiblev27: typeof Collapsiblev2;
+  collapsiblev28: typeof Collapsiblev2;
+  collapsiblev29: typeof Collapsiblev2;
+  collapsiblev210: typeof Collapsiblev2;
+  collapsiblev211: typeof Collapsiblev2;
+  collapsiblev212: typeof Collapsiblev2;
+  collapsiblev213: typeof Collapsiblev2;
+  collapsiblev214: typeof Collapsiblev2;
   footer: "div";
+  embedHtml: typeof Embed;
+  menuOverlay: typeof MenuOverlay;
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -2271,8 +3110,10 @@ export const PlasmicHomepage = Object.assign(
     // Helper components rendering sub-elements
     pageMetadataOverride: makeNodeComponent("pageMetadataOverride"),
     header: makeNodeComponent("header"),
-    navigationBar: makeNodeComponent("navigationBar"),
+    navbarv2: makeNodeComponent("navbarv2"),
     hero: makeNodeComponent("hero"),
+    h1: makeNodeComponent("h1"),
+    h4: makeNodeComponent("h4"),
     about: makeNodeComponent("about"),
     why: makeNodeComponent("why"),
     who: makeNodeComponent("who"),
@@ -2281,8 +3122,23 @@ export const PlasmicHomepage = Object.assign(
     card7: makeNodeComponent("card7"),
     card8: makeNodeComponent("card8"),
     faq: makeNodeComponent("faq"),
-    who2: makeNodeComponent("who2"),
+    collapsiblev2: makeNodeComponent("collapsiblev2"),
+    collapsiblev22: makeNodeComponent("collapsiblev22"),
+    collapsiblev23: makeNodeComponent("collapsiblev23"),
+    collapsiblev24: makeNodeComponent("collapsiblev24"),
+    collapsiblev25: makeNodeComponent("collapsiblev25"),
+    collapsiblev26: makeNodeComponent("collapsiblev26"),
+    collapsiblev27: makeNodeComponent("collapsiblev27"),
+    collapsiblev28: makeNodeComponent("collapsiblev28"),
+    collapsiblev29: makeNodeComponent("collapsiblev29"),
+    collapsiblev210: makeNodeComponent("collapsiblev210"),
+    collapsiblev211: makeNodeComponent("collapsiblev211"),
+    collapsiblev212: makeNodeComponent("collapsiblev212"),
+    collapsiblev213: makeNodeComponent("collapsiblev213"),
+    collapsiblev214: makeNodeComponent("collapsiblev214"),
     footer: makeNodeComponent("footer"),
+    embedHtml: makeNodeComponent("embedHtml"),
+    menuOverlay: makeNodeComponent("menuOverlay"),
 
     // Metadata about props expected for PlasmicHomepage
     internalVariantProps: PlasmicHomepage__VariantProps,

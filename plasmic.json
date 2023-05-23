@@ -450,6 +450,19 @@
           "cssFilePath": "plasmic/sandbox_satuhsehat/PlasmicMitraDiawasi1.module.css",
           "scheme": "blackbox",
           "componentType": "page"
+        },
+        {
+          "id": "j0txJ-a09lq",
+          "name": "OldHomepage",
+          "type": "managed",
+          "projectId": "mazsTSCdeXMvNewzsED8CP",
+          "renderModuleFilePath": "plasmic/sandbox_satuhsehat/PlasmicOldHomepage.tsx",
+          "importSpec": {
+            "modulePath": "../pages/old-hompage.tsx"
+          },
+          "cssFilePath": "plasmic/sandbox_satuhsehat/PlasmicOldHomepage.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
         }
       ],
       "icons": [
