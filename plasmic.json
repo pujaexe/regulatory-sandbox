@@ -36,46 +36,55 @@
         {
           "id": "kv6Mk_JNYw",
           "name": "Button",
+          "displayName": "AntdButton",
           "componentImportPath": "antd/lib/button"
         },
         {
           "id": "iBC45mjTXv",
           "name": "Slider",
+          "displayName": "AntdSlider",
           "componentImportPath": "@plasmicpkgs/antd/skinny/registerSlider"
         },
         {
           "id": "tRueht1jub",
           "name": "Switch",
+          "displayName": "AntdSwitch",
           "componentImportPath": "antd/lib/switch"
         },
         {
           "id": "YRr0RPAdEj",
           "name": "Option",
+          "displayName": "AntdOption",
           "componentImportPath": "rc-select"
         },
         {
           "id": "Ay1H491feg",
           "name": "OptGroup",
+          "displayName": "AntdOptionGroup",
           "componentImportPath": "rc-select"
         },
         {
           "id": "2YpGIhkzkpc",
           "name": "Select",
+          "displayName": "AntdSelect",
           "componentImportPath": "antd/lib/select"
         },
         {
           "id": "yegZ392NLoV",
           "name": "CollapsePanel",
+          "displayName": "AntdCollapsePanel",
           "componentImportPath": "antd/lib/collapse/CollapsePanel"
         },
         {
           "id": "F10gpQ1ZhXY",
           "name": "Collapse",
+          "displayName": "AntdCollapse",
           "componentImportPath": "@plasmicpkgs/antd/skinny/registerCollapse"
         },
         {
           "id": "SAEWraOT2YV",
           "name": "Checkbox",
+          "displayName": "AntdCheckbox",
           "componentImportPath": "antd/lib/checkbox/Checkbox",
           "helper": {
             "name": "checkboxHelpers",
@@ -85,41 +94,49 @@
         {
           "id": "m5zFS-kMOL-",
           "name": "CheckboxGroup",
+          "displayName": "AntdCheckboxGroup",
           "componentImportPath": "antd/lib/checkbox/Group"
         },
         {
           "id": "6DZuSUEKjFh",
           "name": "MenuDivider",
+          "displayName": "AntdMenuDivider",
           "componentImportPath": "antd/lib/menu/MenuDivider"
         },
         {
           "id": "HZ6EmQgIQJr",
           "name": "MenuItem",
+          "displayName": "AntdMenuItem",
           "componentImportPath": "antd/lib/menu/MenuItem"
         },
         {
           "id": "LGE6ExNG8fZ",
           "name": "ItemGroup",
+          "displayName": "AntdMenuItemGroup",
           "componentImportPath": "rc-menu"
         },
         {
           "id": "DSwQm8gUYob",
           "name": "SubMenu",
+          "displayName": "AntdSubMenu",
           "componentImportPath": "antd/lib/menu/SubMenu"
         },
         {
           "id": "Iz_hLKpHZDg",
           "name": "Menu",
+          "displayName": "AntdMenu",
           "componentImportPath": "antd/lib/menu/index"
         },
         {
           "id": "_C8wcdH3BDp",
           "name": "Carousel",
+          "displayName": "AntdCarousel",
           "componentImportPath": "antd/lib/carousel"
         },
         {
           "id": "tO9wrxr8Nbb",
           "name": "Input",
+          "displayName": "AntdInput",
           "componentImportPath": "antd/lib/input",
           "helper": {
             "name": "inputHelpers",
@@ -129,6 +146,7 @@
         {
           "id": "ZJIPHLoTjkN",
           "name": "TextArea",
+          "displayName": "AntdInputTextArea",
           "componentImportPath": "antd/lib/input/TextArea",
           "helper": {
             "name": "inputHelpers",
@@ -138,6 +156,7 @@
         {
           "id": "zDcn8vsMldu",
           "name": "Search",
+          "displayName": "AntdInputSearch",
           "componentImportPath": "antd/lib/input/Search",
           "helper": {
             "name": "inputHelpers",
@@ -147,6 +166,7 @@
         {
           "id": "fTDg0FM1tnD",
           "name": "Password",
+          "displayName": "AntdInputPassword",
           "componentImportPath": "antd/lib/input/Password",
           "helper": {
             "name": "inputHelpers",
@@ -156,50 +176,58 @@
         {
           "id": "uZueUXuqePq",
           "name": "InputGroup",
+          "displayName": "AntdInputGroup",
           "componentImportPath": "antd/lib/input/Group"
         },
         {
           "id": "cv59X4q0WK",
           "name": "Dropdown",
+          "displayName": "AntdDropdown",
           "componentImportPath": "@plasmicpkgs/antd/skinny/registerDropdown"
         },
         {
           "id": "cHUYQj2aKK",
           "name": "DropdownButton",
+          "displayName": "AntdDropdownButton",
           "componentImportPath": "antd/lib/dropdown/dropdown-button"
         },
         {
           "id": "p3HNI5RglT",
           "name": "TabPane",
+          "displayName": "AntdTabPane",
           "componentImportPath": "@plasmicpkgs/antd/skinny/registerTabs"
         },
         {
           "id": "Hb-DVgvuk3",
           "name": "Tabs",
+          "displayName": "AntdTabs",
           "componentImportPath": "@plasmicpkgs/antd/skinny/registerTabs"
         },
         {
           "id": "Q0BhxRa-Moi",
           "name": "Rate",
+          "displayName": "AntdRate",
           "componentImportPath": "antd/lib/rate"
         },
         {
           "id": "LF24IrAPbeRN",
           "name": "TableWrapper",
+          "displayName": "AntdTable",
           "componentImportPath": "@plasmicpkgs/antd/skinny/registerTable"
         },
         {
           "id": "qJFaUEuzy9Ae",
           "name": "TableColumn",
+          "displayName": "AntdTableColumn",
           "componentImportPath": "@plasmicpkgs/antd/skinny/registerTable"
         },
         {
           "id": "aOob39p1-Dlv",
           "name": "TableValue",
+          "displayName": "AntdTableValue",
           "componentImportPath": "@plasmicpkgs/antd/skinny/registerTable"
         }
-      ],
-      "jsBundleThemes": []
+      ]
     },
     {
       "projectId": "7nJ7UcFmq9UzB6eXfC5z4a",
@@ -216,10 +244,10 @@
         {
           "id": "jGx9tiKJoex",
           "name": "NavigationBar",
+          "displayName": "hostless-plasmic-navigation-bar",
           "componentImportPath": "@plasmicpkgs/plasmic-nav"
         }
-      ],
-      "jsBundleThemes": []
+      ]
     },
     {
       "projectId": "mazsTSCdeXMvNewzsED8CP",
@@ -463,6 +491,84 @@
           "cssFilePath": "plasmic/sandbox_satuhsehat/PlasmicOldHomepage.module.css",
           "scheme": "blackbox",
           "componentType": "page"
+        },
+        {
+          "id": "_9j33abEC0S",
+          "name": "MitraTerdaftar3",
+          "type": "managed",
+          "projectId": "mazsTSCdeXMvNewzsED8CP",
+          "renderModuleFilePath": "plasmic/sandbox_satuhsehat/PlasmicMitraTerdaftar3.tsx",
+          "importSpec": {
+            "modulePath": "../pages/mitra-terdaftar-3.tsx"
+          },
+          "cssFilePath": "plasmic/sandbox_satuhsehat/PlasmicMitraTerdaftar3.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "zsM1caetHSr",
+          "name": "MitraTerdaftar4",
+          "type": "managed",
+          "projectId": "mazsTSCdeXMvNewzsED8CP",
+          "renderModuleFilePath": "plasmic/sandbox_satuhsehat/PlasmicMitraTerdaftar4.tsx",
+          "importSpec": {
+            "modulePath": "../pages/mitra-terdaftar-4.tsx"
+          },
+          "cssFilePath": "plasmic/sandbox_satuhsehat/PlasmicMitraTerdaftar4.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "yZECew2bO7I",
+          "name": "MitraTerdaftar5",
+          "type": "managed",
+          "projectId": "mazsTSCdeXMvNewzsED8CP",
+          "renderModuleFilePath": "plasmic/sandbox_satuhsehat/PlasmicMitraTerdaftar5.tsx",
+          "importSpec": {
+            "modulePath": "../pages/mitra-terdaftar-5.tsx"
+          },
+          "cssFilePath": "plasmic/sandbox_satuhsehat/PlasmicMitraTerdaftar5.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "gr0XLr-NHHB",
+          "name": "MitraTerdaftar6",
+          "type": "managed",
+          "projectId": "mazsTSCdeXMvNewzsED8CP",
+          "renderModuleFilePath": "plasmic/sandbox_satuhsehat/PlasmicMitraTerdaftar6.tsx",
+          "importSpec": {
+            "modulePath": "../pages/mitra-terdaftar-6.tsx"
+          },
+          "cssFilePath": "plasmic/sandbox_satuhsehat/PlasmicMitraTerdaftar6.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "jZlBan-H0ne",
+          "name": "MitraTerdaftar7",
+          "type": "managed",
+          "projectId": "mazsTSCdeXMvNewzsED8CP",
+          "renderModuleFilePath": "plasmic/sandbox_satuhsehat/PlasmicMitraTerdaftar7.tsx",
+          "importSpec": {
+            "modulePath": "../pages/mitra-terdaftar-7.tsx"
+          },
+          "cssFilePath": "plasmic/sandbox_satuhsehat/PlasmicMitraTerdaftar7.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "Eo1V8pvEL6m",
+          "name": "MitraDiawasi2",
+          "type": "managed",
+          "projectId": "mazsTSCdeXMvNewzsED8CP",
+          "renderModuleFilePath": "plasmic/sandbox_satuhsehat/PlasmicMitraDiawasi2.tsx",
+          "importSpec": {
+            "modulePath": "../pages/mitra-diawasi-2.tsx"
+          },
+          "cssFilePath": "plasmic/sandbox_satuhsehat/PlasmicMitraDiawasi2.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
         }
       ],
       "icons": [
@@ -687,6 +793,201 @@
           "id": "iVPkSeOT2",
           "name": "banner-new.png",
           "filePath": "../public/plasmic/sandbox_satuhsehat/images/bannerNewpng.png"
+        },
+        {
+          "id": "cPMCZA3Ao",
+          "name": "aido health.png",
+          "filePath": "../public/plasmic/sandbox_satuhsehat/images/aidoHealthpng.png"
+        },
+        {
+          "id": "n3tXFRaJH",
+          "name": "alodoctor.jpeg",
+          "filePath": "../public/plasmic/sandbox_satuhsehat/images/alodoctorjpeg.jpg"
+        },
+        {
+          "id": "P_RRSGboI",
+          "name": "appskep.png",
+          "filePath": "../public/plasmic/sandbox_satuhsehat/images/appskeppng.png"
+        },
+        {
+          "id": "gZSr63nzc",
+          "name": "call my doctor.png",
+          "filePath": "../public/plasmic/sandbox_satuhsehat/images/callMyDoctorpng.png"
+        },
+        {
+          "id": "nkdNVR35V",
+          "name": "cexup.png",
+          "filePath": "../public/plasmic/sandbox_satuhsehat/images/cexuppng.png"
+        },
+        {
+          "id": "cseTdlcL0",
+          "name": "dkonsul_logo - Adityas Kemal Fakhruddin.png",
+          "filePath": "../public/plasmic/sandbox_satuhsehat/images/dkonsulLogoAdityasKemalFakhruddinpng.png"
+        },
+        {
+          "id": "1Ga0t1YZK",
+          "name": "farmasee.png",
+          "filePath": "../public/plasmic/sandbox_satuhsehat/images/farmaseepng.png"
+        },
+        {
+          "id": "21NzUOId8",
+          "name": "FitHappy.png",
+          "filePath": "../public/plasmic/sandbox_satuhsehat/images/fitHappypng.png"
+        },
+        {
+          "id": "HqY6tqgWG",
+          "name": "Gizi Nusantara.png",
+          "filePath": "../public/plasmic/sandbox_satuhsehat/images/giziNusantarapng.png"
+        },
+        {
+          "id": "S-yqfhjDS",
+          "name": "good doctor.png",
+          "filePath": "../public/plasmic/sandbox_satuhsehat/images/goodDoctorpng.png"
+        },
+        {
+          "id": "He9Fc2zOd",
+          "name": "Halodoc 2.jpeg",
+          "filePath": "../public/plasmic/sandbox_satuhsehat/images/halodoc2Jpeg.jpg"
+        },
+        {
+          "id": "p9Q0tvFDN",
+          "name": "healthical.png",
+          "filePath": "../public/plasmic/sandbox_satuhsehat/images/healthicalpng.png"
+        },
+        {
+          "id": "IMxRtdFp8",
+          "name": "healthpro.jpeg",
+          "filePath": "../public/plasmic/sandbox_satuhsehat/images/healthprojpeg.jpg"
+        },
+        {
+          "id": "lJCJbFvYJ",
+          "name": "ibunda.id.png",
+          "filePath": "../public/plasmic/sandbox_satuhsehat/images/ibundaidpng.png"
+        },
+        {
+          "id": "_hc7UFy0n",
+          "name": "indihealth Med Service Japan Indihealth.png",
+          "filePath": "../public/plasmic/sandbox_satuhsehat/images/indihealthMedServiceJapanIndihealthpng.png"
+        },
+        {
+          "id": "3LtHFpDaN",
+          "name": "iVascular.png",
+          "filePath": "../public/plasmic/sandbox_satuhsehat/images/iVascularpng.png"
+        },
+        {
+          "id": "Vq8xDlhRG",
+          "name": "Klinisia.png",
+          "filePath": "../public/plasmic/sandbox_satuhsehat/images/klinisiapng.png"
+        },
+        {
+          "id": "0e1bbB4w2",
+          "name": "lifepack.jpeg",
+          "filePath": "../public/plasmic/sandbox_satuhsehat/images/lifepackjpeg.jpg"
+        },
+        {
+          "id": "bvJgFRg3p",
+          "name": "getmedik.png",
+          "filePath": "../public/plasmic/sandbox_satuhsehat/images/getmedikpng.png"
+        },
+        {
+          "id": "5w2tj63Yj",
+          "name": "conficare.png",
+          "filePath": "../public/plasmic/sandbox_satuhsehat/images/conficarepng.png"
+        },
+        {
+          "id": "V-_N1Y2qC",
+          "name": "myclnqsehat indonesia.png",
+          "filePath": "../public/plasmic/sandbox_satuhsehat/images/myclnqsehatIndonesiapng.png"
+        },
+        {
+          "id": "ULlfe98rO",
+          "name": "mDOC.jpeg",
+          "filePath": "../public/plasmic/sandbox_satuhsehat/images/mDoCjpeg.jpg"
+        },
+        {
+          "id": "mgc20TqIf",
+          "name": "medisin.png",
+          "filePath": "../public/plasmic/sandbox_satuhsehat/images/medisinpng.png"
+        },
+        {
+          "id": "WjiZGs5SJ",
+          "name": "meja dokter.png",
+          "filePath": "../public/plasmic/sandbox_satuhsehat/images/mejaDokterpng.png"
+        },
+        {
+          "id": "tFO3bUkFA",
+          "name": "naluri.png",
+          "filePath": "../public/plasmic/sandbox_satuhsehat/images/naluripng.png"
+        },
+        {
+          "id": "MK65noO_L",
+          "name": "neurabot.png",
+          "filePath": "../public/plasmic/sandbox_satuhsehat/images/neurabotpng.png"
+        },
+        {
+          "id": "W636fRpfi",
+          "name": "Oke dok.png",
+          "filePath": "../public/plasmic/sandbox_satuhsehat/images/okeDokpng.png"
+        },
+        {
+          "id": "g0x7pAZFZ",
+          "name": "Periksa Dulu.png",
+          "filePath": "../public/plasmic/sandbox_satuhsehat/images/periksaDulupng.png"
+        },
+        {
+          "id": "V7Q97FeGu",
+          "name": "Periksain.png",
+          "filePath": "../public/plasmic/sandbox_satuhsehat/images/periksainpng.png"
+        },
+        {
+          "id": "ZJfD691Uq",
+          "name": "phamcy.png",
+          "filePath": "../public/plasmic/sandbox_satuhsehat/images/phamcypng.png"
+        },
+        {
+          "id": "2uewQlRK9",
+          "name": "riliv.png",
+          "filePath": "../public/plasmic/sandbox_satuhsehat/images/rilivpng.png"
+        },
+        {
+          "id": "jDi6aGeyD",
+          "name": "SAM Element.jpeg",
+          "filePath": "../public/plasmic/sandbox_satuhsehat/images/samElementjpeg.jpg"
+        },
+        {
+          "id": "lzTIRIeml",
+          "name": "Sehati teleCTG.png",
+          "filePath": "../public/plasmic/sandbox_satuhsehat/images/sehatiTeleCtGpng.png"
+        },
+        {
+          "id": "ePPR8j7Tk",
+          "name": "SehatQ.jpeg",
+          "filePath": "../public/plasmic/sandbox_satuhsehat/images/sehatQjpeg.jpg"
+        },
+        {
+          "id": "UlhuJAVVE",
+          "name": "siap dok.jpeg",
+          "filePath": "../public/plasmic/sandbox_satuhsehat/images/siapDokjpeg.jpg"
+        },
+        {
+          "id": "F5wC14jRK",
+          "name": "sintasi.png",
+          "filePath": "../public/plasmic/sandbox_satuhsehat/images/sintasipng.png"
+        },
+        {
+          "id": "lyrc_0cqr",
+          "name": "sirka.jpeg",
+          "filePath": "../public/plasmic/sandbox_satuhsehat/images/sirkajpeg.jpg"
+        },
+        {
+          "id": "QxYdZR8Hy",
+          "name": "tenang.jpeg",
+          "filePath": "../public/plasmic/sandbox_satuhsehat/images/tenangjpeg.jpg"
+        },
+        {
+          "id": "a5VovoAdK",
+          "name": "simas sehat.png",
+          "filePath": "../public/plasmic/sandbox_satuhsehat/images/simasSehatpng.png"
         }
       ],
       "indirect": false,
@@ -695,11 +996,13 @@
         {
           "id": "7EBFWZs-Lh",
           "name": "PlasmicHead",
+          "displayName": "hostless-plasmic-head",
           "componentImportPath": "@plasmicapp/react-web"
         },
         {
           "id": "-JA6awYg0l",
           "name": "Fetcher",
+          "displayName": "plasmic-data-source-fetcher",
           "componentImportPath": "@plasmicapp/react-web/lib/data-sources"
         }
       ]
@@ -719,11 +1022,13 @@
         {
           "id": "FNIk-CnxQYXU",
           "name": "RichLayout",
+          "displayName": "hostless-rich-layout",
           "componentImportPath": "@plasmicpkgs/plasmic-rich-components"
         },
         {
           "id": "k4RvFQUTZKCU",
           "name": "RichTable",
+          "displayName": "hostless-rich-table",
           "componentImportPath": "@plasmicpkgs/plasmic-rich-components",
           "helper": {
             "name": "tableHelpers",
@@ -733,10 +1038,10 @@
         {
           "id": "zV8WqibK3ZnC",
           "name": "RichDetails",
+          "displayName": "hostless-rich-details",
           "componentImportPath": "@plasmicpkgs/plasmic-rich-components"
         }
-      ],
-      "jsBundleThemes": []
+      ]
     },
     {
       "projectId": "ohDidvG9XsCeFumugENU3J",
@@ -753,126 +1058,151 @@
         {
           "id": "OvH7ENd3m7ug",
           "name": "AntdSelect",
+          "displayName": "plasmic-antd5-select",
           "componentImportPath": "@plasmicpkgs/antd5/skinny/registerSelect"
         },
         {
           "id": "ACzfHW-ZLLiW",
           "name": "AntdOption",
+          "displayName": "plasmic-antd5-option",
           "componentImportPath": "@plasmicpkgs/antd5/skinny/registerSelect"
         },
         {
           "id": "UyLCOYx2BYc4",
           "name": "AntdTable",
+          "displayName": "plasmic-antd5-table",
           "componentImportPath": "@plasmicpkgs/antd5/skinny/registerTable"
         },
         {
           "id": "OFZLDfR2iHmj",
           "name": "AntdColumn",
+          "displayName": "plasmic-antd5-table-column",
           "componentImportPath": "@plasmicpkgs/antd5/skinny/registerTable"
         },
         {
           "id": "-EU4JlrV3jtw",
           "name": "AntdColumnGroup",
+          "displayName": "plasmic-antd5-table-column-group",
           "componentImportPath": "@plasmicpkgs/antd5/skinny/registerTable"
         },
         {
           "id": "DmrLLHGTjGTE",
           "name": "AntdConfigProvider",
+          "displayName": "plasmic-antd5-config-provider",
           "componentImportPath": "@plasmicpkgs/antd5/skinny/registerConfigProvider"
         },
         {
           "id": "aFHKFWNvs7",
           "name": "AntdCheckbox",
+          "displayName": "plasmic-antd5-checkbox",
           "componentImportPath": "@plasmicpkgs/antd5/skinny/registerCheckbox"
         },
         {
           "id": "2bM6vBkaxc",
           "name": "AntdCheckboxGroup",
+          "displayName": "plasmic-antd5-checkbox-group",
           "componentImportPath": "@plasmicpkgs/antd5/skinny/registerCheckbox"
         },
         {
           "id": "-CXVV9tXtP",
           "name": "AntdRadio",
+          "displayName": "plasmic-antd5-radio",
           "componentImportPath": "@plasmicpkgs/antd5/skinny/registerRadio"
         },
         {
           "id": "C3Ce7Sqgay",
           "name": "AntdRadioButton",
+          "displayName": "plasmic-antd5-radio-button",
           "componentImportPath": "@plasmicpkgs/antd5/skinny/registerRadio"
         },
         {
           "id": "PZQhrvIGy1",
           "name": "AntdRadioGroup",
+          "displayName": "plasmic-antd5-radio-group",
           "componentImportPath": "@plasmicpkgs/antd5/skinny/registerRadio"
         },
         {
           "id": "xx93QbkHH5i",
           "name": "AntdModal",
+          "displayName": "plasmic-antd5-modal",
           "componentImportPath": "@plasmicpkgs/antd5/skinny/registerModal"
         },
         {
           "id": "bx9Xzvf5_eu",
           "name": "AntdButton",
+          "displayName": "plasmic-antd5-button",
           "componentImportPath": "@plasmicpkgs/antd5/skinny/registerButton"
         },
         {
           "id": "fo-n3xHvdqt",
           "name": "AntdMenu",
+          "displayName": "plasmic-antd5-menu",
           "componentImportPath": "@plasmicpkgs/antd5/skinny/registerMenu"
         },
         {
           "id": "QSmezaW-Gyu",
           "name": "AntdMenuItem",
+          "displayName": "plasmic-antd5-menu-item",
           "componentImportPath": "@plasmicpkgs/antd5/skinny/registerMenu"
         },
         {
           "id": "6ySly9jzXsR",
           "name": "AntdMenuItemGroup",
+          "displayName": "plasmic-antd5-menu-item-group",
           "componentImportPath": "@plasmicpkgs/antd5/skinny/registerMenu"
         },
         {
           "id": "pwJcAbVYC4M",
           "name": "AntdMenuDivider",
+          "displayName": "plasmic-antd5-menu-divider",
           "componentImportPath": "@plasmicpkgs/antd5/skinny/registerMenu"
         },
         {
           "id": "nL-8oPEfDNL",
           "name": "AntdSubMenu",
+          "displayName": "plasmic-antd5-submenu",
           "componentImportPath": "@plasmicpkgs/antd5/skinny/registerMenu"
         },
         {
           "id": "zIDEYq9RgLG",
           "name": "AntdDropdown",
+          "displayName": "plasmic-antd5-dropdown",
           "componentImportPath": "@plasmicpkgs/antd5/skinny/registerDropdown"
         },
         {
           "id": "5sJiSDZuAW",
           "name": "AntdOptionGroup",
+          "displayName": "plasmic-antd5-option-group",
           "componentImportPath": "@plasmicpkgs/antd5/skinny/registerSelect"
         },
         {
           "id": "TgJFzUZpvQ",
           "name": "FormWrapper",
+          "displayName": "plasmic-antd5-form",
           "componentImportPath": "@plasmicpkgs/antd5/skinny/registerForm"
         },
         {
           "id": "EYHwZh9ILg",
           "name": "FormItemWrapper",
+          "displayName": "plasmic-antd5-form-item",
           "componentImportPath": "@plasmicpkgs/antd5/skinny/registerForm"
         },
         {
           "id": "zEXrWX9naj",
           "name": "FormGroup",
+          "displayName": "plasmic-antd5-form-group",
           "componentImportPath": "@plasmicpkgs/antd5/skinny/registerForm"
         },
         {
           "id": "M2mN_XzxO4",
           "name": "FormListWrapper",
+          "displayName": "plasmic-antd5-form-list",
           "componentImportPath": "@plasmicpkgs/antd5/skinny/registerForm"
         },
         {
           "id": "Vf5hntD2SZ5",
           "name": "AntdInput",
+          "displayName": "plasmic-antd5-input",
           "componentImportPath": "@plasmicpkgs/antd5/skinny/registerInput",
           "helper": {
             "name": "inputHelpers",
@@ -882,6 +1212,7 @@
         {
           "id": "RW4q13RFtAd",
           "name": "AntdPassword",
+          "displayName": "plasmic-antd5-input-password",
           "componentImportPath": "@plasmicpkgs/antd5/skinny/registerInput",
           "helper": {
             "name": "inputHelpers",
@@ -891,6 +1222,7 @@
         {
           "id": "pTzGlMptTxd",
           "name": "AntdTextArea",
+          "displayName": "plasmic-antd5-textarea",
           "componentImportPath": "@plasmicpkgs/antd5/skinny/registerInput",
           "helper": {
             "name": "inputHelpers",
@@ -900,20 +1232,28 @@
         {
           "id": "wxD5qjEe3pU",
           "name": "AntdInputNumber",
+          "displayName": "plasmic-antd5-input-number",
           "componentImportPath": "@plasmicpkgs/antd5/skinny/registerInput"
         },
         {
           "id": "Zzbfw0tfhA",
           "name": "UploadWrapper",
+          "displayName": "plasmic-antd5-upload",
           "componentImportPath": "@plasmicpkgs/antd5/skinny/registerUpload"
         },
         {
           "id": "-gkBqPikhk",
           "name": "AntdSwitch",
+          "displayName": "plasmic-antd5-switch",
           "componentImportPath": "@plasmicpkgs/antd5/skinny/registerSwitch"
+        },
+        {
+          "id": "lKdkQL67fv",
+          "name": "AntdDatePicker",
+          "displayName": "plasmic-antd5-date-picker",
+          "componentImportPath": "@plasmicpkgs/antd5/skinny/registerDatePicker"
         }
-      ],
-      "jsBundleThemes": []
+      ]
     },
     {
       "projectId": "r3ASNrnyvLLLAtDvzUioQ",
@@ -930,10 +1270,10 @@
         {
           "id": "HOQUyOpClJ",
           "name": "Slider",
+          "displayName": "hostless-slider",
           "componentImportPath": "react-slick"
         }
-      ],
-      "jsBundleThemes": []
+      ]
     },
     {
       "projectId": "caTPwKxj5ZrD9LQ7DMdK4Z",
@@ -950,25 +1290,28 @@
         {
           "id": "CMDBvOhaI4s",
           "name": "Iframe",
+          "displayName": "hostless-iframe",
           "componentImportPath": "@plasmicpkgs/plasmic-basic-components"
         },
         {
           "id": "RhitNJW5Zu-",
           "name": "Video",
+          "displayName": "hostless-html-video",
           "componentImportPath": "@plasmicpkgs/plasmic-basic-components"
         },
         {
           "id": "PKldDYkH42",
           "name": "Embed",
+          "displayName": "hostless-embed",
           "componentImportPath": "@plasmicpkgs/plasmic-basic-components"
         },
         {
           "id": "D4RbnlpRXg3",
           "name": "DataProvider",
+          "displayName": "hostless-data-provider",
           "componentImportPath": "@plasmicpkgs/plasmic-basic-components"
         }
-      ],
-      "jsBundleThemes": []
+      ]
     }
   ],
   "globalVariants": {
@@ -985,6 +1328,6 @@
   "nextjsConfig": {
     "pagesDir": "../pages"
   },
-  "cliVersion": "0.1.284",
-  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.284/dist/plasmic.schema.json"
+  "cliVersion": "0.1.286",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.286/dist/plasmic.schema.json"
 }

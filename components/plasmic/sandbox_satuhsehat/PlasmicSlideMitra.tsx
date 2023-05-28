@@ -46,7 +46,6 @@ import { useScreenVariants as useScreenVariantsqbGzfD819Z3T3 } from "./PlasmicGl
 import "@plasmicapp/react-web/lib/plasmic.css";
 
 import plasmic_antd_5_hostless_css from "../antd_5_hostless/plasmic_antd_5_hostless.module.css"; // plasmic-import: ohDidvG9XsCeFumugENU3J/projectcss
-import plasmic_plasmic_rich_components_css from "../plasmic_rich_components/plasmic_plasmic_rich_components.module.css"; // plasmic-import: jkU633o1Cz7HrJdwdxhVHk/projectcss
 import projectcss from "./plasmic_sandbox_satuhsehat.module.css"; // plasmic-import: mazsTSCdeXMvNewzsED8CP/projectcss
 import sty from "./PlasmicSlideMitra.module.css"; // plasmic-import: HjExHmE43ji/css
 
@@ -117,7 +116,9 @@ function PlasmicSlideMitra__RenderFunc(props: {
   const $refs = refsRef.current;
 
   const currentUser = p.useCurrentUser?.() || {};
+
   const [$queries, setDollarQueries] = React.useState({});
+
   const stateSpecs = React.useMemo(
     () => [
       {
@@ -150,7 +151,6 @@ function PlasmicSlideMitra__RenderFunc(props: {
         projectcss.plasmic_mixins,
         projectcss.plasmic_tokens,
         plasmic_antd_5_hostless_css.plasmic_tokens,
-        plasmic_plasmic_rich_components_css.plasmic_tokens,
         sty.root,
         { [sty.rootisDiawasi]: hasVariant($state, "isDiawasi", "isDiawasi") }
       )}
@@ -421,10 +421,56 @@ function PlasmicSlideMitra__RenderFunc(props: {
                     ? true
                     : undefined
                 }
+                slot={
+                  <p.PlasmicImg
+                    alt={""}
+                    className={classNames(sty.img__gilyS, {
+                      [sty.imgisDiawasi__gilySvK8Cy]: hasVariant(
+                        $state,
+                        "isDiawasi",
+                        "isDiawasi"
+                      )
+                    })}
+                    displayHeight={
+                      hasVariant($state, "isDiawasi", "isDiawasi")
+                        ? ("72px" as const)
+                        : ("72px" as const)
+                    }
+                    displayMaxHeight={"none" as const}
+                    displayMaxWidth={
+                      hasVariant($state, "isDiawasi", "isDiawasi")
+                        ? ("100%" as const)
+                        : ("100%" as const)
+                    }
+                    displayMinHeight={"0" as const}
+                    displayMinWidth={"0" as const}
+                    displayWidth={
+                      hasVariant($state, "isDiawasi", "isDiawasi")
+                        ? ("72px" as const)
+                        : ("72px" as const)
+                    }
+                    loading={"lazy" as const}
+                    src={
+                      hasVariant($state, "isDiawasi", "isDiawasi")
+                        ? {
+                            src: "/plasmic/sandbox_satuhsehat/images/rilivpng.png",
+                            fullWidth: 4669,
+                            fullHeight: 2363,
+                            aspectRatio: undefined
+                          }
+                        : {
+                            src: "/plasmic/sandbox_satuhsehat/images/menuIconspng.png",
+                            fullWidth: 70,
+                            fullHeight: 70,
+                            aspectRatio: undefined
+                          }
+                    }
+                  />
+                }
               >
                 {hasVariant($state, "isDiawasi", "isDiawasi")
-                  ? "PeriksaDulu"
-                  : "PeriksaDulu"}
+                  ? "Riliv"
+                  : "Ai Care"}
               </ItemListMitraThumbnail>
             ) : null}
             {(hasVariant($state, "isDiawasi", "isDiawasi") ? true : true) ? (
@@ -442,15 +488,43 @@ function PlasmicSlideMitra__RenderFunc(props: {
                     ? true
                     : undefined
                 }
+                slot={
+                  <p.PlasmicImg
+                    alt={""}
+                    className={classNames(sty.img__ebq22)}
+                    displayHeight={"72px" as const}
+                    displayMaxHeight={"none" as const}
+                    displayMaxWidth={"100%" as const}
+                    displayMinHeight={"0" as const}
+                    displayMinWidth={"0" as const}
+                    displayWidth={"72px" as const}
+                    loading={"lazy" as const}
+                    src={{
+                      src: "/plasmic/sandbox_satuhsehat/images/aidoHealthpng.png",
+                      fullWidth: 1038,
+                      fullHeight: 102,
+                      aspectRatio: undefined
+                    }}
+                  />
+                }
               >
                 <div
                   className={classNames(
                     projectcss.all,
                     projectcss.__wab_text,
-                    sty.text__oZun8
+                    sty.text__oZun8,
+                    {
+                      [sty.textisDiawasi__oZun8VK8Cy]: hasVariant(
+                        $state,
+                        "isDiawasi",
+                        "isDiawasi"
+                      )
+                    }
                   )}
                 >
-                  {"MedicTech"}
+                  {hasVariant($state, "isDiawasi", "isDiawasi")
+                    ? "Medic+"
+                    : "Aido Health"}
                 </div>
               </ItemListMitraThumbnail>
             ) : null}
@@ -469,8 +543,56 @@ function PlasmicSlideMitra__RenderFunc(props: {
                     ? true
                     : undefined
                 }
+                slot={
+                  <p.PlasmicImg
+                    alt={""}
+                    className={classNames(sty.img__qzUa, {
+                      [sty.imgisDiawasi__qzUavK8Cy]: hasVariant(
+                        $state,
+                        "isDiawasi",
+                        "isDiawasi"
+                      )
+                    })}
+                    displayHeight={
+                      hasVariant($state, "isDiawasi", "isDiawasi")
+                        ? ("72px" as const)
+                        : ("auto" as const)
+                    }
+                    displayMaxHeight={"none" as const}
+                    displayMaxWidth={
+                      hasVariant($state, "isDiawasi", "isDiawasi")
+                        ? ("100%" as const)
+                        : ("100%" as const)
+                    }
+                    displayMinHeight={"0" as const}
+                    displayMinWidth={"0" as const}
+                    displayWidth={
+                      hasVariant($state, "isDiawasi", "isDiawasi")
+                        ? ("72px" as const)
+                        : ("auto" as const)
+                    }
+                    loading={"lazy" as const}
+                    src={
+                      hasVariant($state, "isDiawasi", "isDiawasi")
+                        ? {
+                            src: "/plasmic/sandbox_satuhsehat/images/simasSehatpng.png",
+                            fullWidth: 529,
+                            fullHeight: 127,
+                            aspectRatio: undefined
+                          }
+                        : {
+                            src: "/plasmic/sandbox_satuhsehat/images/menuIconspng.png",
+                            fullWidth: 70,
+                            fullHeight: 70,
+                            aspectRatio: undefined
+                          }
+                    }
+                  />
+                }
               >
-                {"PERIKSAIN"}
+                {hasVariant($state, "isDiawasi", "isDiawasi")
+                  ? "Klinik Simas Sehat"
+                  : "Alodokter"}
               </ItemListMitraThumbnail>
             ) : null}
             {(hasVariant($state, "isDiawasi", "isDiawasi") ? true : true) ? (
@@ -488,8 +610,190 @@ function PlasmicSlideMitra__RenderFunc(props: {
                     ? true
                     : undefined
                 }
+                slot={
+                  <p.PlasmicImg
+                    alt={""}
+                    className={classNames(sty.img__kCSoa, {
+                      [sty.imgisDiawasi__kCSoavK8Cy]: hasVariant(
+                        $state,
+                        "isDiawasi",
+                        "isDiawasi"
+                      )
+                    })}
+                    displayHeight={
+                      hasVariant($state, "isDiawasi", "isDiawasi")
+                        ? ("72px" as const)
+                        : ("auto" as const)
+                    }
+                    displayMaxHeight={"none" as const}
+                    displayMaxWidth={
+                      hasVariant($state, "isDiawasi", "isDiawasi")
+                        ? ("100%" as const)
+                        : ("100%" as const)
+                    }
+                    displayMinHeight={"0" as const}
+                    displayMinWidth={"0" as const}
+                    displayWidth={
+                      hasVariant($state, "isDiawasi", "isDiawasi")
+                        ? ("72px" as const)
+                        : ("auto" as const)
+                    }
+                    loading={"lazy" as const}
+                    src={
+                      hasVariant($state, "isDiawasi", "isDiawasi")
+                        ? {
+                            src: "/plasmic/sandbox_satuhsehat/images/goodDoctorpng.png",
+                            fullWidth: 1000,
+                            fullHeight: 1000,
+                            aspectRatio: undefined
+                          }
+                        : {
+                            src: "/plasmic/sandbox_satuhsehat/images/menuIconspng.png",
+                            fullWidth: 70,
+                            fullHeight: 70,
+                            aspectRatio: undefined
+                          }
+                    }
+                  />
+                }
               >
-                {"Getwell"}
+                {hasVariant($state, "isDiawasi", "isDiawasi")
+                  ? "Good Doctor"
+                  : "APPSKEP"}
+              </ItemListMitraThumbnail>
+            ) : null}
+            {(hasVariant($state, "isDiawasi", "isDiawasi") ? true : true) ? (
+              <ItemListMitraThumbnail
+                className={classNames(
+                  "__wab_instance",
+                  sty.itemListMitraThumbnail__wyV2E,
+                  {
+                    [sty.itemListMitraThumbnailisDiawasi__wyV2EvK8Cy]:
+                      hasVariant($state, "isDiawasi", "isDiawasi")
+                  }
+                )}
+                isTerdaftar={
+                  hasVariant($state, "isDiawasi", "isDiawasi")
+                    ? true
+                    : undefined
+                }
+                slot={
+                  <p.PlasmicImg
+                    alt={""}
+                    className={classNames(sty.img__zwM9R, {
+                      [sty.imgisDiawasi__zwM9RvK8Cy]: hasVariant(
+                        $state,
+                        "isDiawasi",
+                        "isDiawasi"
+                      )
+                    })}
+                    displayHeight={
+                      hasVariant($state, "isDiawasi", "isDiawasi")
+                        ? ("72px" as const)
+                        : ("auto" as const)
+                    }
+                    displayMaxHeight={"none" as const}
+                    displayMaxWidth={
+                      hasVariant($state, "isDiawasi", "isDiawasi")
+                        ? ("100%" as const)
+                        : ("100%" as const)
+                    }
+                    displayMinHeight={"0" as const}
+                    displayMinWidth={"0" as const}
+                    displayWidth={
+                      hasVariant($state, "isDiawasi", "isDiawasi")
+                        ? ("72px" as const)
+                        : ("auto" as const)
+                    }
+                    loading={"lazy" as const}
+                    src={
+                      hasVariant($state, "isDiawasi", "isDiawasi")
+                        ? {
+                            src: "/plasmic/sandbox_satuhsehat/images/naluripng.png",
+                            fullWidth: 822,
+                            fullHeight: 240,
+                            aspectRatio: undefined
+                          }
+                        : {
+                            src: "/plasmic/sandbox_satuhsehat/images/menuIconspng.png",
+                            fullWidth: 70,
+                            fullHeight: 70,
+                            aspectRatio: undefined
+                          }
+                    }
+                  />
+                }
+              >
+                {hasVariant($state, "isDiawasi", "isDiawasi")
+                  ? "Naluri"
+                  : "Artiﬁcial intelegent, Patient and Engagement Platform"}
+              </ItemListMitraThumbnail>
+            ) : null}
+            {(hasVariant($state, "isDiawasi", "isDiawasi") ? true : true) ? (
+              <ItemListMitraThumbnail
+                className={classNames(
+                  "__wab_instance",
+                  sty.itemListMitraThumbnail__cBe4,
+                  {
+                    [sty.itemListMitraThumbnailisDiawasi__cBe4VK8Cy]:
+                      hasVariant($state, "isDiawasi", "isDiawasi")
+                  }
+                )}
+                isTerdaftar={
+                  hasVariant($state, "isDiawasi", "isDiawasi")
+                    ? true
+                    : undefined
+                }
+                slot={
+                  <p.PlasmicImg
+                    alt={""}
+                    className={classNames(sty.img__wAacQ, {
+                      [sty.imgisDiawasi__wAacQvK8Cy]: hasVariant(
+                        $state,
+                        "isDiawasi",
+                        "isDiawasi"
+                      )
+                    })}
+                    displayHeight={
+                      hasVariant($state, "isDiawasi", "isDiawasi")
+                        ? ("72px" as const)
+                        : ("auto" as const)
+                    }
+                    displayMaxHeight={"none" as const}
+                    displayMaxWidth={
+                      hasVariant($state, "isDiawasi", "isDiawasi")
+                        ? ("100%" as const)
+                        : ("100%" as const)
+                    }
+                    displayMinHeight={"0" as const}
+                    displayMinWidth={"0" as const}
+                    displayWidth={
+                      hasVariant($state, "isDiawasi", "isDiawasi")
+                        ? ("72px" as const)
+                        : ("auto" as const)
+                    }
+                    loading={"lazy" as const}
+                    src={
+                      hasVariant($state, "isDiawasi", "isDiawasi")
+                        ? {
+                            src: "/plasmic/sandbox_satuhsehat/images/myclnqsehatIndonesiapng.png",
+                            fullWidth: 711,
+                            fullHeight: 712,
+                            aspectRatio: undefined
+                          }
+                        : {
+                            src: "/plasmic/sandbox_satuhsehat/images/menuIconspng.png",
+                            fullWidth: 70,
+                            fullHeight: 70,
+                            aspectRatio: undefined
+                          }
+                    }
+                  />
+                }
+              >
+                {hasVariant($state, "isDiawasi", "isDiawasi")
+                  ? "myclnq sehat"
+                  : "ATM Sehat"}
               </ItemListMitraThumbnail>
             ) : null}
           </Slider>

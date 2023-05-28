@@ -41,7 +41,6 @@ import Navbarv2 from "../../Navbarv2"; // plasmic-import: NCicNLzCjc/component
 import "@plasmicapp/react-web/lib/plasmic.css";
 
 import plasmic_antd_5_hostless_css from "../antd_5_hostless/plasmic_antd_5_hostless.module.css"; // plasmic-import: ohDidvG9XsCeFumugENU3J/projectcss
-import plasmic_plasmic_rich_components_css from "../plasmic_rich_components/plasmic_plasmic_rich_components.module.css"; // plasmic-import: jkU633o1Cz7HrJdwdxhVHk/projectcss
 import projectcss from "./plasmic_sandbox_satuhsehat.module.css"; // plasmic-import: mazsTSCdeXMvNewzsED8CP/projectcss
 import sty from "./PlasmicMitraDiawasi1.module.css"; // plasmic-import: IVTbCxM9Wzl/css
 
@@ -102,7 +101,9 @@ function PlasmicMitraDiawasi1__RenderFunc(props: {
   const $refs = refsRef.current;
 
   const currentUser = p.useCurrentUser?.() || {};
+
   const [$queries, setDollarQueries] = React.useState({});
+
   const stateSpecs = React.useMemo(
     () => [
       {
@@ -139,7 +140,6 @@ function PlasmicMitraDiawasi1__RenderFunc(props: {
             projectcss.plasmic_mixins,
             projectcss.plasmic_tokens,
             plasmic_antd_5_hostless_css.plasmic_tokens,
-            plasmic_plasmic_rich_components_css.plasmic_tokens,
             sty.root
           )}
         >
@@ -245,17 +245,17 @@ function PlasmicMitraDiawasi1__RenderFunc(props: {
                 <p.PlasmicImg
                   alt={""}
                   className={classNames(sty.img__r0Ds9)}
-                  displayHeight={"auto" as const}
+                  displayHeight={"72px" as const}
                   displayMaxHeight={"none" as const}
                   displayMaxWidth={"100%" as const}
                   displayMinHeight={"0" as const}
                   displayMinWidth={"0" as const}
-                  displayWidth={"auto" as const}
+                  displayWidth={"72px" as const}
                   loading={"lazy" as const}
                   src={{
-                    src: "/plasmic/sandbox_satuhsehat/images/menuIconspng.png",
-                    fullWidth: 70,
-                    fullHeight: 70,
+                    src: "/plasmic/sandbox_satuhsehat/images/rilivpng.png",
+                    fullWidth: 4669,
+                    fullHeight: 2363,
                     aspectRatio: undefined
                   }}
                 />
@@ -274,7 +274,7 @@ function PlasmicMitraDiawasi1__RenderFunc(props: {
                         sty.h5__zdLxq
                       )}
                     >
-                      {"Sehati TeleCTG"}
+                      {"Riliv"}
                     </h5>
                     <div
                       className={classNames(
@@ -283,7 +283,7 @@ function PlasmicMitraDiawasi1__RenderFunc(props: {
                         sty.text___7K2K9
                       )}
                     >
-                      {"PT Zetta Telecetege Intenasional"}
+                      {"PT Riliv Psikologi Indonesia"}
                     </div>
                   </p.Stack>
                 ) : null}
@@ -325,7 +325,7 @@ function PlasmicMitraDiawasi1__RenderFunc(props: {
                         sty.h5___64ERf
                       )}
                     >
-                      {"Halodoc"}
+                      {"Medic+"}
                     </h5>
                     <div
                       className={classNames(
@@ -334,7 +334,7 @@ function PlasmicMitraDiawasi1__RenderFunc(props: {
                         sty.text__aQMpA
                       )}
                     >
-                      {"PT Media Dokter Investama"}
+                      {"9Sky Ventures Pte. Ltd."}
                     </div>
                   </p.Stack>
                 ) : null}
@@ -347,17 +347,17 @@ function PlasmicMitraDiawasi1__RenderFunc(props: {
                 <p.PlasmicImg
                   alt={""}
                   className={classNames(sty.img__rwW4O)}
-                  displayHeight={"auto" as const}
+                  displayHeight={"72px" as const}
                   displayMaxHeight={"none" as const}
                   displayMaxWidth={"100%" as const}
                   displayMinHeight={"0" as const}
                   displayMinWidth={"0" as const}
-                  displayWidth={"auto" as const}
+                  displayWidth={"72px" as const}
                   loading={"lazy" as const}
                   src={{
-                    src: "/plasmic/sandbox_satuhsehat/images/menuIconspng.png",
-                    fullWidth: 70,
-                    fullHeight: 70,
+                    src: "/plasmic/sandbox_satuhsehat/images/simasSehatpng.png",
+                    fullWidth: 529,
+                    fullHeight: 127,
                     aspectRatio: undefined
                   }}
                 />
@@ -376,7 +376,7 @@ function PlasmicMitraDiawasi1__RenderFunc(props: {
                         sty.h5__gsFxq
                       )}
                     >
-                      {"FitHappy"}
+                      {"Klinik Simas Sehat"}
                     </h5>
                     <div
                       className={classNames(
@@ -385,7 +385,7 @@ function PlasmicMitraDiawasi1__RenderFunc(props: {
                         sty.text__nIulc
                       )}
                     >
-                      {"PT CEPAT SEMBUH HIDUP SEHAT"}
+                      {"PT Wapindo Jasaartha"}
                     </div>
                   </p.Stack>
                 ) : null}
@@ -398,17 +398,17 @@ function PlasmicMitraDiawasi1__RenderFunc(props: {
                 <p.PlasmicImg
                   alt={""}
                   className={classNames(sty.img__dex4D)}
-                  displayHeight={"auto" as const}
+                  displayHeight={"72px" as const}
                   displayMaxHeight={"none" as const}
                   displayMaxWidth={"100%" as const}
                   displayMinHeight={"0" as const}
                   displayMinWidth={"0" as const}
-                  displayWidth={"auto" as const}
+                  displayWidth={"72px" as const}
                   loading={"lazy" as const}
                   src={{
-                    src: "/plasmic/sandbox_satuhsehat/images/menuIconspng.png",
-                    fullWidth: 70,
-                    fullHeight: 70,
+                    src: "/plasmic/sandbox_satuhsehat/images/goodDoctorpng.png",
+                    fullWidth: 1000,
+                    fullHeight: 1000,
                     aspectRatio: undefined
                   }}
                 />
@@ -427,7 +427,7 @@ function PlasmicMitraDiawasi1__RenderFunc(props: {
                         sty.h5__g4UC6
                       )}
                     >
-                      {"Klinisia"}
+                      {"Good Doctor"}
                     </h5>
                     <div
                       className={classNames(
@@ -436,7 +436,7 @@ function PlasmicMitraDiawasi1__RenderFunc(props: {
                         sty.text___1Abos
                       )}
                     >
-                      {"PT Kawan Sehat Indonesia "}
+                      {"PT Good Doctor Technology Indonesia"}
                     </div>
                   </p.Stack>
                 ) : null}
@@ -449,17 +449,17 @@ function PlasmicMitraDiawasi1__RenderFunc(props: {
                 <p.PlasmicImg
                   alt={""}
                   className={classNames(sty.img__m36A1)}
-                  displayHeight={"auto" as const}
+                  displayHeight={"72px" as const}
                   displayMaxHeight={"none" as const}
                   displayMaxWidth={"100%" as const}
                   displayMinHeight={"0" as const}
                   displayMinWidth={"0" as const}
-                  displayWidth={"auto" as const}
+                  displayWidth={"72px" as const}
                   loading={"lazy" as const}
                   src={{
-                    src: "/plasmic/sandbox_satuhsehat/images/menuIconspng.png",
-                    fullWidth: 70,
-                    fullHeight: 70,
+                    src: "/plasmic/sandbox_satuhsehat/images/naluripng.png",
+                    fullWidth: 822,
+                    fullHeight: 240,
                     aspectRatio: undefined
                   }}
                 />
@@ -478,7 +478,7 @@ function PlasmicMitraDiawasi1__RenderFunc(props: {
                         sty.h5__waxSo
                       )}
                     >
-                      {"dkonsul"}
+                      {"Naluri"}
                     </h5>
                     <div
                       className={classNames(
@@ -487,7 +487,7 @@ function PlasmicMitraDiawasi1__RenderFunc(props: {
                         sty.text__wDfNe
                       )}
                     >
-                      {"PT. GLOBAL URBAN ESENSIAL"}
+                      {"PT NALURI HIDUP INDONESIA"}
                     </div>
                   </p.Stack>
                 ) : null}
@@ -500,17 +500,17 @@ function PlasmicMitraDiawasi1__RenderFunc(props: {
                 <p.PlasmicImg
                   alt={""}
                   className={classNames(sty.img___4C0F9)}
-                  displayHeight={"auto" as const}
+                  displayHeight={"72px" as const}
                   displayMaxHeight={"none" as const}
                   displayMaxWidth={"100%" as const}
                   displayMinHeight={"0" as const}
                   displayMinWidth={"0" as const}
-                  displayWidth={"auto" as const}
+                  displayWidth={"72px" as const}
                   loading={"lazy" as const}
                   src={{
-                    src: "/plasmic/sandbox_satuhsehat/images/menuIconspng.png",
-                    fullWidth: 70,
-                    fullHeight: 70,
+                    src: "/plasmic/sandbox_satuhsehat/images/myclnqsehatIndonesiapng.png",
+                    fullWidth: 711,
+                    fullHeight: 712,
                     aspectRatio: undefined
                   }}
                 />
@@ -529,7 +529,7 @@ function PlasmicMitraDiawasi1__RenderFunc(props: {
                         sty.h5__lJbeJ
                       )}
                     >
-                      {"CONFICARES"}
+                      {"myclnq sehat"}
                     </h5>
                     <div
                       className={classNames(
@@ -538,7 +538,7 @@ function PlasmicMitraDiawasi1__RenderFunc(props: {
                         sty.text__bkTOf
                       )}
                     >
-                      {"PT QLCOM SOLUSI BISNIS"}
+                      {"pt myclnq sehat indonesia"}
                     </div>
                   </p.Stack>
                 ) : null}
@@ -551,17 +551,17 @@ function PlasmicMitraDiawasi1__RenderFunc(props: {
                 <p.PlasmicImg
                   alt={""}
                   className={classNames(sty.img___75Vhe)}
-                  displayHeight={"auto" as const}
+                  displayHeight={"72px" as const}
                   displayMaxHeight={"none" as const}
                   displayMaxWidth={"100%" as const}
                   displayMinHeight={"0" as const}
                   displayMinWidth={"0" as const}
-                  displayWidth={"auto" as const}
+                  displayWidth={"72px" as const}
                   loading={"lazy" as const}
                   src={{
-                    src: "/plasmic/sandbox_satuhsehat/images/menuIconspng.png",
-                    fullWidth: 70,
-                    fullHeight: 70,
+                    src: "/plasmic/sandbox_satuhsehat/images/lifepackjpeg.jpg",
+                    fullWidth: 256,
+                    fullHeight: 256,
                     aspectRatio: undefined
                   }}
                 />
@@ -580,7 +580,7 @@ function PlasmicMitraDiawasi1__RenderFunc(props: {
                         sty.h5___2PltO
                       )}
                     >
-                      {"Cexup"}
+                      {"Lifepack"}
                     </h5>
                     <div
                       className={classNames(
@@ -589,7 +589,7 @@ function PlasmicMitraDiawasi1__RenderFunc(props: {
                         sty.text__ksN9I
                       )}
                     >
-                      {"PT. Tele Cexup Indonesia"}
+                      {"PT Indopasifik Teknologi Medika Indonesia"}
                     </div>
                   </p.Stack>
                 ) : null}
@@ -602,17 +602,17 @@ function PlasmicMitraDiawasi1__RenderFunc(props: {
                 <p.PlasmicImg
                   alt={""}
                   className={classNames(sty.img___3SrxI)}
-                  displayHeight={"auto" as const}
+                  displayHeight={"72px" as const}
                   displayMaxHeight={"none" as const}
                   displayMaxWidth={"100%" as const}
                   displayMinHeight={"0" as const}
                   displayMinWidth={"0" as const}
-                  displayWidth={"auto" as const}
+                  displayWidth={"72px" as const}
                   loading={"lazy" as const}
                   src={{
-                    src: "/plasmic/sandbox_satuhsehat/images/menuIconspng.png",
-                    fullWidth: 70,
-                    fullHeight: 70,
+                    src: "/plasmic/sandbox_satuhsehat/images/alodoctorjpeg.jpg",
+                    fullWidth: 1080,
+                    fullHeight: 1080,
                     aspectRatio: undefined
                   }}
                 />
@@ -631,7 +631,7 @@ function PlasmicMitraDiawasi1__RenderFunc(props: {
                         sty.h5__vQxVm
                       )}
                     >
-                      {"Naluri"}
+                      {"Alodokter , Alomedika"}
                     </h5>
                     <div
                       className={classNames(
@@ -640,7 +640,7 @@ function PlasmicMitraDiawasi1__RenderFunc(props: {
                         sty.text__b1TIo
                       )}
                     >
-                      {"PT NALURI HIDUP INDONESIA"}
+                      {"PT ALODOKTER TEKNOLOGI SOLUSI"}
                     </div>
                   </p.Stack>
                 ) : null}
@@ -653,17 +653,17 @@ function PlasmicMitraDiawasi1__RenderFunc(props: {
                 <p.PlasmicImg
                   alt={""}
                   className={classNames(sty.img__senGq)}
-                  displayHeight={"auto" as const}
+                  displayHeight={"72px" as const}
                   displayMaxHeight={"none" as const}
                   displayMaxWidth={"100%" as const}
                   displayMinHeight={"0" as const}
                   displayMinWidth={"0" as const}
-                  displayWidth={"auto" as const}
+                  displayWidth={"72px" as const}
                   loading={"lazy" as const}
                   src={{
-                    src: "/plasmic/sandbox_satuhsehat/images/menuIconspng.png",
-                    fullWidth: 70,
-                    fullHeight: 70,
+                    src: "/plasmic/sandbox_satuhsehat/images/halodoc2Jpeg.jpg",
+                    fullWidth: 2480,
+                    fullHeight: 2480,
                     aspectRatio: undefined
                   }}
                 />
@@ -682,7 +682,7 @@ function PlasmicMitraDiawasi1__RenderFunc(props: {
                         sty.h5__jEJy
                       )}
                     >
-                      {"Eka Hospital"}
+                      {"Halodoc"}
                     </h5>
                     <div
                       className={classNames(
@@ -691,7 +691,58 @@ function PlasmicMitraDiawasi1__RenderFunc(props: {
                         sty.text__iOcIp
                       )}
                     >
-                      {"PELITA RELIANCE INTERNATIONAL HOSPITAL"}
+                      {"PT Media Dokter Investama"}
+                    </div>
+                  </p.Stack>
+                ) : null}
+              </p.Stack>
+              <p.Stack
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox___6Oaz)}
+              >
+                <p.PlasmicImg
+                  alt={""}
+                  className={classNames(sty.img__qmAw)}
+                  displayHeight={"72px" as const}
+                  displayMaxHeight={"none" as const}
+                  displayMaxWidth={"100%" as const}
+                  displayMinHeight={"0" as const}
+                  displayMinWidth={"0" as const}
+                  displayWidth={"72px" as const}
+                  loading={"lazy" as const}
+                  src={{
+                    src: "/plasmic/sandbox_satuhsehat/images/sehatiTeleCtGpng.png",
+                    fullWidth: 4167,
+                    fullHeight: 4168,
+                    aspectRatio: undefined
+                  }}
+                />
+
+                {true ? (
+                  <p.Stack
+                    as={"div"}
+                    hasGap={true}
+                    className={classNames(projectcss.all, sty.freeBox__rZ65A)}
+                  >
+                    <h5
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.h5,
+                        projectcss.__wab_text,
+                        sty.h5__ehfIr
+                      )}
+                    >
+                      {"Sehati TeleCTG"}
+                    </h5>
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__aMeMw
+                      )}
+                    >
+                      {"PT Zetta Telecetege Intenasional"}
                     </div>
                   </p.Stack>
                 ) : null}

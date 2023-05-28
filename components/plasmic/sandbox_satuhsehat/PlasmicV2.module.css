@@ -259,6 +259,7 @@
   min-width: 0;
 }
 .mitra {
+  display: flex;
   position: relative;
   flex-direction: column;
   align-items: center;
@@ -269,7 +270,6 @@
   background: #ffffff;
   grid-column-start: 1;
   grid-column-end: -1;
-  display: none;
   padding: 72px 0px;
 }
 .freeBox__wtcah {

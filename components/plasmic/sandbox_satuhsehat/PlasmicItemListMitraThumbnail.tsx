@@ -40,7 +40,6 @@ import {
 import "@plasmicapp/react-web/lib/plasmic.css";
 
 import plasmic_antd_5_hostless_css from "../antd_5_hostless/plasmic_antd_5_hostless.module.css"; // plasmic-import: ohDidvG9XsCeFumugENU3J/projectcss
-import plasmic_plasmic_rich_components_css from "../plasmic_rich_components/plasmic_plasmic_rich_components.module.css"; // plasmic-import: jkU633o1Cz7HrJdwdxhVHk/projectcss
 import projectcss from "./plasmic_sandbox_satuhsehat.module.css"; // plasmic-import: mazsTSCdeXMvNewzsED8CP/projectcss
 import sty from "./PlasmicItemListMitraThumbnail.module.css"; // plasmic-import: 5Buw-2ZEH6/css
 
@@ -112,7 +111,9 @@ function PlasmicItemListMitraThumbnail__RenderFunc(props: {
   const $refs = refsRef.current;
 
   const currentUser = p.useCurrentUser?.() || {};
+
   const [$queries, setDollarQueries] = React.useState({});
+
   const stateSpecs = React.useMemo(
     () => [
       {
@@ -140,7 +141,6 @@ function PlasmicItemListMitraThumbnail__RenderFunc(props: {
           projectcss.plasmic_mixins,
           projectcss.plasmic_tokens,
           plasmic_antd_5_hostless_css.plasmic_tokens,
-          plasmic_plasmic_rich_components_css.plasmic_tokens,
           sty.root,
           {
             [sty.rootisTerdaftar]: hasVariant(

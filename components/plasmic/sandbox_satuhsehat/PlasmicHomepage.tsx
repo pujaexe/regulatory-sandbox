@@ -38,6 +38,7 @@ import {
 } from "@plasmicapp/react-web";
 import { PlasmicHead } from "@plasmicapp/react-web"; // plasmic-import: 7EBFWZs-Lh/codeComponent
 import Navbarv2 from "../../Navbarv2"; // plasmic-import: NCicNLzCjc/component
+import SlideMitra from "../../SlideMitra"; // plasmic-import: HjExHmE43ji/component
 import Collapsiblev2 from "../../Collapsiblev2"; // plasmic-import: vrBPAsBs7q/component
 import { Embed } from "@plasmicpkgs/plasmic-basic-components"; // plasmic-import: PKldDYkH42/codeComponent
 import MenuOverlay from "../../MenuOverlay"; // plasmic-import: 8v397mSlg-/component
@@ -47,7 +48,6 @@ import { useScreenVariants as useScreenVariantsqbGzfD819Z3T3 } from "./PlasmicGl
 import "@plasmicapp/react-web/lib/plasmic.css";
 
 import plasmic_antd_5_hostless_css from "../antd_5_hostless/plasmic_antd_5_hostless.module.css"; // plasmic-import: ohDidvG9XsCeFumugENU3J/projectcss
-import plasmic_plasmic_rich_components_css from "../plasmic_rich_components/plasmic_plasmic_rich_components.module.css"; // plasmic-import: jkU633o1Cz7HrJdwdxhVHk/projectcss
 import projectcss from "./plasmic_sandbox_satuhsehat.module.css"; // plasmic-import: mazsTSCdeXMvNewzsED8CP/projectcss
 import sty from "./PlasmicHomepage.module.css"; // plasmic-import: 2kkee5R7hDuz/css
 
@@ -81,6 +81,8 @@ export type PlasmicHomepage__OverridesType = {
   h1?: p.Flex<"h1">;
   h4?: p.Flex<"h4">;
   about?: p.Flex<"div">;
+  mitra?: p.Flex<"div">;
+  slideMitra?: p.Flex<typeof SlideMitra>;
   why?: p.Flex<"div">;
   who?: p.Flex<"div">;
   card5?: p.Flex<"div">;
@@ -144,7 +146,9 @@ function PlasmicHomepage__RenderFunc(props: {
   const $refs = refsRef.current;
 
   const currentUser = p.useCurrentUser?.() || {};
+
   const [$queries, setDollarQueries] = React.useState({});
+
   const stateSpecs = React.useMemo(
     () => [
       {
@@ -297,7 +301,6 @@ function PlasmicHomepage__RenderFunc(props: {
             projectcss.plasmic_mixins,
             projectcss.plasmic_tokens,
             plasmic_antd_5_hostless_css.plasmic_tokens,
-            plasmic_plasmic_rich_components_css.plasmic_tokens,
             sty.root
           )}
         >
@@ -466,6 +469,37 @@ function PlasmicHomepage__RenderFunc(props: {
               </div>
             </p.Stack>
           </div>
+          {true ? (
+            <div
+              data-plasmic-name={"mitra"}
+              data-plasmic-override={overrides.mitra}
+              className={classNames(projectcss.all, sty.mitra)}
+            >
+              {true ? (
+                <p.Stack
+                  as={"div"}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.freeBox__pzuXb)}
+                >
+                  <h2
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.h2,
+                      projectcss.__wab_text,
+                      sty.h2__tEnp
+                    )}
+                  >
+                    {"Mitra penyelenggara inovasi digital kesehatan"}
+                  </h2>
+                  <SlideMitra
+                    data-plasmic-name={"slideMitra"}
+                    data-plasmic-override={overrides.slideMitra}
+                    className={classNames("__wab_instance", sty.slideMitra)}
+                  />
+                </p.Stack>
+              ) : null}
+            </div>
+          ) : null}
           <div
             data-plasmic-name={"why"}
             data-plasmic-override={overrides.why}
@@ -2937,6 +2971,8 @@ const PlasmicDescendants = {
     "h1",
     "h4",
     "about",
+    "mitra",
+    "slideMitra",
     "why",
     "who",
     "card5",
@@ -2969,6 +3005,8 @@ const PlasmicDescendants = {
   h1: ["h1"],
   h4: ["h4"],
   about: ["about"],
+  mitra: ["mitra", "slideMitra"],
+  slideMitra: ["slideMitra"],
   why: ["why"],
   who: ["who", "card5", "card6", "card7", "card8"],
   card5: ["card5"],
@@ -3022,6 +3060,8 @@ type NodeDefaultElementType = {
   h1: "h1";
   h4: "h4";
   about: "div";
+  mitra: "div";
+  slideMitra: typeof SlideMitra;
   why: "div";
   who: "div";
   card5: "div";
@@ -3115,6 +3155,8 @@ export const PlasmicHomepage = Object.assign(
     h1: makeNodeComponent("h1"),
     h4: makeNodeComponent("h4"),
     about: makeNodeComponent("about"),
+    mitra: makeNodeComponent("mitra"),
+    slideMitra: makeNodeComponent("slideMitra"),
     why: makeNodeComponent("why"),
     who: makeNodeComponent("who"),
     card5: makeNodeComponent("card5"),

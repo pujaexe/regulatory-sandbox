@@ -41,7 +41,6 @@ import Navbarv2 from "../../Navbarv2"; // plasmic-import: NCicNLzCjc/component
 import "@plasmicapp/react-web/lib/plasmic.css";
 
 import plasmic_antd_5_hostless_css from "../antd_5_hostless/plasmic_antd_5_hostless.module.css"; // plasmic-import: ohDidvG9XsCeFumugENU3J/projectcss
-import plasmic_plasmic_rich_components_css from "../plasmic_rich_components/plasmic_plasmic_rich_components.module.css"; // plasmic-import: jkU633o1Cz7HrJdwdxhVHk/projectcss
 import projectcss from "./plasmic_sandbox_satuhsehat.module.css"; // plasmic-import: mazsTSCdeXMvNewzsED8CP/projectcss
 import sty from "./PlasmicMitraTerdaftar2.module.css"; // plasmic-import: OVqjk0nNAZQ/css
 
@@ -103,7 +102,9 @@ function PlasmicMitraTerdaftar2__RenderFunc(props: {
   const $refs = refsRef.current;
 
   const currentUser = p.useCurrentUser?.() || {};
+
   const [$queries, setDollarQueries] = React.useState({});
+
   const stateSpecs = React.useMemo(
     () => [
       {
@@ -140,7 +141,6 @@ function PlasmicMitraTerdaftar2__RenderFunc(props: {
             projectcss.plasmic_mixins,
             projectcss.plasmic_tokens,
             plasmic_antd_5_hostless_css.plasmic_tokens,
-            plasmic_plasmic_rich_components_css.plasmic_tokens,
             sty.root
           )}
         >
@@ -246,17 +246,17 @@ function PlasmicMitraTerdaftar2__RenderFunc(props: {
                 <p.PlasmicImg
                   alt={""}
                   className={classNames(sty.img__nAfvN)}
-                  displayHeight={"auto" as const}
+                  displayHeight={"72px" as const}
                   displayMaxHeight={"none" as const}
                   displayMaxWidth={"100%" as const}
                   displayMinHeight={"0" as const}
                   displayMinWidth={"0" as const}
-                  displayWidth={"auto" as const}
+                  displayWidth={"72px" as const}
                   loading={"lazy" as const}
                   src={{
-                    src: "/plasmic/sandbox_satuhsehat/images/menuIconspng.png",
-                    fullWidth: 70,
-                    fullHeight: 70,
+                    src: "/plasmic/sandbox_satuhsehat/images/conficarepng.png",
+                    fullWidth: 1683,
+                    fullHeight: 554,
                     aspectRatio: undefined
                   }}
                 />
@@ -275,7 +275,7 @@ function PlasmicMitraTerdaftar2__RenderFunc(props: {
                         sty.h5__bxj5W
                       )}
                     >
-                      {"Sehati TeleCTG"}
+                      {"CONFICARES"}
                     </h5>
                     <div
                       className={classNames(
@@ -284,7 +284,7 @@ function PlasmicMitraTerdaftar2__RenderFunc(props: {
                         sty.text___2BXap
                       )}
                     >
-                      {"PT Zetta Telecetege Intenasional"}
+                      {"PT. Qlcom Solusi Bisnis"}
                     </div>
                   </p.Stack>
                 ) : null}
@@ -297,17 +297,17 @@ function PlasmicMitraTerdaftar2__RenderFunc(props: {
                 <p.PlasmicImg
                   alt={""}
                   className={classNames(sty.img__vfZno)}
-                  displayHeight={"auto" as const}
+                  displayHeight={"72px" as const}
                   displayMaxHeight={"none" as const}
                   displayMaxWidth={"100%" as const}
                   displayMinHeight={"0" as const}
                   displayMinWidth={"0" as const}
-                  displayWidth={"auto" as const}
+                  displayWidth={"72px" as const}
                   loading={"lazy" as const}
                   src={{
-                    src: "/plasmic/sandbox_satuhsehat/images/menuIconspng.png",
-                    fullWidth: 70,
-                    fullHeight: 70,
+                    src: "/plasmic/sandbox_satuhsehat/images/dkonsulLogoAdityasKemalFakhruddinpng.png",
+                    fullWidth: 907,
+                    fullHeight: 360,
                     aspectRatio: undefined
                   }}
                 />
@@ -326,7 +326,7 @@ function PlasmicMitraTerdaftar2__RenderFunc(props: {
                         sty.h5__irUaO
                       )}
                     >
-                      {"Halodoc"}
+                      {"dkonsul"}
                     </h5>
                     <div
                       className={classNames(
@@ -335,7 +335,7 @@ function PlasmicMitraTerdaftar2__RenderFunc(props: {
                         sty.text__ntExc
                       )}
                     >
-                      {"PT Media Dokter Investama"}
+                      {"PT. Global Urban Esensial"}
                     </div>
                   </p.Stack>
                 ) : null}
@@ -377,7 +377,7 @@ function PlasmicMitraTerdaftar2__RenderFunc(props: {
                         sty.h5__lwQzM
                       )}
                     >
-                      {"FitHappy"}
+                      {"DoctorTool"}
                     </h5>
                     <div
                       className={classNames(
@@ -386,7 +386,7 @@ function PlasmicMitraTerdaftar2__RenderFunc(props: {
                         sty.text__vyRdr
                       )}
                     >
-                      {"PT CEPAT SEMBUH HIDUP SEHAT"}
+                      {"PT. Medifa Infoyasa Suryantara"}
                     </div>
                   </p.Stack>
                 ) : null}
@@ -428,7 +428,7 @@ function PlasmicMitraTerdaftar2__RenderFunc(props: {
                         sty.h5___4Fxar
                       )}
                     >
-                      {"Klinisia"}
+                      {"Dub-Dub"}
                     </h5>
                     <div
                       className={classNames(
@@ -437,7 +437,7 @@ function PlasmicMitraTerdaftar2__RenderFunc(props: {
                         sty.text__aJhKn
                       )}
                     >
-                      {"PT Kawan Sehat Indonesia "}
+                      {"PT. Areta Rekayasa Teknologi"}
                     </div>
                   </p.Stack>
                 ) : null}
@@ -479,7 +479,7 @@ function PlasmicMitraTerdaftar2__RenderFunc(props: {
                         sty.h5___0FxTs
                       )}
                     >
-                      {"dkonsul"}
+                      {"Eka Hospital"}
                     </h5>
                     <div
                       className={classNames(
@@ -488,7 +488,7 @@ function PlasmicMitraTerdaftar2__RenderFunc(props: {
                         sty.text__ly9Q
                       )}
                     >
-                      {"PT. GLOBAL URBAN ESENSIAL"}
+                      {"Pelita Reliance International Hospital"}
                     </div>
                   </p.Stack>
                 ) : null}
@@ -530,7 +530,7 @@ function PlasmicMitraTerdaftar2__RenderFunc(props: {
                         sty.h5__l3Vk
                       )}
                     >
-                      {"CONFICARES"}
+                      {"Elitech"}
                     </h5>
                     <div
                       className={classNames(
@@ -539,7 +539,7 @@ function PlasmicMitraTerdaftar2__RenderFunc(props: {
                         sty.text__gM66J
                       )}
                     >
-                      {"PT QLCOM SOLUSI BISNIS"}
+                      {"PT. Sinko Prima Alloy"}
                     </div>
                   </p.Stack>
                 ) : null}
@@ -552,17 +552,17 @@ function PlasmicMitraTerdaftar2__RenderFunc(props: {
                 <p.PlasmicImg
                   alt={""}
                   className={classNames(sty.img__uaWxg)}
-                  displayHeight={"auto" as const}
+                  displayHeight={"72px" as const}
                   displayMaxHeight={"none" as const}
                   displayMaxWidth={"100%" as const}
                   displayMinHeight={"0" as const}
                   displayMinWidth={"0" as const}
-                  displayWidth={"auto" as const}
+                  displayWidth={"72px" as const}
                   loading={"lazy" as const}
                   src={{
-                    src: "/plasmic/sandbox_satuhsehat/images/menuIconspng.png",
-                    fullWidth: 70,
-                    fullHeight: 70,
+                    src: "/plasmic/sandbox_satuhsehat/images/farmaseepng.png",
+                    fullWidth: 601,
+                    fullHeight: 124,
                     aspectRatio: undefined
                   }}
                 />
@@ -581,7 +581,7 @@ function PlasmicMitraTerdaftar2__RenderFunc(props: {
                         sty.h5___2B9Po
                       )}
                     >
-                      {"Cexup"}
+                      {"Farmasee"}
                     </h5>
                     <div
                       className={classNames(
@@ -590,7 +590,7 @@ function PlasmicMitraTerdaftar2__RenderFunc(props: {
                         sty.text___2WWcl
                       )}
                     >
-                      {"PT. Tele Cexup Indonesia"}
+                      {"PT. Visi Tekno Farma Persada"}
                     </div>
                   </p.Stack>
                 ) : null}
@@ -603,17 +603,17 @@ function PlasmicMitraTerdaftar2__RenderFunc(props: {
                 <p.PlasmicImg
                   alt={""}
                   className={classNames(sty.img__oY8Iq)}
-                  displayHeight={"auto" as const}
+                  displayHeight={"72px" as const}
                   displayMaxHeight={"none" as const}
                   displayMaxWidth={"100%" as const}
                   displayMinHeight={"0" as const}
                   displayMinWidth={"0" as const}
-                  displayWidth={"auto" as const}
+                  displayWidth={"72px" as const}
                   loading={"lazy" as const}
                   src={{
-                    src: "/plasmic/sandbox_satuhsehat/images/menuIconspng.png",
-                    fullWidth: 70,
-                    fullHeight: 70,
+                    src: "/plasmic/sandbox_satuhsehat/images/fitHappypng.png",
+                    fullWidth: 1024,
+                    fullHeight: 1024,
                     aspectRatio: undefined
                   }}
                 />
@@ -632,7 +632,7 @@ function PlasmicMitraTerdaftar2__RenderFunc(props: {
                         sty.h5__wxEbg
                       )}
                     >
-                      {"Naluri"}
+                      {"FitHappy"}
                     </h5>
                     <div
                       className={classNames(
@@ -641,7 +641,7 @@ function PlasmicMitraTerdaftar2__RenderFunc(props: {
                         sty.text__pCoav
                       )}
                     >
-                      {"PT NALURI HIDUP INDONESIA"}
+                      {"PT. Cepat Sembuh Hidup Sehat"}
                     </div>
                   </p.Stack>
                 ) : null}
@@ -654,6 +654,57 @@ function PlasmicMitraTerdaftar2__RenderFunc(props: {
                 <p.PlasmicImg
                   alt={""}
                   className={classNames(sty.img__lPvD)}
+                  displayHeight={"72px" as const}
+                  displayMaxHeight={"none" as const}
+                  displayMaxWidth={"100%" as const}
+                  displayMinHeight={"0" as const}
+                  displayMinWidth={"0" as const}
+                  displayWidth={"72px" as const}
+                  loading={"lazy" as const}
+                  src={{
+                    src: "/plasmic/sandbox_satuhsehat/images/getmedikpng.png",
+                    fullWidth: 2206,
+                    fullHeight: 802,
+                    aspectRatio: undefined
+                  }}
+                />
+
+                {true ? (
+                  <p.Stack
+                    as={"div"}
+                    hasGap={true}
+                    className={classNames(projectcss.all, sty.freeBox__wis1H)}
+                  >
+                    <h5
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.h5,
+                        projectcss.__wab_text,
+                        sty.h5__r6VO
+                      )}
+                    >
+                      {"GetMedik"}
+                    </h5>
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__aAeNi
+                      )}
+                    >
+                      {"PT. Layanan Medik Indonesia"}
+                    </div>
+                  </p.Stack>
+                ) : null}
+              </p.Stack>
+              <p.Stack
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox__ua2I)}
+              >
+                <p.PlasmicImg
+                  alt={""}
+                  className={classNames(sty.img___3CqHy)}
                   displayHeight={"auto" as const}
                   displayMaxHeight={"none" as const}
                   displayMaxWidth={"100%" as const}
@@ -673,36 +724,36 @@ function PlasmicMitraTerdaftar2__RenderFunc(props: {
                   <p.Stack
                     as={"div"}
                     hasGap={true}
-                    className={classNames(projectcss.all, sty.freeBox__wis1H)}
+                    className={classNames(projectcss.all, sty.freeBox__ikdiA)}
                   >
                     <h5
                       className={classNames(
                         projectcss.all,
                         projectcss.h5,
                         projectcss.__wab_text,
-                        sty.h5__r6VO
+                        sty.h5__szcwo
                       )}
                     >
-                      {"Eka Hospital"}
+                      {"Getwell"}
                     </h5>
                     <div
                       className={classNames(
                         projectcss.all,
                         projectcss.__wab_text,
-                        sty.text__aAeNi
+                        sty.text__rKdJj
                       )}
                     >
-                      {"PELITA RELIANCE INTERNATIONAL HOSPITAL"}
+                      {"PT. Telemedika Teknologi Indonesia"}
                     </div>
                   </p.Stack>
                 ) : null}
               </p.Stack>
-              <div className={classNames(projectcss.all, sty.freeBox__woTfZ)}>
+              <div className={classNames(projectcss.all, sty.freeBox__yi0RU)}>
                 <p.PlasmicLink
                   className={classNames(
                     projectcss.all,
                     projectcss.a,
-                    sty.link___549Bz
+                    sty.link__jehX7
                   )}
                   component={Link}
                   href={`/mitra-terdaftar-1`}
@@ -712,7 +763,7 @@ function PlasmicMitraTerdaftar2__RenderFunc(props: {
                     className={classNames(
                       projectcss.all,
                       projectcss.__wab_text,
-                      sty.text__po3Qi
+                      sty.text__rinP2
                     )}
                   >
                     {"1"}
@@ -722,7 +773,7 @@ function PlasmicMitraTerdaftar2__RenderFunc(props: {
                   className={classNames(
                     projectcss.all,
                     projectcss.a,
-                    sty.link__oJbJc
+                    sty.link__u3YfS
                   )}
                   component={Link}
                   href={`/mitra-terdaftar-2`}
@@ -732,10 +783,110 @@ function PlasmicMitraTerdaftar2__RenderFunc(props: {
                     className={classNames(
                       projectcss.all,
                       projectcss.__wab_text,
-                      sty.text__ulyCz
+                      sty.text___0R8Jb
                     )}
                   >
                     {"2"}
+                  </div>
+                </p.PlasmicLink>
+                <p.PlasmicLink
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.a,
+                    sty.link__q8CzK
+                  )}
+                  component={Link}
+                  href={`/mitra-terdaftar-3`}
+                  platform={"nextjs"}
+                >
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__lGbj5
+                    )}
+                  >
+                    {"3"}
+                  </div>
+                </p.PlasmicLink>
+                <p.PlasmicLink
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.a,
+                    sty.link__hRx3K
+                  )}
+                  component={Link}
+                  href={`/mitra-terdaftar-4`}
+                  platform={"nextjs"}
+                >
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__fl2Ch
+                    )}
+                  >
+                    {"4"}
+                  </div>
+                </p.PlasmicLink>
+                <p.PlasmicLink
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.a,
+                    sty.link__h2X3H
+                  )}
+                  component={Link}
+                  href={`/mitra-terdaftar-5`}
+                  platform={"nextjs"}
+                >
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__j5D
+                    )}
+                  >
+                    {"5"}
+                  </div>
+                </p.PlasmicLink>
+                <p.PlasmicLink
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.a,
+                    sty.link__homtl
+                  )}
+                  component={Link}
+                  href={`/mitra-terdaftar-6`}
+                  platform={"nextjs"}
+                >
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text___083R6
+                    )}
+                  >
+                    {"6"}
+                  </div>
+                </p.PlasmicLink>
+                <p.PlasmicLink
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.a,
+                    sty.link__plfp
+                  )}
+                  component={Link}
+                  href={`/mitra-terdaftar-7`}
+                  platform={"nextjs"}
+                >
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__rUos2
+                    )}
+                  >
+                    {"7"}
                   </div>
                 </p.PlasmicLink>
               </div>
