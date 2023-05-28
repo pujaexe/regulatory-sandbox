@@ -569,7 +569,7 @@ function PlasmicSlideMitra__RenderFunc(props: {
                     displayWidth={
                       hasVariant($state, "isDiawasi", "isDiawasi")
                         ? ("72px" as const)
-                        : ("auto" as const)
+                        : ("72px" as const)
                     }
                     loading={"lazy" as const}
                     src={
@@ -581,9 +581,9 @@ function PlasmicSlideMitra__RenderFunc(props: {
                             aspectRatio: undefined
                           }
                         : {
-                            src: "/plasmic/sandbox_satuhsehat/images/menuIconspng.png",
-                            fullWidth: 70,
-                            fullHeight: 70,
+                            src: "/plasmic/sandbox_satuhsehat/images/alodoctorjpeg.jpg",
+                            fullWidth: 1080,
+                            fullHeight: 1080,
                             aspectRatio: undefined
                           }
                     }

@@ -138,27 +138,28 @@
 }
 .img__ebq22 {
   position: relative;
-  object-fit: cover;
+  object-fit: contain;
   max-width: 100%;
   width: 72px;
   height: 72px;
 }
 .img__ebq22 > picture > img {
-  object-fit: cover;
+  object-fit: contain;
 }
 .img__ebq22 > :global(.__wab_img-spacer) > img {
-  object-fit: cover;
+  object-fit: contain;
 }
 .img__qzUa {
   position: relative;
-  object-fit: cover;
+  object-fit: contain;
   max-width: 100%;
+  width: 72px;
 }
 .img__qzUa > picture > img {
-  object-fit: cover;
+  object-fit: contain;
 }
 .img__qzUa > :global(.__wab_img-spacer) > img {
-  object-fit: cover;
+  object-fit: contain;
 }
 .imgisDiawasi__qzUavK8Cy {
   width: 72px;
