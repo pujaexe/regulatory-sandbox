@@ -37,7 +37,7 @@ import {
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
 import { PlasmicHead } from "@plasmicapp/react-web"; // plasmic-import: 7EBFWZs-Lh/codeComponent
-import Navbarv2 from "../../Navbarv2"; // plasmic-import: NCicNLzCjc/component
+import { NavigationBar } from "@plasmicpkgs/plasmic-nav"; // plasmic-import: jGx9tiKJoex/codeComponent
 import Slider from "react-slick"; // plasmic-import: HOQUyOpClJ/codeComponent
 import SlideMitra from "../../SlideMitra"; // plasmic-import: HjExHmE43ji/component
 import Collapsiblev2 from "../../Collapsiblev2"; // plasmic-import: vrBPAsBs7q/component
@@ -50,7 +50,6 @@ import plasmic_antd_5_hostless_css from "../antd_5_hostless/plasmic_antd_5_hostl
 import projectcss from "./plasmic_sandbox_satuhsehat.module.css"; // plasmic-import: mazsTSCdeXMvNewzsED8CP/projectcss
 import sty from "./PlasmicHomepage.module.css"; // plasmic-import: 2kkee5R7hDuz/css
 
-import MenuSvgrepoComsvgIcon from "./icons/PlasmicIcon__MenuSvgrepoComsvg"; // plasmic-import: yxVuo-XHb-/icon
 import LawSvgrepoCom1SvgIcon from "./icons/PlasmicIcon__LawSvgrepoCom1Svg"; // plasmic-import: jj3V4MmrRO/icon
 import JusticeSvgrepoCom1SvgIcon from "./icons/PlasmicIcon__JusticeSvgrepoCom1Svg"; // plasmic-import: d11xSBFAIc/icon
 import Frame1000001301SvgIcon from "./icons/PlasmicIcon__Frame1000001301Svg"; // plasmic-import: HdY_vWMIj2/icon
@@ -73,8 +72,7 @@ export const PlasmicHomepage__ArgProps = new Array<ArgPropType>();
 export type PlasmicHomepage__OverridesType = {
   root?: p.Flex<"div">;
   pageMetadataOverride?: p.Flex<typeof PlasmicHead>;
-  header?: p.Flex<"div">;
-  navbarv2?: p.Flex<typeof Navbarv2>;
+  navigationBar?: p.Flex<typeof NavigationBar>;
   hero?: p.Flex<"div">;
   slider?: p.Flex<typeof Slider>;
   hero2?: p.Flex<"a"> & Partial<LinkProps>;
@@ -149,12 +147,6 @@ function PlasmicHomepage__RenderFunc(props: {
 
   const stateSpecs = React.useMemo(
     () => [
-      {
-        path: "navbarv2.isMenuShow",
-        type: "private",
-        variableType: "boolean",
-        initFunc: ({ $props, $state, $queries, $ctx }) => false
-      },
       {
         path: "collapsiblev2.isCollapse",
         type: "private",
@@ -308,31 +300,61 @@ function PlasmicHomepage__RenderFunc(props: {
             className={classNames("__wab_instance", sty.pageMetadataOverride)}
           />
 
-          {true ? (
-            <div
-              data-plasmic-name={"header"}
-              data-plasmic-override={overrides.header}
-              className={classNames(projectcss.all, sty.header)}
-            >
-              <Navbarv2
-                data-plasmic-name={"navbarv2"}
-                data-plasmic-override={overrides.navbarv2}
-                className={classNames("__wab_instance", sty.navbarv2)}
-                isMenuShow={p.generateStateValueProp($state, [
-                  "navbarv2",
-                  "isMenuShow"
-                ])}
-                onIsMenuShowChange={p.generateStateOnChangeProp($state, [
-                  "navbarv2",
-                  "isMenuShow"
-                ])}
+          <NavigationBar
+            data-plasmic-name={"navigationBar"}
+            data-plasmic-override={overrides.navigationBar}
+            brand={
+              <p.PlasmicLink
+                className={classNames(
+                  projectcss.all,
+                  projectcss.a,
+                  sty.link__mou0T
+                )}
+                component={Link}
+                href={"#" as const}
+                platform={"nextjs"}
               >
+                <p.PlasmicImg
+                  alt={""}
+                  className={classNames(sty.img__rlz8J)}
+                  displayHeight={"40px" as const}
+                  displayMaxHeight={"none" as const}
+                  displayMaxWidth={"none" as const}
+                  displayMinHeight={"0" as const}
+                  displayMinWidth={"0" as const}
+                  displayWidth={"auto" as const}
+                  src={{
+                    src: "/plasmic/sandbox_satuhsehat/images/logokemkespng.png",
+                    fullWidth: 133,
+                    fullHeight: 60,
+                    aspectRatio: undefined
+                  }}
+                />
+              </p.PlasmicLink>
+            }
+            className={classNames("__wab_instance", sty.navigationBar)}
+            closeButton={
+              <p.PlasmicImg
+                alt={""}
+                className={classNames(sty.img__g4SY)}
+                displayHeight={"auto" as const}
+                displayMaxHeight={"none" as const}
+                displayMaxWidth={"none" as const}
+                displayMinHeight={"0" as const}
+                displayMinWidth={"0" as const}
+                displayWidth={"auto" as const}
+                src={"https://static1.plasmic.app/close.svg" as const}
+              />
+            }
+            itemsGap={24 as const}
+            menuItems={
+              <React.Fragment>
                 <p.PlasmicLink
                   className={classNames(
                     projectcss.all,
                     projectcss.a,
                     projectcss.__wab_text,
-                    sty.link__fX96H
+                    sty.link__kgrvP
                   )}
                   component={Link}
                   href={`/`}
@@ -345,7 +367,7 @@ function PlasmicHomepage__RenderFunc(props: {
                     projectcss.all,
                     projectcss.a,
                     projectcss.__wab_text,
-                    sty.link__qsOpU
+                    sty.link__nEjW6
                   )}
                   component={Link}
                   href={`/`}
@@ -358,7 +380,7 @@ function PlasmicHomepage__RenderFunc(props: {
                     projectcss.all,
                     projectcss.a,
                     projectcss.__wab_text,
-                    sty.link___2HlJy
+                    sty.link___9O23
                   )}
                   component={Link}
                   href={`/mitra-terdaftar-1`}
@@ -371,7 +393,7 @@ function PlasmicHomepage__RenderFunc(props: {
                     projectcss.all,
                     projectcss.a,
                     projectcss.__wab_text,
-                    sty.link__scuxf
+                    sty.link___3Gg8K
                   )}
                   component={Link}
                   href={`/mitra-diawasi-1`}
@@ -384,7 +406,7 @@ function PlasmicHomepage__RenderFunc(props: {
                     projectcss.all,
                     projectcss.a,
                     projectcss.__wab_text,
-                    sty.link___8JEd8
+                    sty.link___8GQw
                   )}
                   component={Link}
                   href={`/`}
@@ -397,7 +419,7 @@ function PlasmicHomepage__RenderFunc(props: {
                     projectcss.all,
                     projectcss.a,
                     projectcss.__wab_text,
-                    sty.link__xitid
+                    sty.link__wGr4O
                   )}
                   component={Link}
                   href={`/doc-v-2`}
@@ -405,9 +427,24 @@ function PlasmicHomepage__RenderFunc(props: {
                 >
                   {"Dokumen"}
                 </p.PlasmicLink>
-              </Navbarv2>
-            </div>
-          ) : null}
+              </React.Fragment>
+            }
+            openButton={
+              <p.PlasmicImg
+                alt={""}
+                className={classNames(sty.img___2Qxq5)}
+                displayHeight={"auto" as const}
+                displayMaxHeight={"none" as const}
+                displayMaxWidth={"none" as const}
+                displayMinHeight={"0" as const}
+                displayMinWidth={"0" as const}
+                displayWidth={"auto" as const}
+                src={"https://static1.plasmic.app/menu.svg" as const}
+              />
+            }
+            responsiveBreakpoint={768 as const}
+          />
+
           <div
             data-plasmic-name={"hero"}
             data-plasmic-override={overrides.hero}
@@ -2958,8 +2995,7 @@ const PlasmicDescendants = {
   root: [
     "root",
     "pageMetadataOverride",
-    "header",
-    "navbarv2",
+    "navigationBar",
     "hero",
     "slider",
     "hero2",
@@ -2992,8 +3028,7 @@ const PlasmicDescendants = {
     "footer"
   ],
   pageMetadataOverride: ["pageMetadataOverride"],
-  header: ["header", "navbarv2"],
-  navbarv2: ["navbarv2"],
+  navigationBar: ["navigationBar"],
   hero: ["hero", "slider"],
   slider: ["slider"],
   hero2: ["hero2", "h1", "h4"],
@@ -3047,8 +3082,7 @@ type DescendantsType<T extends NodeNameType> =
 type NodeDefaultElementType = {
   root: "div";
   pageMetadataOverride: typeof PlasmicHead;
-  header: "div";
-  navbarv2: typeof Navbarv2;
+  navigationBar: typeof NavigationBar;
   hero: "div";
   slider: typeof Slider;
   hero2: "a";
@@ -3142,8 +3176,7 @@ export const PlasmicHomepage = Object.assign(
   {
     // Helper components rendering sub-elements
     pageMetadataOverride: makeNodeComponent("pageMetadataOverride"),
-    header: makeNodeComponent("header"),
-    navbarv2: makeNodeComponent("navbarv2"),
+    navigationBar: makeNodeComponent("navigationBar"),
     hero: makeNodeComponent("hero"),
     slider: makeNodeComponent("slider"),
     hero2: makeNodeComponent("hero2"),
