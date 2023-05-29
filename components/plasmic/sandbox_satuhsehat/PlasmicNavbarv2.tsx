@@ -57,12 +57,14 @@ export type PlasmicNavbarv2__ArgsType = {
   slot?: React.ReactNode;
   isMenuShow?: boolean;
   onIsMenuShowChange?: (val: string) => void;
+  children?: React.ReactNode;
 };
 type ArgPropType = keyof PlasmicNavbarv2__ArgsType;
 export const PlasmicNavbarv2__ArgProps = new Array<ArgPropType>(
   "slot",
   "isMenuShow",
-  "onIsMenuShowChange"
+  "onIsMenuShowChange",
+  "children"
 );
 
 export type PlasmicNavbarv2__OverridesType = {
@@ -78,6 +80,7 @@ export interface DefaultNavbarv2Props {
   slot?: React.ReactNode;
   isMenuShow?: boolean;
   onIsMenuShowChange?: (val: string) => void;
+  children?: React.ReactNode;
   className?: string;
 }
 
@@ -186,84 +189,91 @@ function PlasmicNavbarv2__RenderFunc(props: {
           hasGap={true}
           className={classNames(projectcss.all, sty.freeBox__pPkBt)}
         >
-          <p.PlasmicLink
-            className={classNames(
-              projectcss.all,
-              projectcss.a,
-              projectcss.__wab_text,
-              sty.link__is3DD
-            )}
-            component={Link}
-            href={`/`}
-            platform={"nextjs"}
-          >
-            {"Beranda"}
-          </p.PlasmicLink>
-          <p.PlasmicLink
-            className={classNames(
-              projectcss.all,
-              projectcss.a,
-              projectcss.__wab_text,
-              sty.link__tXiWw
-            )}
-            component={Link}
-            href={`/`}
-            platform={"nextjs"}
-          >
-            {"Tentang"}
-          </p.PlasmicLink>
-          <p.PlasmicLink
-            className={classNames(
-              projectcss.all,
-              projectcss.a,
-              projectcss.__wab_text,
-              sty.link__bNmuV
-            )}
-            component={Link}
-            href={`/mitra-terdaftar-1`}
-            platform={"nextjs"}
-          >
-            {"Mitra Tercatat"}
-          </p.PlasmicLink>
-          <p.PlasmicLink
-            className={classNames(
-              projectcss.all,
-              projectcss.a,
-              projectcss.__wab_text,
-              sty.link__jwgou
-            )}
-            component={Link}
-            href={`/mitra-diawasi-1`}
-            platform={"nextjs"}
-          >
-            {"Mitra Diawasi"}
-          </p.PlasmicLink>
-          <p.PlasmicLink
-            className={classNames(
-              projectcss.all,
-              projectcss.a,
-              projectcss.__wab_text,
-              sty.link__brGjE
-            )}
-            component={Link}
-            href={`/`}
-            platform={"nextjs"}
-          >
-            {"FAQ"}
-          </p.PlasmicLink>
-          <p.PlasmicLink
-            className={classNames(
-              projectcss.all,
-              projectcss.a,
-              projectcss.__wab_text,
-              sty.link__k3PGh
-            )}
-            component={Link}
-            href={`/`}
-            platform={"nextjs"}
-          >
-            {"Dokumen"}
-          </p.PlasmicLink>
+          {p.renderPlasmicSlot({
+            defaultContents: (
+              <React.Fragment>
+                <p.PlasmicLink
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.a,
+                    projectcss.__wab_text,
+                    sty.link__fbtRz
+                  )}
+                  component={Link}
+                  href={`/`}
+                  platform={"nextjs"}
+                >
+                  {"Beranda"}
+                </p.PlasmicLink>
+                <p.PlasmicLink
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.a,
+                    projectcss.__wab_text,
+                    sty.link__aRd4Y
+                  )}
+                  component={Link}
+                  href={`/`}
+                  platform={"nextjs"}
+                >
+                  {"Tentang"}
+                </p.PlasmicLink>
+                <p.PlasmicLink
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.a,
+                    projectcss.__wab_text,
+                    sty.link__xYh0Y
+                  )}
+                  component={Link}
+                  href={`/mitra-terdaftar-1`}
+                  platform={"nextjs"}
+                >
+                  {"Mitra Tercatat"}
+                </p.PlasmicLink>
+                <p.PlasmicLink
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.a,
+                    projectcss.__wab_text,
+                    sty.link__bFjv8
+                  )}
+                  component={Link}
+                  href={`/mitra-diawasi-1`}
+                  platform={"nextjs"}
+                >
+                  {"Mitra Diawasi"}
+                </p.PlasmicLink>
+                <p.PlasmicLink
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.a,
+                    projectcss.__wab_text,
+                    sty.link__sApOb
+                  )}
+                  component={Link}
+                  href={`/`}
+                  platform={"nextjs"}
+                >
+                  {"FAQ"}
+                </p.PlasmicLink>
+                <p.PlasmicLink
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.a,
+                    projectcss.__wab_text,
+                    sty.link__avBtv
+                  )}
+                  component={Link}
+                  href={`/doc-v-2`}
+                  platform={"nextjs"}
+                >
+                  {"Dokumen"}
+                </p.PlasmicLink>
+              </React.Fragment>
+            ),
+            value: args.children
+          })}
         </p.Stack>
       ) : null}
       {(hasVariant(globalVariants, "screen", "mobileOnly") ? true : true) ? (
@@ -500,9 +510,7 @@ function PlasmicNavbarv2__RenderFunc(props: {
                 )}
                 component={Link}
                 href={
-                  hasVariant(globalVariants, "screen", "mobileOnly")
-                    ? ("#home" as const)
-                    : `/v-2`
+                  hasVariant(globalVariants, "screen", "mobileOnly") ? `/` : `/`
                 }
                 platform={"nextjs"}
               >
@@ -517,9 +525,7 @@ function PlasmicNavbarv2__RenderFunc(props: {
                 )}
                 component={Link}
                 href={
-                  hasVariant(globalVariants, "screen", "mobileOnly")
-                    ? ("#about" as const)
-                    : `/v-2`
+                  hasVariant(globalVariants, "screen", "mobileOnly") ? `/` : `/`
                 }
                 platform={"nextjs"}
               >
@@ -533,7 +539,11 @@ function PlasmicNavbarv2__RenderFunc(props: {
                   sty.link__uqd8R
                 )}
                 component={Link}
-                href={`/mitra-terdaftar-1`}
+                href={
+                  hasVariant(globalVariants, "screen", "mobileOnly")
+                    ? `/mitra-terdaftar-1`
+                    : `/mitra-terdaftar-1`
+                }
                 platform={"nextjs"}
               >
                 {"Mitra Terdaftar"}
@@ -546,7 +556,11 @@ function PlasmicNavbarv2__RenderFunc(props: {
                   sty.link___8J3A1
                 )}
                 component={Link}
-                href={`/mitra-diawasi-1`}
+                href={
+                  hasVariant(globalVariants, "screen", "mobileOnly")
+                    ? `/mitra-diawasi-1`
+                    : `/mitra-diawasi-1`
+                }
                 platform={"nextjs"}
               >
                 {"Mitra Diawasi"}
@@ -561,7 +575,7 @@ function PlasmicNavbarv2__RenderFunc(props: {
                 component={Link}
                 href={
                   hasVariant(globalVariants, "screen", "mobileOnly")
-                    ? ("#faq" as const)
+                    ? `/`
                     : `/v-2`
                 }
                 platform={"nextjs"}
@@ -576,7 +590,11 @@ function PlasmicNavbarv2__RenderFunc(props: {
                   sty.link__iqAxm
                 )}
                 component={Link}
-                href={`/doc-v-2`}
+                href={
+                  hasVariant(globalVariants, "screen", "mobileOnly")
+                    ? `/doc-v-2`
+                    : `/doc-v-2`
+                }
                 platform={"nextjs"}
               >
                 {"Dokumen"}

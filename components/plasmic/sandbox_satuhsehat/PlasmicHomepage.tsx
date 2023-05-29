@@ -326,7 +326,86 @@ function PlasmicHomepage__RenderFunc(props: {
                   "navbarv2",
                   "isMenuShow"
                 ])}
-              />
+              >
+                <p.PlasmicLink
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.a,
+                    projectcss.__wab_text,
+                    sty.link__fX96H
+                  )}
+                  component={Link}
+                  href={`/`}
+                  platform={"nextjs"}
+                >
+                  {"Beranda"}
+                </p.PlasmicLink>
+                <p.PlasmicLink
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.a,
+                    projectcss.__wab_text,
+                    sty.link__qsOpU
+                  )}
+                  component={Link}
+                  href={`/`}
+                  platform={"nextjs"}
+                >
+                  {"Tentang"}
+                </p.PlasmicLink>
+                <p.PlasmicLink
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.a,
+                    projectcss.__wab_text,
+                    sty.link___2HlJy
+                  )}
+                  component={Link}
+                  href={`/mitra-terdaftar-1`}
+                  platform={"nextjs"}
+                >
+                  {"Mitra Tercatat"}
+                </p.PlasmicLink>
+                <p.PlasmicLink
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.a,
+                    projectcss.__wab_text,
+                    sty.link__scuxf
+                  )}
+                  component={Link}
+                  href={`/mitra-diawasi-1`}
+                  platform={"nextjs"}
+                >
+                  {"Mitra Diawasi"}
+                </p.PlasmicLink>
+                <p.PlasmicLink
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.a,
+                    projectcss.__wab_text,
+                    sty.link___8JEd8
+                  )}
+                  component={Link}
+                  href={`/`}
+                  platform={"nextjs"}
+                >
+                  {"FAQ"}
+                </p.PlasmicLink>
+                <p.PlasmicLink
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.a,
+                    projectcss.__wab_text,
+                    sty.link__xitid
+                  )}
+                  component={Link}
+                  href={`/doc-v-2`}
+                  platform={"nextjs"}
+                >
+                  {"Dokumen"}
+                </p.PlasmicLink>
+              </Navbarv2>
             </div>
           ) : null}
           <div
