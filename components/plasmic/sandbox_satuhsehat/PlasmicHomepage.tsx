@@ -45,7 +45,7 @@ import Collapsiblev2 from "../../Collapsiblev2"; // plasmic-import: vrBPAsBs7q/c
 import { useScreenVariants as useScreenVariantsqbGzfD819Z3T3 } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: QBGzfD819Z3t3/globalVariant
 
 import "@plasmicapp/react-web/lib/plasmic.css";
-import "../react_slick/plasmic_react_slick.module.css";
+import styles from "../react_slick/plasmic_react_slick.module.css";
 
 import plasmic_antd_5_hostless_css from "../antd_5_hostless/plasmic_antd_5_hostless.module.css"; // plasmic-import: ohDidvG9XsCeFumugENU3J/projectcss
 import projectcss from "./plasmic_sandbox_satuhsehat.module.css"; // plasmic-import: mazsTSCdeXMvNewzsED8CP/projectcss
