@@ -194,7 +194,7 @@ function PlasmicNavbarv2__RenderFunc(props: {
               sty.link__is3DD
             )}
             component={Link}
-            href={"#home" as const}
+            href={`/`}
             platform={"nextjs"}
           >
             {"Beranda"}
@@ -207,7 +207,7 @@ function PlasmicNavbarv2__RenderFunc(props: {
               sty.link__tXiWw
             )}
             component={Link}
-            href={"#about" as const}
+            href={`/`}
             platform={"nextjs"}
           >
             {"Tentang"}
@@ -223,7 +223,7 @@ function PlasmicNavbarv2__RenderFunc(props: {
             href={`/mitra-terdaftar-1`}
             platform={"nextjs"}
           >
-            {"Mitra Terdaftar"}
+            {"Mitra Tercatat"}
           </p.PlasmicLink>
           <p.PlasmicLink
             className={classNames(
@@ -246,7 +246,7 @@ function PlasmicNavbarv2__RenderFunc(props: {
               sty.link__brGjE
             )}
             component={Link}
-            href={"#faq" as const}
+            href={`/`}
             platform={"nextjs"}
           >
             {"FAQ"}
@@ -259,7 +259,7 @@ function PlasmicNavbarv2__RenderFunc(props: {
               sty.link__k3PGh
             )}
             component={Link}
-            href={`/doc-v-2`}
+            href={`/`}
             platform={"nextjs"}
           >
             {"Dokumen"}
