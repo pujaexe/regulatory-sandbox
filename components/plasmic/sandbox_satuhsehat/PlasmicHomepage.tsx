@@ -421,6 +421,7 @@ function PlasmicHomepage__RenderFunc(props: {
               autoplaySpeed={5000 as const}
               className={classNames("__wab_instance", sty.slider)}
               dots={true}
+              useCSS={true}
             >
               <p.PlasmicLink
                 className={classNames(

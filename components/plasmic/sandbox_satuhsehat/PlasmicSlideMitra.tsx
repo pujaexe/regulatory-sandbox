@@ -398,7 +398,7 @@ function PlasmicSlideMitra__RenderFunc(props: {
             })}
             dots={true}
             infinite={
-              hasVariant($state, "isDiawasi", "isDiawasi") ? false : true
+              hasVariant($state, "isDiawasi", "isDiawasi") ? false : false
             }
             rows={1 as const}
             slidesPerRow={1 as const}
