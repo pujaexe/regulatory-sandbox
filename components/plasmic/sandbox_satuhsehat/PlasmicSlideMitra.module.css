@@ -175,14 +175,16 @@
 }
 .img__kCSoa {
   position: relative;
-  object-fit: cover;
+  object-fit: contain;
   max-width: 100%;
+  width: 72px;
+  height: 72px;
 }
 .img__kCSoa > picture > img {
-  object-fit: cover;
+  object-fit: contain;
 }
 .img__kCSoa > :global(.__wab_img-spacer) > img {
-  object-fit: cover;
+  object-fit: contain;
 }
 .imgisDiawasi__kCSoavK8Cy {
   width: 72px;
@@ -196,32 +198,18 @@
 .imgisDiawasi__kCSoavK8Cy > :global(.__wab_img-spacer) > img {
   object-fit: contain;
 }
-.img__zwM9R {
-  position: relative;
-  object-fit: cover;
-  max-width: 100%;
-}
-.img__zwM9R > picture > img {
-  object-fit: cover;
-}
-.img__zwM9R > :global(.__wab_img-spacer) > img {
-  object-fit: cover;
-}
-.imgisDiawasi__zwM9RvK8Cy {
-  width: 72px;
-  height: 72px;
-  max-width: 100%;
-}
 .img__wAacQ {
   position: relative;
-  object-fit: cover;
+  object-fit: contain;
   max-width: 100%;
+  width: 72px;
+  height: 72px;
 }
 .img__wAacQ > picture > img {
-  object-fit: cover;
+  object-fit: contain;
 }
 .img__wAacQ > :global(.__wab_img-spacer) > img {
-  object-fit: cover;
+  object-fit: contain;
 }
 .imgisDiawasi__wAacQvK8Cy {
   width: 72px;

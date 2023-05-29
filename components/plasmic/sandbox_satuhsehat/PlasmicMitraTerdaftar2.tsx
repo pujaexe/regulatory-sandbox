@@ -37,7 +37,6 @@ import {
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
 import Navbarv2 from "../../Navbarv2"; // plasmic-import: NCicNLzCjc/component
-import MenuOverlay from "../../MenuOverlay"; // plasmic-import: 8v397mSlg-/component
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
@@ -46,7 +45,6 @@ import projectcss from "./plasmic_sandbox_satuhsehat.module.css"; // plasmic-imp
 import sty from "./PlasmicMitraTerdaftar2.module.css"; // plasmic-import: OVqjk0nNAZQ/css
 
 import MenuSvgrepoComsvgIcon from "./icons/PlasmicIcon__MenuSvgrepoComsvg"; // plasmic-import: yxVuo-XHb-/icon
-import CloseBoldSvgrepoComsvgIcon from "./icons/PlasmicIcon__CloseBoldSvgrepoComsvg"; // plasmic-import: DGAC4EtneT/icon
 
 export type PlasmicMitraTerdaftar2__VariantMembers = {};
 export type PlasmicMitraTerdaftar2__VariantsArgs = {};
@@ -65,8 +63,6 @@ export type PlasmicMitraTerdaftar2__OverridesType = {
   h1?: p.Flex<"h1">;
   h2?: p.Flex<"h2">;
   footer?: p.Flex<"div">;
-  menuOverlay?: p.Flex<typeof MenuOverlay>;
-  svg?: p.Flex<"svg">;
 };
 
 export interface DefaultMitraTerdaftar2Props {}
@@ -187,7 +183,7 @@ function PlasmicMitraTerdaftar2__RenderFunc(props: {
                       sty.h1
                     )}
                   >
-                    {"Penyelenggaran Inovasi Kesehatan (IDK)Terdaftar"}
+                    {"Penyelenggaran Inovasi Kesehatan (IDK)Tercatat"}
                   </h1>
                   <div
                     className={classNames(
@@ -197,7 +193,7 @@ function PlasmicMitraTerdaftar2__RenderFunc(props: {
                     )}
                   >
                     {
-                      "Daftar penyelenggara Inovasi Kesehatan Digital yang telah bergabung dan dibina oleh Regulatory Sandbox kementrian Kesehatan RI"
+                      'Status "Tercatat" diberikan kepada penyelenggara IDK yang sudah mendaftar serta telah lolos verifikasi dan validasi dokumen. \n\nPenyelenggara IDK dengan status "Tercatat" tidak serta merta memberikan hak kepada penyelenggara Inovasi Digital Kesehatan untuk menggunakan logo Kementerian Kesehatan dalam media promosinya.'
                     }
                   </div>
                 </p.Stack>
@@ -403,17 +399,17 @@ function PlasmicMitraTerdaftar2__RenderFunc(props: {
                 <p.PlasmicImg
                   alt={""}
                   className={classNames(sty.img__qu7Aa)}
-                  displayHeight={"auto" as const}
+                  displayHeight={"72px" as const}
                   displayMaxHeight={"none" as const}
                   displayMaxWidth={"100%" as const}
                   displayMinHeight={"0" as const}
                   displayMinWidth={"0" as const}
-                  displayWidth={"auto" as const}
+                  displayWidth={"72px" as const}
                   loading={"lazy" as const}
                   src={{
-                    src: "/plasmic/sandbox_satuhsehat/images/menuIconspng.png",
-                    fullWidth: 70,
-                    fullHeight: 70,
+                    src: "/plasmic/sandbox_satuhsehat/images/aretaDubDubpng.png",
+                    fullWidth: 5692,
+                    fullHeight: 1668,
                     aspectRatio: undefined
                   }}
                 />
@@ -454,17 +450,17 @@ function PlasmicMitraTerdaftar2__RenderFunc(props: {
                 <p.PlasmicImg
                   alt={""}
                   className={classNames(sty.img__rwIpf)}
-                  displayHeight={"auto" as const}
+                  displayHeight={"72px" as const}
                   displayMaxHeight={"none" as const}
                   displayMaxWidth={"100%" as const}
                   displayMinHeight={"0" as const}
                   displayMinWidth={"0" as const}
-                  displayWidth={"auto" as const}
+                  displayWidth={"72px" as const}
                   loading={"lazy" as const}
                   src={{
-                    src: "/plasmic/sandbox_satuhsehat/images/menuIconspng.png",
-                    fullWidth: 70,
-                    fullHeight: 70,
+                    src: "/plasmic/sandbox_satuhsehat/images/ekaHospitalpng.png",
+                    fullWidth: 2481,
+                    fullHeight: 1218,
                     aspectRatio: undefined
                   }}
                 />
@@ -505,17 +501,17 @@ function PlasmicMitraTerdaftar2__RenderFunc(props: {
                 <p.PlasmicImg
                   alt={""}
                   className={classNames(sty.img__pjFdO)}
-                  displayHeight={"auto" as const}
+                  displayHeight={"72px" as const}
                   displayMaxHeight={"none" as const}
                   displayMaxWidth={"100%" as const}
                   displayMinHeight={"0" as const}
                   displayMinWidth={"0" as const}
-                  displayWidth={"auto" as const}
+                  displayWidth={"72px" as const}
                   loading={"lazy" as const}
                   src={{
-                    src: "/plasmic/sandbox_satuhsehat/images/menuIconspng.png",
-                    fullWidth: 70,
-                    fullHeight: 70,
+                    src: "/plasmic/sandbox_satuhsehat/images/elitech2Png.png",
+                    fullWidth: 4322,
+                    fullHeight: 4124,
                     aspectRatio: undefined
                   }}
                 />
@@ -709,17 +705,17 @@ function PlasmicMitraTerdaftar2__RenderFunc(props: {
                 <p.PlasmicImg
                   alt={""}
                   className={classNames(sty.img___3CqHy)}
-                  displayHeight={"auto" as const}
+                  displayHeight={"72px" as const}
                   displayMaxHeight={"none" as const}
                   displayMaxWidth={"100%" as const}
                   displayMinHeight={"0" as const}
                   displayMinWidth={"0" as const}
-                  displayWidth={"auto" as const}
+                  displayWidth={"72px" as const}
                   loading={"lazy" as const}
                   src={{
-                    src: "/plasmic/sandbox_satuhsehat/images/menuIconspng.png",
-                    fullWidth: 70,
-                    fullHeight: 70,
+                    src: "/plasmic/sandbox_satuhsehat/images/telmedTelemedikaTeknologiIndonesiapng.png",
+                    fullWidth: 295,
+                    fullHeight: 141,
                     aspectRatio: undefined
                   }}
                 />
@@ -930,196 +926,6 @@ function PlasmicMitraTerdaftar2__RenderFunc(props: {
               </div>
             </p.Stack>
           </p.Stack>
-          {(() => {
-            try {
-              return $state.navbarv2.isMenuShow;
-            } catch (e) {
-              if (e instanceof TypeError) {
-                return true;
-              }
-              throw e;
-            }
-          })() ? (
-            <MenuOverlay
-              data-plasmic-name={"menuOverlay"}
-              data-plasmic-override={overrides.menuOverlay}
-              className={classNames("__wab_instance", sty.menuOverlay)}
-            >
-              <p.PlasmicLink
-                className={classNames(
-                  projectcss.all,
-                  projectcss.a,
-                  sty.link__eqXfH
-                )}
-                component={Link}
-                onClick={async event => {
-                  const $steps = {};
-                  $steps["updateNavbarv2IsMenuShow"] = true
-                    ? (() => {
-                        const actionArgs = {
-                          variable: __wrapUserFunction(
-                            {
-                              type: "InteractionArgLoc",
-                              actionName: "updateVariable",
-                              interactionUuid: "Aop5iFWJw1",
-                              componentUuid: "OVqjk0nNAZQ",
-                              argName: "variable"
-                            },
-                            () => ({
-                              objRoot: $state,
-                              variablePath: ["navbarv2", "isMenuShow"]
-                            })
-                          ),
-                          operation: __wrapUserFunction(
-                            {
-                              type: "InteractionArgLoc",
-                              actionName: "updateVariable",
-                              interactionUuid: "Aop5iFWJw1",
-                              componentUuid: "OVqjk0nNAZQ",
-                              argName: "operation"
-                            },
-                            () => 0
-                          ),
-                          value: __wrapUserFunction(
-                            {
-                              type: "InteractionArgLoc",
-                              actionName: "updateVariable",
-                              interactionUuid: "Aop5iFWJw1",
-                              componentUuid: "OVqjk0nNAZQ",
-                              argName: "value"
-                            },
-                            () => false
-                          )
-                        };
-                        return __wrapUserFunction(
-                          {
-                            type: "InteractionLoc",
-                            actionName: "updateVariable",
-                            interactionUuid: "Aop5iFWJw1",
-                            componentUuid: "OVqjk0nNAZQ"
-                          },
-                          () =>
-                            (({ variable, value, startIndex, deleteCount }) => {
-                              if (!variable) {
-                                return;
-                              }
-                              const { objRoot, variablePath } = variable;
-
-                              p.set(objRoot, variablePath, value);
-                              return value;
-                            })?.apply(null, [actionArgs]),
-                          actionArgs
-                        );
-                      })()
-                    : undefined;
-                  if (
-                    typeof $steps["updateNavbarv2IsMenuShow"] === "object" &&
-                    typeof $steps["updateNavbarv2IsMenuShow"].then ===
-                      "function"
-                  ) {
-                    $steps["updateNavbarv2IsMenuShow"] =
-                      await __wrapUserPromise(
-                        {
-                          type: "InteractionLoc",
-                          actionName: "updateVariable",
-                          interactionUuid: "Aop5iFWJw1",
-                          componentUuid: "OVqjk0nNAZQ"
-                        },
-                        $steps["updateNavbarv2IsMenuShow"]
-                      );
-                  }
-                }}
-                platform={"nextjs"}
-              >
-                <CloseBoldSvgrepoComsvgIcon
-                  data-plasmic-name={"svg"}
-                  data-plasmic-override={overrides.svg}
-                  className={classNames(projectcss.all, sty.svg)}
-                  role={"img"}
-                />
-              </p.PlasmicLink>
-              <p.PlasmicLink
-                className={classNames(
-                  projectcss.all,
-                  projectcss.a,
-                  sty.link___2BAec
-                )}
-                component={Link}
-                href={`/v-2`}
-                platform={"nextjs"}
-              >
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__ubzTa
-                  )}
-                >
-                  {"Beranda"}
-                </div>
-              </p.PlasmicLink>
-              <p.PlasmicLink
-                className={classNames(
-                  projectcss.all,
-                  projectcss.a,
-                  sty.link___3EDkY
-                )}
-                component={Link}
-                href={`/v-2`}
-                platform={"nextjs"}
-              >
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__lUqf
-                  )}
-                >
-                  {"Tentang"}
-                </div>
-              </p.PlasmicLink>
-              <p.PlasmicLink
-                className={classNames(
-                  projectcss.all,
-                  projectcss.a,
-                  sty.link___5KYu7
-                )}
-                component={Link}
-                href={`/v-2`}
-                platform={"nextjs"}
-              >
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__n7KEf
-                  )}
-                >
-                  {"FAQ"}
-                </div>
-              </p.PlasmicLink>
-              <p.PlasmicLink
-                className={classNames(
-                  projectcss.all,
-                  projectcss.a,
-                  sty.link___0FXfs
-                )}
-                component={Link}
-                href={`/doc-v-2`}
-                platform={"nextjs"}
-              >
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__meg01
-                  )}
-                >
-                  {"Dokumen"}
-                </div>
-              </p.PlasmicLink>
-            </MenuOverlay>
-          ) : null}
         </div>
       </div>
     </React.Fragment>
@@ -1127,23 +933,12 @@ function PlasmicMitraTerdaftar2__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: [
-    "root",
-    "header",
-    "navbarv2",
-    "h1",
-    "h2",
-    "footer",
-    "menuOverlay",
-    "svg"
-  ],
+  root: ["root", "header", "navbarv2", "h1", "h2", "footer"],
   header: ["header", "navbarv2"],
   navbarv2: ["navbarv2"],
   h1: ["h1"],
   h2: ["h2"],
-  footer: ["footer"],
-  menuOverlay: ["menuOverlay", "svg"],
-  svg: ["svg"]
+  footer: ["footer"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -1155,8 +950,6 @@ type NodeDefaultElementType = {
   h1: "h1";
   h2: "h2";
   footer: "div";
-  menuOverlay: typeof MenuOverlay;
-  svg: "svg";
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -1224,8 +1017,6 @@ export const PlasmicMitraTerdaftar2 = Object.assign(
     h1: makeNodeComponent("h1"),
     h2: makeNodeComponent("h2"),
     footer: makeNodeComponent("footer"),
-    menuOverlay: makeNodeComponent("menuOverlay"),
-    svg: makeNodeComponent("svg"),
 
     // Metadata about props expected for PlasmicMitraTerdaftar2
     internalVariantProps: PlasmicMitraTerdaftar2__VariantProps,

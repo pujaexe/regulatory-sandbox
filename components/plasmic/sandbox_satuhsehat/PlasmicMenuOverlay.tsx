@@ -225,6 +225,46 @@ function PlasmicMenuOverlay__RenderFunc(props: {
                 className={classNames(
                   projectcss.all,
                   projectcss.a,
+                  sty.link__flmZu
+                )}
+                component={Link}
+                href={`/mitra-terdaftar-1`}
+                platform={"nextjs"}
+              >
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__rns49
+                  )}
+                >
+                  {"Mitra Terdaftar"}
+                </div>
+              </p.PlasmicLink>
+              <p.PlasmicLink
+                className={classNames(
+                  projectcss.all,
+                  projectcss.a,
+                  sty.link__kQhtb
+                )}
+                component={Link}
+                href={`/mitra-diawasi-1`}
+                platform={"nextjs"}
+              >
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__bltvr
+                  )}
+                >
+                  {"Mitra Diawasi"}
+                </div>
+              </p.PlasmicLink>
+              <p.PlasmicLink
+                className={classNames(
+                  projectcss.all,
+                  projectcss.a,
                   sty.link__byBt
                 )}
                 component={Link}

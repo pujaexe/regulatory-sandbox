@@ -37,11 +37,11 @@ import {
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
 import { PlasmicHead } from "@plasmicapp/react-web"; // plasmic-import: 7EBFWZs-Lh/codeComponent
+import { Embed } from "@plasmicpkgs/plasmic-basic-components"; // plasmic-import: PKldDYkH42/codeComponent
 import Navbarv2 from "../../Navbarv2"; // plasmic-import: NCicNLzCjc/component
+import Slider from "react-slick"; // plasmic-import: HOQUyOpClJ/codeComponent
 import SlideMitra from "../../SlideMitra"; // plasmic-import: HjExHmE43ji/component
 import Collapsiblev2 from "../../Collapsiblev2"; // plasmic-import: vrBPAsBs7q/component
-import { Embed } from "@plasmicpkgs/plasmic-basic-components"; // plasmic-import: PKldDYkH42/codeComponent
-import MenuOverlay from "../../MenuOverlay"; // plasmic-import: 8v397mSlg-/component
 
 import { useScreenVariants as useScreenVariantsqbGzfD819Z3T3 } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: QBGzfD819Z3t3/globalVariant
 
@@ -61,7 +61,6 @@ import MedicineDrugHealthMedicalSmartphonePharmacyTablet2SvgrepoComsvgIcon from 
 import MobilePhoneChatHealthDeviceTelephoneSmartphoneSvgrepoComsvgIcon from "./icons/PlasmicIcon__MobilePhoneChatHealthDeviceTelephoneSmartphoneSvgrepoComsvg"; // plasmic-import: KLL8rlOJRh/icon
 import ArrowCircleRightSvgrepoComsvgIcon from "./icons/PlasmicIcon__ArrowCircleRightSvgrepoComsvg"; // plasmic-import: Zlge9B9cCO/icon
 import ArrowCircleDownSvgrepoComsvgIcon from "./icons/PlasmicIcon__ArrowCircleDownSvgrepoComsvg"; // plasmic-import: gVLgtkvi5O/icon
-import CloseBoldSvgrepoComsvgIcon from "./icons/PlasmicIcon__CloseBoldSvgrepoComsvg"; // plasmic-import: DGAC4EtneT/icon
 
 export type PlasmicHomepage__VariantMembers = {};
 export type PlasmicHomepage__VariantsArgs = {};
@@ -75,9 +74,12 @@ export const PlasmicHomepage__ArgProps = new Array<ArgPropType>();
 export type PlasmicHomepage__OverridesType = {
   root?: p.Flex<"div">;
   pageMetadataOverride?: p.Flex<typeof PlasmicHead>;
+  embedHtml?: p.Flex<typeof Embed>;
   header?: p.Flex<"div">;
   navbarv2?: p.Flex<typeof Navbarv2>;
   hero?: p.Flex<"div">;
+  slider?: p.Flex<typeof Slider>;
+  hero2?: p.Flex<"a"> & Partial<LinkProps>;
   h1?: p.Flex<"h1">;
   h4?: p.Flex<"h4">;
   about?: p.Flex<"div">;
@@ -105,8 +107,6 @@ export type PlasmicHomepage__OverridesType = {
   collapsiblev213?: p.Flex<typeof Collapsiblev2>;
   collapsiblev214?: p.Flex<typeof Collapsiblev2>;
   footer?: p.Flex<"div">;
-  embedHtml?: p.Flex<typeof Embed>;
-  menuOverlay?: p.Flex<typeof MenuOverlay>;
 };
 
 export interface DefaultHomepageProps {}
@@ -310,6 +310,15 @@ function PlasmicHomepage__RenderFunc(props: {
             className={classNames("__wab_instance", sty.pageMetadataOverride)}
           />
 
+          <Embed
+            data-plasmic-name={"embedHtml"}
+            data-plasmic-override={overrides.embedHtml}
+            className={classNames("__wab_instance", sty.embedHtml)}
+            code={
+              '<link rel="stylesheet" type="text/css" charset="UTF-8" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" /> \n<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />' as const
+            }
+          />
+
           {true ? (
             <div
               data-plasmic-name={"header"}
@@ -335,74 +344,175 @@ function PlasmicHomepage__RenderFunc(props: {
             data-plasmic-name={"hero"}
             data-plasmic-override={overrides.hero}
             className={classNames(projectcss.all, sty.hero)}
+            id={"home" as const}
           >
-            <div className={classNames(projectcss.all, sty.columns__f0TOe)}>
-              <p.Stack
-                as={"div"}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.column__wmmQn)}
+            <Slider
+              data-plasmic-name={"slider"}
+              data-plasmic-override={overrides.slider}
+              autoplay={true}
+              className={classNames("__wab_instance", sty.slider)}
+            >
+              <p.PlasmicLink
+                className={classNames(
+                  projectcss.all,
+                  projectcss.a,
+                  sty.link__txzf2
+                )}
+                component={Link}
+                href={`/mitra-terdaftar-1`}
+                platform={"nextjs"}
               >
-                <h1
-                  data-plasmic-name={"h1"}
-                  data-plasmic-override={overrides.h1}
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.h1,
-                    projectcss.__wab_text,
-                    sty.h1
-                  )}
-                >
-                  {"Pendaftaran Ditutup!"}
-                </h1>
-                <h5
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.h5,
-                    projectcss.__wab_text,
-                    sty.h5__rsLzc
-                  )}
-                >
-                  <React.Fragment>
-                    <React.Fragment>
-                      {"Terima kasih kepada 50+ penyelenggara "}
-                    </React.Fragment>
-                    <span
-                      className={"plasmic_default__all plasmic_default__span"}
-                      style={{ fontWeight: 700 }}
-                    >
-                      {"inovasi digital (IDK)"}
-                    </span>
-                    <React.Fragment>
-                      {" klaster telekesehatan yang telah mendaftar"}
-                    </React.Fragment>
-                  </React.Fragment>
-                </h5>
-                <h4
-                  data-plasmic-name={"h4"}
-                  data-plasmic-override={overrides.h4}
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.h4,
-                    projectcss.__wab_text,
-                    sty.h4
-                  )}
-                >
-                  {"Pengumuman lolos verifikasi 28 Mei 2023"}
-                </h4>
-              </p.Stack>
-              {(
-                hasVariant(globalVariants, "screen", "mobileOnly") ? true : true
-              ) ? (
-                <div
-                  className={classNames(projectcss.all, sty.column__j16Qt)}
+                <p.PlasmicImg
+                  alt={""}
+                  className={classNames(sty.img__jmQ7)}
+                  displayHeight={"auto" as const}
+                  displayMaxHeight={"none" as const}
+                  displayMaxWidth={"100%" as const}
+                  displayMinHeight={"0" as const}
+                  displayMinWidth={"0" as const}
+                  displayWidth={"auto" as const}
+                  src={{
+                    src: "/plasmic/sandbox_satuhsehat/images/banner1Png2.png",
+                    fullWidth: 1452,
+                    fullHeight: 485,
+                    aspectRatio: undefined
+                  }}
                 />
-              ) : null}
-            </div>
+              </p.PlasmicLink>
+              <p.PlasmicLink
+                className={classNames(
+                  projectcss.all,
+                  projectcss.a,
+                  sty.link__mcgHc
+                )}
+                component={Link}
+                href={`/mitra-diawasi-1`}
+                platform={"nextjs"}
+              >
+                <p.PlasmicImg
+                  alt={""}
+                  className={classNames(sty.img__mfTk)}
+                  displayHeight={"auto" as const}
+                  displayMaxHeight={"none" as const}
+                  displayMaxWidth={"100%" as const}
+                  displayMinHeight={"0" as const}
+                  displayMinWidth={"0" as const}
+                  displayWidth={"auto" as const}
+                  src={{
+                    src: "/plasmic/sandbox_satuhsehat/images/banner2Png.png",
+                    fullWidth: 1452,
+                    fullHeight: 485,
+                    aspectRatio: undefined
+                  }}
+                />
+              </p.PlasmicLink>
+              <p.PlasmicLink
+                className={classNames(
+                  projectcss.all,
+                  projectcss.a,
+                  sty.link__nxaq6
+                )}
+                component={Link}
+                platform={"nextjs"}
+              >
+                <p.PlasmicImg
+                  alt={""}
+                  className={classNames(sty.img__k255W)}
+                  displayHeight={"auto" as const}
+                  displayMaxHeight={"none" as const}
+                  displayMaxWidth={"100%" as const}
+                  displayMinHeight={"0" as const}
+                  displayMinWidth={"0" as const}
+                  displayWidth={"auto" as const}
+                  src={{
+                    src: "/plasmic/sandbox_satuhsehat/images/banner3Png.png",
+                    fullWidth: 1452,
+                    fullHeight: 485,
+                    aspectRatio: undefined
+                  }}
+                />
+              </p.PlasmicLink>
+            </Slider>
           </div>
+          {true ? (
+            <p.PlasmicLink
+              data-plasmic-name={"hero2"}
+              data-plasmic-override={overrides.hero2}
+              className={classNames(projectcss.all, projectcss.a, sty.hero2)}
+              component={Link}
+              platform={"nextjs"}
+            >
+              <div className={classNames(projectcss.all, sty.columns__dcdaa)}>
+                <p.Stack
+                  as={"div"}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.column__kImIp)}
+                >
+                  <h1
+                    data-plasmic-name={"h1"}
+                    data-plasmic-override={overrides.h1}
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.h1,
+                      projectcss.__wab_text,
+                      sty.h1
+                    )}
+                  >
+                    {"Pendaftaran Ditutup!"}
+                  </h1>
+                  <h5
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.h5,
+                      projectcss.__wab_text,
+                      sty.h5__z8AOt
+                    )}
+                  >
+                    <React.Fragment>
+                      <React.Fragment>
+                        {"Terima kasih kepada 50+ penyelenggara "}
+                      </React.Fragment>
+                      <span
+                        className={"plasmic_default__all plasmic_default__span"}
+                        style={{ fontWeight: 700 }}
+                      >
+                        {"inovasi digital (IDK)"}
+                      </span>
+                      <React.Fragment>
+                        {" klaster telekesehatan yang telah mendaftar"}
+                      </React.Fragment>
+                    </React.Fragment>
+                  </h5>
+                  <h4
+                    data-plasmic-name={"h4"}
+                    data-plasmic-override={overrides.h4}
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.h4,
+                      projectcss.__wab_text,
+                      sty.h4
+                    )}
+                  >
+                    {"Pengumuman lolos verifikasi 28 Mei 2023"}
+                  </h4>
+                </p.Stack>
+                {(
+                  hasVariant(globalVariants, "screen", "mobileOnly")
+                    ? true
+                    : true
+                ) ? (
+                  <div
+                    className={classNames(projectcss.all, sty.column___9TWv)}
+                  />
+                ) : null}
+              </div>
+            </p.PlasmicLink>
+          ) : null}
           <div
             data-plasmic-name={"about"}
             data-plasmic-override={overrides.about}
             className={classNames(projectcss.all, sty.about)}
+            id={"about" as const}
           >
             <p.Stack
               as={"div"}
@@ -824,6 +934,7 @@ function PlasmicHomepage__RenderFunc(props: {
             data-plasmic-name={"faq"}
             data-plasmic-override={overrides.faq}
             className={classNames(projectcss.all, sty.faq)}
+            id={"faq" as const}
           >
             {true ? (
               <p.Stack
@@ -2630,7 +2741,10 @@ function PlasmicHomepage__RenderFunc(props: {
               </p.Stack>
             ) : null}
           </div>
-          <div className={classNames(projectcss.all, sty.freeBox__drWj0)}>
+          <div
+            className={classNames(projectcss.all, sty.freeBox__drWj0)}
+            id={"contact" as const}
+          >
             <div className={classNames(projectcss.all, sty.freeBox___5RfUx)}>
               {true ? (
                 <p.Stack
@@ -2763,198 +2877,6 @@ function PlasmicHomepage__RenderFunc(props: {
               </div>
             </p.Stack>
           </p.Stack>
-          <Embed
-            data-plasmic-name={"embedHtml"}
-            data-plasmic-override={overrides.embedHtml}
-            className={classNames("__wab_instance", sty.embedHtml)}
-            code={
-              '<link rel="stylesheet" type="text/css" charset="UTF-8" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" /> \n<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />' as const
-            }
-          />
-
-          {(
-            hasVariant(globalVariants, "screen", "mobileOnly")
-              ? (() => {
-                  try {
-                    return $state.navbarv2.isMenuShow;
-                  } catch (e) {
-                    if (e instanceof TypeError) {
-                      return true;
-                    }
-                    throw e;
-                  }
-                })()
-              : true
-          ) ? (
-            <MenuOverlay
-              data-plasmic-name={"menuOverlay"}
-              data-plasmic-override={overrides.menuOverlay}
-              className={classNames("__wab_instance", sty.menuOverlay)}
-            >
-              <p.PlasmicLink
-                className={classNames(
-                  projectcss.all,
-                  projectcss.a,
-                  sty.link__o4BX0
-                )}
-                component={Link}
-                onClick={async event => {
-                  const $steps = {};
-                  $steps["updateNavbarv2IsMenuShow"] = true
-                    ? (() => {
-                        const actionArgs = {
-                          variable: __wrapUserFunction(
-                            {
-                              type: "InteractionArgLoc",
-                              actionName: "updateVariable",
-                              interactionUuid: "nsmV9XeejC",
-                              componentUuid: "2kkee5R7hDuz",
-                              argName: "variable"
-                            },
-                            () => ({
-                              objRoot: $state,
-                              variablePath: ["navbarv2", "isMenuShow"]
-                            })
-                          ),
-                          operation: __wrapUserFunction(
-                            {
-                              type: "InteractionArgLoc",
-                              actionName: "updateVariable",
-                              interactionUuid: "nsmV9XeejC",
-                              componentUuid: "2kkee5R7hDuz",
-                              argName: "operation"
-                            },
-                            () => 4
-                          )
-                        };
-                        return __wrapUserFunction(
-                          {
-                            type: "InteractionLoc",
-                            actionName: "updateVariable",
-                            interactionUuid: "nsmV9XeejC",
-                            componentUuid: "2kkee5R7hDuz"
-                          },
-                          () =>
-                            (({ variable, value, startIndex, deleteCount }) => {
-                              if (!variable) {
-                                return;
-                              }
-                              const { objRoot, variablePath } = variable;
-
-                              const oldValue = p.get(objRoot, variablePath);
-                              p.set(objRoot, variablePath, !oldValue);
-                              return !oldValue;
-                            })?.apply(null, [actionArgs]),
-                          actionArgs
-                        );
-                      })()
-                    : undefined;
-                  if (
-                    typeof $steps["updateNavbarv2IsMenuShow"] === "object" &&
-                    typeof $steps["updateNavbarv2IsMenuShow"].then ===
-                      "function"
-                  ) {
-                    $steps["updateNavbarv2IsMenuShow"] =
-                      await __wrapUserPromise(
-                        {
-                          type: "InteractionLoc",
-                          actionName: "updateVariable",
-                          interactionUuid: "nsmV9XeejC",
-                          componentUuid: "2kkee5R7hDuz"
-                        },
-                        $steps["updateNavbarv2IsMenuShow"]
-                      );
-                  }
-                }}
-                platform={"nextjs"}
-              >
-                <CloseBoldSvgrepoComsvgIcon
-                  className={classNames(projectcss.all, sty.svg__vCKts)}
-                  role={"img"}
-                />
-              </p.PlasmicLink>
-              <p.PlasmicLink
-                className={classNames(
-                  projectcss.all,
-                  projectcss.a,
-                  sty.link__aEbrR
-                )}
-                component={Link}
-                href={`/v-2`}
-                platform={"nextjs"}
-              >
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__cw1QJ
-                  )}
-                >
-                  {"Beranda"}
-                </div>
-              </p.PlasmicLink>
-              <p.PlasmicLink
-                className={classNames(
-                  projectcss.all,
-                  projectcss.a,
-                  sty.link__h3Ryj
-                )}
-                component={Link}
-                href={`/v-2`}
-                platform={"nextjs"}
-              >
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__r1J8
-                  )}
-                >
-                  {"Tentang"}
-                </div>
-              </p.PlasmicLink>
-              <p.PlasmicLink
-                className={classNames(
-                  projectcss.all,
-                  projectcss.a,
-                  sty.link___4VVq
-                )}
-                component={Link}
-                href={`/v-2`}
-                platform={"nextjs"}
-              >
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__isKd
-                  )}
-                >
-                  {"FAQ"}
-                </div>
-              </p.PlasmicLink>
-              <p.PlasmicLink
-                className={classNames(
-                  projectcss.all,
-                  projectcss.a,
-                  sty.link__lIy0O
-                )}
-                component={Link}
-                href={`/doc-v-2`}
-                platform={"nextjs"}
-              >
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__kEdLv
-                  )}
-                >
-                  {"Dokumen"}
-                </div>
-              </p.PlasmicLink>
-            </MenuOverlay>
-          ) : null}
         </div>
       </div>
     </React.Fragment>
@@ -2965,9 +2887,12 @@ const PlasmicDescendants = {
   root: [
     "root",
     "pageMetadataOverride",
+    "embedHtml",
     "header",
     "navbarv2",
     "hero",
+    "slider",
+    "hero2",
     "h1",
     "h4",
     "about",
@@ -2994,14 +2919,15 @@ const PlasmicDescendants = {
     "collapsiblev212",
     "collapsiblev213",
     "collapsiblev214",
-    "footer",
-    "embedHtml",
-    "menuOverlay"
+    "footer"
   ],
   pageMetadataOverride: ["pageMetadataOverride"],
+  embedHtml: ["embedHtml"],
   header: ["header", "navbarv2"],
   navbarv2: ["navbarv2"],
-  hero: ["hero", "h1", "h4"],
+  hero: ["hero", "slider"],
+  slider: ["slider"],
+  hero2: ["hero2", "h1", "h4"],
   h1: ["h1"],
   h4: ["h4"],
   about: ["about"],
@@ -3044,9 +2970,7 @@ const PlasmicDescendants = {
   collapsiblev212: ["collapsiblev212"],
   collapsiblev213: ["collapsiblev213"],
   collapsiblev214: ["collapsiblev214"],
-  footer: ["footer"],
-  embedHtml: ["embedHtml"],
-  menuOverlay: ["menuOverlay"]
+  footer: ["footer"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -3054,9 +2978,12 @@ type DescendantsType<T extends NodeNameType> =
 type NodeDefaultElementType = {
   root: "div";
   pageMetadataOverride: typeof PlasmicHead;
+  embedHtml: typeof Embed;
   header: "div";
   navbarv2: typeof Navbarv2;
   hero: "div";
+  slider: typeof Slider;
+  hero2: "a";
   h1: "h1";
   h4: "h4";
   about: "div";
@@ -3084,8 +3011,6 @@ type NodeDefaultElementType = {
   collapsiblev213: typeof Collapsiblev2;
   collapsiblev214: typeof Collapsiblev2;
   footer: "div";
-  embedHtml: typeof Embed;
-  menuOverlay: typeof MenuOverlay;
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -3149,9 +3074,12 @@ export const PlasmicHomepage = Object.assign(
   {
     // Helper components rendering sub-elements
     pageMetadataOverride: makeNodeComponent("pageMetadataOverride"),
+    embedHtml: makeNodeComponent("embedHtml"),
     header: makeNodeComponent("header"),
     navbarv2: makeNodeComponent("navbarv2"),
     hero: makeNodeComponent("hero"),
+    slider: makeNodeComponent("slider"),
+    hero2: makeNodeComponent("hero2"),
     h1: makeNodeComponent("h1"),
     h4: makeNodeComponent("h4"),
     about: makeNodeComponent("about"),
@@ -3179,8 +3107,6 @@ export const PlasmicHomepage = Object.assign(
     collapsiblev213: makeNodeComponent("collapsiblev213"),
     collapsiblev214: makeNodeComponent("collapsiblev214"),
     footer: makeNodeComponent("footer"),
-    embedHtml: makeNodeComponent("embedHtml"),
-    menuOverlay: makeNodeComponent("menuOverlay"),
 
     // Metadata about props expected for PlasmicHomepage
     internalVariantProps: PlasmicHomepage__VariantProps,

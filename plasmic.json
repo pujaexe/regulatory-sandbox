@@ -693,6 +693,11 @@
           "id": "DGAC4EtneT",
           "name": "CloseBoldSvgrepoComsvgIcon",
           "moduleFilePath": "plasmic/sandbox_satuhsehat/icons/PlasmicIcon__CloseBoldSvgrepoComsvg.tsx"
+        },
+        {
+          "id": "w8Y57Hvvpk",
+          "name": "CloseMdSvgrepoComsvgIcon",
+          "moduleFilePath": "plasmic/sandbox_satuhsehat/icons/PlasmicIcon__CloseMdSvgrepoComsvg.tsx"
         }
       ],
       "images": [
@@ -990,6 +995,91 @@
           "id": "a5VovoAdK",
           "name": "simas sehat.png",
           "filePath": "../public/plasmic/sandbox_satuhsehat/images/simasSehatpng.png"
+        },
+        {
+          "id": "-b3XVpFnf",
+          "name": "banner1.png",
+          "filePath": "../public/plasmic/sandbox_satuhsehat/images/banner1Png.png"
+        },
+        {
+          "id": "Tpwe4yn86",
+          "name": "banner2.png",
+          "filePath": "../public/plasmic/sandbox_satuhsehat/images/banner2Png.png"
+        },
+        {
+          "id": "Tla2NL74C",
+          "name": "banner3.png",
+          "filePath": "../public/plasmic/sandbox_satuhsehat/images/banner3Png.png"
+        },
+        {
+          "id": "WLWGNWkrB",
+          "name": "banner1.png 2",
+          "filePath": "../public/plasmic/sandbox_satuhsehat/images/banner1Png2.png"
+        },
+        {
+          "id": "t2F5M7F8r",
+          "name": "ai care.png",
+          "filePath": "../public/plasmic/sandbox_satuhsehat/images/aiCarepng.png"
+        },
+        {
+          "id": "9CUnBF-Lo",
+          "name": "medic+.png",
+          "filePath": "../public/plasmic/sandbox_satuhsehat/images/medicpng.png"
+        },
+        {
+          "id": "LWH_L_Kph",
+          "name": "tele sehat indonesia - ATM Sehat.png",
+          "filePath": "../public/plasmic/sandbox_satuhsehat/images/teleSehatIndonesiaAtmSehatpng.png"
+        },
+        {
+          "id": "ZzKsyUwpW",
+          "name": "Telmed - Telemedika Teknologi Indonesia.png",
+          "filePath": "../public/plasmic/sandbox_satuhsehat/images/telmedTelemedikaTeknologiIndonesiapng.png"
+        },
+        {
+          "id": "3oNP1oSfj",
+          "name": "SBN.png",
+          "filePath": "../public/plasmic/sandbox_satuhsehat/images/sbNpng.png"
+        },
+        {
+          "id": "uyg9h1W7A",
+          "name": "eka hospital.png",
+          "filePath": "../public/plasmic/sandbox_satuhsehat/images/ekaHospitalpng.png"
+        },
+        {
+          "id": "SYG53sozQ",
+          "name": "Elitech2.png",
+          "filePath": "../public/plasmic/sandbox_satuhsehat/images/elitech2Png.png"
+        },
+        {
+          "id": "0IHFB9LYF",
+          "name": "areta - dub dub.png",
+          "filePath": "../public/plasmic/sandbox_satuhsehat/images/aretaDubDubpng.png"
+        },
+        {
+          "id": "0eAlNkF1X",
+          "name": "goapotik.png",
+          "filePath": "../public/plasmic/sandbox_satuhsehat/images/goapotikpng.png"
+        },
+        {
+          "id": "ZjoPD3vDd",
+          "name": "sisfomedia - SmartHealth Mobile2.png",
+          "filePath": "../public/plasmic/sandbox_satuhsehat/images/sisfomediaSmartHealthMobile2Png.png"
+        },
+        {
+          "id": "qIRWFJuOo",
+          "name": "SMARTPSC.png",
+          "filePath": "../public/plasmic/sandbox_satuhsehat/images/smartpsCpng.png"
+        },
+        {
+          "id": "jbjpN0yom",
+          "name": "GSI - tanyaDNA.png",
+          "filePath": "../public/plasmic/sandbox_satuhsehat/images/gsiTanyaDnApng.png"
+        },
+        {
+          "id": "5Hn5avuwa",
+          "name": "PT Transindo Data Perkasa - Transmedic Telemedicine.png",
+          "filePath": "../public/plasmic/sandbox_satuhsehat/images/ptTransindoDataPerkasaTransmedicTelemedicinepng.png"
         }
       ],
       "indirect": false,

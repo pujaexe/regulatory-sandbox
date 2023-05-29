@@ -37,7 +37,6 @@ import {
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
 import Navbarv2 from "../../Navbarv2"; // plasmic-import: NCicNLzCjc/component
-import MenuOverlay from "../../MenuOverlay"; // plasmic-import: 8v397mSlg-/component
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
@@ -48,7 +47,6 @@ import sty from "./PlasmicDocV2.module.css"; // plasmic-import: lfKNC0RMO_/css
 import MenuSvgrepoComsvgIcon from "./icons/PlasmicIcon__MenuSvgrepoComsvg"; // plasmic-import: yxVuo-XHb-/icon
 import DownSmSvgrepoComsvgIcon from "./icons/PlasmicIcon__DownSmSvgrepoComsvg"; // plasmic-import: zXZ3XcPzrU/icon
 import DownloadsvgIcon from "./icons/PlasmicIcon__Downloadsvg"; // plasmic-import: rn5oD25wmM/icon
-import CloseBoldSvgrepoComsvgIcon from "./icons/PlasmicIcon__CloseBoldSvgrepoComsvg"; // plasmic-import: DGAC4EtneT/icon
 
 export type PlasmicDocV2__VariantMembers = {};
 export type PlasmicDocV2__VariantsArgs = {};
@@ -65,7 +63,6 @@ export type PlasmicDocV2__OverridesType = {
   columns?: p.Flex<"div">;
   h1?: p.Flex<"h1">;
   footer?: p.Flex<"div">;
-  menuOverlay?: p.Flex<typeof MenuOverlay>;
 };
 
 export interface DefaultDocV2Props {}
@@ -488,194 +485,6 @@ function PlasmicDocV2__RenderFunc(props: {
               </div>
             </p.Stack>
           </p.Stack>
-          {(() => {
-            try {
-              return $state.navbarv2.isMenuShow;
-            } catch (e) {
-              if (e instanceof TypeError) {
-                return true;
-              }
-              throw e;
-            }
-          })() ? (
-            <MenuOverlay
-              data-plasmic-name={"menuOverlay"}
-              data-plasmic-override={overrides.menuOverlay}
-              className={classNames("__wab_instance", sty.menuOverlay)}
-            >
-              <p.PlasmicLink
-                className={classNames(
-                  projectcss.all,
-                  projectcss.a,
-                  sty.link__vjmUg
-                )}
-                component={Link}
-                onClick={async event => {
-                  const $steps = {};
-                  $steps["updateNavbarv2IsMenuShow"] = true
-                    ? (() => {
-                        const actionArgs = {
-                          variable: __wrapUserFunction(
-                            {
-                              type: "InteractionArgLoc",
-                              actionName: "updateVariable",
-                              interactionUuid: "NGzpS0M6jB",
-                              componentUuid: "lfKNC0RMO_",
-                              argName: "variable"
-                            },
-                            () => ({
-                              objRoot: $state,
-                              variablePath: ["navbarv2", "isMenuShow"]
-                            })
-                          ),
-                          operation: __wrapUserFunction(
-                            {
-                              type: "InteractionArgLoc",
-                              actionName: "updateVariable",
-                              interactionUuid: "NGzpS0M6jB",
-                              componentUuid: "lfKNC0RMO_",
-                              argName: "operation"
-                            },
-                            () => 0
-                          ),
-                          value: __wrapUserFunction(
-                            {
-                              type: "InteractionArgLoc",
-                              actionName: "updateVariable",
-                              interactionUuid: "NGzpS0M6jB",
-                              componentUuid: "lfKNC0RMO_",
-                              argName: "value"
-                            },
-                            () => false
-                          )
-                        };
-                        return __wrapUserFunction(
-                          {
-                            type: "InteractionLoc",
-                            actionName: "updateVariable",
-                            interactionUuid: "NGzpS0M6jB",
-                            componentUuid: "lfKNC0RMO_"
-                          },
-                          () =>
-                            (({ variable, value, startIndex, deleteCount }) => {
-                              if (!variable) {
-                                return;
-                              }
-                              const { objRoot, variablePath } = variable;
-
-                              p.set(objRoot, variablePath, value);
-                              return value;
-                            })?.apply(null, [actionArgs]),
-                          actionArgs
-                        );
-                      })()
-                    : undefined;
-                  if (
-                    typeof $steps["updateNavbarv2IsMenuShow"] === "object" &&
-                    typeof $steps["updateNavbarv2IsMenuShow"].then ===
-                      "function"
-                  ) {
-                    $steps["updateNavbarv2IsMenuShow"] =
-                      await __wrapUserPromise(
-                        {
-                          type: "InteractionLoc",
-                          actionName: "updateVariable",
-                          interactionUuid: "NGzpS0M6jB",
-                          componentUuid: "lfKNC0RMO_"
-                        },
-                        $steps["updateNavbarv2IsMenuShow"]
-                      );
-                  }
-                }}
-                platform={"nextjs"}
-              >
-                <CloseBoldSvgrepoComsvgIcon
-                  className={classNames(projectcss.all, sty.svg__wru0E)}
-                  role={"img"}
-                />
-              </p.PlasmicLink>
-              <p.PlasmicLink
-                className={classNames(
-                  projectcss.all,
-                  projectcss.a,
-                  sty.link__rlhZq
-                )}
-                component={Link}
-                href={`/v-2`}
-                platform={"nextjs"}
-              >
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__fXvjo
-                  )}
-                >
-                  {"Beranda"}
-                </div>
-              </p.PlasmicLink>
-              <p.PlasmicLink
-                className={classNames(
-                  projectcss.all,
-                  projectcss.a,
-                  sty.link___8YUtw
-                )}
-                component={Link}
-                href={`/v-2`}
-                platform={"nextjs"}
-              >
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__dput7
-                  )}
-                >
-                  {"Tentang"}
-                </div>
-              </p.PlasmicLink>
-              <p.PlasmicLink
-                className={classNames(
-                  projectcss.all,
-                  projectcss.a,
-                  sty.link___2CsR
-                )}
-                component={Link}
-                href={`/v-2`}
-                platform={"nextjs"}
-              >
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__yNNz
-                  )}
-                >
-                  {"FAQ"}
-                </div>
-              </p.PlasmicLink>
-              <p.PlasmicLink
-                className={classNames(
-                  projectcss.all,
-                  projectcss.a,
-                  sty.link___9O41M
-                )}
-                component={Link}
-                href={`/doc-v-2`}
-                platform={"nextjs"}
-              >
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__sIPw
-                  )}
-                >
-                  {"Dokumen"}
-                </div>
-              </p.PlasmicLink>
-            </MenuOverlay>
-          ) : null}
         </div>
       </div>
     </React.Fragment>
@@ -683,12 +492,11 @@ function PlasmicDocV2__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "navbarv2", "columns", "h1", "footer", "menuOverlay"],
+  root: ["root", "navbarv2", "columns", "h1", "footer"],
   navbarv2: ["navbarv2"],
   columns: ["columns", "h1"],
   h1: ["h1"],
-  footer: ["footer"],
-  menuOverlay: ["menuOverlay"]
+  footer: ["footer"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -699,7 +507,6 @@ type NodeDefaultElementType = {
   columns: "div";
   h1: "h1";
   footer: "div";
-  menuOverlay: typeof MenuOverlay;
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -766,7 +573,6 @@ export const PlasmicDocV2 = Object.assign(
     columns: makeNodeComponent("columns"),
     h1: makeNodeComponent("h1"),
     footer: makeNodeComponent("footer"),
-    menuOverlay: makeNodeComponent("menuOverlay"),
 
     // Metadata about props expected for PlasmicDocV2
     internalVariantProps: PlasmicDocV2__VariantProps,

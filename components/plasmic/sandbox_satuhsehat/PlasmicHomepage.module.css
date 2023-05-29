@@ -16,6 +16,11 @@
   object-fit: cover;
   position: relative;
 }
+.embedHtml:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+  position: relative;
+}
 .header {
   display: flex;
   position: fixed;
@@ -45,24 +50,97 @@
   align-items: center;
   justify-content: center;
   width: 100%;
+  height: auto;
+  max-width: 100%;
+  background: linear-gradient(#ffffff, #ffffff),
+    url("/plasmic/sandbox_satuhsehat/images/bannerNewpng.png") top 50% left 50% / cover repeat;
+  margin-top: 82px;
+  min-width: 0;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .hero {
+    background: none;
+  }
+}
+.slider:global(.__wab_instance) {
+  width: 100%;
+  max-width: 100%;
+  flex-direction: column;
+  object-fit: cover;
+  position: relative;
+  height: 485px;
+  min-width: 0;
+  flex-shrink: 0;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .slider:global(.__wab_instance) {
+    height: auto;
+  }
+}
+.link__txzf2 {
+  display: flex;
+}
+.img__jmQ7 {
+  object-fit: cover;
+  max-width: 100%;
+}
+.img__jmQ7 > picture > img {
+  object-fit: cover;
+}
+.img__jmQ7 > :global(.__wab_img-spacer) > img {
+  object-fit: cover;
+}
+.link__mcgHc {
+  display: flex;
+}
+.img__mfTk {
+  object-fit: cover;
+  max-width: 100%;
+}
+.img__mfTk > picture > img {
+  object-fit: cover;
+}
+.img__mfTk > :global(.__wab_img-spacer) > img {
+  object-fit: cover;
+}
+.link__nxaq6 {
+  display: flex;
+}
+.img__k255W {
+  object-fit: cover;
+  max-width: 100%;
+}
+.img__k255W > picture > img {
+  object-fit: cover;
+}
+.img__k255W > :global(.__wab_img-spacer) > img {
+  object-fit: cover;
+}
+.hero2 {
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
   height: 485px;
   max-width: 100%;
   background: url("/plasmic/sandbox_satuhsehat/images/bannerNewpng.png") top 50% left 50% / cover repeat;
   margin-top: 82px;
   min-width: 0;
   flex-shrink: 0;
+  display: none;
 }
 @media (min-width: 0px) and (max-width: 768px) {
-  .hero {
+  .hero2 {
     background: url("/plasmic/sandbox_satuhsehat/images/bannerNewpng.png") top 50% left 0% / cover repeat;
     padding-top: 24px;
     padding-bottom: 24px;
   }
 }
-.columns__f0TOe {
+.columns__dcdaa {
   --plsmc-rc-col-gap: 0px;
 }
-.columns__f0TOe {
+.columns__dcdaa {
   display: flex;
   position: relative;
   width: 100%;
@@ -75,14 +153,14 @@
   min-width: 0;
   padding: 0px 16px;
 }
-.columns__f0TOe > :nth-child(2n + 1) {
+.columns__dcdaa > :nth-child(2n + 1) {
   width: calc((100% - 2 * var(--plsmc-rc-col-gap, 0px)) * 6 / 12);
 }
-.columns__f0TOe > :nth-child(2n + 2) {
+.columns__dcdaa > :nth-child(2n + 2) {
   width: calc((100% - 2 * var(--plsmc-rc-col-gap, 0px)) * 6 / 12);
 }
 @media (min-width: 0px) and (max-width: 768px) {
-  .columns__f0TOe {
+  .columns__dcdaa {
     width: 100%;
     height: auto;
     flex-direction: row;
@@ -92,11 +170,11 @@
   }
 }
 @media (min-width: 0px) and (max-width: 768px) {
-  .columns__f0TOe > :nth-child(1n + 1) {
+  .columns__dcdaa > :nth-child(1n + 1) {
     width: calc((100% - 1 * var(--plsmc-rc-col-gap, 0px)) * 12 / 12);
   }
 }
-.column__wmmQn {
+.column__kImIp {
   display: flex;
   position: relative;
   flex-direction: column;
@@ -105,7 +183,7 @@
   max-width: 100%;
   min-width: 0;
 }
-.column__wmmQn > :global(.__wab_flex-container) {
+.column__kImIp > :global(.__wab_flex-container) {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
@@ -113,10 +191,10 @@
   margin-top: calc(0px - 24px);
   height: calc(100% + 24px);
 }
-.column__wmmQn > :global(.__wab_flex-container) > *,
-.column__wmmQn > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
-.column__wmmQn > :global(.__wab_flex-container) > picture > img,
-.column__wmmQn
+.column__kImIp > :global(.__wab_flex-container) > *,
+.column__kImIp > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.column__kImIp > :global(.__wab_flex-container) > picture > img,
+.column__kImIp
   > :global(.__wab_flex-container)
   > :global(.__wab_slot)
   > picture
@@ -134,7 +212,7 @@
   font-weight: 500;
   min-width: 0;
 }
-.h5__rsLzc {
+.h5__z8AOt {
   position: relative;
   width: 100%;
   height: auto;
@@ -154,7 +232,7 @@
   font-weight: 600;
   min-width: 0;
 }
-.column__j16Qt {
+.column___9TWv {
   display: flex;
   position: relative;
   flex-direction: column;
@@ -166,7 +244,7 @@
   min-width: 0;
 }
 @media (min-width: 0px) and (max-width: 768px) {
-  .column__j16Qt {
+  .column___9TWv {
     display: none;
   }
 }
@@ -2061,109 +2139,4 @@
   font-size: 14px;
   font-weight: 300;
   min-width: 0;
-}
-.embedHtml:global(.__wab_instance) {
-  max-width: 100%;
-  object-fit: cover;
-  position: relative;
-}
-.menuOverlay:global(.__wab_instance) {
-  max-width: 100%;
-  position: absolute;
-  z-index: 100;
-  left: 0px;
-  top: 0px;
-  display: none;
-}
-@media (min-width: 0px) and (max-width: 768px) {
-  .menuOverlay:global(.__wab_instance) {
-    display: flex;
-  }
-}
-.link__o4BX0 {
-  position: relative;
-  width: 100%;
-  height: auto;
-  max-width: 100%;
-  display: flex;
-  flex-direction: row;
-  color: #000000;
-  justify-content: flex-end;
-  align-items: flex-start;
-  transition-property: all;
-  transition-duration: 1s;
-  cursor: pointer;
-  min-width: 0;
-  -webkit-transition-property: all;
-  -webkit-transition-duration: 1s;
-  padding: 16px;
-}
-.svg__vCKts {
-  position: relative;
-  object-fit: cover;
-  max-width: 100%;
-  width: 1em;
-  flex-shrink: 0;
-  height: 1em;
-}
-.link__aEbrR {
-  position: relative;
-  width: 100%;
-  height: auto;
-  max-width: 100%;
-  display: flex;
-  flex-direction: row;
-  color: #000000;
-  min-width: 0;
-  padding: 16px;
-}
-.text__cw1QJ {
-  position: relative;
-  padding-bottom: 0px;
-}
-.link__h3Ryj {
-  position: relative;
-  width: 100%;
-  height: auto;
-  max-width: 100%;
-  display: flex;
-  flex-direction: row;
-  color: #000000;
-  min-width: 0;
-  padding: 16px;
-}
-.text__r1J8 {
-  position: relative;
-  padding-top: 0px;
-}
-.link___4VVq {
-  position: relative;
-  width: 100%;
-  height: auto;
-  max-width: 100%;
-  display: flex;
-  flex-direction: row;
-  color: #000000;
-  min-width: 0;
-  padding: 16px;
-}
-.text__isKd {
-  position: relative;
-  padding-bottom: 0px;
-  padding-top: 0px;
-}
-.link__lIy0O {
-  position: relative;
-  width: 100%;
-  height: auto;
-  max-width: 100%;
-  display: flex;
-  flex-direction: row;
-  color: #000000;
-  min-width: 0;
-  padding: 16px;
-}
-.text__kEdLv {
-  position: relative;
-  padding-top: 0px;
 }

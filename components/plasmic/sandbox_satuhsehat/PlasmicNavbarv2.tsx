@@ -46,6 +46,7 @@ import projectcss from "./plasmic_sandbox_satuhsehat.module.css"; // plasmic-imp
 import sty from "./PlasmicNavbarv2.module.css"; // plasmic-import: NCicNLzCjc/css
 
 import MenuSvgrepoComsvgIcon from "./icons/PlasmicIcon__MenuSvgrepoComsvg"; // plasmic-import: yxVuo-XHb-/icon
+import CloseMdSvgrepoComsvgIcon from "./icons/PlasmicIcon__CloseMdSvgrepoComsvg"; // plasmic-import: w8Y57Hvvpk/icon
 
 export type PlasmicNavbarv2__VariantMembers = {};
 export type PlasmicNavbarv2__VariantsArgs = {};
@@ -67,8 +68,10 @@ export const PlasmicNavbarv2__ArgProps = new Array<ArgPropType>(
 export type PlasmicNavbarv2__OverridesType = {
   root?: p.Flex<"div">;
   logo?: p.Flex<typeof p.PlasmicImg>;
-  freeBox?: p.Flex<"div">;
   button?: p.Flex<"button">;
+  menuoverlay?: p.Flex<"div">;
+  svg?: p.Flex<"svg">;
+  logo2?: p.Flex<typeof p.PlasmicImg>;
 };
 
 export interface DefaultNavbarv2Props {
@@ -180,10 +183,8 @@ function PlasmicNavbarv2__RenderFunc(props: {
       {(hasVariant(globalVariants, "screen", "mobileOnly") ? true : true) ? (
         <p.Stack
           as={"div"}
-          data-plasmic-name={"freeBox"}
-          data-plasmic-override={overrides.freeBox}
           hasGap={true}
-          className={classNames(projectcss.all, sty.freeBox)}
+          className={classNames(projectcss.all, sty.freeBox__pPkBt)}
         >
           <p.PlasmicLink
             className={classNames(
@@ -193,7 +194,7 @@ function PlasmicNavbarv2__RenderFunc(props: {
               sty.link__is3DD
             )}
             component={Link}
-            href={`/v-2`}
+            href={"#home" as const}
             platform={"nextjs"}
           >
             {"Beranda"}
@@ -206,7 +207,7 @@ function PlasmicNavbarv2__RenderFunc(props: {
               sty.link__tXiWw
             )}
             component={Link}
-            href={`/v-2`}
+            href={"#about" as const}
             platform={"nextjs"}
           >
             {"Tentang"}
@@ -245,7 +246,7 @@ function PlasmicNavbarv2__RenderFunc(props: {
               sty.link__brGjE
             )}
             component={Link}
-            href={`/v-2`}
+            href={"#faq" as const}
             platform={"nextjs"}
           >
             {"FAQ"}
@@ -349,15 +350,252 @@ function PlasmicNavbarv2__RenderFunc(props: {
           })}
         </button>
       ) : null}
+      {(
+        hasVariant(globalVariants, "screen", "mobileOnly")
+          ? (() => {
+              try {
+                return $state.isMenuShow;
+              } catch (e) {
+                if (e instanceof TypeError) {
+                  return true;
+                }
+                throw e;
+              }
+            })()
+          : (() => {
+              try {
+                return $state.isMenuShow;
+              } catch (e) {
+                if (e instanceof TypeError) {
+                  return true;
+                }
+                throw e;
+              }
+            })()
+      ) ? (
+        <p.Stack
+          as={"div"}
+          data-plasmic-name={"menuoverlay"}
+          data-plasmic-override={overrides.menuoverlay}
+          hasGap={true}
+          className={classNames(projectcss.all, sty.menuoverlay)}
+        >
+          <p.PlasmicLink
+            className={classNames(
+              projectcss.all,
+              projectcss.a,
+              sty.link___0ZxI
+            )}
+            component={Link}
+            href={"https://www.plasmic.app/" as const}
+            onClick={async event => {
+              const $steps = {};
+              $steps["updateIsMenuShow"] = true
+                ? (() => {
+                    const actionArgs = {
+                      variable: __wrapUserFunction(
+                        {
+                          type: "InteractionArgLoc",
+                          actionName: "updateVariable",
+                          interactionUuid: "b2_jsoqNJ",
+                          componentUuid: "NCicNLzCjc",
+                          argName: "variable"
+                        },
+                        () => ({
+                          objRoot: $state,
+                          variablePath: ["isMenuShow"]
+                        })
+                      ),
+                      operation: __wrapUserFunction(
+                        {
+                          type: "InteractionArgLoc",
+                          actionName: "updateVariable",
+                          interactionUuid: "b2_jsoqNJ",
+                          componentUuid: "NCicNLzCjc",
+                          argName: "operation"
+                        },
+                        () => 4
+                      )
+                    };
+                    return __wrapUserFunction(
+                      {
+                        type: "InteractionLoc",
+                        actionName: "updateVariable",
+                        interactionUuid: "b2_jsoqNJ",
+                        componentUuid: "NCicNLzCjc"
+                      },
+                      () =>
+                        (({ variable, value, startIndex, deleteCount }) => {
+                          if (!variable) {
+                            return;
+                          }
+                          const { objRoot, variablePath } = variable;
+
+                          const oldValue = p.get(objRoot, variablePath);
+                          p.set(objRoot, variablePath, !oldValue);
+                          return !oldValue;
+                        })?.apply(null, [actionArgs]),
+                      actionArgs
+                    );
+                  })()
+                : undefined;
+              if (
+                typeof $steps["updateIsMenuShow"] === "object" &&
+                typeof $steps["updateIsMenuShow"].then === "function"
+              ) {
+                $steps["updateIsMenuShow"] = await __wrapUserPromise(
+                  {
+                    type: "InteractionLoc",
+                    actionName: "updateVariable",
+                    interactionUuid: "b2_jsoqNJ",
+                    componentUuid: "NCicNLzCjc"
+                  },
+                  $steps["updateIsMenuShow"]
+                );
+              }
+            }}
+            platform={"nextjs"}
+          >
+            <CloseMdSvgrepoComsvgIcon
+              data-plasmic-name={"svg"}
+              data-plasmic-override={overrides.svg}
+              className={classNames(projectcss.all, sty.svg)}
+              role={"img"}
+            />
+          </p.PlasmicLink>
+          <p.PlasmicImg
+            data-plasmic-name={"logo2"}
+            data-plasmic-override={overrides.logo2}
+            alt={""}
+            className={classNames(sty.logo2)}
+            displayHeight={"50px" as const}
+            displayMaxHeight={"none" as const}
+            displayMaxWidth={"100%" as const}
+            displayMinHeight={"0" as const}
+            displayMinWidth={"0" as const}
+            displayWidth={"auto" as const}
+            loading={"lazy" as const}
+            src={{
+              src: "/plasmic/sandbox_satuhsehat/images/logokemkespng.png",
+              fullWidth: 133,
+              fullHeight: 60,
+              aspectRatio: undefined
+            }}
+          />
+
+          {(
+            hasVariant(globalVariants, "screen", "mobileOnly") ? true : true
+          ) ? (
+            <p.Stack
+              as={"div"}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.freeBox__iwsiZ)}
+            >
+              <p.PlasmicLink
+                className={classNames(
+                  projectcss.all,
+                  projectcss.a,
+                  projectcss.__wab_text,
+                  sty.link__ncZpq
+                )}
+                component={Link}
+                href={
+                  hasVariant(globalVariants, "screen", "mobileOnly")
+                    ? ("#home" as const)
+                    : `/v-2`
+                }
+                platform={"nextjs"}
+              >
+                {"Beranda"}
+              </p.PlasmicLink>
+              <p.PlasmicLink
+                className={classNames(
+                  projectcss.all,
+                  projectcss.a,
+                  projectcss.__wab_text,
+                  sty.link__kqIyi
+                )}
+                component={Link}
+                href={
+                  hasVariant(globalVariants, "screen", "mobileOnly")
+                    ? ("#about" as const)
+                    : `/v-2`
+                }
+                platform={"nextjs"}
+              >
+                {"Tentang"}
+              </p.PlasmicLink>
+              <p.PlasmicLink
+                className={classNames(
+                  projectcss.all,
+                  projectcss.a,
+                  projectcss.__wab_text,
+                  sty.link__uqd8R
+                )}
+                component={Link}
+                href={`/mitra-terdaftar-1`}
+                platform={"nextjs"}
+              >
+                {"Mitra Terdaftar"}
+              </p.PlasmicLink>
+              <p.PlasmicLink
+                className={classNames(
+                  projectcss.all,
+                  projectcss.a,
+                  projectcss.__wab_text,
+                  sty.link___8J3A1
+                )}
+                component={Link}
+                href={`/mitra-diawasi-1`}
+                platform={"nextjs"}
+              >
+                {"Mitra Diawasi"}
+              </p.PlasmicLink>
+              <p.PlasmicLink
+                className={classNames(
+                  projectcss.all,
+                  projectcss.a,
+                  projectcss.__wab_text,
+                  sty.link__x11W1
+                )}
+                component={Link}
+                href={
+                  hasVariant(globalVariants, "screen", "mobileOnly")
+                    ? ("#faq" as const)
+                    : `/v-2`
+                }
+                platform={"nextjs"}
+              >
+                {"FAQ"}
+              </p.PlasmicLink>
+              <p.PlasmicLink
+                className={classNames(
+                  projectcss.all,
+                  projectcss.a,
+                  projectcss.__wab_text,
+                  sty.link__iqAxm
+                )}
+                component={Link}
+                href={`/doc-v-2`}
+                platform={"nextjs"}
+              >
+                {"Dokumen"}
+              </p.PlasmicLink>
+            </p.Stack>
+          ) : null}
+        </p.Stack>
+      ) : null}
     </div>
   ) as React.ReactElement | null;
 }
 
 const PlasmicDescendants = {
-  root: ["root", "logo", "freeBox", "button"],
+  root: ["root", "logo", "button", "menuoverlay", "svg", "logo2"],
   logo: ["logo"],
-  freeBox: ["freeBox"],
-  button: ["button"]
+  button: ["button"],
+  menuoverlay: ["menuoverlay", "svg", "logo2"],
+  svg: ["svg"],
+  logo2: ["logo2"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -365,8 +603,10 @@ type DescendantsType<T extends NodeNameType> =
 type NodeDefaultElementType = {
   root: "div";
   logo: typeof p.PlasmicImg;
-  freeBox: "div";
   button: "button";
+  menuoverlay: "div";
+  svg: "svg";
+  logo2: typeof p.PlasmicImg;
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -430,8 +670,10 @@ export const PlasmicNavbarv2 = Object.assign(
   {
     // Helper components rendering sub-elements
     logo: makeNodeComponent("logo"),
-    freeBox: makeNodeComponent("freeBox"),
     button: makeNodeComponent("button"),
+    menuoverlay: makeNodeComponent("menuoverlay"),
+    svg: makeNodeComponent("svg"),
+    logo2: makeNodeComponent("logo2"),
 
     // Metadata about props expected for PlasmicNavbarv2
     internalVariantProps: PlasmicNavbarv2__VariantProps,
