@@ -16,11 +16,6 @@
   object-fit: cover;
   position: relative;
 }
-.embedHtml:global(.__wab_instance) {
-  max-width: 100%;
-  object-fit: cover;
-  position: relative;
-}
 .header {
   display: flex;
   position: fixed;

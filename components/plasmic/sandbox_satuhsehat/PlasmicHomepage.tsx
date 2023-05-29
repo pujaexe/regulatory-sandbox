@@ -37,7 +37,6 @@ import {
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
 import { PlasmicHead } from "@plasmicapp/react-web"; // plasmic-import: 7EBFWZs-Lh/codeComponent
-import { Embed } from "@plasmicpkgs/plasmic-basic-components"; // plasmic-import: PKldDYkH42/codeComponent
 import Navbarv2 from "../../Navbarv2"; // plasmic-import: NCicNLzCjc/component
 import Slider from "react-slick"; // plasmic-import: HOQUyOpClJ/codeComponent
 import SlideMitra from "../../SlideMitra"; // plasmic-import: HjExHmE43ji/component
@@ -74,7 +73,6 @@ export const PlasmicHomepage__ArgProps = new Array<ArgPropType>();
 export type PlasmicHomepage__OverridesType = {
   root?: p.Flex<"div">;
   pageMetadataOverride?: p.Flex<typeof PlasmicHead>;
-  embedHtml?: p.Flex<typeof Embed>;
   header?: p.Flex<"div">;
   navbarv2?: p.Flex<typeof Navbarv2>;
   hero?: p.Flex<"div">;
@@ -308,15 +306,6 @@ function PlasmicHomepage__RenderFunc(props: {
             data-plasmic-name={"pageMetadataOverride"}
             data-plasmic-override={overrides.pageMetadataOverride}
             className={classNames("__wab_instance", sty.pageMetadataOverride)}
-          />
-
-          <Embed
-            data-plasmic-name={"embedHtml"}
-            data-plasmic-override={overrides.embedHtml}
-            className={classNames("__wab_instance", sty.embedHtml)}
-            code={
-              '<link rel="stylesheet" type="text/css" charset="UTF-8" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" /> \n<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />' as const
-            }
           />
 
           {true ? (
@@ -2887,7 +2876,6 @@ const PlasmicDescendants = {
   root: [
     "root",
     "pageMetadataOverride",
-    "embedHtml",
     "header",
     "navbarv2",
     "hero",
@@ -2922,7 +2910,6 @@ const PlasmicDescendants = {
     "footer"
   ],
   pageMetadataOverride: ["pageMetadataOverride"],
-  embedHtml: ["embedHtml"],
   header: ["header", "navbarv2"],
   navbarv2: ["navbarv2"],
   hero: ["hero", "slider"],
@@ -2978,7 +2965,6 @@ type DescendantsType<T extends NodeNameType> =
 type NodeDefaultElementType = {
   root: "div";
   pageMetadataOverride: typeof PlasmicHead;
-  embedHtml: typeof Embed;
   header: "div";
   navbarv2: typeof Navbarv2;
   hero: "div";
@@ -3074,7 +3060,6 @@ export const PlasmicHomepage = Object.assign(
   {
     // Helper components rendering sub-elements
     pageMetadataOverride: makeNodeComponent("pageMetadataOverride"),
-    embedHtml: makeNodeComponent("embedHtml"),
     header: makeNodeComponent("header"),
     navbarv2: makeNodeComponent("navbarv2"),
     hero: makeNodeComponent("hero"),
