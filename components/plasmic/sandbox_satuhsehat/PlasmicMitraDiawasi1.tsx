@@ -192,7 +192,7 @@ function PlasmicMitraDiawasi1__RenderFunc(props: {
                     )}
                   >
                     {
-                      'Status "Diawasi" diberikan kepada penyelenggara IDK yang telah melalui serangkaian penilaian serta berhasil mendapatkan rekomendasi dan menjadi mitra Kemenkes RI.\n\nPenyelenggara IDK dengan status "Diawasi" dapat menggunakan identitas kepesertaan regulatory sandbox yang penggunaannya mengikuti ketentuan pada KMK No. HK.01.07/MENKES/1280/2023 (perlu hperlink ke dok).\n\nPengawasan partisipatif akan diberlakukan untuk menjamin kepatuhan penyelenggara IDK dengan status "Diawasi" sekaligus melindungi konsumen sebagai pengguna inovasi.'
+                      'Status "Diawasi" diberikan kepada penyelenggara IDK yang telah melalui serangkaian penilaian serta berhasil mendapatkan rekomendasi dan menjadi mitra Kemenkes RI.\n\nPenyelenggara IDK dengan status "Diawasi" dapat menggunakan identitas kepesertaan regulatory sandbox yang penggunaannya mengikuti ketentuan pada KMK No. HK.01.07/MENKES/1280/2023.\n\nPengawasan partisipatif akan diberlakukan untuk menjamin kepatuhan penyelenggara IDK dengan status "Diawasi" sekaligus melindungi konsumen sebagai pengguna inovasi.'
                     }
                   </div>
                 </p.Stack>
@@ -775,7 +775,7 @@ function PlasmicMitraDiawasi1__RenderFunc(props: {
                     sty.link__wknDb
                   )}
                   component={Link}
-                  href={`/mitra-terdaftar-2`}
+                  href={`/mitra-diawasi-2`}
                   platform={"nextjs"}
                 >
                   <div
