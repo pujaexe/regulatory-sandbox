@@ -46,9 +46,6 @@ import { useScreenVariants as useScreenVariantsqbGzfD819Z3T3 } from "./PlasmicGl
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-
 import plasmic_antd_5_hostless_css from "../antd_5_hostless/plasmic_antd_5_hostless.module.css"; // plasmic-import: ohDidvG9XsCeFumugENU3J/projectcss
 import projectcss from "./plasmic_sandbox_satuhsehat.module.css"; // plasmic-import: mazsTSCdeXMvNewzsED8CP/projectcss
 import sty from "./PlasmicHomepage.module.css"; // plasmic-import: 2kkee5R7hDuz/css
@@ -336,6 +333,7 @@ function PlasmicHomepage__RenderFunc(props: {
             <Slider
               data-plasmic-name={"slider"}
               data-plasmic-override={overrides.slider}
+              adaptiveHeight={false}
               autoplay={true}
               autoplaySpeed={5000 as const}
               className={classNames("__wab_instance", sty.slider)}

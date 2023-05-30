@@ -63,12 +63,12 @@
   }
 }
 .slider:global(.__wab_instance) {
-  width: 100%;
-  max-width: 100%;
+  max-width: 1440px;
   flex-direction: column;
   object-fit: cover;
   position: relative;
   height: 485px;
+  width: 100%;
   min-width: 0;
   flex-shrink: 0;
 }
