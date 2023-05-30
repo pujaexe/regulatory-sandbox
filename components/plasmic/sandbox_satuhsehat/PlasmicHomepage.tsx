@@ -37,7 +37,7 @@ import {
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
 import { PlasmicHead } from "@plasmicapp/react-web"; // plasmic-import: 7EBFWZs-Lh/codeComponent
-import { NavigationBar } from "@plasmicpkgs/plasmic-nav"; // plasmic-import: jGx9tiKJoex/codeComponent
+import Navbarv2 from "../../Navbarv2"; // plasmic-import: NCicNLzCjc/component
 import Slider from "react-slick"; // plasmic-import: HOQUyOpClJ/codeComponent
 import SlideMitra from "../../SlideMitra"; // plasmic-import: HjExHmE43ji/component
 import Collapsiblev2 from "../../Collapsiblev2"; // plasmic-import: vrBPAsBs7q/component
@@ -50,6 +50,7 @@ import plasmic_antd_5_hostless_css from "../antd_5_hostless/plasmic_antd_5_hostl
 import projectcss from "./plasmic_sandbox_satuhsehat.module.css"; // plasmic-import: mazsTSCdeXMvNewzsED8CP/projectcss
 import sty from "./PlasmicHomepage.module.css"; // plasmic-import: 2kkee5R7hDuz/css
 
+import MenuSvgrepoComsvgIcon from "./icons/PlasmicIcon__MenuSvgrepoComsvg"; // plasmic-import: yxVuo-XHb-/icon
 import LawSvgrepoCom1SvgIcon from "./icons/PlasmicIcon__LawSvgrepoCom1Svg"; // plasmic-import: jj3V4MmrRO/icon
 import JusticeSvgrepoCom1SvgIcon from "./icons/PlasmicIcon__JusticeSvgrepoCom1Svg"; // plasmic-import: d11xSBFAIc/icon
 import Frame1000001301SvgIcon from "./icons/PlasmicIcon__Frame1000001301Svg"; // plasmic-import: HdY_vWMIj2/icon
@@ -72,7 +73,7 @@ export const PlasmicHomepage__ArgProps = new Array<ArgPropType>();
 export type PlasmicHomepage__OverridesType = {
   root?: p.Flex<"div">;
   pageMetadataOverride?: p.Flex<typeof PlasmicHead>;
-  navigationBar?: p.Flex<typeof NavigationBar>;
+  navbarv2?: p.Flex<typeof Navbarv2>;
   hero?: p.Flex<"div">;
   slider?: p.Flex<typeof Slider>;
   hero2?: p.Flex<"a"> & Partial<LinkProps>;
@@ -230,6 +231,12 @@ function PlasmicHomepage__RenderFunc(props: {
         type: "private",
         variableType: "boolean",
         initFunc: ({ $props, $state, $queries, $ctx }) => false
+      },
+      {
+        path: "navbarv2.isMenuShow",
+        type: "private",
+        variableType: "boolean",
+        initFunc: ({ $props, $state, $queries, $ctx }) => false
       }
     ],
     [$props, $ctx]
@@ -300,151 +307,23 @@ function PlasmicHomepage__RenderFunc(props: {
             className={classNames("__wab_instance", sty.pageMetadataOverride)}
           />
 
-          <NavigationBar
-            data-plasmic-name={"navigationBar"}
-            data-plasmic-override={overrides.navigationBar}
-            brand={
-              <p.PlasmicLink
-                className={classNames(
-                  projectcss.all,
-                  projectcss.a,
-                  sty.link__mou0T
-                )}
-                component={Link}
-                href={"#" as const}
-                platform={"nextjs"}
-              >
-                <p.PlasmicImg
-                  alt={""}
-                  className={classNames(sty.img__rlz8J)}
-                  displayHeight={"40px" as const}
-                  displayMaxHeight={"none" as const}
-                  displayMaxWidth={"none" as const}
-                  displayMinHeight={"0" as const}
-                  displayMinWidth={"0" as const}
-                  displayWidth={"auto" as const}
-                  src={{
-                    src: "/plasmic/sandbox_satuhsehat/images/logokemkespng.png",
-                    fullWidth: 133,
-                    fullHeight: 60,
-                    aspectRatio: undefined
-                  }}
-                />
-              </p.PlasmicLink>
-            }
-            className={classNames("__wab_instance", sty.navigationBar)}
-            closeButton={
-              <p.PlasmicImg
-                alt={""}
-                className={classNames(sty.img__g4SY)}
-                displayHeight={"auto" as const}
-                displayMaxHeight={"none" as const}
-                displayMaxWidth={"none" as const}
-                displayMinHeight={"0" as const}
-                displayMinWidth={"0" as const}
-                displayWidth={"auto" as const}
-                src={"https://static1.plasmic.app/close.svg" as const}
+          {true ? (
+            <div className={classNames(projectcss.all, sty.freeBox__zKg80)}>
+              <Navbarv2
+                data-plasmic-name={"navbarv2"}
+                data-plasmic-override={overrides.navbarv2}
+                className={classNames("__wab_instance", sty.navbarv2)}
+                isMenuShow={p.generateStateValueProp($state, [
+                  "navbarv2",
+                  "isMenuShow"
+                ])}
+                onIsMenuShowChange={p.generateStateOnChangeProp($state, [
+                  "navbarv2",
+                  "isMenuShow"
+                ])}
               />
-            }
-            itemsGap={24 as const}
-            menuItems={
-              <React.Fragment>
-                <p.PlasmicLink
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.a,
-                    projectcss.__wab_text,
-                    sty.link__kgrvP
-                  )}
-                  component={Link}
-                  href={`/`}
-                  platform={"nextjs"}
-                >
-                  {"Beranda"}
-                </p.PlasmicLink>
-                <p.PlasmicLink
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.a,
-                    projectcss.__wab_text,
-                    sty.link__nEjW6
-                  )}
-                  component={Link}
-                  href={`/`}
-                  platform={"nextjs"}
-                >
-                  {"Tentang"}
-                </p.PlasmicLink>
-                <p.PlasmicLink
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.a,
-                    projectcss.__wab_text,
-                    sty.link___9O23
-                  )}
-                  component={Link}
-                  href={`/mitra-terdaftar-1`}
-                  platform={"nextjs"}
-                >
-                  {"Mitra Tercatat"}
-                </p.PlasmicLink>
-                <p.PlasmicLink
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.a,
-                    projectcss.__wab_text,
-                    sty.link___3Gg8K
-                  )}
-                  component={Link}
-                  href={`/mitra-diawasi-1`}
-                  platform={"nextjs"}
-                >
-                  {"Mitra Diawasi"}
-                </p.PlasmicLink>
-                <p.PlasmicLink
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.a,
-                    projectcss.__wab_text,
-                    sty.link___8GQw
-                  )}
-                  component={Link}
-                  href={`/`}
-                  platform={"nextjs"}
-                >
-                  {"FAQ"}
-                </p.PlasmicLink>
-                <p.PlasmicLink
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.a,
-                    projectcss.__wab_text,
-                    sty.link__wGr4O
-                  )}
-                  component={Link}
-                  href={`/doc-v-2`}
-                  platform={"nextjs"}
-                >
-                  {"Dokumen"}
-                </p.PlasmicLink>
-              </React.Fragment>
-            }
-            openButton={
-              <p.PlasmicImg
-                alt={""}
-                className={classNames(sty.img___2Qxq5)}
-                displayHeight={"auto" as const}
-                displayMaxHeight={"none" as const}
-                displayMaxWidth={"none" as const}
-                displayMinHeight={"0" as const}
-                displayMinWidth={"0" as const}
-                displayWidth={"auto" as const}
-                src={"https://static1.plasmic.app/menu.svg" as const}
-              />
-            }
-            responsiveBreakpoint={768 as const}
-          />
-
+            </div>
+          ) : null}
           <div
             data-plasmic-name={"hero"}
             data-plasmic-override={overrides.hero}
@@ -2995,7 +2874,7 @@ const PlasmicDescendants = {
   root: [
     "root",
     "pageMetadataOverride",
-    "navigationBar",
+    "navbarv2",
     "hero",
     "slider",
     "hero2",
@@ -3028,7 +2907,7 @@ const PlasmicDescendants = {
     "footer"
   ],
   pageMetadataOverride: ["pageMetadataOverride"],
-  navigationBar: ["navigationBar"],
+  navbarv2: ["navbarv2"],
   hero: ["hero", "slider"],
   slider: ["slider"],
   hero2: ["hero2", "h1", "h4"],
@@ -3082,7 +2961,7 @@ type DescendantsType<T extends NodeNameType> =
 type NodeDefaultElementType = {
   root: "div";
   pageMetadataOverride: typeof PlasmicHead;
-  navigationBar: typeof NavigationBar;
+  navbarv2: typeof Navbarv2;
   hero: "div";
   slider: typeof Slider;
   hero2: "a";
@@ -3176,7 +3055,7 @@ export const PlasmicHomepage = Object.assign(
   {
     // Helper components rendering sub-elements
     pageMetadataOverride: makeNodeComponent("pageMetadataOverride"),
-    navigationBar: makeNodeComponent("navigationBar"),
+    navbarv2: makeNodeComponent("navbarv2"),
     hero: makeNodeComponent("hero"),
     slider: makeNodeComponent("slider"),
     hero2: makeNodeComponent("hero2"),
