@@ -797,14 +797,17 @@
 }
 .img__xSRlM {
   position: relative;
-  object-fit: cover;
+  object-fit: contain;
   max-width: 100%;
+  width: 72px;
+  height: 72px;
+  flex-shrink: 0;
 }
 .img__xSRlM > picture > img {
-  object-fit: cover;
+  object-fit: contain;
 }
 .img__xSRlM > :global(.__wab_img-spacer) > img {
-  object-fit: cover;
+  object-fit: contain;
 }
 .freeBox___2Ky2T {
   display: flex;
@@ -967,14 +970,17 @@
 }
 .img__t23V4 {
   position: relative;
-  object-fit: cover;
+  object-fit: contain;
   max-width: 100%;
+  width: 72px;
+  height: 72px;
+  flex-shrink: 0;
 }
 .img__t23V4 > picture > img {
-  object-fit: cover;
+  object-fit: contain;
 }
 .img__t23V4 > :global(.__wab_img-spacer) > img {
-  object-fit: cover;
+  object-fit: contain;
 }
 .freeBox__xn1Km {
   display: flex;

@@ -679,14 +679,17 @@
 }
 .img__fpOoy {
   position: relative;
-  object-fit: cover;
+  object-fit: contain;
   max-width: 100%;
+  width: 72px;
+  height: 72px;
+  flex-shrink: 0;
 }
 .img__fpOoy > picture > img {
-  object-fit: cover;
+  object-fit: contain;
 }
 .img__fpOoy > :global(.__wab_img-spacer) > img {
-  object-fit: cover;
+  object-fit: contain;
 }
 .freeBox__sYSls {
   display: flex;

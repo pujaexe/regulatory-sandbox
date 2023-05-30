@@ -195,7 +195,7 @@ function PlasmicMitraTerdaftar1__RenderFunc(props: {
                     )}
                   >
                     {
-                      'Status "Tercatat" diberikan kepada penyelenggara IDK yang sudah mendaftar serta telah lolos verifikasi dan validasi dokumen. \n\nPenyelenggara IDK dengan status "Tercatat" tidak serta merta memberikan hak kepada penyelenggara Inovasi Digital Kesehatan untuk menggunakan logo Kementerian Kesehatan dalam media promosinya.'
+                      'Status "Tercatat" diberikan kepada penyelenggara IDK yang sudah mendaftar serta telah lolos verifikasi dan validasi dokumen. \n\nPenyelenggara IDK dengan status "Tercatat" tidak serta merta diberikan hak kepada penyelenggara Inovasi Digital Kesehatan untuk menggunakan logo Kementerian Kesehatan dalam media promosinya.'
                     }
                   </div>
                 </p.Stack>
@@ -545,17 +545,17 @@ function PlasmicMitraTerdaftar1__RenderFunc(props: {
                 <p.PlasmicImg
                   alt={""}
                   className={classNames(sty.img__xSRlM)}
-                  displayHeight={"auto" as const}
+                  displayHeight={"72px" as const}
                   displayMaxHeight={"none" as const}
                   displayMaxWidth={"100%" as const}
                   displayMinHeight={"0" as const}
                   displayMinWidth={"0" as const}
-                  displayWidth={"auto" as const}
+                  displayWidth={"72px" as const}
                   loading={"lazy" as const}
                   src={{
-                    src: "/plasmic/sandbox_satuhsehat/images/menuIconspng.png",
-                    fullWidth: 70,
-                    fullHeight: 70,
+                    src: "/plasmic/sandbox_satuhsehat/images/komiteBiox1Jpeg.jpg",
+                    fullWidth: 239,
+                    fullHeight: 294,
                     aspectRatio: undefined
                   }}
                 />
@@ -647,17 +647,17 @@ function PlasmicMitraTerdaftar1__RenderFunc(props: {
                 <p.PlasmicImg
                   alt={""}
                   className={classNames(sty.img__t23V4)}
-                  displayHeight={"auto" as const}
+                  displayHeight={"72px" as const}
                   displayMaxHeight={"none" as const}
                   displayMaxWidth={"100%" as const}
                   displayMinHeight={"0" as const}
                   displayMinWidth={"0" as const}
-                  displayWidth={"auto" as const}
+                  displayWidth={"72px" as const}
                   loading={"lazy" as const}
                   src={{
-                    src: "/plasmic/sandbox_satuhsehat/images/menuIconspng.png",
-                    fullWidth: 70,
-                    fullHeight: 70,
+                    src: "/plasmic/sandbox_satuhsehat/images/carevojpeg.png",
+                    fullWidth: 461,
+                    fullHeight: 295,
                     aspectRatio: undefined
                   }}
                 />

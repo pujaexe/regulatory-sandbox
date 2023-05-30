@@ -418,6 +418,9 @@
   position: relative;
   object-fit: cover;
   max-width: 100%;
+  width: 72px;
+  height: 72px;
+  flex-shrink: 0;
 }
 .img__j4L4D > picture > img {
   object-fit: cover;

@@ -503,14 +503,17 @@
 }
 .img__z8W13 {
   position: relative;
-  object-fit: cover;
+  object-fit: contain;
   max-width: 100%;
+  width: 72px;
+  height: 72px;
+  flex-shrink: 0;
 }
 .img__z8W13 > picture > img {
-  object-fit: cover;
+  object-fit: contain;
 }
 .img__z8W13 > :global(.__wab_img-spacer) > img {
-  object-fit: cover;
+  object-fit: contain;
 }
 .freeBox__qtLCe {
   display: flex;

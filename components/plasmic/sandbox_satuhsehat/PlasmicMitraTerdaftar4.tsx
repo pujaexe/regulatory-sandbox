@@ -193,7 +193,7 @@ function PlasmicMitraTerdaftar4__RenderFunc(props: {
                     )}
                   >
                     {
-                      'Status "Tercatat" diberikan kepada penyelenggara IDK yang sudah mendaftar serta telah lolos verifikasi dan validasi dokumen. \n\nPenyelenggara IDK dengan status "Tercatat" tidak serta merta memberikan hak kepada penyelenggara Inovasi Digital Kesehatan untuk menggunakan logo Kementerian Kesehatan dalam media promosinya.'
+                      'Status "Tercatat" diberikan kepada penyelenggara IDK yang sudah mendaftar serta telah lolos verifikasi dan validasi dokumen. \n\nPenyelenggara IDK dengan status "Tercatat" tidak serta merta diberikan hak kepada penyelenggara Inovasi Digital Kesehatan untuk menggunakan logo Kementerian Kesehatan dalam media promosinya.'
                     }
                   </div>
                 </p.Stack>
@@ -450,17 +450,17 @@ function PlasmicMitraTerdaftar4__RenderFunc(props: {
                 <p.PlasmicImg
                   alt={""}
                   className={classNames(sty.img__qGkeq)}
-                  displayHeight={"auto" as const}
+                  displayHeight={"72px" as const}
                   displayMaxHeight={"none" as const}
                   displayMaxWidth={"100%" as const}
                   displayMinHeight={"0" as const}
                   displayMinWidth={"0" as const}
-                  displayWidth={"auto" as const}
+                  displayWidth={"72px" as const}
                   loading={"lazy" as const}
                   src={{
-                    src: "/plasmic/sandbox_satuhsehat/images/menuIconspng.png",
-                    fullWidth: 70,
-                    fullHeight: 70,
+                    src: "/plasmic/sandbox_satuhsehat/images/bhumiVartaTechnologyLokasi1Png.png",
+                    fullWidth: 849,
+                    fullHeight: 252,
                     aspectRatio: undefined
                   }}
                 />
@@ -603,17 +603,17 @@ function PlasmicMitraTerdaftar4__RenderFunc(props: {
                 <p.PlasmicImg
                   alt={""}
                   className={classNames(sty.img__r227Q)}
-                  displayHeight={"auto" as const}
+                  displayHeight={"72px" as const}
                   displayMaxHeight={"none" as const}
                   displayMaxWidth={"100%" as const}
                   displayMinHeight={"0" as const}
                   displayMinWidth={"0" as const}
-                  displayWidth={"auto" as const}
+                  displayWidth={"72px" as const}
                   loading={"lazy" as const}
                   src={{
-                    src: "/plasmic/sandbox_satuhsehat/images/menuIconspng.png",
-                    fullWidth: 70,
-                    fullHeight: 70,
+                    src: "/plasmic/sandbox_satuhsehat/images/ptInnoviewIndoTech1Png.png",
+                    fullWidth: 4096,
+                    fullHeight: 4096,
                     aspectRatio: undefined
                   }}
                 />
