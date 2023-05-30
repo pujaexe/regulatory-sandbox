@@ -29,6 +29,7 @@
   top: 0;
   z-index: 1;
   right: 0;
+  background: #ffffff;
   flex-shrink: 0;
 }
 .navbarv2:global(.__wab_instance) {

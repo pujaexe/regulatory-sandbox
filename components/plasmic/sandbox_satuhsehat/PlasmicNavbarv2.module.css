@@ -10,6 +10,7 @@
   padding-left: 16px;
   padding-right: 16px;
   position: relative;
+  background: #ffffff;
   grid-column-start: 1;
   grid-column-end: -1;
 }
