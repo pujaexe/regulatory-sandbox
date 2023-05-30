@@ -193,7 +193,7 @@ function PlasmicMitraTerdaftar3__RenderFunc(props: {
                     )}
                   >
                     {
-                      'Status "Tercatat" diberikan kepada penyelenggara IDK yang sudah mendaftar serta telah lolos verifikasi dan validasi dokumen. \n\nPenyelenggara IDK dengan status "Tercatat" tidak serta merta diberikan hak kepada penyelenggara Inovasi Digital Kesehatan untuk menggunakan logo Kementerian Kesehatan dalam media promosinya.'
+                      'Status "Tercatat" diberikan kepada penyelenggara IDK yang sudah mendaftar serta telah lolos verifikasi dan validasi dokumen. \n\nPenyelenggara IDK dengan status "Tercatat" tidak serta merta diberikan hak untuk menggunakan logo Kementerian Kesehatan dalam media promosinya. Penggunaan logo Kementerian Kesehatan diatur lebih lanjut melalui PMK No.7 Tahun 2017 tentang Penggunaan Logo Kementerian Kesehatan.'
                     }
                   </div>
                 </p.Stack>
