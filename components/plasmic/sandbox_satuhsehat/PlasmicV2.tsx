@@ -859,7 +859,10 @@ function PlasmicV2__RenderFunc(props: {
                           try {
                             return $state.isCollapse ? false : true;
                           } catch (e) {
-                            if (e instanceof TypeError) {
+                            if (
+                              e instanceof TypeError ||
+                              e?.plasmicType === "PlasmicUndefinedDataError"
+                            ) {
                               return true;
                             }
                             throw e;
@@ -877,7 +880,10 @@ function PlasmicV2__RenderFunc(props: {
                           try {
                             return $state.isCollapse ? true : false;
                           } catch (e) {
-                            if (e instanceof TypeError) {
+                            if (
+                              e instanceof TypeError ||
+                              e?.plasmicType === "PlasmicUndefinedDataError"
+                            ) {
                               return true;
                             }
                             throw e;
@@ -1156,7 +1162,10 @@ function PlasmicV2__RenderFunc(props: {
                           try {
                             return $state.isCollapse ? false : true;
                           } catch (e) {
-                            if (e instanceof TypeError) {
+                            if (
+                              e instanceof TypeError ||
+                              e?.plasmicType === "PlasmicUndefinedDataError"
+                            ) {
                               return true;
                             }
                             throw e;
@@ -1174,7 +1183,10 @@ function PlasmicV2__RenderFunc(props: {
                           try {
                             return $state.isCollapse ? true : false;
                           } catch (e) {
-                            if (e instanceof TypeError) {
+                            if (
+                              e instanceof TypeError ||
+                              e?.plasmicType === "PlasmicUndefinedDataError"
+                            ) {
                               return true;
                             }
                             throw e;
@@ -1251,7 +1263,10 @@ function PlasmicV2__RenderFunc(props: {
                           try {
                             return $state.isCollapse ? false : true;
                           } catch (e) {
-                            if (e instanceof TypeError) {
+                            if (
+                              e instanceof TypeError ||
+                              e?.plasmicType === "PlasmicUndefinedDataError"
+                            ) {
                               return true;
                             }
                             throw e;
@@ -1269,7 +1284,10 @@ function PlasmicV2__RenderFunc(props: {
                           try {
                             return $state.isCollapse ? true : false;
                           } catch (e) {
-                            if (e instanceof TypeError) {
+                            if (
+                              e instanceof TypeError ||
+                              e?.plasmicType === "PlasmicUndefinedDataError"
+                            ) {
                               return true;
                             }
                             throw e;
@@ -1357,7 +1375,10 @@ function PlasmicV2__RenderFunc(props: {
                           try {
                             return $state.isCollapse ? false : true;
                           } catch (e) {
-                            if (e instanceof TypeError) {
+                            if (
+                              e instanceof TypeError ||
+                              e?.plasmicType === "PlasmicUndefinedDataError"
+                            ) {
                               return true;
                             }
                             throw e;
@@ -1375,7 +1396,10 @@ function PlasmicV2__RenderFunc(props: {
                           try {
                             return $state.isCollapse ? true : false;
                           } catch (e) {
-                            if (e instanceof TypeError) {
+                            if (
+                              e instanceof TypeError ||
+                              e?.plasmicType === "PlasmicUndefinedDataError"
+                            ) {
                               return true;
                             }
                             throw e;
@@ -1435,7 +1459,10 @@ function PlasmicV2__RenderFunc(props: {
                           try {
                             return $state.isCollapse ? false : true;
                           } catch (e) {
-                            if (e instanceof TypeError) {
+                            if (
+                              e instanceof TypeError ||
+                              e?.plasmicType === "PlasmicUndefinedDataError"
+                            ) {
                               return true;
                             }
                             throw e;
@@ -1453,7 +1480,10 @@ function PlasmicV2__RenderFunc(props: {
                           try {
                             return $state.isCollapse ? true : false;
                           } catch (e) {
-                            if (e instanceof TypeError) {
+                            if (
+                              e instanceof TypeError ||
+                              e?.plasmicType === "PlasmicUndefinedDataError"
+                            ) {
                               return true;
                             }
                             throw e;
@@ -1527,7 +1557,10 @@ function PlasmicV2__RenderFunc(props: {
                           try {
                             return $state.isCollapse ? false : true;
                           } catch (e) {
-                            if (e instanceof TypeError) {
+                            if (
+                              e instanceof TypeError ||
+                              e?.plasmicType === "PlasmicUndefinedDataError"
+                            ) {
                               return true;
                             }
                             throw e;
@@ -1545,7 +1578,10 @@ function PlasmicV2__RenderFunc(props: {
                           try {
                             return $state.isCollapse ? true : false;
                           } catch (e) {
-                            if (e instanceof TypeError) {
+                            if (
+                              e instanceof TypeError ||
+                              e?.plasmicType === "PlasmicUndefinedDataError"
+                            ) {
                               return true;
                             }
                             throw e;
@@ -1646,7 +1682,10 @@ function PlasmicV2__RenderFunc(props: {
                           try {
                             return $state.isCollapse ? false : true;
                           } catch (e) {
-                            if (e instanceof TypeError) {
+                            if (
+                              e instanceof TypeError ||
+                              e?.plasmicType === "PlasmicUndefinedDataError"
+                            ) {
                               return true;
                             }
                             throw e;
@@ -1664,7 +1703,10 @@ function PlasmicV2__RenderFunc(props: {
                           try {
                             return $state.isCollapse ? true : false;
                           } catch (e) {
-                            if (e instanceof TypeError) {
+                            if (
+                              e instanceof TypeError ||
+                              e?.plasmicType === "PlasmicUndefinedDataError"
+                            ) {
                               return true;
                             }
                             throw e;
@@ -1749,7 +1791,10 @@ function PlasmicV2__RenderFunc(props: {
                           try {
                             return $state.isCollapse ? false : true;
                           } catch (e) {
-                            if (e instanceof TypeError) {
+                            if (
+                              e instanceof TypeError ||
+                              e?.plasmicType === "PlasmicUndefinedDataError"
+                            ) {
                               return true;
                             }
                             throw e;
@@ -1767,7 +1812,10 @@ function PlasmicV2__RenderFunc(props: {
                           try {
                             return $state.isCollapse ? true : false;
                           } catch (e) {
-                            if (e instanceof TypeError) {
+                            if (
+                              e instanceof TypeError ||
+                              e?.plasmicType === "PlasmicUndefinedDataError"
+                            ) {
                               return true;
                             }
                             throw e;
@@ -1853,16 +1901,22 @@ function PlasmicV2__RenderFunc(props: {
                                       sty.li__bum1I
                                     )}
                                   >
-                                    {(() => {
-                                      try {
-                                        return "Memiliki Akta Pendirian Perusahaan dari Kementerian Hukum dan Hak Asasi Manusia (Kementerian Hukum dan Hak Asasi Manusia RI);";
-                                      } catch (e) {
-                                        if (e instanceof TypeError) {
-                                          return "Enter some text";
+                                    <React.Fragment>
+                                      {(() => {
+                                        try {
+                                          return "Memiliki Akta Pendirian Perusahaan dari Kementerian Hukum dan Hak Asasi Manusia (Kementerian Hukum dan Hak Asasi Manusia RI);";
+                                        } catch (e) {
+                                          if (
+                                            e instanceof TypeError ||
+                                            e?.plasmicType ===
+                                              "PlasmicUndefinedDataError"
+                                          ) {
+                                            return "Enter some text";
+                                          }
+                                          throw e;
                                         }
-                                        throw e;
-                                      }
-                                    })()}
+                                      })()}
+                                    </React.Fragment>
                                   </li>
                                   <li
                                     className={classNames(
@@ -1872,16 +1926,22 @@ function PlasmicV2__RenderFunc(props: {
                                       sty.li__tAfsz
                                     )}
                                   >
-                                    {(() => {
-                                      try {
-                                        return "Memiliki Nomor Induk Berusaha (NIB) dari Sistem Online Single Submission (OSS) dan Klasifikasi Baku Lapangan Usaha Indonesia (KBLI);";
-                                      } catch (e) {
-                                        if (e instanceof TypeError) {
-                                          return "Enter some text";
+                                    <React.Fragment>
+                                      {(() => {
+                                        try {
+                                          return "Memiliki Nomor Induk Berusaha (NIB) dari Sistem Online Single Submission (OSS) dan Klasifikasi Baku Lapangan Usaha Indonesia (KBLI);";
+                                        } catch (e) {
+                                          if (
+                                            e instanceof TypeError ||
+                                            e?.plasmicType ===
+                                              "PlasmicUndefinedDataError"
+                                          ) {
+                                            return "Enter some text";
+                                          }
+                                          throw e;
                                         }
-                                        throw e;
-                                      }
-                                    })()}
+                                      })()}
+                                    </React.Fragment>
                                   </li>
                                   <li
                                     className={classNames(
@@ -1891,16 +1951,22 @@ function PlasmicV2__RenderFunc(props: {
                                       sty.li___35U7W
                                     )}
                                   >
-                                    {(() => {
-                                      try {
-                                        return "Memiliki bukti registrasi dari Kominfo sebagai Penyelenggara Sistem Elektronik (PSE); dan";
-                                      } catch (e) {
-                                        if (e instanceof TypeError) {
-                                          return "Enter some text";
+                                    <React.Fragment>
+                                      {(() => {
+                                        try {
+                                          return "Memiliki bukti registrasi dari Kominfo sebagai Penyelenggara Sistem Elektronik (PSE); dan";
+                                        } catch (e) {
+                                          if (
+                                            e instanceof TypeError ||
+                                            e?.plasmicType ===
+                                              "PlasmicUndefinedDataError"
+                                          ) {
+                                            return "Enter some text";
+                                          }
+                                          throw e;
                                         }
-                                        throw e;
-                                      }
-                                    })()}
+                                      })()}
+                                    </React.Fragment>
                                   </li>
                                   <li
                                     className={classNames(
@@ -1910,16 +1976,22 @@ function PlasmicV2__RenderFunc(props: {
                                       sty.li__ysGFk
                                     )}
                                   >
-                                    {(() => {
-                                      try {
-                                        return "Mencantumkan bukti telah melakukan penetration testing (pentest) atau mencantumkan sertifikasi keamanan yang dimiliki.";
-                                      } catch (e) {
-                                        if (e instanceof TypeError) {
-                                          return "Enter some text";
+                                    <React.Fragment>
+                                      {(() => {
+                                        try {
+                                          return "Mencantumkan bukti telah melakukan penetration testing (pentest) atau mencantumkan sertifikasi keamanan yang dimiliki.";
+                                        } catch (e) {
+                                          if (
+                                            e instanceof TypeError ||
+                                            e?.plasmicType ===
+                                              "PlasmicUndefinedDataError"
+                                          ) {
+                                            return "Enter some text";
+                                          }
+                                          throw e;
                                         }
-                                        throw e;
-                                      }
-                                    })()}
+                                      })()}
+                                    </React.Fragment>
                                   </li>
                                 </ul>
                               </li>
@@ -2080,7 +2152,10 @@ function PlasmicV2__RenderFunc(props: {
                           try {
                             return $state.isCollapse ? false : true;
                           } catch (e) {
-                            if (e instanceof TypeError) {
+                            if (
+                              e instanceof TypeError ||
+                              e?.plasmicType === "PlasmicUndefinedDataError"
+                            ) {
                               return true;
                             }
                             throw e;
@@ -2098,7 +2173,10 @@ function PlasmicV2__RenderFunc(props: {
                           try {
                             return $state.isCollapse ? true : false;
                           } catch (e) {
-                            if (e instanceof TypeError) {
+                            if (
+                              e instanceof TypeError ||
+                              e?.plasmicType === "PlasmicUndefinedDataError"
+                            ) {
                               return true;
                             }
                             throw e;
@@ -2203,7 +2281,10 @@ function PlasmicV2__RenderFunc(props: {
                           try {
                             return $state.isCollapse ? false : true;
                           } catch (e) {
-                            if (e instanceof TypeError) {
+                            if (
+                              e instanceof TypeError ||
+                              e?.plasmicType === "PlasmicUndefinedDataError"
+                            ) {
                               return true;
                             }
                             throw e;
@@ -2221,7 +2302,10 @@ function PlasmicV2__RenderFunc(props: {
                           try {
                             return $state.isCollapse ? true : false;
                           } catch (e) {
-                            if (e instanceof TypeError) {
+                            if (
+                              e instanceof TypeError ||
+                              e?.plasmicType === "PlasmicUndefinedDataError"
+                            ) {
                               return true;
                             }
                             throw e;
@@ -2300,7 +2384,10 @@ function PlasmicV2__RenderFunc(props: {
                           try {
                             return $state.isCollapse ? false : true;
                           } catch (e) {
-                            if (e instanceof TypeError) {
+                            if (
+                              e instanceof TypeError ||
+                              e?.plasmicType === "PlasmicUndefinedDataError"
+                            ) {
                               return true;
                             }
                             throw e;
@@ -2318,7 +2405,10 @@ function PlasmicV2__RenderFunc(props: {
                           try {
                             return $state.isCollapse ? true : false;
                           } catch (e) {
-                            if (e instanceof TypeError) {
+                            if (
+                              e instanceof TypeError ||
+                              e?.plasmicType === "PlasmicUndefinedDataError"
+                            ) {
                               return true;
                             }
                             throw e;
@@ -2397,7 +2487,10 @@ function PlasmicV2__RenderFunc(props: {
                           try {
                             return $state.isCollapse ? false : true;
                           } catch (e) {
-                            if (e instanceof TypeError) {
+                            if (
+                              e instanceof TypeError ||
+                              e?.plasmicType === "PlasmicUndefinedDataError"
+                            ) {
                               return true;
                             }
                             throw e;
@@ -2415,7 +2508,10 @@ function PlasmicV2__RenderFunc(props: {
                           try {
                             return $state.isCollapse ? true : false;
                           } catch (e) {
-                            if (e instanceof TypeError) {
+                            if (
+                              e instanceof TypeError ||
+                              e?.plasmicType === "PlasmicUndefinedDataError"
+                            ) {
                               return true;
                             }
                             throw e;
@@ -2477,7 +2573,10 @@ function PlasmicV2__RenderFunc(props: {
                           try {
                             return $state.isCollapse ? false : true;
                           } catch (e) {
-                            if (e instanceof TypeError) {
+                            if (
+                              e instanceof TypeError ||
+                              e?.plasmicType === "PlasmicUndefinedDataError"
+                            ) {
                               return true;
                             }
                             throw e;
@@ -2495,7 +2594,10 @@ function PlasmicV2__RenderFunc(props: {
                           try {
                             return $state.isCollapse ? true : false;
                           } catch (e) {
-                            if (e instanceof TypeError) {
+                            if (
+                              e instanceof TypeError ||
+                              e?.plasmicType === "PlasmicUndefinedDataError"
+                            ) {
                               return true;
                             }
                             throw e;
@@ -2555,7 +2657,10 @@ function PlasmicV2__RenderFunc(props: {
                           try {
                             return $state.isCollapse ? false : true;
                           } catch (e) {
-                            if (e instanceof TypeError) {
+                            if (
+                              e instanceof TypeError ||
+                              e?.plasmicType === "PlasmicUndefinedDataError"
+                            ) {
                               return true;
                             }
                             throw e;
@@ -2573,7 +2678,10 @@ function PlasmicV2__RenderFunc(props: {
                           try {
                             return $state.isCollapse ? true : false;
                           } catch (e) {
-                            if (e instanceof TypeError) {
+                            if (
+                              e instanceof TypeError ||
+                              e?.plasmicType === "PlasmicUndefinedDataError"
+                            ) {
                               return true;
                             }
                             throw e;
@@ -2731,7 +2839,10 @@ function PlasmicV2__RenderFunc(props: {
             try {
               return $state.navbarv2.isMenuShow;
             } catch (e) {
-              if (e instanceof TypeError) {
+              if (
+                e instanceof TypeError ||
+                e?.plasmicType === "PlasmicUndefinedDataError"
+              ) {
                 return true;
               }
               throw e;

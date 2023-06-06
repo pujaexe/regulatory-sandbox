@@ -46,10 +46,6 @@ import { useScreenVariants as useScreenVariantsqbGzfD819Z3T3 } from "./PlasmicGl
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-
-
 import plasmic_antd_5_hostless_css from "../antd_5_hostless/plasmic_antd_5_hostless.module.css"; // plasmic-import: ohDidvG9XsCeFumugENU3J/projectcss
 import projectcss from "./plasmic_sandbox_satuhsehat.module.css"; // plasmic-import: mazsTSCdeXMvNewzsED8CP/projectcss
 import sty from "./PlasmicHomepage.module.css"; // plasmic-import: 2kkee5R7hDuz/css
@@ -998,7 +994,10 @@ function PlasmicHomepage__RenderFunc(props: {
                           try {
                             return $state.isCollapse ? false : true;
                           } catch (e) {
-                            if (e instanceof TypeError) {
+                            if (
+                              e instanceof TypeError ||
+                              e?.plasmicType === "PlasmicUndefinedDataError"
+                            ) {
                               return true;
                             }
                             throw e;
@@ -1016,7 +1015,10 @@ function PlasmicHomepage__RenderFunc(props: {
                           try {
                             return $state.isCollapse ? true : false;
                           } catch (e) {
-                            if (e instanceof TypeError) {
+                            if (
+                              e instanceof TypeError ||
+                              e?.plasmicType === "PlasmicUndefinedDataError"
+                            ) {
                               return true;
                             }
                             throw e;
@@ -1295,7 +1297,10 @@ function PlasmicHomepage__RenderFunc(props: {
                           try {
                             return $state.isCollapse ? false : true;
                           } catch (e) {
-                            if (e instanceof TypeError) {
+                            if (
+                              e instanceof TypeError ||
+                              e?.plasmicType === "PlasmicUndefinedDataError"
+                            ) {
                               return true;
                             }
                             throw e;
@@ -1313,7 +1318,10 @@ function PlasmicHomepage__RenderFunc(props: {
                           try {
                             return $state.isCollapse ? true : false;
                           } catch (e) {
-                            if (e instanceof TypeError) {
+                            if (
+                              e instanceof TypeError ||
+                              e?.plasmicType === "PlasmicUndefinedDataError"
+                            ) {
                               return true;
                             }
                             throw e;
@@ -1390,7 +1398,10 @@ function PlasmicHomepage__RenderFunc(props: {
                           try {
                             return $state.isCollapse ? false : true;
                           } catch (e) {
-                            if (e instanceof TypeError) {
+                            if (
+                              e instanceof TypeError ||
+                              e?.plasmicType === "PlasmicUndefinedDataError"
+                            ) {
                               return true;
                             }
                             throw e;
@@ -1408,7 +1419,10 @@ function PlasmicHomepage__RenderFunc(props: {
                           try {
                             return $state.isCollapse ? true : false;
                           } catch (e) {
-                            if (e instanceof TypeError) {
+                            if (
+                              e instanceof TypeError ||
+                              e?.plasmicType === "PlasmicUndefinedDataError"
+                            ) {
                               return true;
                             }
                             throw e;
@@ -1496,7 +1510,10 @@ function PlasmicHomepage__RenderFunc(props: {
                           try {
                             return $state.isCollapse ? false : true;
                           } catch (e) {
-                            if (e instanceof TypeError) {
+                            if (
+                              e instanceof TypeError ||
+                              e?.plasmicType === "PlasmicUndefinedDataError"
+                            ) {
                               return true;
                             }
                             throw e;
@@ -1514,7 +1531,10 @@ function PlasmicHomepage__RenderFunc(props: {
                           try {
                             return $state.isCollapse ? true : false;
                           } catch (e) {
-                            if (e instanceof TypeError) {
+                            if (
+                              e instanceof TypeError ||
+                              e?.plasmicType === "PlasmicUndefinedDataError"
+                            ) {
                               return true;
                             }
                             throw e;
@@ -1574,7 +1594,10 @@ function PlasmicHomepage__RenderFunc(props: {
                           try {
                             return $state.isCollapse ? false : true;
                           } catch (e) {
-                            if (e instanceof TypeError) {
+                            if (
+                              e instanceof TypeError ||
+                              e?.plasmicType === "PlasmicUndefinedDataError"
+                            ) {
                               return true;
                             }
                             throw e;
@@ -1592,7 +1615,10 @@ function PlasmicHomepage__RenderFunc(props: {
                           try {
                             return $state.isCollapse ? true : false;
                           } catch (e) {
-                            if (e instanceof TypeError) {
+                            if (
+                              e instanceof TypeError ||
+                              e?.plasmicType === "PlasmicUndefinedDataError"
+                            ) {
                               return true;
                             }
                             throw e;
@@ -1666,7 +1692,10 @@ function PlasmicHomepage__RenderFunc(props: {
                           try {
                             return $state.isCollapse ? false : true;
                           } catch (e) {
-                            if (e instanceof TypeError) {
+                            if (
+                              e instanceof TypeError ||
+                              e?.plasmicType === "PlasmicUndefinedDataError"
+                            ) {
                               return true;
                             }
                             throw e;
@@ -1684,7 +1713,10 @@ function PlasmicHomepage__RenderFunc(props: {
                           try {
                             return $state.isCollapse ? true : false;
                           } catch (e) {
-                            if (e instanceof TypeError) {
+                            if (
+                              e instanceof TypeError ||
+                              e?.plasmicType === "PlasmicUndefinedDataError"
+                            ) {
                               return true;
                             }
                             throw e;
@@ -1785,7 +1817,10 @@ function PlasmicHomepage__RenderFunc(props: {
                           try {
                             return $state.isCollapse ? false : true;
                           } catch (e) {
-                            if (e instanceof TypeError) {
+                            if (
+                              e instanceof TypeError ||
+                              e?.plasmicType === "PlasmicUndefinedDataError"
+                            ) {
                               return true;
                             }
                             throw e;
@@ -1803,7 +1838,10 @@ function PlasmicHomepage__RenderFunc(props: {
                           try {
                             return $state.isCollapse ? true : false;
                           } catch (e) {
-                            if (e instanceof TypeError) {
+                            if (
+                              e instanceof TypeError ||
+                              e?.plasmicType === "PlasmicUndefinedDataError"
+                            ) {
                               return true;
                             }
                             throw e;
@@ -1888,7 +1926,10 @@ function PlasmicHomepage__RenderFunc(props: {
                           try {
                             return $state.isCollapse ? false : true;
                           } catch (e) {
-                            if (e instanceof TypeError) {
+                            if (
+                              e instanceof TypeError ||
+                              e?.plasmicType === "PlasmicUndefinedDataError"
+                            ) {
                               return true;
                             }
                             throw e;
@@ -1906,7 +1947,10 @@ function PlasmicHomepage__RenderFunc(props: {
                           try {
                             return $state.isCollapse ? true : false;
                           } catch (e) {
-                            if (e instanceof TypeError) {
+                            if (
+                              e instanceof TypeError ||
+                              e?.plasmicType === "PlasmicUndefinedDataError"
+                            ) {
                               return true;
                             }
                             throw e;
@@ -1992,16 +2036,22 @@ function PlasmicHomepage__RenderFunc(props: {
                                       sty.li__cTdp
                                     )}
                                   >
-                                    {(() => {
-                                      try {
-                                        return "Memiliki Akta Pendirian Perusahaan dari Kementerian Hukum dan Hak Asasi Manusia (Kementerian Hukum dan Hak Asasi Manusia RI);";
-                                      } catch (e) {
-                                        if (e instanceof TypeError) {
-                                          return "Enter some text";
+                                    <React.Fragment>
+                                      {(() => {
+                                        try {
+                                          return "Memiliki Akta Pendirian Perusahaan dari Kementerian Hukum dan Hak Asasi Manusia (Kementerian Hukum dan Hak Asasi Manusia RI);";
+                                        } catch (e) {
+                                          if (
+                                            e instanceof TypeError ||
+                                            e?.plasmicType ===
+                                              "PlasmicUndefinedDataError"
+                                          ) {
+                                            return "Enter some text";
+                                          }
+                                          throw e;
                                         }
-                                        throw e;
-                                      }
-                                    })()}
+                                      })()}
+                                    </React.Fragment>
                                   </li>
                                   <li
                                     className={classNames(
@@ -2011,16 +2061,22 @@ function PlasmicHomepage__RenderFunc(props: {
                                       sty.li___3Rpt3
                                     )}
                                   >
-                                    {(() => {
-                                      try {
-                                        return "Memiliki Nomor Induk Berusaha (NIB) dari Sistem Online Single Submission (OSS) dan Klasifikasi Baku Lapangan Usaha Indonesia (KBLI);";
-                                      } catch (e) {
-                                        if (e instanceof TypeError) {
-                                          return "Enter some text";
+                                    <React.Fragment>
+                                      {(() => {
+                                        try {
+                                          return "Memiliki Nomor Induk Berusaha (NIB) dari Sistem Online Single Submission (OSS) dan Klasifikasi Baku Lapangan Usaha Indonesia (KBLI);";
+                                        } catch (e) {
+                                          if (
+                                            e instanceof TypeError ||
+                                            e?.plasmicType ===
+                                              "PlasmicUndefinedDataError"
+                                          ) {
+                                            return "Enter some text";
+                                          }
+                                          throw e;
                                         }
-                                        throw e;
-                                      }
-                                    })()}
+                                      })()}
+                                    </React.Fragment>
                                   </li>
                                   <li
                                     className={classNames(
@@ -2030,16 +2086,22 @@ function PlasmicHomepage__RenderFunc(props: {
                                       sty.li__pHnF
                                     )}
                                   >
-                                    {(() => {
-                                      try {
-                                        return "Memiliki bukti registrasi dari Kominfo sebagai Penyelenggara Sistem Elektronik (PSE); dan";
-                                      } catch (e) {
-                                        if (e instanceof TypeError) {
-                                          return "Enter some text";
+                                    <React.Fragment>
+                                      {(() => {
+                                        try {
+                                          return "Memiliki bukti registrasi dari Kominfo sebagai Penyelenggara Sistem Elektronik (PSE); dan";
+                                        } catch (e) {
+                                          if (
+                                            e instanceof TypeError ||
+                                            e?.plasmicType ===
+                                              "PlasmicUndefinedDataError"
+                                          ) {
+                                            return "Enter some text";
+                                          }
+                                          throw e;
                                         }
-                                        throw e;
-                                      }
-                                    })()}
+                                      })()}
+                                    </React.Fragment>
                                   </li>
                                   <li
                                     className={classNames(
@@ -2049,16 +2111,22 @@ function PlasmicHomepage__RenderFunc(props: {
                                       sty.li__nOAwP
                                     )}
                                   >
-                                    {(() => {
-                                      try {
-                                        return "Mencantumkan bukti telah melakukan penetration testing (pentest) atau mencantumkan sertifikasi keamanan yang dimiliki.";
-                                      } catch (e) {
-                                        if (e instanceof TypeError) {
-                                          return "Enter some text";
+                                    <React.Fragment>
+                                      {(() => {
+                                        try {
+                                          return "Mencantumkan bukti telah melakukan penetration testing (pentest) atau mencantumkan sertifikasi keamanan yang dimiliki.";
+                                        } catch (e) {
+                                          if (
+                                            e instanceof TypeError ||
+                                            e?.plasmicType ===
+                                              "PlasmicUndefinedDataError"
+                                          ) {
+                                            return "Enter some text";
+                                          }
+                                          throw e;
                                         }
-                                        throw e;
-                                      }
-                                    })()}
+                                      })()}
+                                    </React.Fragment>
                                   </li>
                                 </ul>
                               </li>
@@ -2219,7 +2287,10 @@ function PlasmicHomepage__RenderFunc(props: {
                           try {
                             return $state.isCollapse ? false : true;
                           } catch (e) {
-                            if (e instanceof TypeError) {
+                            if (
+                              e instanceof TypeError ||
+                              e?.plasmicType === "PlasmicUndefinedDataError"
+                            ) {
                               return true;
                             }
                             throw e;
@@ -2237,7 +2308,10 @@ function PlasmicHomepage__RenderFunc(props: {
                           try {
                             return $state.isCollapse ? true : false;
                           } catch (e) {
-                            if (e instanceof TypeError) {
+                            if (
+                              e instanceof TypeError ||
+                              e?.plasmicType === "PlasmicUndefinedDataError"
+                            ) {
                               return true;
                             }
                             throw e;
@@ -2342,7 +2416,10 @@ function PlasmicHomepage__RenderFunc(props: {
                           try {
                             return $state.isCollapse ? false : true;
                           } catch (e) {
-                            if (e instanceof TypeError) {
+                            if (
+                              e instanceof TypeError ||
+                              e?.plasmicType === "PlasmicUndefinedDataError"
+                            ) {
                               return true;
                             }
                             throw e;
@@ -2360,7 +2437,10 @@ function PlasmicHomepage__RenderFunc(props: {
                           try {
                             return $state.isCollapse ? true : false;
                           } catch (e) {
-                            if (e instanceof TypeError) {
+                            if (
+                              e instanceof TypeError ||
+                              e?.plasmicType === "PlasmicUndefinedDataError"
+                            ) {
                               return true;
                             }
                             throw e;
@@ -2439,7 +2519,10 @@ function PlasmicHomepage__RenderFunc(props: {
                           try {
                             return $state.isCollapse ? false : true;
                           } catch (e) {
-                            if (e instanceof TypeError) {
+                            if (
+                              e instanceof TypeError ||
+                              e?.plasmicType === "PlasmicUndefinedDataError"
+                            ) {
                               return true;
                             }
                             throw e;
@@ -2457,7 +2540,10 @@ function PlasmicHomepage__RenderFunc(props: {
                           try {
                             return $state.isCollapse ? true : false;
                           } catch (e) {
-                            if (e instanceof TypeError) {
+                            if (
+                              e instanceof TypeError ||
+                              e?.plasmicType === "PlasmicUndefinedDataError"
+                            ) {
                               return true;
                             }
                             throw e;
@@ -2536,7 +2622,10 @@ function PlasmicHomepage__RenderFunc(props: {
                           try {
                             return $state.isCollapse ? false : true;
                           } catch (e) {
-                            if (e instanceof TypeError) {
+                            if (
+                              e instanceof TypeError ||
+                              e?.plasmicType === "PlasmicUndefinedDataError"
+                            ) {
                               return true;
                             }
                             throw e;
@@ -2554,7 +2643,10 @@ function PlasmicHomepage__RenderFunc(props: {
                           try {
                             return $state.isCollapse ? true : false;
                           } catch (e) {
-                            if (e instanceof TypeError) {
+                            if (
+                              e instanceof TypeError ||
+                              e?.plasmicType === "PlasmicUndefinedDataError"
+                            ) {
                               return true;
                             }
                             throw e;
@@ -2616,7 +2708,10 @@ function PlasmicHomepage__RenderFunc(props: {
                           try {
                             return $state.isCollapse ? false : true;
                           } catch (e) {
-                            if (e instanceof TypeError) {
+                            if (
+                              e instanceof TypeError ||
+                              e?.plasmicType === "PlasmicUndefinedDataError"
+                            ) {
                               return true;
                             }
                             throw e;
@@ -2634,7 +2729,10 @@ function PlasmicHomepage__RenderFunc(props: {
                           try {
                             return $state.isCollapse ? true : false;
                           } catch (e) {
-                            if (e instanceof TypeError) {
+                            if (
+                              e instanceof TypeError ||
+                              e?.plasmicType === "PlasmicUndefinedDataError"
+                            ) {
                               return true;
                             }
                             throw e;
@@ -2694,7 +2792,10 @@ function PlasmicHomepage__RenderFunc(props: {
                           try {
                             return $state.isCollapse ? false : true;
                           } catch (e) {
-                            if (e instanceof TypeError) {
+                            if (
+                              e instanceof TypeError ||
+                              e?.plasmicType === "PlasmicUndefinedDataError"
+                            ) {
                               return true;
                             }
                             throw e;
@@ -2712,7 +2813,10 @@ function PlasmicHomepage__RenderFunc(props: {
                           try {
                             return $state.isCollapse ? true : false;
                           } catch (e) {
-                            if (e instanceof TypeError) {
+                            if (
+                              e instanceof TypeError ||
+                              e?.plasmicType === "PlasmicUndefinedDataError"
+                            ) {
                               return true;
                             }
                             throw e;

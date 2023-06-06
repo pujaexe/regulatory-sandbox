@@ -1120,6 +1120,11 @@
           "id": "DOiOzS4wL",
           "name": "trustmedis (1) 1.png",
           "filePath": "../public/plasmic/sandbox_satuhsehat/images/trustmedis11Png.png"
+        },
+        {
+          "id": "Li4axfVkd",
+          "name": "grtwell-new@2x.png",
+          "filePath": "../public/plasmic/sandbox_satuhsehat/images/grtwellNew2Xpng.png"
         }
       ],
       "indirect": false,
@@ -1172,9 +1177,14 @@
           "name": "RichDetails",
           "displayName": "hostless-rich-details",
           "componentImportPath": "@plasmicpkgs/plasmic-rich-components"
+        },
+        {
+          "id": "Hh2OL1EveIF",
+          "name": "RichList",
+          "displayName": "hostless-rich-list",
+          "componentImportPath": "@plasmicpkgs/plasmic-rich-components"
         }
-      ],
-      "jsBundleThemes": []
+      ]
     },
     {
       "projectId": "ohDidvG9XsCeFumugENU3J",
@@ -1386,8 +1396,7 @@
           "displayName": "plasmic-antd5-date-picker",
           "componentImportPath": "@plasmicpkgs/antd5/skinny/registerDatePicker"
         }
-      ],
-      "jsBundleThemes": []
+      ]
     },
     {
       "projectId": "r3ASNrnyvLLLAtDvzUioQ",
@@ -1464,6 +1473,6 @@
   "nextjsConfig": {
     "pagesDir": "../pages"
   },
-  "cliVersion": "0.1.286",
-  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.286/dist/plasmic.schema.json"
+  "cliVersion": "0.1.291",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.291/dist/plasmic.schema.json"
 }

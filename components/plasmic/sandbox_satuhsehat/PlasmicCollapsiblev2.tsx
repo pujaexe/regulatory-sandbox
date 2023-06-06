@@ -237,7 +237,10 @@ function PlasmicCollapsiblev2__RenderFunc(props: {
                   try {
                     return $state.isCollapse ? false : true;
                   } catch (e) {
-                    if (e instanceof TypeError) {
+                    if (
+                      e instanceof TypeError ||
+                      e?.plasmicType === "PlasmicUndefinedDataError"
+                    ) {
                       return true;
                     }
                     throw e;
@@ -252,7 +255,10 @@ function PlasmicCollapsiblev2__RenderFunc(props: {
                   try {
                     return $state.isCollapse ? true : false;
                   } catch (e) {
-                    if (e instanceof TypeError) {
+                    if (
+                      e instanceof TypeError ||
+                      e?.plasmicType === "PlasmicUndefinedDataError"
+                    ) {
                       return true;
                     }
                     throw e;
@@ -272,7 +278,10 @@ function PlasmicCollapsiblev2__RenderFunc(props: {
           try {
             return $state.isCollapse;
           } catch (e) {
-            if (e instanceof TypeError) {
+            if (
+              e instanceof TypeError ||
+              e?.plasmicType === "PlasmicUndefinedDataError"
+            ) {
               return true;
             }
             throw e;

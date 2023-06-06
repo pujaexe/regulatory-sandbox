@@ -356,7 +356,10 @@ function PlasmicNavbarv2__RenderFunc(props: {
               try {
                 return $state.isMenuShow;
               } catch (e) {
-                if (e instanceof TypeError) {
+                if (
+                  e instanceof TypeError ||
+                  e?.plasmicType === "PlasmicUndefinedDataError"
+                ) {
                   return true;
                 }
                 throw e;
@@ -366,7 +369,10 @@ function PlasmicNavbarv2__RenderFunc(props: {
               try {
                 return $state.isMenuShow;
               } catch (e) {
-                if (e instanceof TypeError) {
+                if (
+                  e instanceof TypeError ||
+                  e?.plasmicType === "PlasmicUndefinedDataError"
+                ) {
                   return true;
                 }
                 throw e;

@@ -713,9 +713,9 @@ function PlasmicMitraTerdaftar2__RenderFunc(props: {
                   displayWidth={"72px" as const}
                   loading={"lazy" as const}
                   src={{
-                    src: "/plasmic/sandbox_satuhsehat/images/telmedTelemedikaTeknologiIndonesiapng.png",
-                    fullWidth: 295,
-                    fullHeight: 141,
+                    src: "/plasmic/sandbox_satuhsehat/images/grtwellNew2Xpng.png",
+                    fullWidth: 1534,
+                    fullHeight: 1256,
                     aspectRatio: undefined
                   }}
                 />

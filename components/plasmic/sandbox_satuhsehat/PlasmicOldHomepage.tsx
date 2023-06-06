@@ -1538,16 +1538,22 @@ function PlasmicOldHomepage__RenderFunc(props: {
                                     sty.li__qASzS
                                   )}
                                 >
-                                  {(() => {
-                                    try {
-                                      return "Memiliki Akta Pendirian Perusahaan dari Kementerian Hukum dan Hak Asasi Manusia (Kementerian Hukum dan Hak Asasi Manusia RI);";
-                                    } catch (e) {
-                                      if (e instanceof TypeError) {
-                                        return "Enter some text";
+                                  <React.Fragment>
+                                    {(() => {
+                                      try {
+                                        return "Memiliki Akta Pendirian Perusahaan dari Kementerian Hukum dan Hak Asasi Manusia (Kementerian Hukum dan Hak Asasi Manusia RI);";
+                                      } catch (e) {
+                                        if (
+                                          e instanceof TypeError ||
+                                          e?.plasmicType ===
+                                            "PlasmicUndefinedDataError"
+                                        ) {
+                                          return "Enter some text";
+                                        }
+                                        throw e;
                                       }
-                                      throw e;
-                                    }
-                                  })()}
+                                    })()}
+                                  </React.Fragment>
                                 </li>
                                 <li
                                   className={classNames(
@@ -1557,16 +1563,22 @@ function PlasmicOldHomepage__RenderFunc(props: {
                                     sty.li__biyt5
                                   )}
                                 >
-                                  {(() => {
-                                    try {
-                                      return "Memiliki Nomor Induk Berusaha (NIB) dari Sistem Online Single Submission (OSS) dan Klasifikasi Baku Lapangan Usaha Indonesia (KBLI);";
-                                    } catch (e) {
-                                      if (e instanceof TypeError) {
-                                        return "Enter some text";
+                                  <React.Fragment>
+                                    {(() => {
+                                      try {
+                                        return "Memiliki Nomor Induk Berusaha (NIB) dari Sistem Online Single Submission (OSS) dan Klasifikasi Baku Lapangan Usaha Indonesia (KBLI);";
+                                      } catch (e) {
+                                        if (
+                                          e instanceof TypeError ||
+                                          e?.plasmicType ===
+                                            "PlasmicUndefinedDataError"
+                                        ) {
+                                          return "Enter some text";
+                                        }
+                                        throw e;
                                       }
-                                      throw e;
-                                    }
-                                  })()}
+                                    })()}
+                                  </React.Fragment>
                                 </li>
                                 <li
                                   className={classNames(
@@ -1576,16 +1588,22 @@ function PlasmicOldHomepage__RenderFunc(props: {
                                     sty.li__kBAs
                                   )}
                                 >
-                                  {(() => {
-                                    try {
-                                      return "Memiliki bukti registrasi dari Kominfo sebagai Penyelenggara Sistem Elektronik (PSE); dan";
-                                    } catch (e) {
-                                      if (e instanceof TypeError) {
-                                        return "Enter some text";
+                                  <React.Fragment>
+                                    {(() => {
+                                      try {
+                                        return "Memiliki bukti registrasi dari Kominfo sebagai Penyelenggara Sistem Elektronik (PSE); dan";
+                                      } catch (e) {
+                                        if (
+                                          e instanceof TypeError ||
+                                          e?.plasmicType ===
+                                            "PlasmicUndefinedDataError"
+                                        ) {
+                                          return "Enter some text";
+                                        }
+                                        throw e;
                                       }
-                                      throw e;
-                                    }
-                                  })()}
+                                    })()}
+                                  </React.Fragment>
                                 </li>
                                 <li
                                   className={classNames(
@@ -1595,16 +1613,22 @@ function PlasmicOldHomepage__RenderFunc(props: {
                                     sty.li__hYyr2
                                   )}
                                 >
-                                  {(() => {
-                                    try {
-                                      return "Mencantumkan bukti telah melakukan penetration testing (pentest) atau mencantumkan sertifikasi keamanan yang dimiliki.";
-                                    } catch (e) {
-                                      if (e instanceof TypeError) {
-                                        return "Enter some text";
+                                  <React.Fragment>
+                                    {(() => {
+                                      try {
+                                        return "Mencantumkan bukti telah melakukan penetration testing (pentest) atau mencantumkan sertifikasi keamanan yang dimiliki.";
+                                      } catch (e) {
+                                        if (
+                                          e instanceof TypeError ||
+                                          e?.plasmicType ===
+                                            "PlasmicUndefinedDataError"
+                                        ) {
+                                          return "Enter some text";
+                                        }
+                                        throw e;
                                       }
-                                      throw e;
-                                    }
-                                  })()}
+                                    })()}
+                                  </React.Fragment>
                                 </li>
                               </ul>
                             </li>
